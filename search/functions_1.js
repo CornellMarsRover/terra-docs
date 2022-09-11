@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['backing_0',['Backing',['../structtoml_1_1Backing.html#a3370c018154881c47cb594e31a5fb339',1,'toml::Backing']]]
+  ['bind_0',['bind',['../namespacemonad.html#afebc1fc1f735b9daf60dea1082bbea5d',1,'monad']]],
+  ['build_5fstring_1',['build_string',['../namespacecmr.html#afbfa839675165c84ac3472908cafa711',1,'cmr']]]
 ];

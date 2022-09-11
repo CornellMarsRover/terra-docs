@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['b_0',['b',['../structtoml__datum__t.html#a366a5df3a6ec20330acacfb2c55405bf',1,'toml_datum_t']]]
+  ['is_5fmonad_5flike_5fv_0',['is_monad_like_v',['../namespacemonad.html#a8a382d4e8144c32ea25036b6d2f21b9c',1,'monad']]]
 ];

@@ -73,49 +73,61 @@ $(function() {
 <div class="contents">
 <a href="string__utils_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="namespacecmr.html">    7</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecmr.html">cmr</a></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> ... Args&gt;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespacecmr.html#aef1916b62185e82de6a3a330f8265068">   18</a></span>std::string <a class="code hl_function" href="namespacecmr.html#aef1916b62185e82de6a3a330f8265068">string_format</a>(<span class="keyword">const</span> std::string &amp; format, Args ... args)</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="comment">// Source: https://stackoverflow.com/a/26221725/3212994 (explanation commented here too)</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="comment">// the goal of this approach is to create a char buffer of the final string&#39;s size and</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="comment">// use std::snprintf to write to it, before finally converting it to a std:string.</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="comment">// first, we need to know what the final size actually is.</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="comment">// this requires a call to std::snprintf, where we don&#39;t actually write the result anywhere</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="comment">// but just use the size it returns. this also gives us a chance to do some error handling</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="comment">// which is the advantage of this longer-winded approach over std::sprintf.</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">int</span> size_s =</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    std::snprintf(<span class="keyword">nullptr</span>, 0, format.c_str(), args ...) +</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    1;         <span class="comment">// add extra space for terminator &#39;\0&#39;</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordflow">if</span> (size_s &lt;= 0) {<span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;string format failed&quot;</span>);}</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">auto</span> size = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>( size_s );</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="comment">// now that we know the size, and we know that the format is valid, we finally create our</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="comment">// char buffer and use std::snprintf to write it</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  std::unique_ptr&lt;char[]&gt; buf(<span class="keyword">new</span> <span class="keywordtype">char</span>[size]);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  std::snprintf(buf.get(), size, format.c_str(), args ...);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">return</span> {buf.get(), buf.get() + size - 1};   <span class="comment">// We don&#39;t want the terminator &#39;\0&#39; inside</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespacecmr.html#a0948811202668188a863a6f101bfc73e">   47</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacecmr.html#a0948811202668188a863a6f101bfc73e">ends_with</a>(std::string <span class="keyword">const</span> &amp; value, std::string <span class="keyword">const</span> &amp; ending)</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordflow">if</span> (ending.size() &gt; value.size()) {<span class="keywordflow">return</span> <span class="keyword">false</span>;}</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordflow">return</span> std::equal(ending.rbegin(), ending.rend(), value.rbegin());</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
-<div class="ttc" id="anamespacecmr_html"><div class="ttname"><a href="namespacecmr.html">cmr</a></div><div class="ttdef"><b>Definition:</b> string_utils.hpp:8</div></div>
-<div class="ttc" id="anamespacecmr_html_a0948811202668188a863a6f101bfc73e"><div class="ttname"><a href="namespacecmr.html#a0948811202668188a863a6f101bfc73e">cmr::ends_with</a></div><div class="ttdeci">bool ends_with(std::string const &amp;value, std::string const &amp;ending)</div><div class="ttdoc">Check whether a string ends with the given substring.</div><div class="ttdef"><b>Definition:</b> string_utils.hpp:47</div></div>
-<div class="ttc" id="anamespacecmr_html_aef1916b62185e82de6a3a330f8265068"><div class="ttname"><a href="namespacecmr.html#aef1916b62185e82de6a3a330f8265068">cmr::string_format</a></div><div class="ttdeci">std::string string_format(const std::string &amp;format, Args ... args)</div><div class="ttdoc">Format a string using std::snprintf.</div><div class="ttdef"><b>Definition:</b> string_utils.hpp:18</div></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="cmr__debug_8hpp.html">cmr_debug.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecmr.html">cmr</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespacecmr.html#ae7d6b3cd2dfc0067417200ecf9cfd105">   20</a></span>std::string <a class="code hl_function" href="namespacecmr.html#ae7d6b3cd2dfc0067417200ecf9cfd105">string_format</a>(<span class="keyword">const</span> std::string&amp; format, Args&amp;&amp;... args)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">// Source: https://stackoverflow.com/a/26221725/3212994 (explanation commented</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// here too) the goal of this approach is to create a char buffer of the final</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// string&#39;s size and use std::snprintf to write to it, before finally converting</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// it to a std:string.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">// first, we need to know what the final size actually is.</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// this requires a call to std::snprintf, where we don&#39;t actually write the</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// result anywhere but just use the size it returns. this also gives us a chance</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// to do some error handling which is the advantage of this longer-winded</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// approach over std::sprintf.</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> size_s =</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        std::snprintf(<span class="keyword">nullptr</span>, 0, format.c_str(), std::forward&lt;Args&gt;(args)...) +</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        1;  <span class="comment">// add extra space for terminator &#39;\0&#39;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_define" href="cmr__debug_8hpp.html#a45e857b38e227f3ed0a2db955cbc142d">CMR_ASSERT_MSG</a>(</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        size_s &gt; 0,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="stringliteral">&quot;Invalid format or mismatched arguments passed to `string_format`&quot;</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">const</span> <span class="keyword">auto</span> size = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(size_s);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// now that we know the size, and we know that the format is valid, we finally</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// create our char buffer and use std::snprintf to write it</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    std::string buf(size, <span class="charliteral">&#39;\0&#39;</span>);  <span class="comment">// Use string for NRVO</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    std::snprintf(buf.data(), size, format.c_str(), std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    buf.resize(size - 1);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// We don&#39;t want the terminator &#39;\0&#39; inside</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">return</span> buf;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="namespacecmr.html#afbfa839675165c84ac3472908cafa711">   68</a></span><span class="keyword">auto</span> <a class="code hl_function" href="namespacecmr.html#afbfa839675165c84ac3472908cafa711">build_string</a>(Args&amp;&amp;... args)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    std::stringstream ss;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    (ss &lt;&lt; ... &lt;&lt; std::forward&lt;Args&gt;(args));</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">return</span> ss.str();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}  <span class="comment">// namespace cmr</span></div>
+<div class="ttc" id="acmr__debug_8hpp_html"><div class="ttname"><a href="cmr__debug_8hpp.html">cmr_debug.hpp</a></div></div>
+<div class="ttc" id="acmr__debug_8hpp_html_a45e857b38e227f3ed0a2db955cbc142d"><div class="ttname"><a href="cmr__debug_8hpp.html#a45e857b38e227f3ed0a2db955cbc142d">CMR_ASSERT_MSG</a></div><div class="ttdeci">#define CMR_ASSERT_MSG(CONDITION,...)</div><div class="ttdoc">Like CMR_ASSERT but also supplied a format string followed by format arguments, just like printf</div><div class="ttdef"><b>Definition:</b> cmr_debug.hpp:75</div></div>
+<div class="ttc" id="anamespacecmr_html"><div class="ttname"><a href="namespacecmr.html">cmr</a></div><div class="ttdef"><b>Definition:</b> fabric_node.hpp:8</div></div>
+<div class="ttc" id="anamespacecmr_html_ae7d6b3cd2dfc0067417200ecf9cfd105"><div class="ttname"><a href="namespacecmr.html#ae7d6b3cd2dfc0067417200ecf9cfd105">cmr::string_format</a></div><div class="ttdeci">std::string string_format(const std::string &amp;format, Args &amp;&amp;... args)</div><div class="ttdoc">Format a string using std::snprintf.</div><div class="ttdef"><b>Definition:</b> string_utils.hpp:20</div></div>
+<div class="ttc" id="anamespacecmr_html_afbfa839675165c84ac3472908cafa711"><div class="ttname"><a href="namespacecmr.html#afbfa839675165c84ac3472908cafa711">cmr::build_string</a></div><div class="ttdeci">auto build_string(Args &amp;&amp;... args)</div><div class="ttdoc">Constructs a string by concatenating together the arguments via streams.</div><div class="ttdef"><b>Definition:</b> string_utils.hpp:68</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 11 2022 02:59:14 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Sep 11 2022 03:15:31 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

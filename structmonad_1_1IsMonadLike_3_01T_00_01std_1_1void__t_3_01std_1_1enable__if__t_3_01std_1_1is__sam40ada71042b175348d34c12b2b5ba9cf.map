@@ -1,0 +1,4 @@
+<map id="monad::IsMonadLike&lt; T, std::void_t&lt; std::enable_if_t&lt; std::is_same_v&lt; decltype(std::declval&lt; T &gt;().has_value()), bool &gt; &gt;, decltype(std::declval&lt; T &gt;().value()), decltype(T(std::declval&lt; T &gt;().value()))&gt; &gt;" name="monad::IsMonadLike&lt; T, std::void_t&lt; std::enable_if_t&lt; std::is_same_v&lt; decltype(std::declval&lt; T &gt;().has_value()), bool &gt; &gt;, decltype(std::declval&lt; T &gt;().value()), decltype(T(std::declval&lt; T &gt;().value()))&gt; &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,179,224"/>
+<area shape="rect" id="node2" title=" " alt="" coords="43,5,141,32"/>
+</map>

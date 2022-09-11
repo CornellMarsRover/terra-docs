@@ -74,18 +74,21 @@ $(function() {
   <div class="headertitle"><div class="title">string_utils.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<div class="textblock"><code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &quot;<a class="el" href="cmr__debug_8hpp_source.html">cmr_debug.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for string_utils.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="string__utils_8hpp__incl.png" border="0" usemap="#asrc_2cmr__utils_2include_2cmr__utils_2string__utils_8hpp" alt=""/></div>
 <map name="asrc_2cmr__utils_2include_2cmr__utils_2string__utils_8hpp" id="asrc_2cmr__utils_2include_2cmr__utils_2string__utils_8hpp">
-<area shape="rect" title=" " alt="" coords="39,5,210,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,73,121"/>
-<area shape="rect" title=" " alt="" coords="97,95,152,121"/>
-<area shape="rect" title=" " alt="" coords="176,95,255,121"/>
+<area shape="rect" title=" " alt="" coords="41,5,212,47"/>
+<area shape="rect" title=" " alt="" coords="5,95,75,121"/>
+<area shape="rect" title=" " alt="" coords="99,95,154,121"/>
+<area shape="rect" href="cmr__debug_8hpp.html" title=" " alt="" coords="178,95,289,121"/>
+<area shape="rect" title=" " alt="" coords="100,169,183,196"/>
+<area shape="rect" title=" " alt="" coords="207,169,259,196"/>
+<area shape="rect" title=" " alt="" coords="284,169,404,196"/>
 </map>
 </div>
 </div>
@@ -98,18 +101,19 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aef1916b62185e82de6a3a330f8265068"><td class="memTemplParams" colspan="2">template&lt;typename ... Args&gt; </td></tr>
-<tr class="memitem:aef1916b62185e82de6a3a330f8265068"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr.html#aef1916b62185e82de6a3a330f8265068">cmr::string_format</a> (const std::string &amp;format, Args ... args)</td></tr>
-<tr class="memdesc:aef1916b62185e82de6a3a330f8265068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a string using <code>std::snprintf</code>.  <a href="namespacecmr.html#aef1916b62185e82de6a3a330f8265068">More...</a><br /></td></tr>
-<tr class="separator:aef1916b62185e82de6a3a330f8265068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0948811202668188a863a6f101bfc73e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#a0948811202668188a863a6f101bfc73e">cmr::ends_with</a> (std::string const &amp;value, std::string const &amp;ending)</td></tr>
-<tr class="memdesc:a0948811202668188a863a6f101bfc73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a string ends with the given substring.  <a href="namespacecmr.html#a0948811202668188a863a6f101bfc73e">More...</a><br /></td></tr>
-<tr class="separator:a0948811202668188a863a6f101bfc73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d6b3cd2dfc0067417200ecf9cfd105"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ae7d6b3cd2dfc0067417200ecf9cfd105"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr.html#ae7d6b3cd2dfc0067417200ecf9cfd105">cmr::string_format</a> (const std::string &amp;format, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:ae7d6b3cd2dfc0067417200ecf9cfd105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a string using <code>std::snprintf</code>.  <a href="namespacecmr.html#ae7d6b3cd2dfc0067417200ecf9cfd105">More...</a><br /></td></tr>
+<tr class="separator:ae7d6b3cd2dfc0067417200ecf9cfd105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbfa839675165c84ac3472908cafa711"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:afbfa839675165c84ac3472908cafa711"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr.html#afbfa839675165c84ac3472908cafa711">cmr::build_string</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:afbfa839675165c84ac3472908cafa711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a string by concatenating together the arguments via streams.  <a href="namespacecmr.html#afbfa839675165c84ac3472908cafa711">More...</a><br /></td></tr>
+<tr class="separator:afbfa839675165c84ac3472908cafa711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 11 2022 02:59:14 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Sep 11 2022 03:15:31 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

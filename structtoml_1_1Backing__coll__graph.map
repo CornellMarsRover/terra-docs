@@ -1,7 +1,0 @@
-<map id="toml::Backing" name="toml::Backing">
-<area shape="rect" id="node1" title="Keep track of memory to be freed when all references to the tree returned by toml::parse is no longer..." alt="" coords="5,184,105,211"/>
-<area shape="rect" id="node2" href="$structtoml__table__t.html" title=" " alt="" coords="135,95,229,121"/>
-<area shape="rect" id="node5" href="$structtoml__arritem__t.html" title=" " alt="" coords="129,184,235,211"/>
-<area shape="rect" id="node3" href="$structtoml__keyval__t.html" title=" " alt="" coords="131,5,233,32"/>
-<area shape="rect" id="node4" href="$structtoml__array__t.html" title=" " alt="" coords="195,273,289,300"/>
-</map>

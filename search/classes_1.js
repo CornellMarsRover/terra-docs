@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['backing_0',['Backing',['../structtoml_1_1Backing.html',1,'toml']]]
+  ['demonode_0',['DemoNode',['../classDemoNode.html',1,'']]],
+  ['dependencymanager_1',['DependencyManager',['../classDependencyManager.html',1,'']]]
 ];

@@ -1,6 +1,0 @@
-<map id="toml_arritem_t" name="toml_arritem_t">
-<area shape="rect" id="node1" title=" " alt="" coords="55,5,161,32"/>
-<area shape="rect" id="node2" href="$structtoml__array__t.html" title=" " alt="" coords="5,95,99,121"/>
-<area shape="rect" id="node3" href="$structtoml__table__t.html" title=" " alt="" coords="100,184,193,211"/>
-<area shape="rect" id="node4" href="$structtoml__keyval__t.html" title=" " alt="" coords="193,95,295,121"/>
-</map>
