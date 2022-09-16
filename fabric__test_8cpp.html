@@ -69,35 +69,467 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">fabric_test.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="fabric__node_8hpp_source.html">cmr_fabric/fabric_node.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;cstdio&gt;</code><br />
+<code>#include &quot;<a class="el" href="dependency__manager_8hpp_source.html">cmr_fabric/dependency_manager.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fabric__node_8hpp_source.html">cmr_fabric/fabric_node.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fault__handler_8hpp_source.html">cmr_fabric/fault_handler.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="lifecycle__manager_8hpp_source.html">cmr_fabric/lifecycle_manager.hpp</a>&quot;</code><br />
+<code>#include &quot;cmr_msgs/srv/activate_node.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="services_8hpp_source.html">cmr_utils/services.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="string__utils_8hpp_source.html">cmr_utils/string_utils.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fabric__test__node_8hpp_source.html">fabric_test_node.hpp</a>&quot;</code><br />
 <code>#include &quot;gtest/gtest.h&quot;</code><br />
+<code>#include &quot;lifecycle_msgs/srv/get_state.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for fabric_test.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="fabric__test_8cpp__incl.png" border="0" usemap="#asrc_2cmr__fabric_2test_2fabric__test_8cpp" alt=""/></div>
 <map name="asrc_2cmr__fabric_2test_2fabric__test_8cpp" id="asrc_2cmr__fabric_2test_2fabric__test_8cpp">
-<area shape="rect" title=" " alt="" coords="259,5,389,47"/>
-<area shape="rect" href="fabric__node_8hpp.html" title=" " alt="" coords="155,95,333,121"/>
-<area shape="rect" title=" " alt="" coords="358,95,453,121"/>
-<area shape="rect" title=" " alt="" coords="5,169,157,211"/>
-<area shape="rect" title=" " alt="" coords="182,169,306,211"/>
-<area shape="rect" title=" " alt="" coords="331,169,493,211"/>
+<area shape="rect" title=" " alt="" coords="1720,5,1851,47"/>
+<area shape="rect" title=" " alt="" coords="590,102,647,129"/>
+<area shape="rect" href="dependency__manager_8hpp.html" title=" " alt="" coords="671,95,827,136"/>
+<area shape="rect" title=" " alt="" coords="1028,184,1183,225"/>
+<area shape="rect" href="fabric__node_8hpp.html" title=" " alt="" coords="2439,191,2617,218"/>
+<area shape="rect" href="fault__handler_8hpp.html" title=" " alt="" coords="1562,102,1747,129"/>
+<area shape="rect" href="services_8hpp.html" title=" " alt="" coords="1692,191,1844,218"/>
+<area shape="rect" href="lifecycle__manager_8hpp.html" title=" " alt="" coords="1239,95,1374,136"/>
+<area shape="rect" href="string__utils_8hpp.html" title=" " alt="" coords="1823,102,1990,129"/>
+<area shape="rect" href="fabric__test__node_8hpp.html" title=" " alt="" coords="2014,102,2157,129"/>
+<area shape="rect" title=" " alt="" coords="2233,102,2327,129"/>
+<area shape="rect" title=" " alt="" coords="2352,95,2483,136"/>
+<area shape="rect" title=" " alt="" coords="647,191,758,218"/>
+<area shape="rect" title=" " alt="" coords="5,191,109,218"/>
+<area shape="rect" title=" " alt="" coords="134,184,285,225"/>
+<area shape="rect" title=" " alt="" coords="834,184,1003,225"/>
+<area shape="rect" title=" " alt="" coords="309,184,449,225"/>
+<area shape="rect" title=" " alt="" coords="473,184,623,225"/>
+<area shape="rect" title=" " alt="" coords="1552,281,1672,307"/>
+<area shape="rect" title=" " alt="" coords="2704,281,2784,307"/>
+<area shape="rect" title=" " alt="" coords="2192,273,2344,315"/>
+<area shape="rect" title=" " alt="" coords="2369,273,2493,315"/>
+<area shape="rect" title=" " alt="" coords="2517,273,2680,315"/>
+<area shape="rect" href="cmr__debug_8hpp.html" title=" " alt="" coords="1919,191,2086,218"/>
+<area shape="rect" title=" " alt="" coords="2008,281,2091,307"/>
+<area shape="rect" title=" " alt="" coords="2115,281,2167,307"/>
+<area shape="rect" title=" " alt="" coords="1861,273,1985,315"/>
+<area shape="rect" title=" " alt="" coords="1696,281,1757,307"/>
+<area shape="rect" title=" " alt="" coords="1782,281,1837,307"/>
+<area shape="rect" title=" " alt="" coords="1257,184,1420,225"/>
+<area shape="rect" title=" " alt="" coords="1445,184,1617,225"/>
+<area shape="rect" title=" " alt="" coords="2161,191,2231,218"/>
+<area shape="rect" title=" " alt="" coords="2255,191,2415,218"/>
 </map>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTest.html">FabricTest</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5dcfe2d53b3b6491feefd1cc428f376b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a5dcfe2d53b3b6491feefd1cc428f376b">TEST</a> (FabricTest, activateTest)</td></tr>
+<tr class="separator:a5dcfe2d53b3b6491feefd1cc428f376b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed60e7804baad8c87558d2a607c8fc4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#aed60e7804baad8c87558d2a607c8fc4f">TEST</a> (FabricTest, restartOnKillTest)</td></tr>
+<tr class="separator:aed60e7804baad8c87558d2a607c8fc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176fc0a35cfca575a4a04099606e2352"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a176fc0a35cfca575a4a04099606e2352">TEST</a> (FabricTest, startDependency)</td></tr>
+<tr class="separator:a176fc0a35cfca575a4a04099606e2352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68e2b0aaaec0e52dda13d75cd6eeda9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#af68e2b0aaaec0e52dda13d75cd6eeda9">create_dependee</a> (std::atomic&lt; bool &gt; &amp;end_test, const std::string &amp;node_name, const char *namespace_name)</td></tr>
+<tr class="separator:af68e2b0aaaec0e52dda13d75cd6eeda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e64245766f1664cdac1816d1fb766aa"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a7e64245766f1664cdac1816d1fb766aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a7e64245766f1664cdac1816d1fb766aa">add_to_stream</a> (std::stringstream &amp;stream, const std::string &amp;node_name, Args &amp;&amp;... rest)</td></tr>
+<tr class="separator:a7e64245766f1664cdac1816d1fb766aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389a8caf46368c891e001e78196f1a4e"><td class="memTemplParams" colspan="2">template&lt;typename... Dependees&gt; </td></tr>
+<tr class="memitem:a389a8caf46368c891e001e78196f1a4e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a389a8caf46368c891e001e78196f1a4e">create_depender</a> (std::atomic&lt; bool &gt; &amp;end_test, const std::string &amp;node_name, const char *namespace_name, Dependees &amp;&amp;... dependee_names)</td></tr>
+<tr class="separator:a389a8caf46368c891e001e78196f1a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc124d544c5d5d08d274443a262caa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#affc124d544c5d5d08d274443a262caa7">TEST</a> (FabricTest, DISABLED_startDependencyChain)</td></tr>
+<tr class="separator:affc124d544c5d5d08d274443a262caa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa140db06b2e4019dfd12e9136ad3ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#abaa140db06b2e4019dfd12e9136ad3ad">TEST</a> (FabricTest, killDependender)</td></tr>
+<tr class="separator:abaa140db06b2e4019dfd12e9136ad3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7b653acc94497fb1c967309f836093"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a3e7b653acc94497fb1c967309f836093">TEST</a> (FabricTest, DISABLED_killDependendent)</td></tr>
+<tr class="separator:a3e7b653acc94497fb1c967309f836093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a0d9a950e4ef75058b8f9ef15e177ca4e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a0d9a950e4ef75058b8f9ef15e177ca4e">config_a</a></td></tr>
+<tr class="separator:a0d9a950e4ef75058b8f9ef15e177ca4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640eedc73c84761cfb281cd0f06c8c31"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a640eedc73c84761cfb281cd0f06c8c31">config_b</a></td></tr>
+<tr class="separator:a640eedc73c84761cfb281cd0f06c8c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a7e64245766f1664cdac1816d1fb766aa" name="a7e64245766f1664cdac1816d1fb766aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e64245766f1664cdac1816d1fb766aa">&#9670;&nbsp;</a></span>add_to_stream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_to_stream </td>
+          <td>(</td>
+          <td class="paramtype">std::stringstream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>node_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>rest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af68e2b0aaaec0e52dda13d75cd6eeda9" name="af68e2b0aaaec0e52dda13d75cd6eeda9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af68e2b0aaaec0e52dda13d75cd6eeda9">&#9670;&nbsp;</a></span>create_dependee()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto create_dependee </td>
+          <td>(</td>
+          <td class="paramtype">std::atomic&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>end_test</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>node_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>namespace_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a389a8caf46368c891e001e78196f1a4e" name="a389a8caf46368c891e001e78196f1a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389a8caf46368c891e001e78196f1a4e">&#9670;&nbsp;</a></span>create_depender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Dependees&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto create_depender </td>
+          <td>(</td>
+          <td class="paramtype">std::atomic&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>end_test</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>node_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>namespace_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dependees &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>dependee_names</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5dcfe2d53b3b6491feefd1cc428f376b" name="a5dcfe2d53b3b6491feefd1cc428f376b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcfe2d53b3b6491feefd1cc428f376b">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FabricTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">activateTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e7b653acc94497fb1c967309f836093" name="a3e7b653acc94497fb1c967309f836093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7b653acc94497fb1c967309f836093">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FabricTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DISABLED_killDependendent&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affc124d544c5d5d08d274443a262caa7" name="affc124d544c5d5d08d274443a262caa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc124d544c5d5d08d274443a262caa7">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FabricTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DISABLED_startDependencyChain&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abaa140db06b2e4019dfd12e9136ad3ad" name="abaa140db06b2e4019dfd12e9136ad3ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa140db06b2e4019dfd12e9136ad3ad">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FabricTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">killDependender&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed60e7804baad8c87558d2a607c8fc4f" name="aed60e7804baad8c87558d2a607c8fc4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed60e7804baad8c87558d2a607c8fc4f">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FabricTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">restartOnKillTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a176fc0a35cfca575a4a04099606e2352" name="a176fc0a35cfca575a4a04099606e2352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a176fc0a35cfca575a4a04099606e2352">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FabricTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">startDependency&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a0d9a950e4ef75058b8f9ef15e177ca4e" name="a0d9a950e4ef75058b8f9ef15e177ca4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d9a950e4ef75058b8f9ef15e177ca4e">&#9670;&nbsp;</a></span>config_a</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto config_a</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= R<span class="stringliteral">&quot;(</span></div>
+<div class="line"><span class="stringliteral">dependencies = []</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">[fault_handling]</span></div>
+<div class="line"><span class="stringliteral">restart_attempts = 2</span></div>
+<div class="line"><span class="stringliteral">restart_delay = 4</span></div>
+<div class="line"><span class="stringliteral">)&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a640eedc73c84761cfb281cd0f06c8c31" name="a640eedc73c84761cfb281cd0f06c8c31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a640eedc73c84761cfb281cd0f06c8c31">&#9670;&nbsp;</a></span>config_b</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto config_b</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= R<span class="stringliteral">&quot;(</span></div>
+<div class="line"><span class="stringliteral">dependencies = [%s]</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">[fault_handling]</span></div>
+<div class="line"><span class="stringliteral">restart_attempts = 2</span></div>
+<div class="line"><span class="stringliteral">restart_delay = 0</span></div>
+<div class="line"><span class="stringliteral">)&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 16 2022 20:54:09 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Sep 16 2022 21:08:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

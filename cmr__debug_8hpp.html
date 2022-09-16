@@ -78,16 +78,18 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
+<code>#include &quot;cmr_utils/external/debug_break.h&quot;</code><br />
 <code>#include &quot;rclcpp/rclcpp.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for cmr_debug.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="cmr__debug_8hpp__incl.png" border="0" usemap="#asrc_2cmr__utils_2include_2cmr__utils_2cmr__debug_8hpp" alt=""/></div>
 <map name="asrc_2cmr__utils_2include_2cmr__utils_2cmr__debug_8hpp" id="asrc_2cmr__utils_2include_2cmr__utils_2cmr__debug_8hpp">
-<area shape="rect" title=" " alt="" coords="53,5,224,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,88,121"/>
-<area shape="rect" title=" " alt="" coords="113,95,165,121"/>
-<area shape="rect" title=" " alt="" coords="189,95,309,121"/>
+<area shape="rect" title=" " alt="" coords="109,5,280,47"/>
+<area shape="rect" title=" " alt="" coords="5,102,88,129"/>
+<area shape="rect" title=" " alt="" coords="113,102,165,129"/>
+<area shape="rect" title=" " alt="" coords="189,95,313,136"/>
+<area shape="rect" title=" " alt="" coords="337,102,457,129"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -95,13 +97,18 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="cmr__debug_8hpp__dep__incl.png" border="0" usemap="#asrc_2cmr__utils_2include_2cmr__utils_2cmr__debug_8hppdep" alt=""/></div>
 <map name="asrc_2cmr__utils_2include_2cmr__utils_2cmr__debug_8hppdep" id="asrc_2cmr__utils_2include_2cmr__utils_2cmr__debug_8hppdep">
-<area shape="rect" title=" " alt="" coords="457,5,628,47"/>
+<area shape="rect" title=" " alt="" coords="664,5,835,47"/>
 <area shape="rect" href="demo__node_8cpp.html" title=" " alt="" coords="5,95,168,136"/>
-<area shape="rect" href="dependency__manager_8cpp.html" title=" " alt="" coords="192,95,368,136"/>
-<area shape="rect" href="fabric__node_8cpp.html" title=" " alt="" coords="393,95,519,136"/>
-<area shape="rect" href="string__utils_8hpp.html" title=" " alt="" coords="544,95,715,136"/>
-<area shape="rect" href="cmr__debug_8cpp.html" title=" " alt="" coords="739,95,885,136"/>
-<area shape="rect" href="error__test_8cpp.html" title=" " alt="" coords="909,95,1032,136"/>
+<area shape="rect" href="fault__handler_8hpp.html" title=" " alt="" coords="192,95,381,136"/>
+<area shape="rect" href="dependency__manager_8cpp.html" title=" " alt="" coords="405,95,581,136"/>
+<area shape="rect" href="fabric__node_8cpp.html" title=" " alt="" coords="606,95,733,136"/>
+<area shape="rect" href="fabric__test__node_8hpp.html" title=" " alt="" coords="757,95,904,136"/>
+<area shape="rect" href="string__utils_8hpp.html" title=" " alt="" coords="928,95,1099,136"/>
+<area shape="rect" href="cmr__debug_8cpp.html" title=" " alt="" coords="1123,95,1269,136"/>
+<area shape="rect" href="error__test_8cpp.html" title=" " alt="" coords="1293,95,1416,136"/>
+<area shape="rect" href="fault__handler_8cpp.html" title=" " alt="" coords="141,184,267,225"/>
+<area shape="rect" href="fault__handler__node_8cpp.html" title=" " alt="" coords="291,184,450,225"/>
+<area shape="rect" href="fabric__test_8cpp.html" title=" " alt="" coords="765,184,896,225"/>
 </map>
 </div>
 </div>
@@ -111,6 +118,9 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCmrException.html">CmrException</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all custom exceptions for our code.  <a href="classCmrException.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCmrAssertionException.html">CmrAssertionException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An exception that is thrown by the default assert handler.  <a href="classCmrAssertionException.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -133,6 +143,8 @@ Macros</h2></td></tr>
 <tr class="separator:ga42471ea573e182144f8797a7f59c489d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacf634585d789e02a6e78e90c6e7017c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DEBUG__MACROS.html#gacf634585d789e02a6e78e90c6e7017c6">CMR_LOG_D</a>(LEVEL, ...)&#160;&#160;&#160;<a class="el" href="cmr__debug_8hpp.html#a57389143a245502ed44eda4546e8296e">CMR_LOG</a>(LEVEL, __VA_ARGS__)</td></tr>
 <tr class="separator:gacf634585d789e02a6e78e90c6e7017c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef1364e29bf21e6260747ccd3ce5de9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmr__debug_8hpp.html#a7ef1364e29bf21e6260747ccd3ce5de9">CMR_RETRY_ON_ERR</a>(CODE)</td></tr>
+<tr class="separator:a7ef1364e29bf21e6260747ccd3ce5de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -145,6 +157,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad43ef6b7f75c225c5877a2829d10d0f6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmr__debug_8hpp.html#ad43ef6b7f75c225c5877a2829d10d0f6">get_logger</a> ()</td></tr>
 <tr class="memdesc:ad43ef6b7f75c225c5877a2829d10d0f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the default ROS logger.  <a href="cmr__debug_8hpp.html#ad43ef6b7f75c225c5877a2829d10d0f6">More...</a><br /></td></tr>
 <tr class="separator:ad43ef6b7f75c225c5877a2829d10d0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2ed32647903fc6b544fc61a81bbf40"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmr__debug_8hpp.html#ace2ed32647903fc6b544fc61a81bbf40">is_debugger_attached</a> ()</td></tr>
+<tr class="memdesc:ace2ed32647903fc6b544fc61a81bbf40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a debugger is attached to the current process.  <a href="cmr__debug_8hpp.html#ace2ed32647903fc6b544fc61a81bbf40">More...</a><br /></td></tr>
+<tr class="separator:ace2ed32647903fc6b544fc61a81bbf40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae32e3f77a8ecab97ba7615b92530ca52"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmr__debug_8hpp.html#ae32e3f77a8ecab97ba7615b92530ca52">error_transition</a> ()</td></tr>
+<tr class="memdesc:ae32e3f77a8ecab97ba7615b92530ca52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty function that is called if <code>CMR_RETRY_ON_ERR</code> is called from outside a FabricNode.  <a href="cmr__debug_8hpp.html#ae32e3f77a8ecab97ba7615b92530ca52">More...</a><br /></td></tr>
+<tr class="separator:ae32e3f77a8ecab97ba7615b92530ca52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55cc5e49493402a3831a8a9ba88c5e60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cmr__debug_8hpp.html#a4c8d434b28f375ac8bbbc2bb08d702b1">assert_handler_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmr__debug_8hpp.html#a55cc5e49493402a3831a8a9ba88c5e60">set_assert_handler</a> (<a class="el" href="cmr__debug_8hpp.html#a4c8d434b28f375ac8bbbc2bb08d702b1">assert_handler_t</a> handler) noexcept</td></tr>
 <tr class="memdesc:a55cc5e49493402a3831a8a9ba88c5e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the assert handler callback.  <a href="cmr__debug_8hpp.html#a55cc5e49493402a3831a8a9ba88c5e60">More...</a><br /></td></tr>
 <tr class="separator:a55cc5e49493402a3831a8a9ba88c5e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +172,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a963c6274d33940233116393b7883d348"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmr__debug_8hpp.html#a963c6274d33940233116393b7883d348">cmr_invalid</a> (const char *file, unsigned line, const char *msg)</td></tr>
 <tr class="memdesc:a963c6274d33940233116393b7883d348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for <code>CMR_INVALID</code> macro.  <a href="cmr__debug_8hpp.html#a963c6274d33940233116393b7883d348">More...</a><br /></td></tr>
 <tr class="separator:a963c6274d33940233116393b7883d348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7643bfae7c2049243b77ebb63dceb275"><td class="memTemplParams" colspan="2">template&lt;typename U , typename T &gt; </td></tr>
+<tr class="memitem:a7643bfae7c2049243b77ebb63dceb275"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cmr__debug_8hpp.html#a7643bfae7c2049243b77ebb63dceb275">narrow_cast</a> (T &amp;&amp;t)</td></tr>
+<tr class="memdesc:a7643bfae7c2049243b77ebb63dceb275"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>narrow_cast</code> Casts a type of type <code>T</code> to type <code>U</code> with extra checks to ensure that no information is lost during the conversion  <a href="cmr__debug_8hpp.html#a7643bfae7c2049243b77ebb63dceb275">More...</a><br /></td></tr>
+<tr class="separator:a7643bfae7c2049243b77ebb63dceb275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ae09de846881b31ce84e799b8920010b2" name="ae09de846881b31ce84e799b8920010b2"></a>
@@ -174,16 +196,28 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (!(CONDITION)) {                                                      \</div>
 <div class="line">        CMR_LOG(FATAL, <span class="stringliteral">&quot;ASSERT: &#39;%s&#39; FAILED in %s:%d&quot;</span>, #CONDITION, __FILE__, \</div>
 <div class="line">                __LINE__);                                                   \</div>
+<div class="line">        if (<a class="code hl_function" href="cmr__debug_8hpp.html#ace2ed32647903fc6b544fc61a81bbf40">is_debugger_attached</a>()) {                                        \</div>
+<div class="line">            debug_break();                                                   \</div>
+<div class="line">        }                                                                    \</div>
 <div class="line">        get_assert_handler()();                                              \</div>
 <div class="line">    }</div>
+<div class="ttc" id="acmr__debug_8hpp_html_ace2ed32647903fc6b544fc61a81bbf40"><div class="ttname"><a href="cmr__debug_8hpp.html#ace2ed32647903fc6b544fc61a81bbf40">is_debugger_attached</a></div><div class="ttdeci">bool is_debugger_attached()</div><div class="ttdoc">Determines if a debugger is attached to the current process.</div><div class="ttdef"><b>Definition:</b> cmr_debug.cpp:26</div></div>
 </div><!-- fragment -->
 <p>Asserts a condition is true. </p>
-<p >Optionally pass a format string to log. If the condition is false, creates a <code>FATAL</code> log and calls the assert handler which by default traps the debugger or terminates the program </p><dl class="params"><dt>Parameters</dt><dd>
+<p >If the condition is false, creates a <code>FATAL</code> log and, if debugging is enabled, traps the debugger otherwise invokes <code>error_transition</code> and the assert handler.</p>
+<p >IMPORTANT: This does not instantly fail the program if the condition is false, you MUST still take into consideration the path of execution if the condition you assert on is false.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">CONDITION</td><td>condition to assert </td></tr>
+    <tr><td class="paramname">CONDITION</td><td>condition to assert. In debug mode, if this is false, sets a breakpoint. In release mode it triggers a transition to the error state for FabricNodes</td></tr>
   </table>
   </dd>
 </dl>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Example:</h2>
+<ul>
+<li><code>CMR_ASSERT(x == 10);</code></li>
+</ul>
+<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="cmr__debug_8hpp.html#a45e857b38e227f3ed0a2db955cbc142d" title="Like CMR_ASSERT but also supplied a format string followed by format arguments, just like printf">CMR_ASSERT_MSG</a></code> </dd></dl>
 
 </div>
 </div>
@@ -212,17 +246,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_define" href="cmr__debug_8hpp.html#ae09de846881b31ce84e799b8920010b2">CMR_ASSERT</a>(CONDITION);             \</div>
-<div class="line">    CMR_LOG(FATAL, __VA_ARGS__);</div>
-<div class="ttc" id="acmr__debug_8hpp_html_ae09de846881b31ce84e799b8920010b2"><div class="ttname"><a href="cmr__debug_8hpp.html#ae09de846881b31ce84e799b8920010b2">CMR_ASSERT</a></div><div class="ttdeci">#define CMR_ASSERT(CONDITION)</div><div class="ttdoc">Asserts a condition is true.</div><div class="ttdef"><b>Definition:</b> cmr_debug.hpp:57</div></div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (!(CONDITION)) {                \</div>
+<div class="line">        CMR_LOG(FATAL, __VA_ARGS__);   \</div>
+<div class="line">        CMR_ASSERT(CONDITION);         \</div>
+<div class="line">    }</div>
 </div><!-- fragment -->
 <p>Like <code>CMR_ASSERT</code> but also supplied a format string followed by format arguments, just like <code>printf</code> </p>
-<h3><a class="anchor" id="autotoc_md3"></a>
+<h3><a class="anchor" id="autotoc_md5"></a>
 Example</h3>
 <ul>
 <li><code>CMR_ASSERT_MSG(x == 10, "%s was %d instead of 10", "x", x)</code></li>
-<li><code>CMR_ASSERT(x == 10);</code> </li>
 </ul>
+<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="cmr__debug_8hpp.html#ae09de846881b31ce84e799b8920010b2" title="Asserts a condition is true.">CMR_ASSERT</a></code> </dd></dl>
 
 </div>
 </div>
@@ -276,11 +311,39 @@ Example</h3>
 <p >Uses the node logger if called from a node, otherwise uses the default logger </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">LEVEL</td><td>the level of the message, such as WARN, INFO, DEBUG, FATAL </td></tr>
-    <tr><td class="paramname">...</td><td>A format string followed by format arguments, like <code>printf</code> </td></tr>
+    <tr><td class="paramname">...</td><td>A format string followed by format arguments, like <code>printf</code></td></tr>
   </table>
   </dd>
 </dl>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Example</h2>
+<p ><code>CMR_LOG(INFO, "test is %s", get_parameter("test").as_string().c_str());</code></p>
+<p >`CMR_LOG(WARN, "we got %d", my_num); </p>
 
+</div>
+</div>
+<a id="a7ef1364e29bf21e6260747ccd3ce5de9" name="a7ef1364e29bf21e6260747ccd3ce5de9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ef1364e29bf21e6260747ccd3ce5de9">&#9670;&nbsp;</a></span>CMR_RETRY_ON_ERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMR_RETRY_ON_ERR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CODE</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">try</span> {                                    \</div>
+<div class="line">        CODE                                 \</div>
+<div class="line">    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classCmrAssertionException.html">CmrAssertionException</a>&amp;) { \</div>
+<div class="line">        error_transition();                  \</div>
+<div class="line">    }</div>
+<div class="ttc" id="aclassCmrAssertionException_html"><div class="ttname"><a href="classCmrAssertionException.html">CmrAssertionException</a></div><div class="ttdoc">An exception that is thrown by the default assert handler.</div><div class="ttdef"><b>Definition:</b> cmr_debug.hpp:215</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -297,7 +360,6 @@ Example</h3>
 </div><div class="memdoc">
 
 <p>An assert handler is the function that is called when an assert fails or an <code>CMR_INVALID</code> is triggered. </p>
-<p >The default assert handler will trap a debugger if one is attached, otherwise it will terminate the program </p>
 
 </div>
 </div>
@@ -356,6 +418,34 @@ Example</h3>
 
 </div>
 </div>
+<a id="ae32e3f77a8ecab97ba7615b92530ca52" name="ae32e3f77a8ecab97ba7615b92530ca52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae32e3f77a8ecab97ba7615b92530ca52">&#9670;&nbsp;</a></span>error_transition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto error_transition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Empty function that is called if <code>CMR_RETRY_ON_ERR</code> is called from outside a FabricNode. </p>
+<p >This function will be shadowed if we assert within a FabricNode </p>
+
+</div>
+</div>
 <a id="a8944396e403d8c6d02290c7d583903fe" name="a8944396e403d8c6d02290c7d583903fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8944396e403d8c6d02290c7d583903fe">&#9670;&nbsp;</a></span>get_assert_handler()</h2>
 
@@ -411,6 +501,76 @@ Example</h3>
 
 </div>
 </div>
+<a id="ace2ed32647903fc6b544fc61a81bbf40" name="ace2ed32647903fc6b544fc61a81bbf40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2ed32647903fc6b544fc61a81bbf40">&#9670;&nbsp;</a></span>is_debugger_attached()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_debugger_attached </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines if a debugger is attached to the current process. </p>
+<p >Not very efficient in debug mode, but always returns <code>false</code> in release mode. </p>
+
+</div>
+</div>
+<a id="a7643bfae7c2049243b77ebb63dceb275" name="a7643bfae7c2049243b77ebb63dceb275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7643bfae7c2049243b77ebb63dceb275">&#9670;&nbsp;</a></span>narrow_cast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U , typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto narrow_cast </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>narrow_cast</code> Casts a type of type <code>T</code> to type <code>U</code> with extra checks to ensure that no information is lost during the conversion </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">U</td><td>output type </td></tr>
+    <tr><td class="paramname">T</td><td>input type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>value of type T to cast </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>value of type U</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classCmrAssertionException.html" title="An exception that is thrown by the default assert handler.">CmrAssertionException</a></td><td>if the value of <code>t</code> cannot be represented by type</td></tr>
+  </table>
+  </dd>
+</dl>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Example</h2>
+<div class="fragment"><div class="line"> {C++}</div>
+<div class="line"><span class="keyword">auto</span> x = narrow_cast&lt;int&gt;(1.5); <span class="comment">// will fail</span></div>
+<div class="line"><span class="keyword">auto</span> y = narrow_cast&lt;char&gt;(1); <span class="comment">// will succeed</span></div>
+<div class="line"><span class="keyword">auto</span> z = narrow_cast&lt;unsigned&gt;(-1); <span class="comment">// will fail</span></div>
+<div class="line"><span class="keyword">auto</span> y2 = narrow_cast&lt;double&gt;(1); <span class="comment">// will succeed</span></div>
+<div class="line"><span class="keyword">auto</span> x2 = narrow_cast&lt;char&gt;(128); <span class="comment">// will fail</span></div>
+</div><!-- fragment --> 
+</div>
+</div>
 <a id="a55cc5e49493402a3831a8a9ba88c5e60" name="a55cc5e49493402a3831a8a9ba88c5e60"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55cc5e49493402a3831a8a9ba88c5e60">&#9670;&nbsp;</a></span>set_assert_handler()</h2>
 
@@ -450,7 +610,7 @@ Example</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 16 2022 20:54:09 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Sep 16 2022 21:08:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

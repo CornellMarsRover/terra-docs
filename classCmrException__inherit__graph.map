@@ -1,4 +1,5 @@
 <map id="CmrException" name="CmrException">
-<area shape="rect" id="node1" title="Base class for all custom exceptions for our code." alt="" coords="5,80,108,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="6,5,107,32"/>
+<area shape="rect" id="node1" title="Base class for all custom exceptions for our code." alt="" coords="33,80,135,107"/>
+<area shape="rect" id="node3" href="$classCmrAssertionException.html" title="An exception that is thrown by the default assert handler." alt="" coords="5,155,163,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="33,5,135,32"/>
 </map>

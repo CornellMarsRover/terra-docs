@@ -71,15 +71,28 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">cmr::fabric Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1DependencyManager.html">DependencyManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dependency manager provides a service interface for nodes to acquire their dependencies.  <a href="classcmr_1_1fabric_1_1DependencyManager.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes.">FabricNode</a> is the base class for All CMR nodes.  <a href="classcmr_1_1fabric_1_1FabricNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcmr_1_1fabric_1_1FabricNodeConfig.html">FabricNodeConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration parameters for a <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes.">FabricNode</a>.  <a href="structcmr_1_1fabric_1_1FabricNodeConfig.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html">FaultHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html" title="The FaultHandler class provides a service interface to allow nodes to restart themselves if an error ...">FaultHandler</a> class provides a service interface to allow nodes to restart themselves if an error occurs.  <a href="classcmr_1_1fabric_1_1FaultHandler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1LifecycleManager.html">LifecycleManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This node provides a service interface for activating and deactivating other nodes.  <a href="classcmr_1_1fabric_1_1LifecycleManager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -95,13 +108,57 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a65e52d006c049cde2fa15d0da2d8b59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A LifecycleState is Fabric's representation of the state of a node.  <a href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59e">More...</a><br /></td></tr>
 <tr class="separator:a65e52d006c049cde2fa15d0da2d8b59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52f10767ce8f181287db6baf69add9aa"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aa">DeactivationReason</a> : uint8_t { <a class="el" href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aaa902b0d55fddef6f8d651fe1035b7d4bd">Error</a>
+, <a class="el" href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aaae1ba155a9f2e8c3be94020eef32a0301">Manual</a>
+ }</td></tr>
+<tr class="memdesc:a52f10767ce8f181287db6baf69add9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The reason why a node is deactivated.  <a href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aa">More...</a><br /></td></tr>
+<tr class="separator:a52f10767ce8f181287db6baf69add9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae12486e0d81fe806dcf137432ce7745d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#ae12486e0d81fe806dcf137432ce7745d">set_config_params</a> (<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;node, const toml::Result &amp;toml)</td></tr>
 <tr class="separator:ae12486e0d81fe806dcf137432ce7745d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b05ca087104d4d38af564c7aac05e2e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a0b05ca087104d4d38af564c7aac05e2e">parse_toml</a> (const std::string &amp;toml_path, const std::string &amp;toml_data)</td></tr>
+<tr class="memdesc:a0b05ca087104d4d38af564c7aac05e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the toml config file if one is specified, otherwise parses the config data.  <a href="namespacecmr_1_1fabric.html#a0b05ca087104d4d38af564c7aac05e2e">More...</a><br /></td></tr>
+<tr class="separator:a0b05ca087104d4d38af564c7aac05e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a14356040769ed189dea158272f80f379"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a14356040769ed189dea158272f80f379">time_now</a> = std::chrono::system_clock::now</td></tr>
+<tr class="separator:a14356040769ed189dea158272f80f379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a52f10767ce8f181287db6baf69add9aa" name="a52f10767ce8f181287db6baf69add9aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52f10767ce8f181287db6baf69add9aa">&#9670;&nbsp;</a></span>DeactivationReason</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aa">cmr::fabric::DeactivationReason</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The reason why a node is deactivated. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a52f10767ce8f181287db6baf69add9aaa902b0d55fddef6f8d651fe1035b7d4bd" name="a52f10767ce8f181287db6baf69add9aaa902b0d55fddef6f8d651fe1035b7d4bd"></a>Error&#160;</td><td class="fielddoc"><p >Node has been deactivated due to an error transition. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a52f10767ce8f181287db6baf69add9aaae1ba155a9f2e8c3be94020eef32a0301" name="a52f10767ce8f181287db6baf69add9aaae1ba155a9f2e8c3be94020eef32a0301"></a>Manual&#160;</td><td class="fielddoc"><p >Node has been deactivated <br  />
+ </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a65e52d006c049cde2fa15d0da2d8b59e" name="a65e52d006c049cde2fa15d0da2d8b59e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a65e52d006c049cde2fa15d0da2d8b59e">&#9670;&nbsp;</a></span>LifecycleState</h2>
 
@@ -139,6 +196,52 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a0b05ca087104d4d38af564c7aac05e2e" name="a0b05ca087104d4d38af564c7aac05e2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b05ca087104d4d38af564c7aac05e2e">&#9670;&nbsp;</a></span>parse_toml()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cmr::fabric::parse_toml </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>toml_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>toml_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parses the toml config file if one is specified, otherwise parses the config data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">toml_path</td><td>path to toml config file </td></tr>
+    <tr><td class="paramname">toml_data</td><td>string of toml config file data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>toml::Result or std::nullopt </dd></dl>
+
+</div>
+</div>
 <a id="ae12486e0d81fe806dcf137432ce7745d" name="ae12486e0d81fe806dcf137432ce7745d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae12486e0d81fe806dcf137432ce7745d">&#9670;&nbsp;</a></span>set_config_params()</h2>
 
@@ -167,10 +270,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a14356040769ed189dea158272f80f379" name="a14356040769ed189dea158272f80f379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14356040769ed189dea158272f80f379">&#9670;&nbsp;</a></span>time_now</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto cmr::fabric::time_now = std::chrono::system_clock::now</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 16 2022 20:54:09 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Sep 16 2022 21:08:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

@@ -84,8 +84,16 @@ $(function() {
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_enumvalue" href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59ea4d3d769b812b6faa6b76e1a8abaece2d">Active</a>,</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_enumvalue" href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59ea65457a3fa7904cfb30c890a602332205">Finalized</a></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}  <span class="comment">// namespace cmr::fabric</span></div>
-<div class="ttc" id="anamespacecmr_1_1fabric_html"><div class="ttname"><a href="namespacecmr_1_1fabric.html">cmr::fabric</a></div><div class="ttdef"><b>Definition:</b> fabric_node.hpp:8</div></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aa">   23</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aa">DeactivationReason</a> : uint8_t {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_enumvalue" href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aaa902b0d55fddef6f8d651fe1035b7d4bd">Error</a>,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_enumvalue" href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aaae1ba155a9f2e8c3be94020eef32a0301">Manual</a>,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}  <span class="comment">// namespace cmr::fabric</span></div>
+<div class="ttc" id="anamespacecmr_1_1fabric_html"><div class="ttname"><a href="namespacecmr_1_1fabric.html">cmr::fabric</a></div><div class="ttdef"><b>Definition:</b> dependency_manager.hpp:13</div></div>
+<div class="ttc" id="anamespacecmr_1_1fabric_html_a52f10767ce8f181287db6baf69add9aa"><div class="ttname"><a href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aa">cmr::fabric::DeactivationReason</a></div><div class="ttdeci">DeactivationReason</div><div class="ttdoc">The reason why a node is deactivated.</div><div class="ttdef"><b>Definition:</b> lifecycle_states.hpp:23</div></div>
+<div class="ttc" id="anamespacecmr_1_1fabric_html_a52f10767ce8f181287db6baf69add9aaa902b0d55fddef6f8d651fe1035b7d4bd"><div class="ttname"><a href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aaa902b0d55fddef6f8d651fe1035b7d4bd">cmr::fabric::DeactivationReason::Error</a></div><div class="ttdeci">@ Error</div><div class="ttdoc">Node has been deactivated due to an error transition.</div></div>
+<div class="ttc" id="anamespacecmr_1_1fabric_html_a52f10767ce8f181287db6baf69add9aaae1ba155a9f2e8c3be94020eef32a0301"><div class="ttname"><a href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aaae1ba155a9f2e8c3be94020eef32a0301">cmr::fabric::DeactivationReason::Manual</a></div><div class="ttdeci">@ Manual</div><div class="ttdoc">Node has been deactivated</div></div>
 <div class="ttc" id="anamespacecmr_1_1fabric_html_a65e52d006c049cde2fa15d0da2d8b59e"><div class="ttname"><a href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59e">cmr::fabric::LifecycleState</a></div><div class="ttdeci">LifecycleState</div><div class="ttdoc">A LifecycleState is Fabric's representation of the state of a node.</div><div class="ttdef"><b>Definition:</b> lifecycle_states.hpp:8</div></div>
 <div class="ttc" id="anamespacecmr_1_1fabric_html_a65e52d006c049cde2fa15d0da2d8b59ea3cab03c00dbd11bc3569afa0748013f0"><div class="ttname"><a href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59ea3cab03c00dbd11bc3569afa0748013f0">cmr::fabric::LifecycleState::Inactive</a></div><div class="ttdeci">@ Inactive</div><div class="ttdoc">Node has been configured, but it's not doing anything.</div></div>
 <div class="ttc" id="anamespacecmr_1_1fabric_html_a65e52d006c049cde2fa15d0da2d8b59ea4d3d769b812b6faa6b76e1a8abaece2d"><div class="ttname"><a href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59ea4d3d769b812b6faa6b76e1a8abaece2d">cmr::fabric::LifecycleState::Active</a></div><div class="ttdeci">@ Active</div><div class="ttdoc">Node is actively having effects.</div></div>
@@ -95,7 +103,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 16 2022 20:54:09 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Sep 16 2022 21:08:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

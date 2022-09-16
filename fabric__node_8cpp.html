@@ -70,7 +70,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">fabric_node.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -79,6 +80,7 @@ $(function() {
 <code>#include &quot;cmr_msgs/srv/acquire_dependency.hpp&quot;</code><br />
 <code>#include &quot;cmr_msgs/srv/release_dependency.hpp&quot;</code><br />
 <code>#include &quot;<a class="el" href="cmr__debug_8hpp_source.html">cmr_utils/cmr_debug.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="monad_8hpp_source.html">cmr_utils/monad.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="services_8hpp_source.html">cmr_utils/services.hpp</a>&quot;</code><br />
 <code>#include &quot;lifecycle_msgs/msg/state.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -86,21 +88,25 @@ Include dependency graph for fabric_node.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="fabric__node_8cpp__incl.png" border="0" usemap="#asrc_2cmr__fabric_2src_2fabric__node_8cpp" alt=""/></div>
 <map name="asrc_2cmr__fabric_2src_2fabric__node_8cpp" id="asrc_2cmr__fabric_2src_2fabric__node_8cpp">
-<area shape="rect" title=" " alt="" coords="851,5,978,47"/>
-<area shape="rect" href="fabric__node_8hpp.html" title=" " alt="" coords="225,102,404,129"/>
-<area shape="rect" title=" " alt="" coords="1159,191,1220,218"/>
-<area shape="rect" title=" " alt="" coords="665,95,815,136"/>
-<area shape="rect" title=" " alt="" coords="839,95,990,136"/>
-<area shape="rect" href="cmr__debug_8hpp.html" title=" " alt="" coords="474,102,641,129"/>
-<area shape="rect" href="services_8hpp.html" title=" " alt="" coords="1015,102,1167,129"/>
-<area shape="rect" title=" " alt="" coords="1242,95,1379,136"/>
-<area shape="rect" title=" " alt="" coords="192,184,344,225"/>
-<area shape="rect" title=" " alt="" coords="369,184,493,225"/>
-<area shape="rect" title=" " alt="" coords="5,184,168,225"/>
-<area shape="rect" title=" " alt="" coords="516,191,599,218"/>
-<area shape="rect" title=" " alt="" coords="623,191,675,218"/>
-<area shape="rect" title=" " alt="" coords="809,191,929,218"/>
-<area shape="rect" title=" " alt="" coords="1063,191,1118,218"/>
+<area shape="rect" title=" " alt="" coords="1019,5,1146,47"/>
+<area shape="rect" href="fabric__node_8hpp.html" title=" " alt="" coords="323,102,501,129"/>
+<area shape="rect" title=" " alt="" coords="621,191,683,218"/>
+<area shape="rect" title=" " alt="" coords="1267,95,1418,136"/>
+<area shape="rect" title=" " alt="" coords="1442,95,1593,136"/>
+<area shape="rect" href="cmr__debug_8hpp.html" title=" " alt="" coords="910,102,1077,129"/>
+<area shape="rect" href="monad_8hpp.html" title=" " alt="" coords="1101,102,1243,129"/>
+<area shape="rect" href="services_8hpp.html" title=" " alt="" coords="712,102,864,129"/>
+<area shape="rect" title=" " alt="" coords="1617,95,1754,136"/>
+<area shape="rect" title=" " alt="" coords="517,191,597,218"/>
+<area shape="rect" title=" " alt="" coords="5,184,157,225"/>
+<area shape="rect" title=" " alt="" coords="182,184,306,225"/>
+<area shape="rect" title=" " alt="" coords="331,184,493,225"/>
+<area shape="rect" title=" " alt="" coords="1156,191,1239,218"/>
+<area shape="rect" title=" " alt="" coords="1079,191,1131,218"/>
+<area shape="rect" title=" " alt="" coords="931,184,1055,225"/>
+<area shape="rect" title=" " alt="" coords="787,191,907,218"/>
+<area shape="rect" href="monad_8inl.html" title=" " alt="" coords="1263,191,1398,218"/>
+<area shape="rect" title=" " alt="" coords="707,191,762,218"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -115,11 +121,162 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ae12486e0d81fe806dcf137432ce7745d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#ae12486e0d81fe806dcf137432ce7745d">cmr::fabric::set_config_params</a> (FabricNode &amp;node, const toml::Result &amp;toml)</td></tr>
 <tr class="separator:ae12486e0d81fe806dcf137432ce7745d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b05ca087104d4d38af564c7aac05e2e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a0b05ca087104d4d38af564c7aac05e2e">cmr::fabric::parse_toml</a> (const std::string &amp;toml_path, const std::string &amp;toml_data)</td></tr>
+<tr class="memdesc:a0b05ca087104d4d38af564c7aac05e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the toml config file if one is specified, otherwise parses the config data.  <a href="namespacecmr_1_1fabric.html#a0b05ca087104d4d38af564c7aac05e2e">More...</a><br /></td></tr>
+<tr class="separator:a0b05ca087104d4d38af564c7aac05e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a9dd3a84fdcaeb88d19cd079de29ef8a6"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__node_8cpp.html#a9dd3a84fdcaeb88d19cd079de29ef8a6">param_config_path</a> = &quot;config_path&quot;</td></tr>
+<tr class="separator:a9dd3a84fdcaeb88d19cd079de29ef8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70940b49cf6430c1d90840dbc4a7bd4e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__node_8cpp.html#a70940b49cf6430c1d90840dbc4a7bd4e">param_composition_namespace</a> = &quot;composition_ns&quot;</td></tr>
+<tr class="separator:a70940b49cf6430c1d90840dbc4a7bd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9252d73adbc9da1333fdabe486aa0716"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__node_8cpp.html#a9252d73adbc9da1333fdabe486aa0716">param_max_restarts</a> = &quot;restart_attempts&quot;</td></tr>
+<tr class="separator:a9252d73adbc9da1333fdabe486aa0716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6179673b65e6d9772993faa766a04e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__node_8cpp.html#aea6179673b65e6d9772993faa766a04e">param_restart_delay</a> = &quot;restart_delay&quot;</td></tr>
+<tr class="separator:aea6179673b65e6d9772993faa766a04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc0956e11d67e411d5e4f38e8fa8ce2"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__node_8cpp.html#a6fc0956e11d67e411d5e4f38e8fa8ce2">param_num_attempted_restarts</a> = &quot;num_restarts&quot;</td></tr>
+<tr class="separator:a6fc0956e11d67e411d5e4f38e8fa8ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f9e77fc33131cb0097098c5019fc2f"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__node_8cpp.html#a31f9e77fc33131cb0097098c5019fc2f">param_config_data</a> = &quot;config_data&quot;</td></tr>
+<tr class="separator:a31f9e77fc33131cb0097098c5019fc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a70940b49cf6430c1d90840dbc4a7bd4e" name="a70940b49cf6430c1d90840dbc4a7bd4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70940b49cf6430c1d90840dbc4a7bd4e">&#9670;&nbsp;</a></span>param_composition_namespace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto param_composition_namespace = &quot;composition_ns&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31f9e77fc33131cb0097098c5019fc2f" name="a31f9e77fc33131cb0097098c5019fc2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f9e77fc33131cb0097098c5019fc2f">&#9670;&nbsp;</a></span>param_config_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto param_config_data = &quot;config_data&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9dd3a84fdcaeb88d19cd079de29ef8a6" name="a9dd3a84fdcaeb88d19cd079de29ef8a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd3a84fdcaeb88d19cd079de29ef8a6">&#9670;&nbsp;</a></span>param_config_path</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto param_config_path = &quot;config_path&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9252d73adbc9da1333fdabe486aa0716" name="a9252d73adbc9da1333fdabe486aa0716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9252d73adbc9da1333fdabe486aa0716">&#9670;&nbsp;</a></span>param_max_restarts</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto param_max_restarts = &quot;restart_attempts&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fc0956e11d67e411d5e4f38e8fa8ce2" name="a6fc0956e11d67e411d5e4f38e8fa8ce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc0956e11d67e411d5e4f38e8fa8ce2">&#9670;&nbsp;</a></span>param_num_attempted_restarts</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto param_num_attempted_restarts = &quot;num_restarts&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea6179673b65e6d9772993faa766a04e" name="aea6179673b65e6d9772993faa766a04e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea6179673b65e6d9772993faa766a04e">&#9670;&nbsp;</a></span>param_restart_delay</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto param_restart_delay = &quot;restart_delay&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 16 2022 20:54:09 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Sep 16 2022 21:08:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

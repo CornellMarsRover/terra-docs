@@ -1,0 +1,4 @@
+<map id="cmr::fabric::FaultHandler" name="cmr::fabric::FaultHandler">
+<area shape="rect" id="node1" title="The FaultHandler class provides a service interface to allow nodes to restart themselves if an error ..." alt="" coords="5,80,168,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="39,5,134,32"/>
+</map>

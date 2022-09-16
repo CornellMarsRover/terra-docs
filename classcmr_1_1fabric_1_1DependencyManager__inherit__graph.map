@@ -1,0 +1,4 @@
+<map id="cmr::fabric::DependencyManager" name="cmr::fabric::DependencyManager">
+<area shape="rect" id="node1" title="The dependency manager provides a service interface for nodes to acquire their dependencies." alt="" coords="5,80,215,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="63,5,157,32"/>
+</map>

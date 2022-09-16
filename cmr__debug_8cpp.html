@@ -76,19 +76,20 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="cmr__debug_8hpp_source.html">cmr_utils/cmr_debug.hpp</a>&quot;</code><br />
 <code>#include &lt;atomic&gt;</code><br />
-<code>#include &lt;csignal&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for cmr_debug.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="cmr__debug_8cpp__incl.png" border="0" usemap="#asrc_2cmr__utils_2src_2cmr__debug_8cpp" alt=""/></div>
 <map name="asrc_2cmr__utils_2src_2cmr__debug_8cpp" id="asrc_2cmr__utils_2src_2cmr__debug_8cpp">
-<area shape="rect" title=" " alt="" coords="205,5,350,47"/>
-<area shape="rect" href="cmr__debug_8hpp.html" title=" " alt="" coords="55,95,222,121"/>
-<area shape="rect" title=" " alt="" coords="247,95,308,121"/>
-<area shape="rect" title=" " alt="" coords="333,95,395,121"/>
-<area shape="rect" title=" " alt="" coords="5,169,88,196"/>
-<area shape="rect" title=" " alt="" coords="113,169,165,196"/>
-<area shape="rect" title=" " alt="" coords="189,169,309,196"/>
+<area shape="rect" title=" " alt="" coords="261,5,406,47"/>
+<area shape="rect" href="cmr__debug_8hpp.html" title=" " alt="" coords="111,95,278,121"/>
+<area shape="rect" title=" " alt="" coords="303,95,364,121"/>
+<area shape="rect" title=" " alt="" coords="388,95,455,121"/>
+<area shape="rect" title=" " alt="" coords="5,177,88,203"/>
+<area shape="rect" title=" " alt="" coords="113,177,165,203"/>
+<area shape="rect" title=" " alt="" coords="189,169,313,211"/>
+<area shape="rect" title=" " alt="" coords="337,177,457,203"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -102,6 +103,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8944396e403d8c6d02290c7d583903fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cmr__debug_8hpp.html#a4c8d434b28f375ac8bbbc2bb08d702b1">assert_handler_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmr__debug_8cpp.html#a8944396e403d8c6d02290c7d583903fe">get_assert_handler</a> () noexcept</td></tr>
 <tr class="memdesc:a8944396e403d8c6d02290c7d583903fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the assert handler object.  <a href="cmr__debug_8cpp.html#a8944396e403d8c6d02290c7d583903fe">More...</a><br /></td></tr>
 <tr class="separator:a8944396e403d8c6d02290c7d583903fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2ed32647903fc6b544fc61a81bbf40"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmr__debug_8cpp.html#ace2ed32647903fc6b544fc61a81bbf40">is_debugger_attached</a> ()</td></tr>
+<tr class="memdesc:ace2ed32647903fc6b544fc61a81bbf40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a debugger is attached to the current process.  <a href="cmr__debug_8cpp.html#ace2ed32647903fc6b544fc61a81bbf40">More...</a><br /></td></tr>
+<tr class="separator:ace2ed32647903fc6b544fc61a81bbf40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -150,6 +154,26 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the assert handler object. </p>
+
+</div>
+</div>
+<a id="ace2ed32647903fc6b544fc61a81bbf40" name="ace2ed32647903fc6b544fc61a81bbf40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2ed32647903fc6b544fc61a81bbf40">&#9670;&nbsp;</a></span>is_debugger_attached()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_debugger_attached </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines if a debugger is attached to the current process. </p>
+<p >Not very efficient in debug mode, but always returns <code>false</code> in release mode. </p>
 
 </div>
 </div>
@@ -203,14 +227,14 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">    std::make_shared&lt;assert_handler_t&gt;(<a class="code hl_function" href="cmr__debug_8cpp.html#a9287060199e7d0b7365205f88518d403">default_assert_handler</a>)</div>
-<div class="ttc" id="acmr__debug_8cpp_html_a9287060199e7d0b7365205f88518d403"><div class="ttname"><a href="cmr__debug_8cpp.html#a9287060199e7d0b7365205f88518d403">default_assert_handler</a></div><div class="ttdeci">void default_assert_handler()</div><div class="ttdef"><b>Definition:</b> cmr_debug.cpp:6</div></div>
+<div class="ttc" id="acmr__debug_8cpp_html_a9287060199e7d0b7365205f88518d403"><div class="ttname"><a href="cmr__debug_8cpp.html#a9287060199e7d0b7365205f88518d403">default_assert_handler</a></div><div class="ttdeci">void default_assert_handler()</div><div class="ttdef"><b>Definition:</b> cmr_debug.cpp:5</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 16 2022 20:54:09 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Sep 16 2022 21:08:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
