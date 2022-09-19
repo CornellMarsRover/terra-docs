@@ -1,0 +1,4 @@
+<map id="TestControllerClient" name="TestControllerClient">
+<area shape="rect" id="node1" title="The TestController is a node that listens for messages published to the /test/set_target topic of typ..." alt="" coords="5,80,141,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="26,5,121,32"/>
+</map>

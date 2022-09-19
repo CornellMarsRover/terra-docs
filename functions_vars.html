@@ -73,11 +73,15 @@ $(function() {
 
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
 <li>m_acquire_dependency_srv&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html#a600c7f5963a6203edbbaee01f48082dd">cmr::fabric::DependencyHandler</a></li>
+<li>m_action_client&#160;:&#160;<a class="el" href="classTestControllerClient.html#a61f0da03a9db4cc8da500e068976ac63">TestControllerClient</a></li>
 <li>m_activate_srv&#160;:&#160;<a class="el" href="classLifecycleManager.html#a6a13cdbf0dea5990f4f32051a951112b">LifecycleManager</a></li>
+<li>m_active_goals&#160;:&#160;<a class="el" href="classPositionControllerNode.html#adb5faa271543ec382c7e7ce98eff6eb6">PositionControllerNode</a></li>
+<li>m_angular_vel&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a9269d9cd85c5a9515417cd8a03a01320">PositionControllerNode</a></li>
 <li>m_base_clock&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html#ae204a7c32e1a8914cfddb40ac1c64f92">cmr::fabric::FaultHandler</a></li>
 <li>m_callback_group&#160;:&#160;<a class="el" href="classLifecycleManager.html#a3f255e8b0999d696e41adc9dbc3fc0c1">LifecycleManager</a></li>
 <li>m_check_clock&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html#a2f2ade64067d418fea47b912ad8959b0">cmr::fabric::FaultHandler</a></li>
 <li>m_cleanup_srv&#160;:&#160;<a class="el" href="classLifecycleManager.html#a3adfe97231de4e2bc0423249f88507fa">LifecycleManager</a></li>
+<li>m_cmd_vel_pub&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a46f4640cc4b77e10b03e4aef77fec87d">PositionControllerNode</a></li>
 <li>m_composition_namespace&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a37e1bc7e7895a1bb7a372961921e87b3">cmr::fabric::FabricNode</a></li>
 <li>m_deactivate_srv&#160;:&#160;<a class="el" href="classLifecycleManager.html#a574dfb9fe3e05ee57273b27c743156b5">LifecycleManager</a></li>
 <li>m_dependencies&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html#af2781c574644a6e2db577e4b9b21c3e0">cmr::fabric::DependencyHandler</a></li>
@@ -85,7 +89,11 @@ $(function() {
 <li>m_dependers&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html#a622b6ab7b8cfbd7312d8a405c64586cb">cmr::fabric::DependencyHandler</a></li>
 <li>m_fail_activate&#160;:&#160;<a class="el" href="classFabricTestNode.html#a97b3627162138e77d7b9aa9f024324c6">FabricTestNode</a></li>
 <li>m_fail_activate_srv&#160;:&#160;<a class="el" href="classFabricTestNode.html#ae73d76813b80b7d1bae675561aa99fc0">FabricTestNode</a></li>
+<li>m_frame_broadcaster&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a8f90d3b29f8e2c91528279ff25fff5a5">PositionControllerNode</a></li>
+<li>m_frame_listener&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a76f482da9bbecaa0d76d18a1833e98c1">PositionControllerNode</a></li>
 <li>m_func&#160;:&#160;<a class="el" href="classCmrRAII.html#af7f36cf338f750c19134c3b7f3f55e36">CmrRAII</a></li>
+<li>m_goal_timer&#160;:&#160;<a class="el" href="classPositionControllerNode.html#ade9da3255fe4ac822b6bf55770ca24cc">PositionControllerNode</a></li>
+<li>m_linear_vel&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a798b45a0330999a97d3d5d355b74276c">PositionControllerNode</a></li>
 <li>m_mock_cv&#160;:&#160;<a class="el" href="classcmr_1_1ProducerConsumerMockClock.html#a8f21b375573f7c45e72cde512bd15d55">cmr::ProducerConsumerMockClock&lt; ClockType &gt;</a></li>
 <li>m_mock_mutex&#160;:&#160;<a class="el" href="classcmr_1_1ProducerConsumerMockClock.html#a1435b160a9352226af6ca54716a37dc0">cmr::ProducerConsumerMockClock&lt; ClockType &gt;</a></li>
 <li>m_mocked&#160;:&#160;<a class="el" href="classcmr_1_1ProducerConsumerMockClock.html#a374fd6e63352edef97a79081daf1cae3">cmr::ProducerConsumerMockClock&lt; ClockType &gt;</a></li>
@@ -93,14 +101,19 @@ $(function() {
 <li>m_nodes_to_restart&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html#a3067edbd7465fc94b480bc6962314d3b">cmr::fabric::FaultHandler</a></li>
 <li>m_nodes_to_restart_mutex&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html#a7d917a60277ae34c84859878161db421">cmr::fabric::FaultHandler</a></li>
 <li>m_notify_deactivate_srv&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html#ac51bf8f96b8760d7556d020150060876">cmr::fabric::DependencyHandler</a></li>
+<li>m_odom_listener&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a1889e57731cf7166364add08b7f9fb85">PositionControllerNode</a></li>
 <li>m_processing_fault&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#acc5c077f67e466be171f54119c7fec28">cmr::fabric::FabricNode</a></li>
 <li>m_recover_fault_client&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ae6fedec94208f5372b24392446767fb9">cmr::fabric::FabricNode</a></li>
 <li>m_recover_fault_service&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html#a3548d47aece8ba4f304e2bb1edae92d5">cmr::fabric::FaultHandler</a></li>
 <li>m_release_dependency_srv&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html#a628e625188fcb3f95f142ac65ca7ea67">cmr::fabric::DependencyHandler</a></li>
+<li>m_rotation_angle_tolerance&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a99d8d342045d4b818e6603ad2277ebd3">PositionControllerNode</a></li>
 <li>m_seen_check_mutex&#160;:&#160;<a class="el" href="classcmr_1_1ProducerConsumerMockClock.html#a92247bfb5fd0452bab20cc94bc1f526a">cmr::ProducerConsumerMockClock&lt; ClockType &gt;</a></li>
 <li>m_seen_check_time&#160;:&#160;<a class="el" href="classcmr_1_1ProducerConsumerMockClock.html#a36844e8af0bff270689e397babc82e09">cmr::ProducerConsumerMockClock&lt; ClockType &gt;</a></li>
 <li>m_started_as_dep&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html#a4bbf2d973287077029bbb96aa8a7ea2a">cmr::fabric::DependencyHandler</a></li>
 <li>m_sub&#160;:&#160;<a class="el" href="classDemoNode.html#af647f4e96fd216ef866a9c5dd53bc479">DemoNode</a>, <a class="el" href="classFabricTestNode.html#a0cb3a6c48bb52b21794970081de8ff4c">FabricTestNode</a></li>
+<li>m_target_listener&#160;:&#160;<a class="el" href="classTestControllerClient.html#ad40b156300dfd87e52c9ba1c2dfee140">TestControllerClient</a></li>
+<li>m_target_server&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a63cb08342ac7768629f7dd45e153c065">PositionControllerNode</a></li>
+<li>m_tf_buffer&#160;:&#160;<a class="el" href="classPositionControllerNode.html#adae605ea5f14264d0d8864dd3f462d97">PositionControllerNode</a></li>
 <li>m_time&#160;:&#160;<a class="el" href="classcmr_1_1ProducerConsumerMockClock.html#a4acb2d3773d77344890fa21c31c765b5">cmr::ProducerConsumerMockClock&lt; ClockType &gt;</a></li>
 <li>m_timer&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html#a207a15f6b8dd8b650145723e6df48544">cmr::fabric::FaultHandler</a></li>
 </ul>
@@ -123,7 +136,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 19 2022 15:47:37 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Mon Sep 19 2022 15:54:05 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
