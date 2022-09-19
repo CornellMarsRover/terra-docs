@@ -111,9 +111,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afa740dc1f6969061fecb33c29909e52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca7a00d1da781eb20ead53bf0d040596"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#aca7a00d1da781eb20ead53bf0d040596">~FabricNode</a> () override=default</td></tr>
 <tr class="separator:aca7a00d1da781eb20ead53bf0d040596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae428c8d0260eaee04e550534ed0742f7"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ae428c8d0260eaee04e550534ed0742f7">get_dependencies</a> () const</td></tr>
-<tr class="memdesc:ae428c8d0260eaee04e550534ed0742f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the vector of dependencies defined by this node.  <a href="classcmr_1_1fabric_1_1FabricNode.html#ae428c8d0260eaee04e550534ed0742f7">More...</a><br /></td></tr>
-<tr class="separator:ae428c8d0260eaee04e550534ed0742f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fcb742a9fd0e2c8cfdc3319f2156a7d"><td class="memItemLeft" align="right" valign="top">rclcpp_lifecycle::LifecycleNode::CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a1fcb742a9fd0e2c8cfdc3319f2156a7d">on_configure</a> (const rclcpp_lifecycle::State &amp;) override</td></tr>
 <tr class="separator:a1fcb742a9fd0e2c8cfdc3319f2156a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aead0b7f933cf612407cb012676d062ab"><td class="memItemLeft" align="right" valign="top">rclcpp_lifecycle::LifecycleNode::CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#aead0b7f933cf612407cb012676d062ab">on_activate</a> (const rclcpp_lifecycle::State &amp;) override</td></tr>
@@ -138,12 +135,6 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a6af975eba5172d823e6471b5341a3118"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a6af975eba5172d823e6471b5341a3118">activate_dependencies</a> ()</td></tr>
-<tr class="memdesc:a6af975eba5172d823e6471b5341a3118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to activate all dependencies of this node.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a6af975eba5172d823e6471b5341a3118">More...</a><br /></td></tr>
-<tr class="separator:a6af975eba5172d823e6471b5341a3118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad711425b7e38cd8a13ed46e0834e1045"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ad711425b7e38cd8a13ed46e0834e1045">deactivate_dependencies</a> ()</td></tr>
-<tr class="memdesc:ad711425b7e38cd8a13ed46e0834e1045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to deactivate all activated dependencies of this node.  <a href="classcmr_1_1fabric_1_1FabricNode.html#ad711425b7e38cd8a13ed46e0834e1045">More...</a><br /></td></tr>
-<tr class="separator:ad711425b7e38cd8a13ed46e0834e1045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32f606fbccc4520ace72d43f549472dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a32f606fbccc4520ace72d43f549472dd">cleanup_on_error</a> (const rclcpp_lifecycle::State &amp;current_state)</td></tr>
 <tr class="memdesc:a32f606fbccc4520ace72d43f549472dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up any state when an error occurs.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a32f606fbccc4520ace72d43f549472dd">More...</a><br /></td></tr>
 <tr class="separator:a32f606fbccc4520ace72d43f549472dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,18 +153,16 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:ae40fc7e3cc4898364f7a9d6cabf992af"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html">DependencyHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ae40fc7e3cc4898364f7a9d6cabf992af">m_dependency_manager</a></td></tr>
+<tr class="separator:ae40fc7e3cc4898364f7a9d6cabf992af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37e1bc7e7895a1bb7a372961921e87b3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a37e1bc7e7895a1bb7a372961921e87b3">m_composition_namespace</a></td></tr>
 <tr class="memdesc:a37e1bc7e7895a1bb7a372961921e87b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the namespace.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a37e1bc7e7895a1bb7a372961921e87b3">More...</a><br /></td></tr>
 <tr class="separator:a37e1bc7e7895a1bb7a372961921e87b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6fedec94208f5372b24392446767fb9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Client&lt; cmr_msgs::srv::RecoverFault &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ae6fedec94208f5372b24392446767fb9">m_recover_fault_client</a></td></tr>
 <tr class="memdesc:ae6fedec94208f5372b24392446767fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A client which communicates to the fault handler to restart us if we encounter an error.  <a href="classcmr_1_1fabric_1_1FabricNode.html#ae6fedec94208f5372b24392446767fb9">More...</a><br /></td></tr>
 <tr class="separator:ae6fedec94208f5372b24392446767fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a103d0371a58563860d2abc6c11f900ab"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a103d0371a58563860d2abc6c11f900ab">m_dependencies</a></td></tr>
-<tr class="memdesc:a103d0371a58563860d2abc6c11f900ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of dependencies defined by this node.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a103d0371a58563860d2abc6c11f900ab">More...</a><br /></td></tr>
-<tr class="separator:a103d0371a58563860d2abc6c11f900ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed34e645899092134b071c7ef39f73c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#abed34e645899092134b071c7ef39f73c">m_activated_dependencies</a></td></tr>
-<tr class="memdesc:abed34e645899092134b071c7ef39f73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invairant: must be the same size as m_dependencies.  <a href="classcmr_1_1fabric_1_1FabricNode.html#abed34e645899092134b071c7ef39f73c">More...</a><br /></td></tr>
-<tr class="separator:abed34e645899092134b071c7ef39f73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5c077f67e466be171f54119c7fec28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#acc5c077f67e466be171f54119c7fec28">m_processing_fault</a> = false</td></tr>
+<tr class="separator:acc5c077f67e466be171f54119c7fec28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes.">FabricNode</a> is the base class for All CMR nodes. </p>
@@ -292,35 +281,6 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false otherwise which will cause transition to <code>ErrorProcessing</code> </dd></dl>
 
 <p>Implemented in <a class="el" href="classDemoNode.html#afa0810bcb07ce082ee3f14449ed8ed91">DemoNode</a>, and <a class="el" href="classFabricTestNode.html#a0ae429c0522cd7e890a557a17b0f31fb">FabricTestNode</a>.</p>
-
-</div>
-</div>
-<a id="a6af975eba5172d823e6471b5341a3118" name="a6af975eba5172d823e6471b5341a3118"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6af975eba5172d823e6471b5341a3118">&#9670;&nbsp;</a></span>activate_dependencies()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool cmr::fabric::FabricNode::activate_dependencies </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Attempts to activate all dependencies of this node. </p>
-<p >Indicates which dependencies were activated by setting their corresponding bit in m_activated_dependencies</p>
-<dl class="section return"><dt>Returns</dt><dd>true if all dependencies were activated </dd></dl>
 
 </div>
 </div>
@@ -463,34 +423,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad711425b7e38cd8a13ed46e0834e1045" name="ad711425b7e38cd8a13ed46e0834e1045"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad711425b7e38cd8a13ed46e0834e1045">&#9670;&nbsp;</a></span>deactivate_dependencies()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool cmr::fabric::FabricNode::deactivate_dependencies </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Attempts to deactivate all activated dependencies of this node. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if all dependencies were deactivated </dd></dl>
-
-</div>
-</div>
 <a id="a79f1e678292a21ef3d81193928eae896" name="a79f1e678292a21ef3d81193928eae896"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79f1e678292a21ef3d81193928eae896">&#9670;&nbsp;</a></span>error_transition()</h2>
 
@@ -516,35 +448,6 @@ Private Attributes</h2></td></tr>
 
 <p>Transitions us to the error state and schedules a restart. </p>
 <p >The transition is made manually, as ROS 2 does not support transitions to ErrorProcessing from a PrimaryState </p>
-
-</div>
-</div>
-<a id="ae428c8d0260eaee04e550534ed0742f7" name="ae428c8d0260eaee04e550534ed0742f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae428c8d0260eaee04e550534ed0742f7">&#9670;&nbsp;</a></span>get_dependencies()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::vector&lt; std::string &gt; &amp; cmr::fabric::FabricNode::get_dependencies </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the vector of dependencies defined by this node. </p>
-<p >There is no guarantee that everything in this list is a valid dependency (i.e. that they each exist as a node).</p>
-<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;std::string&gt; list of dependency names </dd></dl>
 
 </div>
 </div>
@@ -734,30 +637,6 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="abed34e645899092134b071c7ef39f73c" name="abed34e645899092134b071c7ef39f73c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abed34e645899092134b071c7ef39f73c">&#9670;&nbsp;</a></span>m_activated_dependencies</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;bool&gt; cmr::fabric::FabricNode::m_activated_dependencies</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Invairant: must be the same size as m_dependencies. </p>
-
-</div>
-</div>
 <a id="a37e1bc7e7895a1bb7a372961921e87b3" name="a37e1bc7e7895a1bb7a372961921e87b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37e1bc7e7895a1bb7a372961921e87b3">&#9670;&nbsp;</a></span>m_composition_namespace</h2>
 
@@ -782,8 +661,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a103d0371a58563860d2abc6c11f900ab" name="a103d0371a58563860d2abc6c11f900ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a103d0371a58563860d2abc6c11f900ab">&#9670;&nbsp;</a></span>m_dependencies</h2>
+<a id="ae40fc7e3cc4898364f7a9d6cabf992af" name="ae40fc7e3cc4898364f7a9d6cabf992af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae40fc7e3cc4898364f7a9d6cabf992af">&#9670;&nbsp;</a></span>m_dependency_manager</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -792,7 +671,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::string&gt; cmr::fabric::FabricNode::m_dependencies</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html">DependencyHandler</a>&gt; cmr::fabric::FabricNode::m_dependency_manager</td>
         </tr>
       </table>
   </td>
@@ -802,7 +681,27 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The list of dependencies defined by this node. </p>
+</div>
+</div>
+<a id="acc5c077f67e466be171f54119c7fec28" name="acc5c077f67e466be171f54119c7fec28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5c077f67e466be171f54119c7fec28">&#9670;&nbsp;</a></span>m_processing_fault</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cmr::fabric::FabricNode::m_processing_fault = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -837,7 +736,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 19 2022 03:30:23 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Mon Sep 19 2022 15:47:37 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

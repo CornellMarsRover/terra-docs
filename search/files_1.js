@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['demo_2elaunch_2epy_0',['demo.launch.py',['../demo_8launch_8py.html',1,'']]],
-  ['demo_5fnode_2ecpp_1',['demo_node.cpp',['../demo__node_8cpp.html',1,'']]],
-  ['demo_5fnode_2ehpp_2',['demo_node.hpp',['../demo__node_8hpp.html',1,'']]],
-  ['demo_5fnode_5fmain_2ecpp_3',['demo_node_main.cpp',['../demo__node__main_8cpp.html',1,'']]],
-  ['dependency_5fmanager_2ecpp_4',['dependency_manager.cpp',['../dependency__manager_8cpp.html',1,'']]],
-  ['dependency_5fmanager_2ehpp_5',['dependency_manager.hpp',['../dependency__manager_8hpp.html',1,'']]],
-  ['dependency_5fmanager_5fnode_2ecpp_6',['dependency_manager_node.cpp',['../dependency__manager__node_8cpp.html',1,'']]]
+  ['debug_5fclock_2ehpp_0',['debug_clock.hpp',['../debug__clock_8hpp.html',1,'']]],
+  ['debug_5fclock_2einl_1',['debug_clock.inl',['../debug__clock_8inl.html',1,'']]],
+  ['demo_2elaunch_2epy_2',['demo.launch.py',['../demo_8launch_8py.html',1,'']]],
+  ['demo_5fnode_2ecpp_3',['demo_node.cpp',['../demo__node_8cpp.html',1,'']]],
+  ['demo_5fnode_2ehpp_4',['demo_node.hpp',['../demo__node_8hpp.html',1,'']]],
+  ['demo_5fnode_5fmain_2ecpp_5',['demo_node_main.cpp',['../demo__node__main_8cpp.html',1,'']]],
+  ['dependency_5fmanager_2ecpp_6',['dependency_manager.cpp',['../dependency__manager_8cpp.html',1,'']]],
+  ['dependency_5fmanager_2ehpp_7',['dependency_manager.hpp',['../dependency__manager_8hpp.html',1,'']]]
 ];

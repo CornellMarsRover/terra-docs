@@ -1,5 +1,5 @@
 <map id="src/cmr_fabric/include/cmr_fabric/dependency_manager.hpp" name="src/cmr_fabric/include/cmr_fabric/dependency_manager.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="535,5,695,61"/>
+<area shape="rect" id="node1" title=" " alt="" coords="629,5,789,61"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,117,116,143"/>
 <area shape="rect" id="node3" title=" " alt="" coords="141,117,245,143"/>
 <area shape="rect" id="node4" title=" " alt="" coords="269,109,420,151"/>
@@ -8,4 +8,5 @@
 <area shape="rect" id="node7" title=" " alt="" coords="817,109,957,151"/>
 <area shape="rect" id="node8" title=" " alt="" coords="981,109,1132,151"/>
 <area shape="rect" id="node9" title=" " alt="" coords="1157,117,1277,143"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1301,109,1463,151"/>
 </map>

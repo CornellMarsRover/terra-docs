@@ -66,6 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">cmr Namespace Reference</div></div>
 </div><!--header-->
@@ -74,6 +75,18 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacecmr_1_1fabric"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html">fabric</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Clock.html">Clock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A clock interface.  <a href="classcmr_1_1Clock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1ProducerConsumerMockClock.html">ProducerConsumerMockClock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A clock that can be mocked for testing.  <a href="classcmr_1_1ProducerConsumerMockClock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1RealClock.html">RealClock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A non-mocked clock.  <a href="classcmr_1_1RealClock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -111,7 +124,7 @@ template&lt;typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Constructs a string by concatenating together the arguments via streams. </p>
-<h2><a class="anchor" id="autotoc_md9"></a>
+<h2><a class="anchor" id="autotoc_md13"></a>
 Example</h2>
 <div class="fragment"><div class="line"> {C++}</div>
 <div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> age = 10;</div>
@@ -168,7 +181,10 @@ template&lt;typename SrvT &gt; </div>
 
 <p>Spins up a service client owned by a temporary node and calls the service with the given request. </p>
 <p >Returns the response if successful, or empty optional otherwise.</p>
-<p >This function blocks until the service response is received and YIELDS TO ROS THIS IS VERY IMPORTANT AND POSSIBLY DANGEROUS, DO NOT CALL WITHIN A CRITICAL SECTION OR ANY AREA OF CODE THAT SHOULD NOT BE INTERUPTED!!! WHEN YOU CALL THIS FUNCTION ANY ROS CALLBACK MAY BE INVOKED</p>
+<p ><b>DATA RACE WARNING:</b> This function blocks until the service response is received and <b>YIELDS TO ROS! THIS IS VERY IMPORTANT AND POSSIBLY DANGEROUS, DO NOT CALL WITHIN A CRITICAL SECTION OR ANY AREA OF CODE THAT SHOULD NOT BE INTERUPTED!!!</b></p>
+<p ><b>DEADLOCK WARNING:</b> This function creates a new node for the client and spins it, this means that <b>THIS FUNCTION BLOCKS THE ENTIRE THREAD, PREVENTING ANY OTHER ROS CALLBACKS FROM BEING INVOKED.</b> Thus any service dispatched from this function <b>CANNOT RELY ON A SERVICE PROVIDED FROM THE SAME THREAD</b></p>
+<p >This is quite possibly <b>THE MOST DANGEROUS</b> FUNCTION IN THE ENTIRE CODEBASE, use with EXTREME CAUTION</p>
+<p >If you can use it, prefer to use an asynchronous service directly, rather than using this function to block a response</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">ServiceT</td><td>The type of the service </td></tr>
@@ -178,10 +194,11 @@ template&lt;typename SrvT &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">service_name</td><td>The name of the service </td></tr>
-    <tr><td class="paramname">request</td><td>The request to send </td></tr>
+    <tr><td class="paramname">request</td><td>The request to send</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The response from the service, or empty optional if the service call failed </dd></dl>
 
 </div>
 </div>
@@ -235,7 +252,7 @@ template&lt;typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 19 2022 03:30:23 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Mon Sep 19 2022 15:47:37 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

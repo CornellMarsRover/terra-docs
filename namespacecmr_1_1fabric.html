@@ -71,16 +71,17 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">cmr::fabric Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1DependencyManager.html">DependencyManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dependency manager provides a service interface for nodes to acquire their dependencies.  <a href="classcmr_1_1fabric_1_1DependencyManager.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html">DependencyHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html" title="The DependencyHandler class is responsible for managing the dependencies.">DependencyHandler</a> class is responsible for managing the dependencies.  <a href="classcmr_1_1fabric_1_1DependencyHandler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcmr_1_1fabric_1_1FabricConfigPath.html">FabricConfigPath</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes.">FabricNode</a> is the base class for All CMR nodes.  <a href="classcmr_1_1fabric_1_1FabricNode.html#details">More...</a><br /></td></tr>
@@ -91,41 +92,52 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html">FaultHandler</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html" title="The FaultHandler class provides a service interface to allow nodes to restart themselves if an error ...">FaultHandler</a> class provides a service interface to allow nodes to restart themselves if an error occurs.  <a href="classcmr_1_1fabric_1_1FaultHandler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1LifecycleManager.html">LifecycleManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This node provides a service interface for activating and deactivating other nodes.  <a href="classcmr_1_1fabric_1_1LifecycleManager.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a65e52d006c049cde2fa15d0da2d8b59e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59e">LifecycleState</a> { <br />
-&#160;&#160;<a class="el" href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59ea88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
-, <a class="el" href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59eaf5d49bc3243ac8419db1a2a0c448d1f3">Unconfigured</a>
-, <a class="el" href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59ea3cab03c00dbd11bc3569afa0748013f0">Inactive</a>
-, <a class="el" href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59ea4d3d769b812b6faa6b76e1a8abaece2d">Active</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59ea65457a3fa7904cfb30c890a602332205">Finalized</a>
-<br />
- }</td></tr>
-<tr class="memdesc:a65e52d006c049cde2fa15d0da2d8b59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A LifecycleState is Fabric's representation of the state of a node.  <a href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59e">More...</a><br /></td></tr>
-<tr class="separator:a65e52d006c049cde2fa15d0da2d8b59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52f10767ce8f181287db6baf69add9aa"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aa">DeactivationReason</a> : uint8_t { <a class="el" href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aaa902b0d55fddef6f8d651fe1035b7d4bd">Error</a>
 , <a class="el" href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aaae1ba155a9f2e8c3be94020eef32a0301">Manual</a>
  }</td></tr>
 <tr class="memdesc:a52f10767ce8f181287db6baf69add9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The reason why a node is deactivated.  <a href="namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aa">More...</a><br /></td></tr>
 <tr class="separator:a52f10767ce8f181287db6baf69add9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bde5b0913d02186fb7b9f5d0580c190"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190">LifecycleState</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
+, <a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190af5d49bc3243ac8419db1a2a0c448d1f3">Unconfigured</a>
+, <a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190a3cab03c00dbd11bc3569afa0748013f0">Inactive</a>
+, <a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190a4d3d769b812b6faa6b76e1a8abaece2d">Active</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190a65457a3fa7904cfb30c890a602332205">Finalized</a>
+, <a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190acead48a56272a6e7214ca922516a3615">Activating</a>
+, <a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190a0ac6bbb8a822d0f2819854eaff847b68">Deactivating</a>
+, <a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190ad3f49ff7e6e57d0a1a3671214fc1681a">Configuring</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190a77bcfd744aa835c1c8d090e50a7c55c6">CleaningUp</a>
+, <a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190a075d9c9ae8c8f1c79c1a1965cd8c5a42">ShuttingDown</a>
+, <a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190af4ef902c41cc887b22a47f0f7874a358">ErrorProcessing</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a2bde5b0913d02186fb7b9f5d0580c190"><td class="mdescLeft">&#160;</td><td class="mdescRight">A LifecycleState is Fabric's representation of the state of a node.  <a href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190">More...</a><br /></td></tr>
+<tr class="separator:a2bde5b0913d02186fb7b9f5d0580c190"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a5835fc4c116298d69818c17f7c8150a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a5835fc4c116298d69818c17f7c8150a6">activate_node</a> (const std::string &amp;node_name)</td></tr>
+<tr class="memdesc:a5835fc4c116298d69818c17f7c8150a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses the <code>LifecycleNode</code> exposed services to activate <code>node_name</code>.  <a href="namespacecmr_1_1fabric.html#a5835fc4c116298d69818c17f7c8150a6">More...</a><br /></td></tr>
+<tr class="separator:a5835fc4c116298d69818c17f7c8150a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40fe5afc9be37d12cc7c3e2141eb90a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a40fe5afc9be37d12cc7c3e2141eb90a9">deactivate_node</a> (const std::string &amp;node_name)</td></tr>
+<tr class="memdesc:a40fe5afc9be37d12cc7c3e2141eb90a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses the <code>LifecycleNode</code> exposed services to deactivate <code>node_name</code>.  <a href="namespacecmr_1_1fabric.html#a40fe5afc9be37d12cc7c3e2141eb90a9">More...</a><br /></td></tr>
+<tr class="separator:a40fe5afc9be37d12cc7c3e2141eb90a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e39a1faab51e02ac2a9b89aafd1144"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#ab4e39a1faab51e02ac2a9b89aafd1144">cleanup_node</a> (const std::string &amp;node_name)</td></tr>
+<tr class="memdesc:ab4e39a1faab51e02ac2a9b89aafd1144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses the <code>LifecycleNode</code> exposed services to cleanup <code>node_name</code>.  <a href="namespacecmr_1_1fabric.html#ab4e39a1faab51e02ac2a9b89aafd1144">More...</a><br /></td></tr>
+<tr class="separator:ab4e39a1faab51e02ac2a9b89aafd1144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafaf3df989305146c1178f1f21524bf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190">LifecycleState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#aafaf3df989305146c1178f1f21524bf3">get_lifecycle_state</a> (const std::string &amp;node_name)</td></tr>
+<tr class="memdesc:aafaf3df989305146c1178f1f21524bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the LifecycleState of a lifecycle node.  <a href="namespacecmr_1_1fabric.html#aafaf3df989305146c1178f1f21524bf3">More...</a><br /></td></tr>
+<tr class="separator:aafaf3df989305146c1178f1f21524bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae12486e0d81fe806dcf137432ce7745d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#ae12486e0d81fe806dcf137432ce7745d">set_config_params</a> (<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;node, const toml::Result &amp;toml)</td></tr>
 <tr class="separator:ae12486e0d81fe806dcf137432ce7745d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b05ca087104d4d38af564c7aac05e2e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a0b05ca087104d4d38af564c7aac05e2e">parse_toml</a> (const std::string &amp;toml_path, const std::string &amp;toml_data)</td></tr>
 <tr class="memdesc:a0b05ca087104d4d38af564c7aac05e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the toml config file if one is specified, otherwise parses the config data.  <a href="namespacecmr_1_1fabric.html#a0b05ca087104d4d38af564c7aac05e2e">More...</a><br /></td></tr>
 <tr class="separator:a0b05ca087104d4d38af564c7aac05e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a14356040769ed189dea158272f80f379"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a14356040769ed189dea158272f80f379">time_now</a> = std::chrono::system_clock::now</td></tr>
-<tr class="separator:a14356040769ed189dea158272f80f379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a52f10767ce8f181287db6baf69add9aa" name="a52f10767ce8f181287db6baf69add9aa"></a>
@@ -151,6 +163,7 @@ Variables</h2></td></tr>
 <p>The reason why a node is deactivated. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a52f10767ce8f181287db6baf69add9aaa902b0d55fddef6f8d651fe1035b7d4bd" name="a52f10767ce8f181287db6baf69add9aaa902b0d55fddef6f8d651fe1035b7d4bd"></a>Error&#160;</td><td class="fielddoc"><p >Node has been deactivated due to an error transition. </p>
+<p >Dependers should register themselves with the <a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html" title="The FaultHandler class provides a service interface to allow nodes to restart themselves if an error ...">FaultHandler</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a52f10767ce8f181287db6baf69add9aaae1ba155a9f2e8c3be94020eef32a0301" name="a52f10767ce8f181287db6baf69add9aaae1ba155a9f2e8c3be94020eef32a0301"></a>Manual&#160;</td><td class="fielddoc"><p >Node has been deactivated <br  />
  </p>
@@ -159,8 +172,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a65e52d006c049cde2fa15d0da2d8b59e" name="a65e52d006c049cde2fa15d0da2d8b59e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65e52d006c049cde2fa15d0da2d8b59e">&#9670;&nbsp;</a></span>LifecycleState</h2>
+<a id="a2bde5b0913d02186fb7b9f5d0580c190" name="a2bde5b0913d02186fb7b9f5d0580c190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bde5b0913d02186fb7b9f5d0580c190">&#9670;&nbsp;</a></span>LifecycleState</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,7 +182,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="namespacecmr_1_1fabric.html#a65e52d006c049cde2fa15d0da2d8b59e">cmr::fabric::LifecycleState</a></td>
+          <td class="memname">enum class <a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190">cmr::fabric::LifecycleState</a> : uint8_t</td>
         </tr>
       </table>
   </td>
@@ -180,22 +193,120 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A LifecycleState is Fabric's representation of the state of a node. </p>
+<p >This is a typed wrapper around ROS 2's lifecycle state which is represented as an integer.</p>
+<p ><a href="https://design.ros2.org/articles/node_lifecycle.html">Read more about ROS 2's lifecycle states</a> </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a65e52d006c049cde2fa15d0da2d8b59ea88183b946cc5f0e8c96b2e66e1c74a7e" name="a65e52d006c049cde2fa15d0da2d8b59ea88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p >Unknown state, indicates that something might be wrong. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2bde5b0913d02186fb7b9f5d0580c190a88183b946cc5f0e8c96b2e66e1c74a7e" name="a2bde5b0913d02186fb7b9f5d0580c190a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p >An error ocurred while trying to read a node's state. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a65e52d006c049cde2fa15d0da2d8b59eaf5d49bc3243ac8419db1a2a0c448d1f3" name="a65e52d006c049cde2fa15d0da2d8b59eaf5d49bc3243ac8419db1a2a0c448d1f3"></a>Unconfigured&#160;</td><td class="fielddoc"><p >Node has been created, but its persisted configuration has not been loaded. </p>
+<tr><td class="fieldname"><a id="a2bde5b0913d02186fb7b9f5d0580c190af5d49bc3243ac8419db1a2a0c448d1f3" name="a2bde5b0913d02186fb7b9f5d0580c190af5d49bc3243ac8419db1a2a0c448d1f3"></a>Unconfigured&#160;</td><td class="fielddoc"><p >Node has been created, but its persisted configuration has not been loaded. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a65e52d006c049cde2fa15d0da2d8b59ea3cab03c00dbd11bc3569afa0748013f0" name="a65e52d006c049cde2fa15d0da2d8b59ea3cab03c00dbd11bc3569afa0748013f0"></a>Inactive&#160;</td><td class="fielddoc"><p >Node has been configured, but it's not doing anything. </p>
+<tr><td class="fieldname"><a id="a2bde5b0913d02186fb7b9f5d0580c190a3cab03c00dbd11bc3569afa0748013f0" name="a2bde5b0913d02186fb7b9f5d0580c190a3cab03c00dbd11bc3569afa0748013f0"></a>Inactive&#160;</td><td class="fielddoc"><p >Node has been configured, but it's not doing anything. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a65e52d006c049cde2fa15d0da2d8b59ea4d3d769b812b6faa6b76e1a8abaece2d" name="a65e52d006c049cde2fa15d0da2d8b59ea4d3d769b812b6faa6b76e1a8abaece2d"></a>Active&#160;</td><td class="fielddoc"><p >Node is actively having effects. </p>
+<tr><td class="fieldname"><a id="a2bde5b0913d02186fb7b9f5d0580c190a4d3d769b812b6faa6b76e1a8abaece2d" name="a2bde5b0913d02186fb7b9f5d0580c190a4d3d769b812b6faa6b76e1a8abaece2d"></a>Active&#160;</td><td class="fielddoc"><p >Node is actively having effects. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a65e52d006c049cde2fa15d0da2d8b59ea65457a3fa7904cfb30c890a602332205" name="a65e52d006c049cde2fa15d0da2d8b59ea65457a3fa7904cfb30c890a602332205"></a>Finalized&#160;</td><td class="fielddoc"><p >Node has shut down, and can no longer be configured or activated. </p>
+<tr><td class="fieldname"><a id="a2bde5b0913d02186fb7b9f5d0580c190a65457a3fa7904cfb30c890a602332205" name="a2bde5b0913d02186fb7b9f5d0580c190a65457a3fa7904cfb30c890a602332205"></a>Finalized&#160;</td><td class="fielddoc"><p >Node has shut down, and can no longer be configured or activated. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bde5b0913d02186fb7b9f5d0580c190acead48a56272a6e7214ca922516a3615" name="a2bde5b0913d02186fb7b9f5d0580c190acead48a56272a6e7214ca922516a3615"></a>Activating&#160;</td><td class="fielddoc"><p >Node is transitioning from Inactive to Active. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bde5b0913d02186fb7b9f5d0580c190a0ac6bbb8a822d0f2819854eaff847b68" name="a2bde5b0913d02186fb7b9f5d0580c190a0ac6bbb8a822d0f2819854eaff847b68"></a>Deactivating&#160;</td><td class="fielddoc"><p >Node is transitioning from Active to Inactive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bde5b0913d02186fb7b9f5d0580c190ad3f49ff7e6e57d0a1a3671214fc1681a" name="a2bde5b0913d02186fb7b9f5d0580c190ad3f49ff7e6e57d0a1a3671214fc1681a"></a>Configuring&#160;</td><td class="fielddoc"><p >Node is transitioning from Unconfigured to Inactive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bde5b0913d02186fb7b9f5d0580c190a77bcfd744aa835c1c8d090e50a7c55c6" name="a2bde5b0913d02186fb7b9f5d0580c190a77bcfd744aa835c1c8d090e50a7c55c6"></a>CleaningUp&#160;</td><td class="fielddoc"><p >Node is transitioning from Inactive to Unconfigured. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bde5b0913d02186fb7b9f5d0580c190a075d9c9ae8c8f1c79c1a1965cd8c5a42" name="a2bde5b0913d02186fb7b9f5d0580c190a075d9c9ae8c8f1c79c1a1965cd8c5a42"></a>ShuttingDown&#160;</td><td class="fielddoc"><p >Node is transitioning from to Finalized. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2bde5b0913d02186fb7b9f5d0580c190af4ef902c41cc887b22a47f0f7874a358" name="a2bde5b0913d02186fb7b9f5d0580c190af4ef902c41cc887b22a47f0f7874a358"></a>ErrorProcessing&#160;</td><td class="fielddoc"><p >Node is transitiong to Unconfigured due to an error in a state transition callback. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a5835fc4c116298d69818c17f7c8150a6" name="a5835fc4c116298d69818c17f7c8150a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5835fc4c116298d69818c17f7c8150a6">&#9670;&nbsp;</a></span>activate_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cmr::fabric::activate_node </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>node_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uses the <code>LifecycleNode</code> exposed services to activate <code>node_name</code>. </p>
+<p >If <code>node_name</code> is already active, this function does nothing and returns true. This will block the caller thread. </p>
+
+</div>
+</div>
+<a id="ab4e39a1faab51e02ac2a9b89aafd1144" name="ab4e39a1faab51e02ac2a9b89aafd1144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e39a1faab51e02ac2a9b89aafd1144">&#9670;&nbsp;</a></span>cleanup_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cmr::fabric::cleanup_node </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>node_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uses the <code>LifecycleNode</code> exposed services to cleanup <code>node_name</code>. </p>
+<p >If <code>node_name</code> is already unconfigured, this function does nothing and returns true. This will block the caller thread. </p>
+
+</div>
+</div>
+<a id="a40fe5afc9be37d12cc7c3e2141eb90a9" name="a40fe5afc9be37d12cc7c3e2141eb90a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40fe5afc9be37d12cc7c3e2141eb90a9">&#9670;&nbsp;</a></span>deactivate_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cmr::fabric::deactivate_node </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>node_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uses the <code>LifecycleNode</code> exposed services to deactivate <code>node_name</code>. </p>
+<p >If <code>node_name</code> is already inactive, this function does nothing and returns true. This will block the caller thread. </p>
+
+</div>
+</div>
+<a id="aafaf3df989305146c1178f1f21524bf3" name="aafaf3df989305146c1178f1f21524bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafaf3df989305146c1178f1f21524bf3">&#9670;&nbsp;</a></span>get_lifecycle_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190">LifecycleState</a> cmr::fabric::get_lifecycle_state </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>node_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the LifecycleState of a lifecycle node. </p>
+<p >This will block the caller thread. </p>
+
+</div>
+</div>
 <a id="a0b05ca087104d4d38af564c7aac05e2e" name="a0b05ca087104d4d38af564c7aac05e2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b05ca087104d4d38af564c7aac05e2e">&#9670;&nbsp;</a></span>parse_toml()</h2>
 
@@ -270,33 +381,10 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a14356040769ed189dea158272f80f379" name="a14356040769ed189dea158272f80f379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14356040769ed189dea158272f80f379">&#9670;&nbsp;</a></span>time_now</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto cmr::fabric::time_now = std::chrono::system_clock::now</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 19 2022 03:30:23 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Mon Sep 19 2022 15:47:37 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
