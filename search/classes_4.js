@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lifecyclemanager_0',['LifecycleManager',['../classLifecycleManager.html',1,'']]]
+  ['joindestructionpolicy_0',['JoinDestructionPolicy',['../classJoinDestructionPolicy.html',1,'']]]
 ];

@@ -9,7 +9,8 @@ var searchData=
   ['set_5ftime_6',['set_time',['../classcmr_1_1ProducerConsumerMockClock.html#af41d1c727564ed4fc26623f527863db9',1,'cmr::ProducerConsumerMockClock']]],
   ['set_5ftime_5fand_5fwait_7',['set_time_and_wait',['../classcmr_1_1ProducerConsumerMockClock.html#a4bf560b80d03b3315eacda4df84a667c',1,'cmr::ProducerConsumerMockClock']]],
   ['shuttingdown_8',['ShuttingDown',['../namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190a075d9c9ae8c8f1c79c1a1965cd8c5a42',1,'cmr::fabric']]],
-  ['string_5fformat_9',['string_format',['../namespacecmr.html#ae7d6b3cd2dfc0067417200ecf9cfd105',1,'cmr']]],
-  ['string_5futils_2ehpp_10',['string_utils.hpp',['../string__utils_8hpp.html',1,'']]],
-  ['system_5fnow_11',['system_now',['../fabric__test_8cpp.html#a2e7e729b1f40ecf173d516cb376ce939',1,'fabric_test.cpp']]]
+  ['start_9',['start',['../classDeferredCreationPolicy.html#a102e5d9bbec13fe939e924eb25296ff7',1,'DeferredCreationPolicy']]],
+  ['string_5fformat_10',['string_format',['../namespacecmr.html#ae7d6b3cd2dfc0067417200ecf9cfd105',1,'cmr']]],
+  ['string_5futils_2ehpp_11',['string_utils.hpp',['../string__utils_8hpp.html',1,'']]],
+  ['system_5fnow_12',['system_now',['../fabric__test_8cpp.html#a2e7e729b1f40ecf173d516cb376ce939',1,'fabric_test.cpp']]]
 ];

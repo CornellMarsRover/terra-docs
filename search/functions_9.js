@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['join_5fall_0',['join_all',['../fabric__test_8cpp.html#a2882ab1ca395d3bd3ed6598db921d651',1,'fabric_test.cpp']]]
+  ['join_0',['join',['../classThreadWrapper.html#a6ccfa8021bab0eadcfec2ca49250cd6d',1,'ThreadWrapper']]],
+  ['joinable_1',['joinable',['../classThreadWrapper.html#a88f3564656a19393842eee236b22fb93',1,'ThreadWrapper']]]
 ];

@@ -8,5 +8,5 @@ var searchData=
   ['on_5fgoal_5ffeedback_5',['on_goal_feedback',['../classTestControllerClient.html#acf09acdc7654157208e86d6bb79f30ef',1,'TestControllerClient']]],
   ['on_5fgoal_5fresult_6',['on_goal_result',['../classTestControllerClient.html#a96ca8203cf1cfe022d3f810ab3fccd5c',1,'TestControllerClient']]],
   ['on_5fshutdown_7',['on_shutdown',['../classcmr_1_1fabric_1_1FabricNode.html#a414babca32c2f114f0b2bebf69429bd2',1,'cmr::fabric::FabricNode']]],
-  ['operator_3d_8',['operator=',['../classCmrRAII.html#a4f753ca62437856a4033552e0012d1f6',1,'CmrRAII::operator=(const CmrRAII &amp;)=delete'],['../classCmrRAII.html#a48d30ad7ae2fc19e99db7e8aa6d0ef8b',1,'CmrRAII::operator=(CmrRAII &amp;&amp;)=default']]]
+  ['operator_3d_8',['operator=',['../classCmrRAII.html#a4f753ca62437856a4033552e0012d1f6',1,'CmrRAII::operator=(const CmrRAII &amp;)=delete'],['../classCmrRAII.html#a48d30ad7ae2fc19e99db7e8aa6d0ef8b',1,'CmrRAII::operator=(CmrRAII &amp;&amp;)=default'],['../classThreadWrapper.html#add1c8735536bc897b658506039f2ba48',1,'ThreadWrapper::operator=(const ThreadWrapper &amp;)=delete'],['../classThreadWrapper.html#af1e2a0929dd88b5cfb9315689b7668dd',1,'ThreadWrapper::operator=(ThreadWrapper &amp;&amp;) noexcept=default']]]
 ];

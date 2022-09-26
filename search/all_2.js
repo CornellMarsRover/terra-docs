@@ -24,7 +24,7 @@ var searchData=
   ['cmr_5ftest_21',['cmr_test',['../md_src_cmr_test_README.html',1,'']]],
   ['cmrassertionexception_22',['CmrAssertionException',['../classCmrAssertionException.html',1,'']]],
   ['cmrexception_23',['CmrException',['../classCmrException.html',1,'']]],
-  ['cmrraii_24',['CmrRAII',['../classCmrRAII.html',1,'CmrRAII'],['../classCmrRAII.html#ace3d4b3435fb13df7cb1408ddf09e0d3',1,'CmrRAII::CmrRAII(T &amp;&amp;func, decltype(std::declval&lt; T &gt;()()) *=0)'],['../classCmrRAII.html#a25891fa2e6decb749e54d5aba02442c3',1,'CmrRAII::CmrRAII(const CmrRAII &amp;)=delete'],['../classCmrRAII.html#a06166f67c4cd1994d0cf28da12053226',1,'CmrRAII::CmrRAII(CmrRAII &amp;&amp;)=default']]],
+  ['cmrraii_24',['CmrRAII',['../classCmrRAII.html',1,'CmrRAII'],['../classCmrRAII.html#ace3d4b3435fb13df7cb1408ddf09e0d3',1,'CmrRAII::CmrRAII(T &amp;&amp;func, decltype(std::declval&lt; T &gt;()()) *=0)'],['../classCmrRAII.html#a06166f67c4cd1994d0cf28da12053226',1,'CmrRAII::CmrRAII(CmrRAII &amp;&amp;)=default'],['../classCmrRAII.html#a25891fa2e6decb749e54d5aba02442c3',1,'CmrRAII::CmrRAII(const CmrRAII &amp;)=delete']]],
   ['composition_5fnamespace_25',['composition_namespace',['../structcmr_1_1fabric_1_1FabricNodeConfig.html#a1738c00d9f75ed3e856f16687a6ef159',1,'cmr::fabric::FabricNodeConfig']]],
   ['composition_5fns_26',['composition_ns',['../namespacedemo.html#a2f6fc62a5f9ec591674fcd77e6d9d080',1,'demo']]],
   ['config_5fa_27',['config_a',['../fabric__test_8cpp.html#a0d9a950e4ef75058b8f9ef15e177ca4e',1,'fabric_test.cpp']]],
@@ -33,9 +33,11 @@ var searchData=
   ['configure_30',['configure',['../classDemoNode.html#af7b19ce94dded7510884d0e93324164b',1,'DemoNode::configure()'],['../classcmr_1_1fabric_1_1FabricNode.html#a48bff2e55c9f6a9838197ec4dae3f529',1,'cmr::fabric::FabricNode::configure()'],['../classFabricTestNode.html#a5fad657e9c6844011fcc71682480a852',1,'FabricTestNode::configure()']]],
   ['configuring_31',['Configuring',['../namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190ad3f49ff7e6e57d0a1a3671214fc1681a',1,'cmr::fabric']]],
   ['create_5facquire_5fdependency_5fservice_32',['create_acquire_dependency_service',['../classcmr_1_1fabric_1_1DependencyHandler.html#a2d67d4452964aa1dc9089bc2b01dd260',1,'cmr::fabric::DependencyHandler']]],
-  ['create_5fcustom_5fdepender_33',['create_custom_depender',['../fabric__test_8cpp.html#a83556165a49ab521651ac5bef1a213f2',1,'fabric_test.cpp']]],
-  ['create_5fdepender_34',['create_depender',['../fabric__test_8cpp.html#a632a5ca08f39b8631cbf93287ac6b909',1,'fabric_test.cpp']]],
-  ['create_5fnotify_5fdeactivate_5fservice_35',['create_notify_deactivate_service',['../classcmr_1_1fabric_1_1DependencyHandler.html#a901dcb810f7108968b538db105348072',1,'cmr::fabric::DependencyHandler']]],
-  ['create_5frelease_5fdependency_5fservice_36',['create_release_dependency_service',['../classcmr_1_1fabric_1_1DependencyHandler.html#a33e3afa521d462c4bd7b2e0e53c7a467',1,'cmr::fabric::DependencyHandler']]],
-  ['fabric_37',['fabric',['../namespacecmr_1_1fabric.html',1,'cmr']]]
+  ['create_5fconfig_33',['create_config',['../test__utils_8hpp.html#a5f36999f32ac2d85eeb8159410823322',1,'test_utils.hpp']]],
+  ['create_5fcustom_5fdepender_34',['create_custom_depender',['../fabric__test_8cpp.html#a83556165a49ab521651ac5bef1a213f2',1,'fabric_test.cpp']]],
+  ['create_5fdepender_35',['create_depender',['../fabric__test_8cpp.html#a632a5ca08f39b8631cbf93287ac6b909',1,'fabric_test.cpp']]],
+  ['create_5fnotify_5fdeactivate_5fservice_36',['create_notify_deactivate_service',['../classcmr_1_1fabric_1_1DependencyHandler.html#a901dcb810f7108968b538db105348072',1,'cmr::fabric::DependencyHandler']]],
+  ['create_5frelease_5fdependency_5fservice_37',['create_release_dependency_service',['../classcmr_1_1fabric_1_1DependencyHandler.html#a33e3afa521d462c4bd7b2e0e53c7a467',1,'cmr::fabric::DependencyHandler']]],
+  ['create_5ftest_5fthread_38',['create_test_thread',['../test__utils_8hpp.html#a6f2392f1a685d9dd4b914ac8975635bd',1,'test_utils.hpp']]],
+  ['fabric_39',['fabric',['../namespacecmr_1_1fabric.html',1,'cmr']]]
 ];
