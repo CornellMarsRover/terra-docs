@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['deactivate_0',['deactivate',['../classFabricTestNode.html#a5ba62881c8daef7926382c7640e8b267',1,'FabricTestNode::deactivate()'],['../classcmr_1_1fabric_1_1FabricNode.html#a18d9dd0458e395d403f3cf48c457e4e1',1,'cmr::fabric::FabricNode::deactivate()'],['../classDemoNode.html#a76894794d22fa7d29f4941a99d11d9db',1,'DemoNode::deactivate()']]],
+  ['deactivate_0',['deactivate',['../classFabricTestNode.html#a5ba62881c8daef7926382c7640e8b267',1,'FabricTestNode::deactivate()'],['../classcmr_1_1fabric_1_1FabricNode.html#a18d9dd0458e395d403f3cf48c457e4e1',1,'cmr::fabric::FabricNode::deactivate()'],['../classDemoNode.html#a76894794d22fa7d29f4941a99d11d9db',1,'DemoNode::deactivate()'],['../classcmr_1_1Joystick.html#ab6833e9331498593d614813b25f4c29b',1,'cmr::Joystick::deactivate()'],['../classcmr_1_1JoystickForwardKinematics.html#a1792f7fd959940c82cfbcd8c51e35bde',1,'cmr::JoystickForwardKinematics::deactivate()']]],
   ['deactivate_5fnode_1',['deactivate_node',['../namespacecmr_1_1fabric.html#a40fe5afc9be37d12cc7c3e2141eb90a9',1,'cmr::fabric']]],
   ['deactivating_2',['Deactivating',['../namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190a0ac6bbb8a822d0f2819854eaff847b68',1,'cmr::fabric']]],
   ['deactivationreason_3',['DeactivationReason',['../namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aa',1,'cmr::fabric']]],

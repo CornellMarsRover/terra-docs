@@ -129,7 +129,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The <a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html" title="The DependencyHandler class is responsible for managing the dependencies.">DependencyHandler</a> class is responsible for managing the dependencies. </p>
 <p >A node that contains a dependency manager becomes part of the dependency DAG. Each node in the DAG should be on a separate thread or be in a separate process. This is because <code><a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html" title="The DependencyHandler class is responsible for managing the dependencies.">DependencyHandler</a></code> requests block the calling thread. I debated with using asynchronous requests, however synchronous was cleaner, especially because we want to make sure that a request finished before we move on so that all dependencies are active before the dependender node is activated. We also want to make sure we get a response so that we can correctly react if something fails. The <a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html" title="The DependencyHandler class is responsible for managing the dependencies.">DependencyHandler</a> is a move away from a centralized dependency manager. This was done to deal with larger dependency graphs. With a centralized manager, we dependency paths longer than length 1 become challenging because of the synchronous services used. If a service activates a node, and that activation triggers the activation of another node (and thus a call to the centralized dependency manager), then a centralized dependency manager could deadlock as it waits for itself. This problem could be handled with multithreaded exeuctors or asynchonous services and a scheduler, however a decentralized approach seemed much simpler. Furthermore, if asynchronous services are desired, a decentralized approach would be mucher easier to implement that.</p>
-<h2><a class="anchor" id="autotoc_md1"></a>
+<h2><a class="anchor" id="autotoc_md3"></a>
 Usage</h2>
 <p >The <a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html" title="The DependencyHandler class is responsible for managing the dependencies.">DependencyHandler</a> exposes the following service interface:</p>
 <ul>
@@ -529,7 +529,7 @@ template&lt;typename It &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 26 2022 04:56:24 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Mon Sep 26 2022 04:58:51 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
