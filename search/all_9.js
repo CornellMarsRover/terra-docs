@@ -1,15 +1,20 @@
 var searchData=
 [
-  ['join_0',['join',['../classThreadWrapper.html#a6ccfa8021bab0eadcfec2ca49250cd6d',1,'ThreadWrapper']]],
-  ['joinable_1',['joinable',['../classThreadWrapper.html#a88f3564656a19393842eee236b22fb93',1,'ThreadWrapper']]],
-  ['joindestructionpolicy_2',['JoinDestructionPolicy',['../classJoinDestructionPolicy.html',1,'']]],
-  ['joystick_3',['Joystick',['../classcmr_1_1Joystick.html',1,'cmr::Joystick'],['../classcmr_1_1Joystick.html#ade24117dba51bdd2b4ca5083a44aaf36',1,'cmr::Joystick::Joystick()']]],
-  ['joystick_2ecpp_4',['joystick.cpp',['../joystick_8cpp.html',1,'']]],
-  ['joystick_2ehpp_5',['joystick.hpp',['../joystick_8hpp.html',1,'']]],
-  ['joystick_5fforward_5fkinematics_2ecpp_6',['joystick_forward_kinematics.cpp',['../joystick__forward__kinematics_8cpp.html',1,'']]],
-  ['joystick_5fforward_5fkinematics_2ehpp_7',['joystick_forward_kinematics.hpp',['../joystick__forward__kinematics_8hpp.html',1,'']]],
-  ['joystick_5fforward_5fkinematics_5fmain_2ecpp_8',['joystick_forward_kinematics_main.cpp',['../joystick__forward__kinematics__main_8cpp.html',1,'']]],
-  ['joystick_5fmain_2ecpp_9',['joystick_main.cpp',['../joystick__main_8cpp.html',1,'']]],
-  ['joystickforwardkinematics_10',['JoystickForwardKinematics',['../classcmr_1_1JoystickForwardKinematics.html',1,'cmr::JoystickForwardKinematics'],['../classcmr_1_1JoystickForwardKinematics.html#a5aeca4c8cfc97a357b424f09ce35a90a',1,'cmr::JoystickForwardKinematics::JoystickForwardKinematics()']]],
-  ['jthread_11',['JThread',['../thread__wrapper_8hpp.html#a50a9e0b0dca6157600861f3069252c83',1,'thread_wrapper.hpp']]]
+  ['identity_5fmatrix_0',['identity_matrix',['../namespacecmr__aruco_1_1transformations.html#af42826de286c0e5606294ffa29214964',1,'cmr_aruco::transformations']]],
+  ['image_5fcallback_1',['image_callback',['../classcmr__aruco_1_1aruco__node_1_1ArucoNode.html#a99b95fe063ad4c1aaa462d5e4a37df8b',1,'cmr_aruco::aruco_node::ArucoNode']]],
+  ['inactive_2',['Inactive',['../namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190a3cab03c00dbd11bc3569afa0748013f0',1,'cmr::fabric']]],
+  ['info_5fcallback_3',['info_callback',['../classcmr__aruco_1_1aruco__node_1_1ArucoNode.html#ad210a7d66668ca09863bd5a08c49e4e2',1,'cmr_aruco::aruco_node::ArucoNode']]],
+  ['info_5fmsg_4',['info_msg',['../classcmr__aruco_1_1aruco__node_1_1ArucoNode.html#a57e20fa731d1b4d818bfb2cc24a4c129',1,'cmr_aruco::aruco_node::ArucoNode']]],
+  ['info_5fsub_5',['info_sub',['../classcmr__aruco_1_1aruco__node_1_1ArucoNode.html#a74f2fc8112ea18143ffb10671aec759e',1,'cmr_aruco::aruco_node::ArucoNode']]],
+  ['install_5frequires_6',['install_requires',['../namespacesetup.html#abead4f26b530856f858f0d44c7cf2588',1,'setup']]],
+  ['instantcreationpolicy_7',['InstantCreationPolicy',['../classInstantCreationPolicy.html',1,'InstantCreationPolicy'],['../classInstantCreationPolicy.html#a727dc4536da6b08d9ccf7c1cb7fda6b7',1,'InstantCreationPolicy::InstantCreationPolicy()']]],
+  ['intrinsic_5fmat_8',['intrinsic_mat',['../classcmr__aruco_1_1aruco__node_1_1ArucoNode.html#a8ea89960c3fd3c4051a4c3d6681a490b',1,'cmr_aruco::aruco_node::ArucoNode']]],
+  ['inverse_5fmatrix_9',['inverse_matrix',['../namespacecmr__aruco_1_1transformations.html#add69f109342f2f00dbe973d3111f8ef3',1,'cmr_aruco::transformations']]],
+  ['invoke_5fassert_10',['invoke_assert',['../error__test_8cpp.html#a0abc3154fcd102c6dc44b43deecd5817',1,'error_test.cpp']]],
+  ['is_5fdebugger_5fattached_11',['is_debugger_attached',['../cmr__debug_8hpp.html#ace2ed32647903fc6b544fc61a81bbf40',1,'is_debugger_attached():&#160;cmr_debug.cpp'],['../cmr__debug_8cpp.html#ace2ed32647903fc6b544fc61a81bbf40',1,'is_debugger_attached():&#160;cmr_debug.cpp']]],
+  ['is_5fmonad_5flike_5fv_12',['is_monad_like_v',['../namespacemonad.html#a8a382d4e8144c32ea25036b6d2f21b9c',1,'monad']]],
+  ['is_5frunning_13',['is_running',['../classDeferredCreationPolicy.html#aff9d43b44981885dc777d68216ecb7fb',1,'DeferredCreationPolicy']]],
+  ['is_5fsame_5ftransform_14',['is_same_transform',['../namespacecmr__aruco_1_1transformations.html#a3131e74c5f17fd2d8c3cb35816eb8bde',1,'cmr_aruco::transformations']]],
+  ['ismonadlike_15',['IsMonadLike',['../structmonad_1_1IsMonadLike.html',1,'monad']]],
+  ['ismonadlike_3c_20t_2c_20std_3a_3avoid_5ft_3c_20std_3a_3aenable_5fif_5ft_3c_20std_3a_3ais_5fsame_5fv_3c_20decltype_28std_3a_3adeclval_3c_20t_20_3e_28_29_2ehas_5fvalue_28_29_29_2c_20bool_20_3e_20_3e_2c_20decltype_28std_3a_3adeclval_3c_20t_20_3e_28_29_2evalue_28_29_29_2c_20decltype_28t_28std_3a_3adeclval_3c_20t_20_3e_28_29_2evalue_28_29_29_29_3e_20_3e_16',['IsMonadLike&lt; T, std::void_t&lt; std::enable_if_t&lt; std::is_same_v&lt; decltype(std::declval&lt; T &gt;().has_value()), bool &gt; &gt;, decltype(std::declval&lt; T &gt;().value()), decltype(T(std::declval&lt; T &gt;().value()))&gt; &gt;',['../structmonad_1_1IsMonadLike_3_01T_00_01std_1_1void__t_3_01std_1_1enable__if__t_3_01std_1_1is__sam2d58459cebc9cc1c6629a7899913a3d8.html',1,'monad']]]
 ];

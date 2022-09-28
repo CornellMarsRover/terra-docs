@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['_7ecmrraii_0',['~CmrRAII',['../classCmrRAII.html#a8686c7f3ca9b889294f8be5a99879806',1,'CmrRAII']]],
-  ['_7efabricnode_1',['~FabricNode',['../classcmr_1_1fabric_1_1FabricNode.html#aca7a00d1da781eb20ead53bf0d040596',1,'cmr::fabric::FabricNode']]],
-  ['_7ethreadwrapper_2',['~ThreadWrapper',['../classThreadWrapper.html#a643af8d1bf04d1b6d7213bf6a067970d',1,'ThreadWrapper']]]
+  ['unit_5fvector_0',['unit_vector',['../namespacecmr__aruco_1_1transformations.html#aecb907f46d6f5d3d2b1254d72727b6bf',1,'cmr_aruco::transformations']]],
+  ['update_5fcmd_5fvel_5fand_5fcheck_5freach_5ftarget_1',['update_cmd_vel_and_check_reach_target',['../classPositionControllerNode.html#a84363b7bb0c3bfbee9ad89989ef3a54c',1,'PositionControllerNode']]]
 ];

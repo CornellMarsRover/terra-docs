@@ -1,18 +1,11 @@
 var searchData=
 [
-  ['fabric_5fcomposition_0',['fabric_composition',['../namespacedemo.html#aeaa4eb573ab704a5a89928924c71c304',1,'demo']]],
-  ['fabric_5fnode_1',['fabric_node',['../namespacedemo.html#a754568b54478e30e221076ca139d79b3',1,'demo']]],
-  ['fabric_5fnode_2ecpp_2',['fabric_node.cpp',['../fabric__node_8cpp.html',1,'']]],
-  ['fabric_5fnode_2ehpp_3',['fabric_node.hpp',['../fabric__node_8hpp.html',1,'']]],
-  ['fabric_5ftest_2ecpp_4',['fabric_test.cpp',['../fabric__test_8cpp.html',1,'']]],
-  ['fabric_5ftest_5fnode_2ehpp_5',['fabric_test_node.hpp',['../fabric__test__node_8hpp.html',1,'']]],
-  ['fabricconfigpath_6',['FabricConfigPath',['../structcmr_1_1fabric_1_1FabricConfigPath.html',1,'cmr::fabric']]],
-  ['fabricnode_7',['FabricNode',['../classcmr_1_1fabric_1_1FabricNode.html',1,'cmr::fabric::FabricNode'],['../classcmr_1_1fabric_1_1FabricNode.html#aed08c9a27fe21cea828ef3440a48e67c',1,'cmr::fabric::FabricNode::FabricNode(const std::optional&lt; FabricNodeConfig &gt; &amp;config=std::nullopt)'],['../classcmr_1_1fabric_1_1FabricNode.html#afa740dc1f6969061fecb33c29909e52e',1,'cmr::fabric::FabricNode::FabricNode(std::optional&lt; FabricNodeConfig &gt; &amp;&amp;config=std::nullopt)']]],
-  ['fabricnodeconfig_8',['FabricNodeConfig',['../structcmr_1_1fabric_1_1FabricNodeConfig.html',1,'cmr::fabric']]],
-  ['fabrictestnode_9',['FabricTestNode',['../classFabricTestNode.html#ac20bfe33e10629a42d4654428ab4ce19',1,'FabricTestNode::FabricTestNode()'],['../classFabricTestNode.html',1,'FabricTestNode']]],
-  ['fault_5fhandler_2ecpp_10',['fault_handler.cpp',['../fault__handler_8cpp.html',1,'']]],
-  ['fault_5fhandler_2ehpp_11',['fault_handler.hpp',['../fault__handler_8hpp.html',1,'']]],
-  ['fault_5fhandler_5fnode_2ecpp_12',['fault_handler_node.cpp',['../fault__handler__node_8cpp.html',1,'']]],
-  ['faulthandler_13',['FaultHandler',['../classcmr_1_1fabric_1_1FaultHandler.html',1,'cmr::fabric::FaultHandler'],['../classcmr_1_1fabric_1_1FaultHandler.html#a7b2e163f67e3ed95fe3894aa0da282e4',1,'cmr::fabric::FaultHandler::FaultHandler(const std::string &amp;node_name=&quot;fault_handler&quot;, const std::string &amp;node_namespace=&quot;fabric&quot;)'],['../classcmr_1_1fabric_1_1FaultHandler.html#a45fbfcf5c5bfb26a8f413a676d2853e6',1,'cmr::fabric::FaultHandler::FaultHandler(std::shared_ptr&lt; cmr::Clock&lt; std::chrono::system_clock &gt; &gt; base_clock, std::shared_ptr&lt; cmr::Clock&lt; std::chrono::system_clock &gt; &gt; check_clock, const std::string &amp;node_name=&quot;fault_handler&quot;, const std::string &amp;node_namespace=&quot;fabric&quot;)']]],
-  ['finalized_14',['Finalized',['../namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190a65457a3fa7904cfb30c890a602332205',1,'cmr::fabric']]]
+  ['entry_5fpoints_0',['entry_points',['../namespacesetup.html#ada7058afc98897f073d3f3b8b9157059',1,'setup']]],
+  ['error_1',['Error',['../namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aaa902b0d55fddef6f8d651fe1035b7d4bd',1,'cmr::fabric']]],
+  ['error_5ftest_2ecpp_2',['error_test.cpp',['../error__test_8cpp.html',1,'']]],
+  ['error_5ftransition_3',['error_transition',['../classcmr_1_1fabric_1_1FabricNode.html#a79f1e678292a21ef3d81193928eae896',1,'cmr::fabric::FabricNode::error_transition()'],['../cmr__debug_8hpp.html#ae32e3f77a8ecab97ba7615b92530ca52',1,'error_transition():&#160;cmr_debug.hpp']]],
+  ['errorprocessing_4',['ErrorProcessing',['../namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190af4ef902c41cc887b22a47f0f7874a358',1,'cmr::fabric']]],
+  ['euler_5ffrom_5fmatrix_5',['euler_from_matrix',['../namespacecmr__aruco_1_1transformations.html#a7baf71f364a4c715b40a7a502cf8d66b',1,'cmr_aruco::transformations']]],
+  ['euler_5ffrom_5fquaternion_6',['euler_from_quaternion',['../namespacecmr__aruco_1_1transformations.html#ae3d6a8314ba7755eccb0324e184ccc27',1,'cmr_aruco::transformations']]],
+  ['euler_5fmatrix_7',['euler_matrix',['../namespacecmr__aruco_1_1transformations.html#a240258a3b9d0fb60a530b0990b2ae042',1,'cmr_aruco::transformations']]]
 ];

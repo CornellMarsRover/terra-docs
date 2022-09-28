@@ -1,7 +1,19 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../cmr__arm_2README_8md.html',1,'(Global Namespace)'],['../cmr__bs_2README_8md.html',1,'(Global Namespace)'],['../cmr__demo_2README_8md.html',1,'(Global Namespace)'],['../cmr__fabric_2README_8md.html',1,'(Global Namespace)'],['../cmr__msgs_2README_8md.html',1,'(Global Namespace)'],['../cmr__test_2README_8md.html',1,'(Global Namespace)']]],
-  ['realclock_1',['RealClock',['../classcmr_1_1RealClock.html',1,'cmr']]],
-  ['register_5ftime_2',['register_time',['../classcmr_1_1Clock.html#ac8f3db074533219ed79fcd5060cc68f5',1,'cmr::Clock::register_time()'],['../classcmr_1_1RealClock.html#ae4f155b70196389deb9765c9b121b6be',1,'cmr::RealClock::register_time()'],['../classcmr_1_1ProducerConsumerMockClock.html#ad991091b8c01e076aa567979aed77521',1,'cmr::ProducerConsumerMockClock::register_time()']]],
-  ['release_5fall_5fdependencies_3',['release_all_dependencies',['../classcmr_1_1fabric_1_1DependencyHandler.html#a6afe1f5aa86cebeb46fb585ceb3e7776',1,'cmr::fabric::DependencyHandler']]]
+  ['package_5fname_0',['package_name',['../namespacesetup.html#a3c783d982ab5a3d08b5fcf646a62976d',1,'setup']]],
+  ['packages_1',['packages',['../namespacesetup.html#aff2375a361fd5865c77bd9aa093be747',1,'setup']]],
+  ['param_5fcomposition_5fnamespace_2',['param_composition_namespace',['../fabric__node_8cpp.html#a70940b49cf6430c1d90840dbc4a7bd4e',1,'fabric_node.cpp']]],
+  ['param_5fconfig_5fdata_3',['param_config_data',['../fabric__node_8cpp.html#a31f9e77fc33131cb0097098c5019fc2f',1,'fabric_node.cpp']]],
+  ['param_5fconfig_5fpath_4',['param_config_path',['../fabric__node_8cpp.html#a9dd3a84fdcaeb88d19cd079de29ef8a6',1,'fabric_node.cpp']]],
+  ['param_5fmax_5frestarts_5',['param_max_restarts',['../fabric__node_8cpp.html#a9252d73adbc9da1333fdabe486aa0716',1,'fabric_node.cpp']]],
+  ['param_5fnum_5fattempted_5frestarts_6',['param_num_attempted_restarts',['../fabric__node_8cpp.html#a6fc0956e11d67e411d5e4f38e8fa8ce2',1,'fabric_node.cpp']]],
+  ['param_5frestart_5fdelay_7',['param_restart_delay',['../fabric__node_8cpp.html#aea6179673b65e6d9772993faa766a04e',1,'fabric_node.cpp']]],
+  ['parse_5ftoml_8',['parse_toml',['../namespacecmr_1_1fabric.html#a0b05ca087104d4d38af564c7aac05e2e',1,'cmr::fabric']]],
+  ['path_9',['path',['../structcmr_1_1fabric_1_1FabricConfigPath.html#a86b47cad94569064d353040672791648',1,'cmr::fabric::FabricConfigPath']]],
+  ['place_10',['place',['../classcmr__aruco_1_1transformations_1_1Arcball.html#a76e69383b95c2fc2ec0dcd24904830cf',1,'cmr_aruco::transformations::Arcball']]],
+  ['poses_5fpub_11',['poses_pub',['../classcmr__aruco_1_1aruco__node_1_1ArucoNode.html#a58d6efd4c3e285633c31b8387067161f',1,'cmr_aruco::aruco_node::ArucoNode']]],
+  ['positioncontrollernode_12',['PositionControllerNode',['../classPositionControllerNode.html',1,'PositionControllerNode'],['../classPositionControllerNode.html#a0a100e3ad912857cae48d3978efbb179',1,'PositionControllerNode::PositionControllerNode()']]],
+  ['producerconsumermockclock_13',['ProducerConsumerMockClock',['../classcmr_1_1ProducerConsumerMockClock.html',1,'cmr']]],
+  ['projection_5ffrom_5fmatrix_14',['projection_from_matrix',['../namespacecmr__aruco_1_1transformations.html#a58e7e9b27b971fa202c330e9efcd1696',1,'cmr_aruco::transformations']]],
+  ['projection_5fmatrix_15',['projection_matrix',['../namespacecmr__aruco_1_1transformations.html#a03237bdc14ac6735c505d5d040b61306',1,'cmr_aruco::transformations']]]
 ];

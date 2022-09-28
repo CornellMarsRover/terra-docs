@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['fabric_5fcomposition_0',['fabric_composition',['../namespacedemo.html#aeaa4eb573ab704a5a89928924c71c304',1,'demo']]],
-  ['fabric_5fnode_1',['fabric_node',['../namespacedemo.html#a754568b54478e30e221076ca139d79b3',1,'demo']]],
-  ['fabricnode_2',['FabricNode',['../classcmr_1_1fabric_1_1FabricNode.html#aed08c9a27fe21cea828ef3440a48e67c',1,'cmr::fabric::FabricNode::FabricNode(const std::optional&lt; FabricNodeConfig &gt; &amp;config=std::nullopt)'],['../classcmr_1_1fabric_1_1FabricNode.html#afa740dc1f6969061fecb33c29909e52e',1,'cmr::fabric::FabricNode::FabricNode(std::optional&lt; FabricNodeConfig &gt; &amp;&amp;config=std::nullopt)']]],
-  ['fabrictestnode_3',['FabricTestNode',['../classFabricTestNode.html#ac20bfe33e10629a42d4654428ab4ce19',1,'FabricTestNode']]],
-  ['faulthandler_4',['FaultHandler',['../classcmr_1_1fabric_1_1FaultHandler.html#a7b2e163f67e3ed95fe3894aa0da282e4',1,'cmr::fabric::FaultHandler::FaultHandler(const std::string &amp;node_name=&quot;fault_handler&quot;, const std::string &amp;node_namespace=&quot;fabric&quot;)'],['../classcmr_1_1fabric_1_1FaultHandler.html#a45fbfcf5c5bfb26a8f413a676d2853e6',1,'cmr::fabric::FaultHandler::FaultHandler(std::shared_ptr&lt; cmr::Clock&lt; std::chrono::system_clock &gt; &gt; base_clock, std::shared_ptr&lt; cmr::Clock&lt; std::chrono::system_clock &gt; &gt; check_clock, const std::string &amp;node_name=&quot;fault_handler&quot;, const std::string &amp;node_namespace=&quot;fabric&quot;)']]]
+  ['error_5ftransition_0',['error_transition',['../classcmr_1_1fabric_1_1FabricNode.html#a79f1e678292a21ef3d81193928eae896',1,'cmr::fabric::FabricNode::error_transition()'],['../cmr__debug_8hpp.html#ae32e3f77a8ecab97ba7615b92530ca52',1,'error_transition():&#160;cmr_debug.hpp']]],
+  ['euler_5ffrom_5fmatrix_1',['euler_from_matrix',['../namespacecmr__aruco_1_1transformations.html#a7baf71f364a4c715b40a7a502cf8d66b',1,'cmr_aruco::transformations']]],
+  ['euler_5ffrom_5fquaternion_2',['euler_from_quaternion',['../namespacecmr__aruco_1_1transformations.html#ae3d6a8314ba7755eccb0324e184ccc27',1,'cmr_aruco::transformations']]],
+  ['euler_5fmatrix_3',['euler_matrix',['../namespacecmr__aruco_1_1transformations.html#a240258a3b9d0fb60a530b0990b2ae042',1,'cmr_aruco::transformations']]]
 ];

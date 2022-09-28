@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['node_5fname_0',['node_name',['../structcmr_1_1fabric_1_1FabricNodeConfig.html#a5794cea871381c0675c8d22f664c30b7',1,'cmr::fabric::FabricNodeConfig::node_name()'],['../structNodeConfig.html#af82e23e9baf33e94271df8b1c7356548',1,'NodeConfig::node_name()']]],
-  ['node_5fnamespace_1',['node_namespace',['../structNodeConfig.html#a666a3534c2f0dddbdf30bc7bb42cd600',1,'NodeConfig']]]
+  ['data_5ffiles_0',['data_files',['../namespacesetup.html#ad027a8e9452da003dca32bf7467bd16e',1,'setup']]],
+  ['description_1',['description',['../namespacesetup.html#aedf461ec52a946bda975938ba0b93ec0',1,'setup']]],
+  ['distortion_2',['distortion',['../classcmr__aruco_1_1aruco__node_1_1ArucoNode.html#a6f224f71b384e34bbe6a5098cc82c60f',1,'cmr_aruco::aruco_node::ArucoNode']]]
 ];
