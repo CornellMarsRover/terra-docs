@@ -97,7 +97,7 @@ $(function() {
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Formats&gt;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="test__utils_8hpp.html#a5f36999f32ac2d85eeb8159410823322">   73</a></span><span class="keyword">auto</span> <a class="code hl_function" href="test__utils_8hpp.html#a5f36999f32ac2d85eeb8159410823322">create_config</a>(<a class="code hl_struct" href="structNodeConfig.html">NodeConfig</a> node_config, <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> config,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="test__utils_8hpp.html#a5f36999f32ac2d85eeb8159410823322">   73</a></span><span class="keyword">auto</span> <a class="code hl_function" href="test__utils_8hpp.html#a5f36999f32ac2d85eeb8159410823322">create_config</a>(<a class="code hl_struct" href="structNodeConfig.html">NodeConfig</a> <a class="code hl_variable" href="namespacedemo__test.html#a2f2db625c14a25c24660d4ac5270621b">node_config</a>, <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> config,</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                   Formats&amp;&amp;... formats)</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    std::array&lt;char, 2048&gt; config_buffer = {};</div>
@@ -109,8 +109,8 @@ $(function() {
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                  std::forward&lt;Formats&gt;(formats)...);</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#pragma GCC diagnostic pop</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#pragma clang diagnostic pop</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structcmr_1_1fabric_1_1FabricNodeConfig.html">cmr::fabric::FabricNodeConfig</a>{node_config.<a class="code hl_variable" href="structNodeConfig.html#af82e23e9baf33e94271df8b1c7356548">node_name</a>,</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                                         node_config.<a class="code hl_variable" href="structNodeConfig.html#a666a3534c2f0dddbdf30bc7bb42cd600">node_namespace</a>,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structcmr_1_1fabric_1_1FabricNodeConfig.html">cmr::fabric::FabricNodeConfig</a>{<a class="code hl_variable" href="namespacedemo__test.html#a2f2db625c14a25c24660d4ac5270621b">node_config</a>.node_name,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                                         <a class="code hl_variable" href="namespacedemo__test.html#a2f2db625c14a25c24660d4ac5270621b">node_config</a>.node_namespace,</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                                         {std::string(config_buffer.data())}};</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
@@ -125,6 +125,7 @@ $(function() {
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
 <div class="ttc" id="aclassThreadWrapper_html"><div class="ttname"><a href="classThreadWrapper.html">ThreadWrapper</a></div><div class="ttdoc">The ThreadWrapper provides RAII and other features for std::thread.</div><div class="ttdef"><b>Definition:</b> thread_wrapper.hpp:109</div></div>
 <div class="ttc" id="afabric__node_8hpp_html"><div class="ttname"><a href="fabric__node_8hpp.html">fabric_node.hpp</a></div></div>
+<div class="ttc" id="anamespacedemo__test_html_a2f2db625c14a25c24660d4ac5270621b"><div class="ttname"><a href="namespacedemo__test.html#a2f2db625c14a25c24660d4ac5270621b">demo_test.node_config</a></div><div class="ttdeci">node_config</div><div class="ttdef"><b>Definition:</b> demo_test.py:63</div></div>
 <div class="ttc" id="anamespacesetup_html_ab3a7a0638d76a01367c5bc3cc699447f"><div class="ttname"><a href="namespacesetup.html#ab3a7a0638d76a01367c5bc3cc699447f">setup.name</a></div><div class="ttdeci">name</div><div class="ttdef"><b>Definition:</b> setup.py:6</div></div>
 <div class="ttc" id="astructNodeConfig_html"><div class="ttname"><a href="structNodeConfig.html">NodeConfig</a></div><div class="ttdoc">Configuration parameters for a node.</div><div class="ttdef"><b>Definition:</b> test_utils.hpp:11</div></div>
 <div class="ttc" id="astructNodeConfig_html_a666a3534c2f0dddbdf30bc7bb42cd600"><div class="ttname"><a href="structNodeConfig.html#a666a3534c2f0dddbdf30bc7bb42cd600">NodeConfig::node_namespace</a></div><div class="ttdeci">const char * node_namespace</div><div class="ttdef"><b>Definition:</b> test_utils.hpp:13</div></div>
@@ -137,7 +138,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 28 2022 23:24:59 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Tue Oct 4 2022 01:04:45 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

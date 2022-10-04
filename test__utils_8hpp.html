@@ -256,7 +256,7 @@ template&lt;typename... Formats&gt; </div>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Example</h2>
 <div class="fragment"><div class="line"> {C++}</div>
-<div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> node_config = <a class="code hl_struct" href="structNodeConfig.html">NodeConfig</a>{<span class="stringliteral">&quot;test_node&quot;</span>, <span class="stringliteral">&quot;test_ns&quot;</span>};</div>
+<div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespacedemo__test.html#a2f2db625c14a25c24660d4ac5270621b">node_config</a> = <a class="code hl_struct" href="structNodeConfig.html">NodeConfig</a>{<span class="stringliteral">&quot;test_node&quot;</span>, <span class="stringliteral">&quot;test_ns&quot;</span>};</div>
 <div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> config_str = R<span class="stringliteral">&quot;(</span></div>
 <div class="line"><span class="stringliteral">dependencies = [%s]</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
@@ -265,7 +265,7 @@ Example</h2>
 <div class="line"><span class="stringliteral">restart_delay = 2</span></div>
 <div class="line"><span class="stringliteral">)&quot;;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral"></span><span class="keyword">const</span> <span class="keyword">auto</span> formatted_config = <a class="code hl_function" href="test__utils_8hpp.html#a5f36999f32ac2d85eeb8159410823322">create_config</a>(node_config, config_str,</div>
+<div class="line"><span class="stringliteral"></span><span class="keyword">const</span> <span class="keyword">auto</span> formatted_config = <a class="code hl_function" href="test__utils_8hpp.html#a5f36999f32ac2d85eeb8159410823322">create_config</a>(<a class="code hl_variable" href="namespacedemo__test.html#a2f2db625c14a25c24660d4ac5270621b">node_config</a>, config_str,</div>
 <div class="line"><span class="stringliteral">&quot;\&quot;test_dep\&quot;&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// formatted_config.toml_config now contains a string which is:</span></div>
@@ -274,6 +274,7 @@ Example</h2>
 <div class="line"><span class="comment">// [fault_handling]</span></div>
 <div class="line"><span class="comment">// restart_attempts = 2</span></div>
 <div class="line"><span class="comment">// restart_delay = 2</span></div>
+<div class="ttc" id="anamespacedemo__test_html_a2f2db625c14a25c24660d4ac5270621b"><div class="ttname"><a href="namespacedemo__test.html#a2f2db625c14a25c24660d4ac5270621b">demo_test.node_config</a></div><div class="ttdeci">node_config</div><div class="ttdef"><b>Definition:</b> demo_test.py:63</div></div>
 <div class="ttc" id="astructNodeConfig_html"><div class="ttname"><a href="structNodeConfig.html">NodeConfig</a></div><div class="ttdoc">Configuration parameters for a node.</div><div class="ttdef"><b>Definition:</b> test_utils.hpp:11</div></div>
 <div class="ttc" id="atest__utils_8hpp_html_a5f36999f32ac2d85eeb8159410823322"><div class="ttname"><a href="test__utils_8hpp.html#a5f36999f32ac2d85eeb8159410823322">create_config</a></div><div class="ttdeci">auto create_config(NodeConfig node_config, const char *const config, Formats &amp;&amp;... formats)</div><div class="ttdoc">Creates a FabricNode config by formatting a toml string.</div><div class="ttdef"><b>Definition:</b> test_utils.hpp:73</div></div>
 </div><!-- fragment --> 
@@ -328,7 +329,7 @@ template&lt;typename NodeT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 28 2022 23:24:59 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Tue Oct 4 2022 01:04:45 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

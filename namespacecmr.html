@@ -97,10 +97,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af6f0399d3f8e177731b2c526f6ebe039"><td class="memTemplParams" colspan="2">template&lt;typename SrvT &gt; </td></tr>
-<tr class="memitem:af6f0399d3f8e177731b2c526f6ebe039"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; std::shared_ptr&lt; typename SrvT::Response &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr.html#af6f0399d3f8e177731b2c526f6ebe039">send_request</a> (const std::string &amp;service_name, const std::shared_ptr&lt; typename SrvT::Request &gt; request)</td></tr>
-<tr class="memdesc:af6f0399d3f8e177731b2c526f6ebe039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spins up a service client owned by a temporary node and calls the service with the given request.  <a href="namespacecmr.html#af6f0399d3f8e177731b2c526f6ebe039">More...</a><br /></td></tr>
-<tr class="separator:af6f0399d3f8e177731b2c526f6ebe039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea21691c16a0393db1724888ce768b5f"><td class="memTemplParams" colspan="2">template&lt;typename SrvT &gt; </td></tr>
+<tr class="memitem:aea21691c16a0393db1724888ce768b5f"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; std::shared_ptr&lt; typename SrvT::Response &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr.html#aea21691c16a0393db1724888ce768b5f">send_request</a> (const std::string &amp;service_name, const std::shared_ptr&lt; typename SrvT::Request &gt; request, std::chrono::seconds timeout=std::chrono::seconds(5))</td></tr>
+<tr class="memdesc:aea21691c16a0393db1724888ce768b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spins up a service client owned by a temporary node and calls the service with the given request.  <a href="namespacecmr.html#aea21691c16a0393db1724888ce768b5f">More...</a><br /></td></tr>
+<tr class="separator:aea21691c16a0393db1724888ce768b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d6b3cd2dfc0067417200ecf9cfd105"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:ae7d6b3cd2dfc0067417200ecf9cfd105"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr.html#ae7d6b3cd2dfc0067417200ecf9cfd105">string_format</a> (const std::string &amp;format, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:ae7d6b3cd2dfc0067417200ecf9cfd105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a string using <code>std::snprintf</code>.  <a href="namespacecmr.html#ae7d6b3cd2dfc0067417200ecf9cfd105">More...</a><br /></td></tr>
@@ -130,7 +130,7 @@ template&lt;typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Constructs a string by concatenating together the arguments via streams. </p>
-<h2><a class="anchor" id="autotoc_md18"></a>
+<h2><a class="anchor" id="autotoc_md65"></a>
 Example</h2>
 <div class="fragment"><div class="line"> {C++}</div>
 <div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> age = 10;</div>
@@ -157,8 +157,8 @@ Example</h2>
 
 </div>
 </div>
-<a id="af6f0399d3f8e177731b2c526f6ebe039" name="af6f0399d3f8e177731b2c526f6ebe039"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6f0399d3f8e177731b2c526f6ebe039">&#9670;&nbsp;</a></span>send_request()</h2>
+<a id="aea21691c16a0393db1724888ce768b5f" name="aea21691c16a0393db1724888ce768b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea21691c16a0393db1724888ce768b5f">&#9670;&nbsp;</a></span>send_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +175,13 @@ template&lt;typename SrvT &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::shared_ptr&lt; typename SrvT::Request &gt;&#160;</td>
-          <td class="paramname"><em>request</em>&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::seconds&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>std::chrono::seconds(5)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -258,7 +264,7 @@ template&lt;typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 28 2022 23:25:00 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Tue Oct 4 2022 01:04:45 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

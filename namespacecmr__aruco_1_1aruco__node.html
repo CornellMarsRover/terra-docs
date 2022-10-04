@@ -74,6 +74,9 @@ $(function() {
   <div class="headertitle"><div class="title">cmr_aruco.aruco_node Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>This node locates Aruco AR markers in images and publishes their ids and poses.  
+<a href="namespacecmr__aruco_1_1aruco__node.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -86,31 +89,13 @@ Functions</h2></td></tr>
 <tr class="separator:afe1b10db32502d35624d9a654051a09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">This node locates Aruco AR markers in images and publishes their ids and poses.
-
-Subscriptions:
-   /camera/image_raw (sensor_msgs.msg.Image)
-   /camera/camera_info (sensor_msgs.msg.CameraInfo)
-   /camera/camera_info (sensor_msgs.msg.CameraInfo)
-
-Published Topics:
-    /aruco_poses (geometry_msgs.msg.PoseArray)
-       Pose of all detected markers (suitable for rviz visualization)
-
-    /aruco_markers (ros2_aruco_interfaces.msg.ArucoMarkers)
-       Provides an array of all poses along with the corresponding
-       marker ids.
-
-Parameters:
-    marker_size - size of the markers in meters (default .0625)
-    aruco_dictionary_id - dictionary that was used to generate markers
-                          (default DICT_5X5_250)
-    image_topic - image topic to subscribe to (default /camera/image_raw)
-    camera_info_topic - camera info topic to subscribe to
-                         (default /camera/camera_info)
-
-Author: Nathan Sprague
-Version: 10/26/2020</pre> </div><h2 class="groupheader">Function Documentation</h2>
+<div class="textblock"><p >This node locates Aruco AR markers in images and publishes their ids and poses. </p>
+<p >Subscriptions: /camera/image_raw (sensor_msgs.msg.Image) /camera/camera_info (sensor_msgs.msg.CameraInfo) /camera/camera_info (sensor_msgs.msg.CameraInfo)</p>
+<p >Published Topics: /aruco_poses (geometry_msgs.msg.PoseArray) Pose of all detected markers (suitable for rviz visualization)</p>
+<p >/aruco_markers (ros2_aruco_interfaces.msg.ArucoMarkers) Provides an array of all poses along with the corresponding marker ids.</p>
+<p >Parameters: marker_size - size of the markers in meters (default .0625) aruco_dictionary_id - dictionary that was used to generate markers (default DICT_5X5_250) image_topic - image topic to subscribe to (default /camera/image_raw) camera_info_topic - camera info topic to subscribe to (default /camera/camera_info)</p>
+<p >Author: Nathan Sprague Version: 10/26/2020 </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="afe1b10db32502d35624d9a654051a09e" name="afe1b10db32502d35624d9a654051a09e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe1b10db32502d35624d9a654051a09e">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -131,7 +116,7 @@ Version: 10/26/2020</pre> </div><h2 class="groupheader">Function Documentation</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 28 2022 23:25:00 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Tue Oct 4 2022 01:04:45 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structNodeConfig.html" title="Configuration parameters for a node." alt="" coords="5,5,95,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,59,39"/>
+<area shape="rect" id="node2" href="$classcmr__py__test_1_1utils__test__node_1_1PassthroughNode.html" title="This node simply provides a topic and action server for testing purposes." alt="" coords="107,5,271,47"/>
 </map>

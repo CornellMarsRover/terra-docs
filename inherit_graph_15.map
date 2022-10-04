@@ -1,4 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,120,32"/>
-<area shape="rect" id="node2" href="$classcmr__aruco_1_1aruco__node_1_1ArucoNode.html" title=" " alt="" coords="168,5,389,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,205,108"/>
+<area shape="rect" id="node2" href="$classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes." alt="" coords="253,81,408,108"/>
+<area shape="rect" id="node3" href="$classDemoNode.html" title=" " alt="" coords="518,5,605,32"/>
+<area shape="rect" id="node4" href="$classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling." alt="" coords="504,56,619,83"/>
+<area shape="rect" id="node5" href="$classcmr_1_1Joystick.html" title="Joystick" alt="" coords="512,107,611,133"/>
+<area shape="rect" id="node6" href="$classcmr_1_1JoystickForwardKinematics.html" title="JoystickForwardKinematics" alt="" coords="456,157,667,184"/>
 </map>

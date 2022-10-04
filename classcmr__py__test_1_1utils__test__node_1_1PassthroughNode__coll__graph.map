@@ -1,0 +1,4 @@
+<map id="cmr_py_test.utils_test_node.PassthroughNode" name="cmr_py_test.utils_test_node.PassthroughNode">
+<area shape="rect" id="node1" title="This node simply provides a topic and action server for testing purposes." alt="" coords="5,80,169,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="61,5,114,32"/>
+</map>

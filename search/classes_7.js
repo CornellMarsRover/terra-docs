@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nodeconfig_0',['NodeConfig',['../structNodeConfig.html',1,'']]]
+  ['lifecyclemanager_0',['LifecycleManager',['../classLifecycleManager.html',1,'']]]
 ];
