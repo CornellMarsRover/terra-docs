@@ -12,6 +12,8 @@ var searchData=
   ['release_5fall_5fdependencies_9',['release_all_dependencies',['../classcmr_1_1fabric_1_1DependencyHandler.html#a6afe1f5aa86cebeb46fb585ceb3e7776',1,'cmr::fabric::DependencyHandler']]],
   ['request_5fcount_10',['request_count',['../classtest__utils_1_1____ServiceActionListener.html#af9fb854a429df5f9be04ad43c1da648c',1,'test_utils::__ServiceActionListener']]],
   ['results_11',['results',['../classtest__utils_1_1TopicSubscriber.html#a0132e9a7cd330581f560e1bdc1d9be77',1,'test_utils::TopicSubscriber']]],
-  ['rotation_5ffrom_5fmatrix_12',['rotation_from_matrix',['../namespacecmr__aruco_1_1transformations.html#aed77446d3de9e09bb1d18304941bb005',1,'cmr_aruco::transformations']]],
-  ['rotation_5fmatrix_13',['rotation_matrix',['../namespacecmr__aruco_1_1transformations.html#aba0a3e06fcfc1e36e90cb42f614cd928',1,'cmr_aruco::transformations']]]
+  ['robot_5fstate_5fpublisher_12',['robot_state_publisher',['../namespacerobot__state__publisher.html',1,'']]],
+  ['robot_5fstate_5fpublisher_2elaunch_2epy_13',['robot_state_publisher.launch.py',['../robot__state__publisher_8launch_8py.html',1,'']]],
+  ['rotation_5ffrom_5fmatrix_14',['rotation_from_matrix',['../namespacecmr__aruco_1_1transformations.html#aed77446d3de9e09bb1d18304941bb005',1,'cmr_aruco::transformations']]],
+  ['rotation_5fmatrix_15',['rotation_matrix',['../namespacecmr__aruco_1_1transformations.html#aba0a3e06fcfc1e36e90cb42f614cd928',1,'cmr_aruco::transformations']]]
 ];
