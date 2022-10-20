@@ -122,7 +122,7 @@ Example:</h3>
 <div class="line"><a class="code hl_function" href="namespacetest__utils.html#a846599ca68e06b7779964e0456662deb">publish_to_topic</a>(String, <span class="stringliteral">&quot;/test/utils_test_node/test_in&quot;</span>, String(data=<span class="stringliteral">&quot;Hi&quot;</span>))</div>
 <div class="line"><span class="keyword">assert</span> subber.wait_for_msg().data == <span class="stringliteral">&quot;Hi&quot;</span></div>
 <div class="line">del subber</div>
-<div class="ttc" id="anamespacetest__utils_html_a846599ca68e06b7779964e0456662deb"><div class="ttname"><a href="namespacetest__utils.html#a846599ca68e06b7779964e0456662deb">test_utils.publish_to_topic</a></div><div class="ttdeci">def publish_to_topic(type topic_type, str topic, msg)</div><div class="ttdoc">Publishes msg to topic using the topic_type type.</div><div class="ttdef"><b>Definition:</b> test_utils.py:681</div></div>
+<div class="ttc" id="anamespacetest__utils_html_a846599ca68e06b7779964e0456662deb"><div class="ttname"><a href="namespacetest__utils.html#a846599ca68e06b7779964e0456662deb">test_utils.publish_to_topic</a></div><div class="ttdeci">def publish_to_topic(type topic_type, str topic, msg)</div><div class="ttdoc">Publishes msg to topic using the topic_type type.</div><div class="ttdef"><b>Definition:</b> test_utils.py:684</div></div>
 </div><!-- fragment --><p> Or using <code>with</code>: </p><div class="fragment"><div class="line"><span class="keyword">with</span> TopicSubscriber(String, <span class="stringliteral">&quot;/test/utils_test_node/test_out&quot;</span>) <span class="keyword">as</span> subber:</div>
 <div class="line">    <a class="code hl_function" href="namespacetest__utils.html#a846599ca68e06b7779964e0456662deb">publish_to_topic</a>(String, <span class="stringliteral">&quot;/test/utils_test_node/test_in&quot;</span>, String(data=<span class="stringliteral">&quot;Hi&quot;</span>))</div>
 <div class="line">    <span class="keyword">assert</span> subber.wait_for_msg().data == <span class="stringliteral">&quot;Hi&quot;</span></div>
@@ -329,6 +329,7 @@ Example:</h3>
 </div><div class="memdoc">
 
 <p>Waits for a message to be received on the topic and returns that message Will return immediately if a message has already been received. </p>
+<p >This should not be called at the same time as another <code>wait_for_msg</code></p>
 <h3><a class="anchor" id="autotoc_md50"></a>
 Args:</h3>
 <ul>
@@ -404,7 +405,7 @@ Returns:</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 4 2022 01:09:53 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Thu Oct 20 2022 01:29:23 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
