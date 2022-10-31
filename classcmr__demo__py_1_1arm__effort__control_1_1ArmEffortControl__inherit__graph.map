@@ -1,0 +1,4 @@
+<map id="cmr_demo_py.arm_effort_control.ArmEffortControl" name="cmr_demo_py.arm_effort_control.ArmEffortControl">
+<area shape="rect" id="node1" title="A temporary test node that just publishes a constant effort of 10.0 to the arm joints at a rate of 2H..." alt="" coords="5,80,172,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="62,5,115,32"/>
+</map>

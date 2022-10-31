@@ -13,10 +13,13 @@ var searchData=
   ['path_10',['path',['../structcmr_1_1fabric_1_1FabricConfigPath.html#a86b47cad94569064d353040672791648',1,'cmr::fabric::FabricConfigPath']]],
   ['place_11',['place',['../classcmr__aruco_1_1transformations_1_1Arcball.html#a76e69383b95c2fc2ec0dcd24904830cf',1,'cmr_aruco::transformations::Arcball']]],
   ['poses_5fpub_12',['poses_pub',['../classcmr__aruco_1_1aruco__node_1_1ArucoNode.html#a58d6efd4c3e285633c31b8387067161f',1,'cmr_aruco::aruco_node::ArucoNode']]],
-  ['positioncontrollernode_13',['PositionControllerNode',['../classPositionControllerNode.html',1,'PositionControllerNode'],['../classPositionControllerNode.html#a0a100e3ad912857cae48d3978efbb179',1,'PositionControllerNode::PositionControllerNode()']]],
-  ['producerconsumermockclock_14',['ProducerConsumerMockClock',['../classcmr_1_1ProducerConsumerMockClock.html',1,'cmr']]],
-  ['projection_5ffrom_5fmatrix_15',['projection_from_matrix',['../namespacecmr__aruco_1_1transformations.html#a58e7e9b27b971fa202c330e9efcd1696',1,'cmr_aruco::transformations']]],
-  ['projection_5fmatrix_16',['projection_matrix',['../namespacecmr__aruco_1_1transformations.html#a03237bdc14ac6735c505d5d040b61306',1,'cmr_aruco::transformations']]],
-  ['pub_17',['pub',['../classcmr__py__test_1_1utils__test__node_1_1PassthroughNode.html#ae28f1c2bb36bd394b454535532a701d0',1,'cmr_py_test::utils_test_node::PassthroughNode']]],
-  ['publish_5fto_5ftopic_18',['publish_to_topic',['../namespacetest__utils.html#a846599ca68e06b7779964e0456662deb',1,'test_utils']]]
+  ['position_5ffactor_13',['position_factor',['../mock__arm__system_8cpp.html#a2fa7b0377603cdac439e43f944450e4e',1,'mock_arm_system.cpp']]],
+  ['positioncontrollernode_14',['PositionControllerNode',['../classPositionControllerNode.html',1,'PositionControllerNode'],['../classPositionControllerNode.html#a0a100e3ad912857cae48d3978efbb179',1,'PositionControllerNode::PositionControllerNode()']]],
+  ['prepare_5fcommand_5fmode_5fswitch_15',['prepare_command_mode_switch',['../classcmr__control_1_1BaseArmSystemHardware.html#a92befdb5c1be851717d40a1d8e40fa18',1,'cmr_control::BaseArmSystemHardware']]],
+  ['producerconsumermockclock_16',['ProducerConsumerMockClock',['../classcmr_1_1ProducerConsumerMockClock.html',1,'cmr']]],
+  ['projection_5ffrom_5fmatrix_17',['projection_from_matrix',['../namespacecmr__aruco_1_1transformations.html#a58e7e9b27b971fa202c330e9efcd1696',1,'cmr_aruco::transformations']]],
+  ['projection_5fmatrix_18',['projection_matrix',['../namespacecmr__aruco_1_1transformations.html#a03237bdc14ac6735c505d5d040b61306',1,'cmr_aruco::transformations']]],
+  ['pub_19',['pub',['../classcmr__py__test_1_1utils__test__node_1_1PassthroughNode.html#ae28f1c2bb36bd394b454535532a701d0',1,'cmr_py_test::utils_test_node::PassthroughNode']]],
+  ['publish_5fto_5ftopic_20',['publish_to_topic',['../namespacetest__utils.html#a846599ca68e06b7779964e0456662deb',1,'test_utils']]],
+  ['publisher_5f_21',['publisher_',['../classcmr__demo__py_1_1arm__effort__control_1_1ArmEffortControl.html#a8c87f817a3972a98130455fad949e4ba',1,'cmr_demo_py::arm_effort_control::ArmEffortControl']]]
 ];

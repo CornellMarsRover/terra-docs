@@ -7,5 +7,7 @@ var searchData=
   ['errorprocessing_4',['ErrorProcessing',['../namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190af4ef902c41cc887b22a47f0f7874a358',1,'cmr::fabric']]],
   ['euler_5ffrom_5fmatrix_5',['euler_from_matrix',['../namespacecmr__aruco_1_1transformations.html#a7baf71f364a4c715b40a7a502cf8d66b',1,'cmr_aruco::transformations']]],
   ['euler_5ffrom_5fquaternion_6',['euler_from_quaternion',['../namespacecmr__aruco_1_1transformations.html#ae3d6a8314ba7755eccb0324e184ccc27',1,'cmr_aruco::transformations']]],
-  ['euler_5fmatrix_7',['euler_matrix',['../namespacecmr__aruco_1_1transformations.html#a240258a3b9d0fb60a530b0990b2ae042',1,'cmr_aruco::transformations']]]
+  ['euler_5fmatrix_7',['euler_matrix',['../namespacecmr__aruco_1_1transformations.html#a240258a3b9d0fb60a530b0990b2ae042',1,'cmr_aruco::transformations']]],
+  ['export_5fcommand_5finterfaces_8',['export_command_interfaces',['../classcmr__control_1_1BaseArmSystemHardware.html#a56b84c940055ee0edcfd4010048b9195',1,'cmr_control::BaseArmSystemHardware::export_command_interfaces()'],['../classcmr__control_1_1DrivesSystemHardware.html#a1d269a7119d675378163790491fb2eff',1,'cmr_control::DrivesSystemHardware::export_command_interfaces()']]],
+  ['export_5fstate_5finterfaces_9',['export_state_interfaces',['../classcmr__control_1_1BaseArmSystemHardware.html#a8a5ecd27acd5b52e65ebcc77be76875f',1,'cmr_control::BaseArmSystemHardware::export_state_interfaces()'],['../classcmr__control_1_1DrivesSystemHardware.html#af77b6177680de8447f702501d65b3c05',1,'cmr_control::DrivesSystemHardware::export_state_interfaces()']]]
 ];

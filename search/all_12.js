@@ -16,7 +16,7 @@ var searchData=
   ['setaxes_13',['setaxes',['../classcmr__aruco_1_1transformations_1_1Arcball.html#aadc42377f9c53fbf76934b343b74b58b',1,'cmr_aruco::transformations::Arcball']]],
   ['setconstrain_14',['setconstrain',['../classcmr__aruco_1_1transformations_1_1Arcball.html#a90a05f0fbcf9bde87c25978a22361e34',1,'cmr_aruco::transformations::Arcball']]],
   ['setup_15',['setup',['../namespacesetup.html',1,'']]],
-  ['setup_2epy_16',['setup.py',['../cmr__py__test_2setup_8py.html',1,'(Global Namespace)'],['../cmr__aruco_2setup_8py.html',1,'(Global Namespace)']]],
+  ['setup_2epy_16',['setup.py',['../cmr__py__test_2setup_8py.html',1,'(Global Namespace)'],['../cmr__demo__py_2setup_8py.html',1,'(Global Namespace)'],['../cmr__aruco_2setup_8py.html',1,'(Global Namespace)']]],
   ['setup_5fclass_17',['setup_class',['../classtest__utils_1_1CMRTestFixture.html#a78751b6b58890f9a6939b4b608431871',1,'test_utils::CMRTestFixture']]],
   ['setup_5fmodule_18',['setup_module',['../namespacetest__utils.html#abf3b2a06a8801183cd76c93746771559',1,'test_utils']]],
   ['shear_5ffrom_5fmatrix_19',['shear_from_matrix',['../namespacecmr__aruco_1_1transformations.html#a14c96eafc2278f74344e92db0e9fea7f',1,'cmr_aruco::transformations']]],
@@ -27,7 +27,7 @@ var searchData=
   ['static_5fconfig_24',['static_config',['../namespacedemo__test.html#a3df95298c436eb3dfe8b862922e200f8',1,'demo_test']]],
   ['string_5fformat_25',['string_format',['../namespacecmr.html#ae7d6b3cd2dfc0067417200ecf9cfd105',1,'cmr']]],
   ['string_5futils_2ehpp_26',['string_utils.hpp',['../string__utils_8hpp.html',1,'']]],
-  ['sub_27',['sub',['../classtest__utils_1_1TopicSubscriber.html#a487226823af0921e90f9d2a77d8965fd',1,'test_utils.TopicSubscriber.sub()'],['../classtest__utils_1_1____ServiceActionListener.html#a1f29d3f06923ffee83a2ff95210c417f',1,'test_utils.__ServiceActionListener.sub()'],['../classcmr__py__test_1_1utils__test__node_1_1PassthroughNode.html#acad0d8cb8891f6252b67c66567145315',1,'cmr_py_test.utils_test_node.PassthroughNode.sub()']]],
+  ['sub_27',['sub',['../classcmr__py__test_1_1utils__test__node_1_1PassthroughNode.html#acad0d8cb8891f6252b67c66567145315',1,'cmr_py_test.utils_test_node.PassthroughNode.sub()'],['../classtest__utils_1_1____ServiceActionListener.html#a1f29d3f06923ffee83a2ff95210c417f',1,'test_utils.__ServiceActionListener.sub()'],['../classtest__utils_1_1TopicSubscriber.html#a487226823af0921e90f9d2a77d8965fd',1,'test_utils.TopicSubscriber.sub()']]],
   ['superimposition_5fmatrix_28',['superimposition_matrix',['../namespacecmr__aruco_1_1transformations.html#a00367bbc62aae776c2a1ea3d18613ac6',1,'cmr_aruco::transformations']]],
   ['system_5fnow_29',['system_now',['../fabric__test_8cpp.html#a2e7e729b1f40ecf173d516cb376ce939',1,'fabric_test.cpp']]]
 ];
