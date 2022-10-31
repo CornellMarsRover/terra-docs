@@ -3,6 +3,6 @@
 <area shape="rect" id="node3" href="$classDemoNode.html" title=" " alt="" coords="5,155,92,181"/>
 <area shape="rect" id="node4" href="$classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling." alt="" coords="117,155,231,181"/>
 <area shape="rect" id="node5" href="$classcmr_1_1Joystick.html" title="Joystick" alt="" coords="255,155,354,181"/>
-<area shape="rect" id="node6" href="$classcmr_1_1JoystickForwardKinematics.html" title="JoystickForwardKinematics" alt="" coords="378,155,589,181"/>
+<area shape="rect" id="node6" href="$classcmr_1_1JoystickDirectControl.html" title="The JoystickDirectControl node is the node called to activate arm control via direct joystick control..." alt="" coords="378,155,551,181"/>
 <area shape="rect" id="node2" title=" " alt="" coords="139,5,339,32"/>
 </map>

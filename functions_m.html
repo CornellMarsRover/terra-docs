@@ -73,6 +73,7 @@ $(function() {
 <li>m_active_goals&#160;:&#160;<a class="el" href="classPositionControllerNode.html#adb5faa271543ec382c7e7ce98eff6eb6">PositionControllerNode</a></li>
 <li>m_angular_vel&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a9269d9cd85c5a9515417cd8a03a01320">PositionControllerNode</a></li>
 <li>m_base_clock&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html#ae204a7c32e1a8914cfddb40ac1c64f92">cmr::fabric::FaultHandler</a></li>
+<li>m_base_rotate_effort_pub&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#a3f65da7bf607de979f0aa6fb978b4e4b">cmr::JoystickDirectControl</a></li>
 <li>m_callback_group&#160;:&#160;<a class="el" href="classLifecycleManager.html#a3f255e8b0999d696e41adc9dbc3fc0c1">LifecycleManager</a></li>
 <li>m_check_clock&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html#a2f2ade64067d418fea47b912ad8959b0">cmr::fabric::FaultHandler</a></li>
 <li>m_cleanup_srv&#160;:&#160;<a class="el" href="classLifecycleManager.html#a3adfe97231de4e2bc0423249f88507fa">LifecycleManager</a></li>
@@ -82,6 +83,7 @@ $(function() {
 <li>m_dependencies&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html#af2781c574644a6e2db577e4b9b21c3e0">cmr::fabric::DependencyHandler</a></li>
 <li>m_dependency_manager&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ae40fc7e3cc4898364f7a9d6cabf992af">cmr::fabric::FabricNode</a></li>
 <li>m_dependers&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html#a622b6ab7b8cfbd7312d8a405c64586cb">cmr::fabric::DependencyHandler</a></li>
+<li>m_elbow_effort_pub&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#a1682d612aa1a4953fcfc73fd44ae0537">cmr::JoystickDirectControl</a></li>
 <li>m_fail_activate&#160;:&#160;<a class="el" href="classFabricTestNode.html#a97b3627162138e77d7b9aa9f024324c6">FabricTestNode</a></li>
 <li>m_fail_activate_srv&#160;:&#160;<a class="el" href="classFabricTestNode.html#ae73d76813b80b7d1bae675561aa99fc0">FabricTestNode</a></li>
 <li>m_frame_broadcaster&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a8f90d3b29f8e2c91528279ff25fff5a5">PositionControllerNode</a></li>
@@ -94,6 +96,8 @@ $(function() {
 <li>m_hw_position_commands&#160;:&#160;<a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#a9cb906c30ec736131a48070bcaf97dd3">cmr_control::BaseArmSystemHardware</a></li>
 <li>m_hw_positions&#160;:&#160;<a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#a86fa56a7219137e5b982ed7cc3a3a9d6">cmr_control::BaseArmSystemHardware</a>, <a class="el" href="classcmr__control_1_1DrivesSystemHardware.html#ae2cd3e077437462b083375e555bba0da">cmr_control::DrivesSystemHardware</a></li>
 <li>m_hw_velocities&#160;:&#160;<a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#ac78a1faac9f1a7d0aaf471385831e323">cmr_control::BaseArmSystemHardware</a>, <a class="el" href="classcmr__control_1_1DrivesSystemHardware.html#a17ee8196d5144ffa8d88fad24de56b43">cmr_control::DrivesSystemHardware</a></li>
+<li>m_is_activated&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#ae1e8de2f055cf0c269ebb1f3c1b51c39">cmr::JoystickDirectControl</a></li>
+<li>m_joystick_sub&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#a8d797e981a52d0f94c521384b5c50ffc">cmr::JoystickDirectControl</a></li>
 <li>m_linear_vel&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a798b45a0330999a97d3d5d355b74276c">PositionControllerNode</a></li>
 <li>m_mock_cv&#160;:&#160;<a class="el" href="classcmr_1_1ProducerConsumerMockClock.html#a8f21b375573f7c45e72cde512bd15d55">cmr::ProducerConsumerMockClock&lt; ClockType &gt;</a></li>
 <li>m_mock_mutex&#160;:&#160;<a class="el" href="classcmr_1_1ProducerConsumerMockClock.html#a1435b160a9352226af6ca54716a37dc0">cmr::ProducerConsumerMockClock&lt; ClockType &gt;</a></li>
@@ -108,13 +112,19 @@ $(function() {
 <li>m_recover_fault_service&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html#a3548d47aece8ba4f304e2bb1edae92d5">cmr::fabric::FaultHandler</a></li>
 <li>m_release_dependency_srv&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html#a628e625188fcb3f95f142ac65ca7ea67">cmr::fabric::DependencyHandler</a></li>
 <li>m_rotation_angle_tolerance&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a99d8d342045d4b818e6603ad2277ebd3">PositionControllerNode</a></li>
+<li>m_second_rotate_effort_pub&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#a505ed71bffc9629b4a08147b46011cb8">cmr::JoystickDirectControl</a></li>
 <li>m_seen_check_mutex&#160;:&#160;<a class="el" href="classcmr_1_1ProducerConsumerMockClock.html#a92247bfb5fd0452bab20cc94bc1f526a">cmr::ProducerConsumerMockClock&lt; ClockType &gt;</a></li>
 <li>m_seen_check_time&#160;:&#160;<a class="el" href="classcmr_1_1ProducerConsumerMockClock.html#a36844e8af0bff270689e397babc82e09">cmr::ProducerConsumerMockClock&lt; ClockType &gt;</a></li>
+<li>m_sens_scaler&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#ac9eb35c3f1f552fce814153654c6139c">cmr::JoystickDirectControl</a></li>
+<li>m_sensitivity&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#abcdf63e6615486c933e260df2701df25">cmr::JoystickDirectControl</a></li>
+<li>m_shoulder_effort_pub&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#ab64ad1c51d74a0c77d2eb9f81c0d9e85">cmr::JoystickDirectControl</a></li>
 <li>m_started_as_dep&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html#a4bbf2d973287077029bbb96aa8a7ea2a">cmr::fabric::DependencyHandler</a></li>
 <li>m_sub&#160;:&#160;<a class="el" href="classDemoNode.html#af647f4e96fd216ef866a9c5dd53bc479">DemoNode</a>, <a class="el" href="classFabricTestNode.html#a0cb3a6c48bb52b21794970081de8ff4c">FabricTestNode</a></li>
 <li>m_target_listener&#160;:&#160;<a class="el" href="classTestControllerClient.html#ad40b156300dfd87e52c9ba1c2dfee140">TestControllerClient</a></li>
 <li>m_target_server&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a63cb08342ac7768629f7dd45e153c065">PositionControllerNode</a></li>
 <li>m_tf_buffer&#160;:&#160;<a class="el" href="classPositionControllerNode.html#adae605ea5f14264d0d8864dd3f462d97">PositionControllerNode</a></li>
+<li>m_third_rotate_effort_pub&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#a35b88f3f5e9e29fe6817dc65bdd0a8a8">cmr::JoystickDirectControl</a></li>
+<li>m_third_tilt_effort_pub&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#a0fd333be79ab18731a540a2684fc9104">cmr::JoystickDirectControl</a></li>
 <li>m_thread&#160;:&#160;<a class="el" href="classDeferredCreationPolicy.html#a2bc392ee883a252d6ef6865572c14a7e">DeferredCreationPolicy</a>, <a class="el" href="classInstantCreationPolicy.html#acb619a18df7522aa5a8a36619689fd7b">InstantCreationPolicy</a></li>
 <li>m_time&#160;:&#160;<a class="el" href="classcmr_1_1ProducerConsumerMockClock.html#a4acb2d3773d77344890fa21c31c765b5">cmr::ProducerConsumerMockClock&lt; ClockType &gt;</a></li>
 <li>m_timer&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html#a207a15f6b8dd8b650145723e6df48544">cmr::fabric::FaultHandler</a></li>
@@ -126,7 +136,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2022 20:27:57 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Mon Oct 31 2022 23:31:58 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
