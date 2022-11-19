@@ -10,7 +10,7 @@ var searchData=
   ['clip_5fmatrix_7',['clip_matrix',['../namespacecmr__aruco_1_1transformations.html#ac22c491f257f0f993b0c7782234f7d9b',1,'cmr_aruco::transformations']]],
   ['cmr_5finvalid_8',['cmr_invalid',['../cmr__debug_8hpp.html#a963c6274d33940233116393b7883d348',1,'cmr_debug.hpp']]],
   ['cmr_5fnode_5ftest_9',['cmr_node_test',['../namespacetest__utils.html#a01a5539fc8e2ed149224ed569a5fc01b',1,'test_utils']]],
-  ['cmrraii_10',['CmrRAII',['../classCmrRAII.html#ace3d4b3435fb13df7cb1408ddf09e0d3',1,'CmrRAII::CmrRAII(T &amp;&amp;func, decltype(std::declval&lt; T &gt;()()) *=0)'],['../classCmrRAII.html#a25891fa2e6decb749e54d5aba02442c3',1,'CmrRAII::CmrRAII(const CmrRAII &amp;)=delete'],['../classCmrRAII.html#a06166f67c4cd1994d0cf28da12053226',1,'CmrRAII::CmrRAII(CmrRAII &amp;&amp;)=default']]],
+  ['cmrraii_10',['CmrRAII',['../classCmrRAII.html#a824ce5b0b377ac37f9a39c65b6225234',1,'CmrRAII::CmrRAII(Func &amp;&amp;func)'],['../classCmrRAII.html#a7055166dc42f85d65d578937a5379e99',1,'CmrRAII::CmrRAII(const Func &amp;func)'],['../classCmrRAII.html#adca8add80a977d2195f4fe7cf0699d2a',1,'CmrRAII::CmrRAII(const CmrRAII &amp;)=delete'],['../classCmrRAII.html#a75f78ac3cbf67f037735d42ee69431f3',1,'CmrRAII::CmrRAII(CmrRAII &amp;&amp;) noexcept=default']]],
   ['compose_5fmatrix_11',['compose_matrix',['../namespacecmr__aruco_1_1transformations.html#aa986e7e210e957f52cf34ab5b41a1043',1,'cmr_aruco::transformations']]],
   ['concatenate_5fmatrices_12',['concatenate_matrices',['../namespacecmr__aruco_1_1transformations.html#ad1e8630f2a456c9d997b74622a928821',1,'cmr_aruco::transformations']]],
   ['config_5ffabric_5fnodes_13',['config_fabric_nodes',['../namespacetest__utils.html#a4cf1895f06a28a5315f98439210a457d',1,'test_utils']]],
@@ -21,5 +21,6 @@ var searchData=
   ['create_5fdepender_18',['create_depender',['../fabric__test_8cpp.html#a632a5ca08f39b8631cbf93287ac6b909',1,'fabric_test.cpp']]],
   ['create_5fnotify_5fdeactivate_5fservice_19',['create_notify_deactivate_service',['../classcmr_1_1fabric_1_1DependencyHandler.html#a901dcb810f7108968b538db105348072',1,'cmr::fabric::DependencyHandler']]],
   ['create_5frelease_5fdependency_5fservice_20',['create_release_dependency_service',['../classcmr_1_1fabric_1_1DependencyHandler.html#a33e3afa521d462c4bd7b2e0e53c7a467',1,'cmr::fabric::DependencyHandler']]],
-  ['create_5ftest_5fthread_21',['create_test_thread',['../test__utils_8hpp.html#a6f2392f1a685d9dd4b914ac8975635bd',1,'test_utils.hpp']]]
+  ['create_5ftest_5fthread_21',['create_test_thread',['../test__utils_8hpp.html#a6f2392f1a685d9dd4b914ac8975635bd',1,'test_utils.hpp']]],
+  ['create_5ftest_5fthreads_22',['create_test_threads',['../controller__test_8cpp.html#a4616de58e893a5f59462f28383a1c3c4',1,'controller_test.cpp']]]
 ];

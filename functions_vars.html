@@ -123,8 +123,10 @@ $(function() {
 <li>m_activate_srv&#160;:&#160;<a class="el" href="classLifecycleManager.html#a6a13cdbf0dea5990f4f32051a951112b">LifecycleManager</a></li>
 <li>m_active_goals&#160;:&#160;<a class="el" href="classPositionControllerNode.html#adb5faa271543ec382c7e7ce98eff6eb6">PositionControllerNode</a></li>
 <li>m_angular_vel&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a9269d9cd85c5a9515417cd8a03a01320">PositionControllerNode</a></li>
+<li>m_axis_state&#160;:&#160;<a class="el" href="classcmr_1_1Joystick.html#a7f74d116fcfd4f7b338b87b73d9a7402">cmr::Joystick</a></li>
 <li>m_base_clock&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html#ae204a7c32e1a8914cfddb40ac1c64f92">cmr::fabric::FaultHandler</a></li>
 <li>m_base_rotate_effort_pub&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#a3f65da7bf607de979f0aa6fb978b4e4b">cmr::JoystickDirectControl</a></li>
+<li>m_buffer_timer&#160;:&#160;<a class="el" href="classcmr_1_1Joystick.html#a1c95d70e57ca3a0057c3b0ac07d9b35a">cmr::Joystick</a></li>
 <li>m_callback_group&#160;:&#160;<a class="el" href="classLifecycleManager.html#a3f255e8b0999d696e41adc9dbc3fc0c1">LifecycleManager</a></li>
 <li>m_check_clock&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html#a2f2ade64067d418fea47b912ad8959b0">cmr::fabric::FaultHandler</a></li>
 <li>m_cleanup_srv&#160;:&#160;<a class="el" href="classLifecycleManager.html#a3adfe97231de4e2bc0423249f88507fa">LifecycleManager</a></li>
@@ -134,12 +136,13 @@ $(function() {
 <li>m_dependencies&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html#af2781c574644a6e2db577e4b9b21c3e0">cmr::fabric::DependencyHandler</a></li>
 <li>m_dependency_manager&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ae40fc7e3cc4898364f7a9d6cabf992af">cmr::fabric::FabricNode</a></li>
 <li>m_dependers&#160;:&#160;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html#a622b6ab7b8cfbd7312d8a405c64586cb">cmr::fabric::DependencyHandler</a></li>
+<li>m_device_name&#160;:&#160;<a class="el" href="classcmr_1_1Joystick.html#a6d73b87c5716877ad547efebb4129449">cmr::Joystick</a></li>
 <li>m_elbow_effort_pub&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#a1682d612aa1a4953fcfc73fd44ae0537">cmr::JoystickDirectControl</a></li>
 <li>m_fail_activate&#160;:&#160;<a class="el" href="classFabricTestNode.html#a97b3627162138e77d7b9aa9f024324c6">FabricTestNode</a></li>
 <li>m_fail_activate_srv&#160;:&#160;<a class="el" href="classFabricTestNode.html#ae73d76813b80b7d1bae675561aa99fc0">FabricTestNode</a></li>
 <li>m_frame_broadcaster&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a8f90d3b29f8e2c91528279ff25fff5a5">PositionControllerNode</a></li>
 <li>m_frame_listener&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a76f482da9bbecaa0d76d18a1833e98c1">PositionControllerNode</a></li>
-<li>m_func&#160;:&#160;<a class="el" href="classCmrRAII.html#af7f36cf338f750c19134c3b7f3f55e36">CmrRAII</a>, <a class="el" href="classDeferredCreationPolicy.html#a1018786040354766ed1bd4c18d92b83f">DeferredCreationPolicy</a></li>
+<li>m_func&#160;:&#160;<a class="el" href="classCmrRAII.html#ac2de0387c868271543958114adb0c1e0">CmrRAII&lt; Func &gt;</a>, <a class="el" href="classDeferredCreationPolicy.html#a1018786040354766ed1bd4c18d92b83f">DeferredCreationPolicy</a></li>
 <li>m_goal_timer&#160;:&#160;<a class="el" href="classPositionControllerNode.html#ade9da3255fe4ac822b6bf55770ca24cc">PositionControllerNode</a></li>
 <li>m_hw_commands&#160;:&#160;<a class="el" href="classcmr__control_1_1DrivesSystemHardware.html#ac5e9facd437a065c16dcaa0aad731d0a">cmr_control::DrivesSystemHardware</a></li>
 <li>m_hw_control_modes&#160;:&#160;<a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#ac30a32298bc3ee9e886e4837af43cef9">cmr_control::BaseArmSystemHardware</a></li>
@@ -148,7 +151,9 @@ $(function() {
 <li>m_hw_positions&#160;:&#160;<a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#a86fa56a7219137e5b982ed7cc3a3a9d6">cmr_control::BaseArmSystemHardware</a>, <a class="el" href="classcmr__control_1_1DrivesSystemHardware.html#ae2cd3e077437462b083375e555bba0da">cmr_control::DrivesSystemHardware</a></li>
 <li>m_hw_velocities&#160;:&#160;<a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#ac78a1faac9f1a7d0aaf471385831e323">cmr_control::BaseArmSystemHardware</a>, <a class="el" href="classcmr__control_1_1DrivesSystemHardware.html#a17ee8196d5144ffa8d88fad24de56b43">cmr_control::DrivesSystemHardware</a></li>
 <li>m_is_activated&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#ae1e8de2f055cf0c269ebb1f3c1b51c39">cmr::JoystickDirectControl</a></li>
+<li>m_joystick_pub&#160;:&#160;<a class="el" href="classcmr_1_1Joystick.html#a80bdf4245ac4f0a64adefb8faf5384ad">cmr::Joystick</a></li>
 <li>m_joystick_sub&#160;:&#160;<a class="el" href="classcmr_1_1JoystickDirectControl.html#a8d797e981a52d0f94c521384b5c50ffc">cmr::JoystickDirectControl</a></li>
+<li>m_js&#160;:&#160;<a class="el" href="classcmr_1_1Joystick.html#aa70e8550d9e2b9ba356ba0609f4e6bf3">cmr::Joystick</a></li>
 <li>m_linear_vel&#160;:&#160;<a class="el" href="classPositionControllerNode.html#a798b45a0330999a97d3d5d355b74276c">PositionControllerNode</a></li>
 <li>m_mock_cv&#160;:&#160;<a class="el" href="classcmr_1_1ProducerConsumerMockClock.html#a8f21b375573f7c45e72cde512bd15d55">cmr::ProducerConsumerMockClock&lt; ClockType &gt;</a></li>
 <li>m_mock_mutex&#160;:&#160;<a class="el" href="classcmr_1_1ProducerConsumerMockClock.html#a1435b160a9352226af6ca54716a37dc0">cmr::ProducerConsumerMockClock&lt; ClockType &gt;</a></li>
@@ -218,10 +223,20 @@ $(function() {
 <li>toml_config&#160;:&#160;<a class="el" href="structcmr_1_1fabric_1_1FabricNodeConfig.html#a57349c03944f0edf0fb5c3f89610b348">cmr::fabric::FabricNodeConfig</a></li>
 <li>trigger_process&#160;:&#160;<a class="el" href="classtest__utils_1_1NodeLauncher.html#a18011e7678cba35ee5f36654cd7cc589">test_utils.NodeLauncher</a></li>
 </ul>
+
+
+<h3><a id="index_x" name="index_x"></a>- x -</h3><ul>
+<li>x&#160;:&#160;<a class="el" href="structcmr_1_1Joystick_1_1AxisState.html#ac81d4aeab9fe32bec7954f0ceaf957fb">cmr::Joystick::AxisState</a></li>
+</ul>
+
+
+<h3><a id="index_y" name="index_y"></a>- y -</h3><ul>
+<li>y&#160;:&#160;<a class="el" href="structcmr_1_1Joystick_1_1AxisState.html#a61239ad9573e1b5c1430bd5fb5366f8a">cmr::Joystick::AxisState</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 9 2022 14:00:31 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Nov 19 2022 23:34:05 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

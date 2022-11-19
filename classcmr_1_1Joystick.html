@@ -69,8 +69,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classcmr_1_1Joystick-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">cmr::Joystick Class Reference</div></div>
 </div><!--header-->
@@ -101,6 +103,12 @@ Collaboration diagram for cmr::Joystick:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcmr_1_1Joystick_1_1AxisState.html">AxisState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state of an axis.  <a href="structcmr_1_1Joystick_1_1AxisState.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ade24117dba51bdd2b4ca5083a44aaf36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#ade24117dba51bdd2b4ca5083a44aaf36">Joystick</a> (const std::optional&lt; <a class="el" href="structcmr_1_1fabric_1_1FabricNodeConfig.html">cmr::fabric::FabricNodeConfig</a> &gt; &amp;config=std::nullopt)</td></tr>
@@ -128,6 +136,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a4ffd3dbf7033f72127a74423b096bf96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a4ffd3dbf7033f72127a74423b096bf96">joystick_callback</a> (std::array&lt; <a class="el" href="structcmr_1_1Joystick_1_1AxisState.html">AxisState</a>, 3 &gt; &amp;axis_state) const</td></tr>
+<tr class="separator:a4ffd3dbf7033f72127a74423b096bf96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ec8ddc8c78b84afb973e4b92c857081"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a4ec8ddc8c78b84afb973e4b92c857081">configure</a> (const std::shared_ptr&lt; toml::Table &gt; &amp;table) override</td></tr>
 <tr class="memdesc:a4ec8ddc8c78b84afb973e4b92c857081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived class hook for configuring the node.  <a href="classcmr_1_1Joystick.html#a4ec8ddc8c78b84afb973e4b92c857081">More...</a><br /></td></tr>
 <tr class="separator:a4ec8ddc8c78b84afb973e4b92c857081"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +150,19 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aee045d042693a82acc3669c5c9b06368"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#aee045d042693a82acc3669c5c9b06368">cleanup</a> () override</td></tr>
 <tr class="memdesc:aee045d042693a82acc3669c5c9b06368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived class hook for cleanup.  <a href="classcmr_1_1Joystick.html#aee045d042693a82acc3669c5c9b06368">More...</a><br /></td></tr>
 <tr class="separator:aee045d042693a82acc3669c5c9b06368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6d73b87c5716877ad547efebb4129449"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a6d73b87c5716877ad547efebb4129449">m_device_name</a></td></tr>
+<tr class="separator:a6d73b87c5716877ad547efebb4129449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70e8550d9e2b9ba356ba0609f4e6bf3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#aa70e8550d9e2b9ba356ba0609f4e6bf3">m_js</a></td></tr>
+<tr class="separator:aa70e8550d9e2b9ba356ba0609f4e6bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c95d70e57ca3a0057c3b0ac07d9b35a"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::WallTimer&lt; std::function&lt; void()&gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a1c95d70e57ca3a0057c3b0ac07d9b35a">m_buffer_timer</a></td></tr>
+<tr class="separator:a1c95d70e57ca3a0057c3b0ac07d9b35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f74d116fcfd4f7b338b87b73d9a7402"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structcmr_1_1Joystick_1_1AxisState.html">AxisState</a>, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a7f74d116fcfd4f7b338b87b73d9a7402">m_axis_state</a> {}</td></tr>
+<tr class="separator:a7f74d116fcfd4f7b338b87b73d9a7402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80bdf4245ac4f0a64adefb8faf5384ad"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; cmr_msgs::msg::JoystickReading &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a80bdf4245ac4f0a64adefb8faf5384ad">m_joystick_pub</a></td></tr>
+<tr class="separator:a80bdf4245ac4f0a64adefb8faf5384ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -329,6 +352,143 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a4ffd3dbf7033f72127a74423b096bf96" name="a4ffd3dbf7033f72127a74423b096bf96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ffd3dbf7033f72127a74423b096bf96">&#9670;&nbsp;</a></span>joystick_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmr::Joystick::joystick_callback </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; <a class="el" href="structcmr_1_1Joystick_1_1AxisState.html">AxisState</a>, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>axis_state</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7f74d116fcfd4f7b338b87b73d9a7402" name="a7f74d116fcfd4f7b338b87b73d9a7402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f74d116fcfd4f7b338b87b73d9a7402">&#9670;&nbsp;</a></span>m_axis_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="structcmr_1_1Joystick_1_1AxisState.html">AxisState</a>, 3&gt; cmr::Joystick::m_axis_state {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c95d70e57ca3a0057c3b0ac07d9b35a" name="a1c95d70e57ca3a0057c3b0ac07d9b35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c95d70e57ca3a0057c3b0ac07d9b35a">&#9670;&nbsp;</a></span>m_buffer_timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp::WallTimer&lt;std::function&lt;void()&gt; &gt; &gt; cmr::Joystick::m_buffer_timer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d73b87c5716877ad547efebb4129449" name="a6d73b87c5716877ad547efebb4129449"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d73b87c5716877ad547efebb4129449">&#9670;&nbsp;</a></span>m_device_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string cmr::Joystick::m_device_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80bdf4245ac4f0a64adefb8faf5384ad" name="a80bdf4245ac4f0a64adefb8faf5384ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80bdf4245ac4f0a64adefb8faf5384ad">&#9670;&nbsp;</a></span>m_joystick_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt;cmr_msgs::msg::JoystickReading&gt; &gt; cmr::Joystick::m_joystick_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa70e8550d9e2b9ba356ba0609f4e6bf3" name="aa70e8550d9e2b9ba356ba0609f4e6bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa70e8550d9e2b9ba356ba0609f4e6bf3">&#9670;&nbsp;</a></span>m_js</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cmr::Joystick::m_js</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/cmr_bs/include/cmr_bs/<a class="el" href="joystick_8hpp_source.html">joystick.hpp</a></li>
 <li>src/cmr_bs/src/<a class="el" href="joystick_8cpp.html">joystick.cpp</a></li>
@@ -336,7 +496,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 9 2022 14:00:31 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Nov 19 2022 23:34:04 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

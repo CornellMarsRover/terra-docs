@@ -4,5 +4,6 @@ var searchData=
   ['arcball_1',['Arcball',['../classcmr__aruco_1_1transformations_1_1Arcball.html',1,'cmr_aruco::transformations']]],
   ['armeffortcontrol_2',['ArmEffortControl',['../classcmr__demo__py_1_1arm__effort__control_1_1ArmEffortControl.html',1,'cmr_demo_py::arm_effort_control']]],
   ['armsystemhardware_3',['ArmSystemHardware',['../classcmr__control_1_1ArmSystemHardware.html',1,'cmr_control']]],
-  ['aruconode_4',['ArucoNode',['../classcmr__aruco_1_1aruco__node_1_1ArucoNode.html',1,'cmr_aruco::aruco_node']]]
+  ['aruconode_4',['ArucoNode',['../classcmr__aruco_1_1aruco__node_1_1ArucoNode.html',1,'cmr_aruco::aruco_node']]],
+  ['axisstate_5',['AxisState',['../structcmr_1_1Joystick_1_1AxisState.html',1,'cmr::Joystick']]]
 ];

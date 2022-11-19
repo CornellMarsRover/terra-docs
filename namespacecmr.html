@@ -97,6 +97,11 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:afe1150d9a4e5c7e7e7239da992ea4a01"><td class="memItemLeft" align="right" valign="top">std::optional&lt; js_event &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#afe1150d9a4e5c7e7e7239da992ea4a01">read_event</a> (int fd)</td></tr>
+<tr class="separator:afe1150d9a4e5c7e7e7239da992ea4a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0832a34d86974d3a62478055b9027a2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#ad0832a34d86974d3a62478055b9027a2">get_axis_state</a> (const js_event &amp;event, std::array&lt; <a class="el" href="structcmr_1_1Joystick_1_1AxisState.html">Joystick::AxisState</a>, 3 &gt; &amp;axis_state)</td></tr>
+<tr class="memdesc:ad0832a34d86974d3a62478055b9027a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keeps track of the current axis state.  <a href="namespacecmr.html#ad0832a34d86974d3a62478055b9027a2">More...</a><br /></td></tr>
+<tr class="separator:ad0832a34d86974d3a62478055b9027a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea21691c16a0393db1724888ce768b5f"><td class="memTemplParams" colspan="2">template&lt;typename SrvT &gt; </td></tr>
 <tr class="memitem:aea21691c16a0393db1724888ce768b5f"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; std::shared_ptr&lt; typename SrvT::Response &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr.html#aea21691c16a0393db1724888ce768b5f">send_request</a> (const std::string &amp;service_name, const std::shared_ptr&lt; typename SrvT::Request &gt; request, std::chrono::seconds timeout=std::chrono::seconds(5))</td></tr>
 <tr class="memdesc:aea21691c16a0393db1724888ce768b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spins up a service client owned by a temporary node and calls the service with the given request.  <a href="namespacecmr.html#aea21691c16a0393db1724888ce768b5f">More...</a><br /></td></tr>
@@ -154,6 +159,56 @@ Example</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>formatted string </dd></dl>
+
+</div>
+</div>
+<a id="ad0832a34d86974d3a62478055b9027a2" name="ad0832a34d86974d3a62478055b9027a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0832a34d86974d3a62478055b9027a2">&#9670;&nbsp;</a></span>get_axis_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t cmr::get_axis_state </td>
+          <td>(</td>
+          <td class="paramtype">const js_event &amp;&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; <a class="el" href="structcmr_1_1Joystick_1_1AxisState.html">Joystick::AxisState</a>, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>axis_state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Keeps track of the current axis state. </p>
+<p >NOTE: This function assumes that axes are numbered starting from 0, and that the X axis is an even number, and the Y axis is an odd number. However, this is usually a safe assumption.</p>
+<p >Returns the axis that the event indicated. </p>
+
+</div>
+</div>
+<a id="afe1150d9a4e5c7e7e7239da992ea4a01" name="afe1150d9a4e5c7e7e7239da992ea4a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe1150d9a4e5c7e7e7239da992ea4a01">&#9670;&nbsp;</a></span>read_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; js_event &gt; cmr::read_event </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -264,7 +319,7 @@ template&lt;typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 9 2022 14:00:31 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Nov 19 2022 23:34:04 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

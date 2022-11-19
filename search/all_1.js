@@ -25,5 +25,6 @@ var searchData=
   ['aruco_5fnode_2epy_22',['aruco_node.py',['../aruco__node_8py.html',1,'']]],
   ['aruco_5fparameters_23',['aruco_parameters',['../classcmr__aruco_1_1aruco__node_1_1ArucoNode.html#a8f07985dd5a36f61485ca6ccd81f6d97',1,'cmr_aruco::aruco_node::ArucoNode']]],
   ['aruconode_24',['ArucoNode',['../classcmr__aruco_1_1aruco__node_1_1ArucoNode.html',1,'cmr_aruco::aruco_node']]],
-  ['assert_5fhandler_5ft_25',['assert_handler_t',['../cmr__debug_8hpp.html#a4c8d434b28f375ac8bbbc2bb08d702b1',1,'cmr_debug.hpp']]]
+  ['assert_5fhandler_5ft_25',['assert_handler_t',['../cmr__debug_8hpp.html#a4c8d434b28f375ac8bbbc2bb08d702b1',1,'cmr_debug.hpp']]],
+  ['axisstate_26',['AxisState',['../structcmr_1_1Joystick_1_1AxisState.html',1,'cmr::Joystick']]]
 ];
