@@ -144,30 +144,36 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:abe12ee7c7c9e2ad38c1842ba934bbfa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#abe12ee7c7c9e2ad38c1842ba934bbfa8">update_arm_position</a> (const cmr_msgs::msg::JoystickReading &amp;msg)</td></tr>
 <tr class="memdesc:abe12ee7c7c9e2ad38c1842ba934bbfa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">update_arm_position is the callback function for when the subscriber receives a message from the joystick hardware.  <a href="classcmr_1_1JoystickDirectControl.html#abe12ee7c7c9e2ad38c1842ba934bbfa8">More...</a><br /></td></tr>
 <tr class="separator:abe12ee7c7c9e2ad38c1842ba934bbfa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32318e96cca46db3af23015ef0ecbe6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#a32318e96cca46db3af23015ef0ecbe6a">toggle_off_callback</a> ()</td></tr>
+<tr class="memdesc:a32318e96cca46db3af23015ef0ecbe6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback called periodically to turn off the motors if the joystick hasn't been used in a while.  <a href="classcmr_1_1JoystickDirectControl.html#a32318e96cca46db3af23015ef0ecbe6a">More...</a><br /></td></tr>
+<tr class="separator:a32318e96cca46db3af23015ef0ecbe6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a8d797e981a52d0f94c521384b5c50ffc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Subscription&lt; cmr_msgs::msg::JoystickReading &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#a8d797e981a52d0f94c521384b5c50ffc">m_joystick_sub</a></td></tr>
-<tr class="memdesc:a8d797e981a52d0f94c521384b5c50ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishers and subcribers declared here.  <a href="classcmr_1_1JoystickDirectControl.html#a8d797e981a52d0f94c521384b5c50ffc">More...</a><br /></td></tr>
+<tr class="memdesc:a8d797e981a52d0f94c521384b5c50ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">listens for messages from the joystick hardware  <a href="classcmr_1_1JoystickDirectControl.html#a8d797e981a52d0f94c521384b5c50ffc">More...</a><br /></td></tr>
 <tr class="separator:a8d797e981a52d0f94c521384b5c50ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f65da7bf607de979f0aa6fb978b4e4b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; cmr_msgs::msg::ArmJointEffort &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#a3f65da7bf607de979f0aa6fb978b4e4b">m_base_rotate_effort_pub</a></td></tr>
-<tr class="separator:a3f65da7bf607de979f0aa6fb978b4e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab64ad1c51d74a0c77d2eb9f81c0d9e85"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; cmr_msgs::msg::ArmJointEffort &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#ab64ad1c51d74a0c77d2eb9f81c0d9e85">m_shoulder_effort_pub</a></td></tr>
-<tr class="separator:ab64ad1c51d74a0c77d2eb9f81c0d9e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1682d612aa1a4953fcfc73fd44ae0537"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; cmr_msgs::msg::ArmJointEffort &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#a1682d612aa1a4953fcfc73fd44ae0537">m_elbow_effort_pub</a></td></tr>
-<tr class="separator:a1682d612aa1a4953fcfc73fd44ae0537"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a505ed71bffc9629b4a08147b46011cb8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; cmr_msgs::msg::ArmJointEffort &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#a505ed71bffc9629b4a08147b46011cb8">m_second_rotate_effort_pub</a></td></tr>
-<tr class="separator:a505ed71bffc9629b4a08147b46011cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fd333be79ab18731a540a2684fc9104"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; cmr_msgs::msg::ArmJointEffort &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#a0fd333be79ab18731a540a2684fc9104">m_third_tilt_effort_pub</a></td></tr>
-<tr class="separator:a0fd333be79ab18731a540a2684fc9104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35b88f3f5e9e29fe6817dc65bdd0a8a8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; cmr_msgs::msg::ArmJointEffort &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#a35b88f3f5e9e29fe6817dc65bdd0a8a8">m_third_rotate_effort_pub</a></td></tr>
-<tr class="separator:a35b88f3f5e9e29fe6817dc65bdd0a8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af018a4b0d9a1a20caaaa1b0697e142f0"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; std_msgs::msg::Float64MultiArray &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#af018a4b0d9a1a20caaaa1b0697e142f0">m_arm_control_pub</a></td></tr>
+<tr class="memdesc:af018a4b0d9a1a20caaaa1b0697e142f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">publishes messages to the ros2 control hardware interface  <a href="classcmr_1_1JoystickDirectControl.html#af018a4b0d9a1a20caaaa1b0697e142f0">More...</a><br /></td></tr>
+<tr class="separator:af018a4b0d9a1a20caaaa1b0697e142f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcdf63e6615486c933e260df2701df25"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#abcdf63e6615486c933e260df2701df25">m_sensitivity</a></td></tr>
 <tr class="separator:abcdf63e6615486c933e260df2701df25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9eb35c3f1f552fce814153654c6139c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#ac9eb35c3f1f552fce814153654c6139c">m_sens_scaler</a></td></tr>
 <tr class="separator:ac9eb35c3f1f552fce814153654c6139c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1e8de2f055cf0c269ebb1f3c1b51c39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#ae1e8de2f055cf0c269ebb1f3c1b51c39">m_is_activated</a></td></tr>
 <tr class="separator:ae1e8de2f055cf0c269ebb1f3c1b51c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13fa696b5e3033183c21e2abb8679979"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763">ArmSegment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#a13fa696b5e3033183c21e2abb8679979">m_active_segment</a></td></tr>
+<tr class="memdesc:a13fa696b5e3033183c21e2abb8679979"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current arm segment being controlled.  <a href="classcmr_1_1JoystickDirectControl.html#a13fa696b5e3033183c21e2abb8679979">More...</a><br /></td></tr>
+<tr class="separator:a13fa696b5e3033183c21e2abb8679979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a330ec86efa53774cb3cb4357b3738c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::WallTimer&lt; std::function&lt; void()&gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#a1a330ec86efa53774cb3cb4357b3738c">m_timer</a></td></tr>
+<tr class="memdesc:a1a330ec86efa53774cb3cb4357b3738c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer to toggle motors off.  <a href="classcmr_1_1JoystickDirectControl.html#a1a330ec86efa53774cb3cb4357b3738c">More...</a><br /></td></tr>
+<tr class="separator:a1a330ec86efa53774cb3cb4357b3738c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0971d85bb4394ba4d122604d57db916"><td class="memItemLeft" align="right" valign="top">rclcpp::Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#af0971d85bb4394ba4d122604d57db916">m_last_msg_time</a></td></tr>
+<tr class="memdesc:af0971d85bb4394ba4d122604d57db916"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last time we wrote to the hadware interface.  <a href="classcmr_1_1JoystickDirectControl.html#af0971d85bb4394ba4d122604d57db916">More...</a><br /></td></tr>
+<tr class="separator:af0971d85bb4394ba4d122604d57db916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1caae2fcdf2812cb2c8df45501ec553"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#ae1caae2fcdf2812cb2c8df45501ec553">m_dirty</a></td></tr>
+<tr class="memdesc:ae1caae2fcdf2812cb2c8df45501ec553"><td class="mdescLeft">&#160;</td><td class="mdescRight">If we wrote to the hardware interface after the last time we toggled controls off.  <a href="classcmr_1_1JoystickDirectControl.html#ae1caae2fcdf2812cb2c8df45501ec553">More...</a><br /></td></tr>
+<tr class="separator:ae1caae2fcdf2812cb2c8df45501ec553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -359,6 +365,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a32318e96cca46db3af23015ef0ecbe6a" name="a32318e96cca46db3af23015ef0ecbe6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32318e96cca46db3af23015ef0ecbe6a">&#9670;&nbsp;</a></span>toggle_off_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmr::JoystickDirectControl::toggle_off_callback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback called periodically to turn off the motors if the joystick hasn't been used in a while. </p>
+
+</div>
+</div>
 <a id="abe12ee7c7c9e2ad38c1842ba934bbfa8" name="abe12ee7c7c9e2ad38c1842ba934bbfa8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe12ee7c7c9e2ad38c1842ba934bbfa8">&#9670;&nbsp;</a></span>update_arm_position()</h2>
 
@@ -389,8 +422,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3f65da7bf607de979f0aa6fb978b4e4b" name="a3f65da7bf607de979f0aa6fb978b4e4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f65da7bf607de979f0aa6fb978b4e4b">&#9670;&nbsp;</a></span>m_base_rotate_effort_pub</h2>
+<a id="a13fa696b5e3033183c21e2abb8679979" name="a13fa696b5e3033183c21e2abb8679979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13fa696b5e3033183c21e2abb8679979">&#9670;&nbsp;</a></span>m_active_segment</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -399,7 +432,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt;cmr_msgs::msg::ArmJointEffort&gt; &gt; cmr::JoystickDirectControl::m_base_rotate_effort_pub</td>
+          <td class="memname"><a class="el" href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763">ArmSegment</a> cmr::JoystickDirectControl::m_active_segment</td>
         </tr>
       </table>
   </td>
@@ -409,10 +442,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The current arm segment being controlled. </p>
+
 </div>
 </div>
-<a id="a1682d612aa1a4953fcfc73fd44ae0537" name="a1682d612aa1a4953fcfc73fd44ae0537"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1682d612aa1a4953fcfc73fd44ae0537">&#9670;&nbsp;</a></span>m_elbow_effort_pub</h2>
+<a id="af018a4b0d9a1a20caaaa1b0697e142f0" name="af018a4b0d9a1a20caaaa1b0697e142f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af018a4b0d9a1a20caaaa1b0697e142f0">&#9670;&nbsp;</a></span>m_arm_control_pub</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,7 +456,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt;cmr_msgs::msg::ArmJointEffort&gt; &gt; cmr::JoystickDirectControl::m_elbow_effort_pub</td>
+          <td class="memname">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt;std_msgs::msg::Float64MultiArray&gt; &gt; cmr::JoystickDirectControl::m_arm_control_pub</td>
         </tr>
       </table>
   </td>
@@ -430,6 +465,32 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>publishes messages to the ros2 control hardware interface </p>
+
+</div>
+</div>
+<a id="ae1caae2fcdf2812cb2c8df45501ec553" name="ae1caae2fcdf2812cb2c8df45501ec553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1caae2fcdf2812cb2c8df45501ec553">&#9670;&nbsp;</a></span>m_dirty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cmr::JoystickDirectControl::m_dirty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If we wrote to the hardware interface after the last time we toggled controls off. </p>
 
 </div>
 </div>
@@ -475,13 +536,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Publishers and subcribers declared here. </p>
-<p >One subscriber listens for messages from the joystick hardware, and one publisher for each individual joint motor. </p>
+<p>listens for messages from the joystick hardware </p>
 
 </div>
 </div>
-<a id="a505ed71bffc9629b4a08147b46011cb8" name="a505ed71bffc9629b4a08147b46011cb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a505ed71bffc9629b4a08147b46011cb8">&#9670;&nbsp;</a></span>m_second_rotate_effort_pub</h2>
+<a id="af0971d85bb4394ba4d122604d57db916" name="af0971d85bb4394ba4d122604d57db916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0971d85bb4394ba4d122604d57db916">&#9670;&nbsp;</a></span>m_last_msg_time</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -490,7 +550,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt;cmr_msgs::msg::ArmJointEffort&gt; &gt; cmr::JoystickDirectControl::m_second_rotate_effort_pub</td>
+          <td class="memname">rclcpp::Time cmr::JoystickDirectControl::m_last_msg_time</td>
         </tr>
       </table>
   </td>
@@ -499,6 +559,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The last time we wrote to the hadware interface. </p>
 
 </div>
 </div>
@@ -546,8 +608,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ab64ad1c51d74a0c77d2eb9f81c0d9e85" name="ab64ad1c51d74a0c77d2eb9f81c0d9e85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab64ad1c51d74a0c77d2eb9f81c0d9e85">&#9670;&nbsp;</a></span>m_shoulder_effort_pub</h2>
+<a id="a1a330ec86efa53774cb3cb4357b3738c" name="a1a330ec86efa53774cb3cb4357b3738c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a330ec86efa53774cb3cb4357b3738c">&#9670;&nbsp;</a></span>m_timer</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -556,7 +618,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt;cmr_msgs::msg::ArmJointEffort&gt; &gt; cmr::JoystickDirectControl::m_shoulder_effort_pub</td>
+          <td class="memname">std::shared_ptr&lt;rclcpp::WallTimer&lt;std::function&lt;void()&gt; &gt; &gt; cmr::JoystickDirectControl::m_timer</td>
         </tr>
       </table>
   </td>
@@ -566,49 +628,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a35b88f3f5e9e29fe6817dc65bdd0a8a8" name="a35b88f3f5e9e29fe6817dc65bdd0a8a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35b88f3f5e9e29fe6817dc65bdd0a8a8">&#9670;&nbsp;</a></span>m_third_rotate_effort_pub</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt;cmr_msgs::msg::ArmJointEffort&gt; &gt; cmr::JoystickDirectControl::m_third_rotate_effort_pub</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0fd333be79ab18731a540a2684fc9104" name="a0fd333be79ab18731a540a2684fc9104"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fd333be79ab18731a540a2684fc9104">&#9670;&nbsp;</a></span>m_third_tilt_effort_pub</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt;cmr_msgs::msg::ArmJointEffort&gt; &gt; cmr::JoystickDirectControl::m_third_tilt_effort_pub</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Timer to toggle motors off. </p>
 
 </div>
 </div>
@@ -619,7 +639,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 19 2022 23:34:04 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Nov 20 2022 00:27:01 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

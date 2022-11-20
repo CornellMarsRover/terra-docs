@@ -67,7 +67,9 @@ $(function() {
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">cmr Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -95,6 +97,15 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A non-mocked clock.  <a href="classcmr_1_1RealClock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a31edbda5c9f35af6b6c4dfcb6b77c763"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763">ArmSegment</a> : uint8_t { <a class="el" href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763a095a1b43effec73955e31e790438de49">Base</a> = 0
+, <a class="el" href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763a5ea53619e3ad29fce5f9bcb86b4625e7">Elbow</a>
+, <a class="el" href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763a4596b383ef8a39fa1d316b94cd9eb3fb">Wrist</a>
+ }</td></tr>
+<tr class="memdesc:a31edbda5c9f35af6b6c4dfcb6b77c763"><td class="mdescLeft">&#160;</td><td class="mdescRight">An ArmSegment is a segment of the arm that can be controlled by mutiple joints for multiple degrees of freedom.  <a href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763">More...</a><br /></td></tr>
+<tr class="separator:a31edbda5c9f35af6b6c4dfcb6b77c763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:afe1150d9a4e5c7e7e7239da992ea4a01"><td class="memItemLeft" align="right" valign="top">std::optional&lt; js_event &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#afe1150d9a4e5c7e7e7239da992ea4a01">read_event</a> (int fd)</td></tr>
@@ -114,7 +125,54 @@ Functions</h2></td></tr>
 <tr class="memitem:afbfa839675165c84ac3472908cafa711"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr.html#afbfa839675165c84ac3472908cafa711">build_string</a> (Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:afbfa839675165c84ac3472908cafa711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a string by concatenating together the arguments via streams.  <a href="namespacecmr.html#afbfa839675165c84ac3472908cafa711">More...</a><br /></td></tr>
 <tr class="separator:afbfa839675165c84ac3472908cafa711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae7b10cd4c0b95c00f762613af7d7e66d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#ae7b10cd4c0b95c00f762613af7d7e66d">base_rotate_idx</a> = 0</td></tr>
+<tr class="separator:ae7b10cd4c0b95c00f762613af7d7e66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f5acb3e2e352c5086e636f2c6cb94f0"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#a8f5acb3e2e352c5086e636f2c6cb94f0">shoulder_idx</a> = 1</td></tr>
+<tr class="separator:a8f5acb3e2e352c5086e636f2c6cb94f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6535a4da4b12832b62cce5f425a981"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#aca6535a4da4b12832b62cce5f425a981">elbow_idx</a> = 2</td></tr>
+<tr class="separator:aca6535a4da4b12832b62cce5f425a981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc648bd567c2d393cdfcca38916d9a24"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#acc648bd567c2d393cdfcca38916d9a24">second_rotate_idx</a> = 3</td></tr>
+<tr class="separator:acc648bd567c2d393cdfcca38916d9a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac134dd72fde6166d13555618d899963e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#ac134dd72fde6166d13555618d899963e">third_tilt_idx</a> = 4</td></tr>
+<tr class="separator:ac134dd72fde6166d13555618d899963e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbfd3bf10da11f8a2ce610fe264e8aa7"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#abbfd3bf10da11f8a2ce610fe264e8aa7">third_rotate_idx</a> = 5</td></tr>
+<tr class="separator:abbfd3bf10da11f8a2ce610fe264e8aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c15c4bb23c08bfbf65b013070c7196"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#ad8c15c4bb23c08bfbf65b013070c7196">end_effector_idx</a> = 6</td></tr>
+<tr class="separator:ad8c15c4bb23c08bfbf65b013070c7196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a31edbda5c9f35af6b6c4dfcb6b77c763" name="a31edbda5c9f35af6b6c4dfcb6b77c763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31edbda5c9f35af6b6c4dfcb6b77c763">&#9670;&nbsp;</a></span>ArmSegment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763">cmr::ArmSegment</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An ArmSegment is a segment of the arm that can be controlled by mutiple joints for multiple degrees of freedom. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a31edbda5c9f35af6b6c4dfcb6b77c763a095a1b43effec73955e31e790438de49" name="a31edbda5c9f35af6b6c4dfcb6b77c763a095a1b43effec73955e31e790438de49"></a>Base&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a31edbda5c9f35af6b6c4dfcb6b77c763a5ea53619e3ad29fce5f9bcb86b4625e7" name="a31edbda5c9f35af6b6c4dfcb6b77c763a5ea53619e3ad29fce5f9bcb86b4625e7"></a>Elbow&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a31edbda5c9f35af6b6c4dfcb6b77c763a4596b383ef8a39fa1d316b94cd9eb3fb" name="a31edbda5c9f35af6b6c4dfcb6b77c763a4596b383ef8a39fa1d316b94cd9eb3fb"></a>Wrist&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="afbfa839675165c84ac3472908cafa711" name="afbfa839675165c84ac3472908cafa711"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbfa839675165c84ac3472908cafa711">&#9670;&nbsp;</a></span>build_string()</h2>
@@ -316,10 +374,165 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ae7b10cd4c0b95c00f762613af7d7e66d" name="ae7b10cd4c0b95c00f762613af7d7e66d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b10cd4c0b95c00f762613af7d7e66d">&#9670;&nbsp;</a></span>base_rotate_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto cmr::base_rotate_idx = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca6535a4da4b12832b62cce5f425a981" name="aca6535a4da4b12832b62cce5f425a981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca6535a4da4b12832b62cce5f425a981">&#9670;&nbsp;</a></span>elbow_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto cmr::elbow_idx = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8c15c4bb23c08bfbf65b013070c7196" name="ad8c15c4bb23c08bfbf65b013070c7196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c15c4bb23c08bfbf65b013070c7196">&#9670;&nbsp;</a></span>end_effector_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto cmr::end_effector_idx = 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc648bd567c2d393cdfcca38916d9a24" name="acc648bd567c2d393cdfcca38916d9a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc648bd567c2d393cdfcca38916d9a24">&#9670;&nbsp;</a></span>second_rotate_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto cmr::second_rotate_idx = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f5acb3e2e352c5086e636f2c6cb94f0" name="a8f5acb3e2e352c5086e636f2c6cb94f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f5acb3e2e352c5086e636f2c6cb94f0">&#9670;&nbsp;</a></span>shoulder_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto cmr::shoulder_idx = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbfd3bf10da11f8a2ce610fe264e8aa7" name="abbfd3bf10da11f8a2ce610fe264e8aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbfd3bf10da11f8a2ce610fe264e8aa7">&#9670;&nbsp;</a></span>third_rotate_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto cmr::third_rotate_idx = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac134dd72fde6166d13555618d899963e" name="ac134dd72fde6166d13555618d899963e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac134dd72fde6166d13555618d899963e">&#9670;&nbsp;</a></span>third_tilt_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto cmr::third_tilt_idx = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 19 2022 23:34:04 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Nov 20 2022 00:27:01 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

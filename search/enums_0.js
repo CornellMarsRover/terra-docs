@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['deactivationreason_0',['DeactivationReason',['../namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aa',1,'cmr::fabric']]]
+  ['armsegment_0',['ArmSegment',['../namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763',1,'cmr']]]
 ];
