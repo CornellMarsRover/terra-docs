@@ -1,8 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,205,108"/>
-<area shape="rect" id="node2" href="$classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes." alt="" coords="253,81,408,108"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,205,133"/>
+<area shape="rect" id="node2" href="$classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes." alt="" coords="253,107,408,133"/>
 <area shape="rect" id="node3" href="$classDemoNode.html" title=" " alt="" coords="499,5,586,32"/>
 <area shape="rect" id="node4" href="$classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling." alt="" coords="485,56,600,83"/>
-<area shape="rect" id="node5" href="$classcmr_1_1Joystick.html" title="Joystick" alt="" coords="493,107,592,133"/>
-<area shape="rect" id="node6" href="$classcmr_1_1JoystickDirectControl.html" title="The JoystickDirectControl node is the node called to activate arm control via direct joystick control..." alt="" coords="456,157,629,184"/>
+<area shape="rect" id="node5" href="$classcmr_1_1CameraNode.html" title="CameraNode" alt="" coords="479,107,606,133"/>
+<area shape="rect" id="node6" href="$classcmr_1_1Joystick.html" title="Joystick" alt="" coords="493,157,592,184"/>
+<area shape="rect" id="node7" href="$classcmr_1_1JoystickDirectControl.html" title="The JoystickDirectControl node is the node called to activate arm control via direct joystick control..." alt="" coords="456,208,629,235"/>
 </map>

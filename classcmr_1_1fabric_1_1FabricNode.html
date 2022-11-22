@@ -87,12 +87,13 @@ Inheritance diagram for cmr::fabric::FabricNode:</div>
 <div class="dyncontent">
 <div class="center"><img src="classcmr_1_1fabric_1_1FabricNode__inherit__graph.png" border="0" usemap="#acmr_1_1fabric_1_1FabricNode_inherit__map" alt="Inheritance graph"/></div>
 <map name="acmr_1_1fabric_1_1FabricNode_inherit__map" id="acmr_1_1fabric_1_1FabricNode_inherit__map">
-<area shape="rect" title="The FabricNode is the base class for All CMR nodes." alt="" coords="162,80,317,107"/>
+<area shape="rect" title="The FabricNode is the base class for All CMR nodes." alt="" coords="242,80,397,107"/>
 <area shape="rect" href="classDemoNode.html" title=" " alt="" coords="5,155,92,181"/>
 <area shape="rect" href="classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling." alt="" coords="117,155,231,181"/>
-<area shape="rect" href="classcmr_1_1Joystick.html" title="Joystick" alt="" coords="255,155,354,181"/>
-<area shape="rect" href="classcmr_1_1JoystickDirectControl.html" title="The JoystickDirectControl node is the node called to activate arm control via direct joystick control..." alt="" coords="378,155,551,181"/>
-<area shape="rect" title=" " alt="" coords="139,5,339,32"/>
+<area shape="rect" href="classcmr_1_1CameraNode.html" title="CameraNode" alt="" coords="256,155,383,181"/>
+<area shape="rect" href="classcmr_1_1Joystick.html" title="Joystick" alt="" coords="407,155,506,181"/>
+<area shape="rect" href="classcmr_1_1JoystickDirectControl.html" title="The JoystickDirectControl node is the node called to activate arm control via direct joystick control..." alt="" coords="530,155,703,181"/>
+<area shape="rect" title=" " alt="" coords="219,5,419,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -282,7 +283,7 @@ Private Attributes</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a18d9dd0458e395d403f3cf48c457e4e1" title="Derived class hook for deactivation.">FabricNode::deactivate</a></code> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false otherwise which will cause transition to <code>ErrorProcessing</code> </dd></dl>
 
-<p>Implemented in <a class="el" href="classcmr_1_1JoystickDirectControl.html#ac8f8d6e83fbdfcebc1aa4885ab6304f7">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1Joystick.html#aaad84e82a27b821aa4e15a79bf57c7ee">cmr::Joystick</a>, <a class="el" href="classDemoNode.html#afa0810bcb07ce082ee3f14449ed8ed91">DemoNode</a>, and <a class="el" href="classFabricTestNode.html#a0ae429c0522cd7e890a557a17b0f31fb">FabricTestNode</a>.</p>
+<p>Implemented in <a class="el" href="classcmr_1_1JoystickDirectControl.html#ac8f8d6e83fbdfcebc1aa4885ab6304f7">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1Joystick.html#aaad84e82a27b821aa4e15a79bf57c7ee">cmr::Joystick</a>, <a class="el" href="classcmr_1_1CameraNode.html#aa3586eb77bcb42379f18fc173cb61345">cmr::CameraNode</a>, <a class="el" href="classDemoNode.html#afa0810bcb07ce082ee3f14449ed8ed91">DemoNode</a>, and <a class="el" href="classFabricTestNode.html#a0ae429c0522cd7e890a557a17b0f31fb">FabricTestNode</a>.</p>
 
 </div>
 </div>
@@ -316,7 +317,7 @@ Private Attributes</h2></td></tr>
 <p>This should essentially undo <code><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a48bff2e55c9f6a9838197ec4dae3f529" title="Derived class hook for configuring the node.">configure()</a></code></p>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false otherwise which will cause transition to <code>ErrorProcessing</code> </dd></dl>
 
-<p>Implemented in <a class="el" href="classcmr_1_1JoystickDirectControl.html#ae1e29f0207bdbe81828373cafcd7aba8">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1Joystick.html#aee045d042693a82acc3669c5c9b06368">cmr::Joystick</a>, <a class="el" href="classDemoNode.html#a9d2c3b2c522edf0e6914675c54195d50">DemoNode</a>, and <a class="el" href="classFabricTestNode.html#a5fd2b502118f97efb318a45c44fcf76b">FabricTestNode</a>.</p>
+<p>Implemented in <a class="el" href="classcmr_1_1JoystickDirectControl.html#ae1e29f0207bdbe81828373cafcd7aba8">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1Joystick.html#aee045d042693a82acc3669c5c9b06368">cmr::Joystick</a>, <a class="el" href="classcmr_1_1CameraNode.html#a1e67ff9f17003aed60a4d1df66f2c8d6">cmr::CameraNode</a>, <a class="el" href="classDemoNode.html#a9d2c3b2c522edf0e6914675c54195d50">DemoNode</a>, and <a class="el" href="classFabricTestNode.html#a5fd2b502118f97efb318a45c44fcf76b">FabricTestNode</a>.</p>
 
 </div>
 </div>
@@ -387,7 +388,7 @@ Private Attributes</h2></td></tr>
 </blockquote>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false otherwise which will cause transition to <code>ErrorProcessing</code> </dd></dl>
 
-<p>Implemented in <a class="el" href="classFabricTestNode.html#a5fad657e9c6844011fcc71682480a852">FabricTestNode</a>, <a class="el" href="classcmr_1_1JoystickDirectControl.html#a573404fdf79d7d728be6b94807cd20c4">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1Joystick.html#a4ec8ddc8c78b84afb973e4b92c857081">cmr::Joystick</a>, and <a class="el" href="classDemoNode.html#af7b19ce94dded7510884d0e93324164b">DemoNode</a>.</p>
+<p>Implemented in <a class="el" href="classFabricTestNode.html#a5fad657e9c6844011fcc71682480a852">FabricTestNode</a>, <a class="el" href="classcmr_1_1JoystickDirectControl.html#a573404fdf79d7d728be6b94807cd20c4">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1Joystick.html#a4ec8ddc8c78b84afb973e4b92c857081">cmr::Joystick</a>, <a class="el" href="classcmr_1_1CameraNode.html#aa9856de05713608470770a6fa46f569b">cmr::CameraNode</a>, and <a class="el" href="classDemoNode.html#af7b19ce94dded7510884d0e93324164b">DemoNode</a>.</p>
 
 </div>
 </div>
@@ -421,7 +422,7 @@ Private Attributes</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#aff5b4793c28f24c4d73bf670027d6286" title="Derived class hook for activation.">FabricNode::activate</a></code> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false otherwise which will cause transition to <code>ErrorProcessing</code> </dd></dl>
 
-<p>Implemented in <a class="el" href="classcmr_1_1JoystickDirectControl.html#a319a8021d67fe226b368852da6dda2ec">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1Joystick.html#ab6833e9331498593d614813b25f4c29b">cmr::Joystick</a>, <a class="el" href="classDemoNode.html#a76894794d22fa7d29f4941a99d11d9db">DemoNode</a>, and <a class="el" href="classFabricTestNode.html#a5ba62881c8daef7926382c7640e8b267">FabricTestNode</a>.</p>
+<p>Implemented in <a class="el" href="classcmr_1_1JoystickDirectControl.html#a319a8021d67fe226b368852da6dda2ec">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1Joystick.html#ab6833e9331498593d614813b25f4c29b">cmr::Joystick</a>, <a class="el" href="classcmr_1_1CameraNode.html#ac1f7bf38ae9788d021d4a31f23ec5b04">cmr::CameraNode</a>, <a class="el" href="classDemoNode.html#a76894794d22fa7d29f4941a99d11d9db">DemoNode</a>, and <a class="el" href="classFabricTestNode.html#a5ba62881c8daef7926382c7640e8b267">FabricTestNode</a>.</p>
 
 </div>
 </div>
@@ -738,7 +739,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 20 2022 01:14:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Tue Nov 22 2022 03:30:59 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
