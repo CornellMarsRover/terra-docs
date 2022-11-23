@@ -5,5 +5,6 @@ var searchData=
   ['handle_5fcancel_2',['handle_cancel',['../classPositionControllerNode.html#a161f821d0df38d38cf7fb14257db7836',1,'PositionControllerNode']]],
   ['handle_5fgoal_3',['handle_goal',['../classPositionControllerNode.html#ad063ba7d3c41e1774569806a4fce9325',1,'PositionControllerNode']]],
   ['handle_5fodom_5fmsg_4',['handle_odom_msg',['../classPositionControllerNode.html#a2ed763649d678124a66792f1c71de09f',1,'PositionControllerNode']]],
-  ['handle_5ftarget_5',['handle_target',['../classTestControllerClient.html#a4062806e6e3e6f78e3f12bf24e633470',1,'TestControllerClient']]]
+  ['handle_5fresponse_5',['handle_response',['../classcmr_1_1fabric_1_1LifecycleClient.html#a1d052351c9c8e870b54ef8897a22ddd8',1,'cmr::fabric::LifecycleClient']]],
+  ['handle_5ftarget_6',['handle_target',['../classTestControllerClient.html#a4062806e6e3e6f78e3f12bf24e633470',1,'TestControllerClient']]]
 ];

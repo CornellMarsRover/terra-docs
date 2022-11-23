@@ -1,0 +1,4 @@
+<map id="cmr::fabric::LifecycleServer&lt; ServerT &gt;" name="cmr::fabric::LifecycleServer&lt; ServerT &gt;">
+<area shape="rect" id="node1" title="Creates a managed server that can be activated and deactivated." alt="" coords="9,80,187,121"/>
+<area shape="rect" id="node2" href="$classcmr_1_1fabric_1_1GenericLifecycle.html" title="Interface for any LifecycleServer." alt="" coords="5,5,191,32"/>
+</map>

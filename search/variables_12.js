@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zip_5fsafe_0',['zip_safe',['../namespacesetup.html#a13510753661cb74083a0c664db11dde9',1,'setup']]]
+  ['x_0',['x',['../structcmr_1_1Joystick_1_1AxisState.html#ac81d4aeab9fe32bec7954f0ceaf957fb',1,'cmr::Joystick::AxisState']]]
 ];

@@ -70,18 +70,27 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">cmr::fabric Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcmr_1_1fabric_1_1ActionConfig.html">ActionConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for a LifecycleActionServer.  <a href="structcmr_1_1fabric_1_1ActionConfig.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1ActionServerPolicy.html">ActionServerPolicy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that provides an action server to <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html" title="Creates a managed server that can be activated and deactivated.">LifecycleServer</a>.  <a href="classcmr_1_1fabric_1_1ActionServerPolicy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html">DependencyHandler</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html" title="The DependencyHandler class is responsible for managing the dependencies.">DependencyHandler</a> class is responsible for managing the dependencies.  <a href="classcmr_1_1fabric_1_1DependencyHandler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcmr_1_1fabric_1_1FabricConfigPath.html">FabricConfigPath</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct that provides semantic typing when an argument is a path.  <a href="structcmr_1_1fabric_1_1FabricConfigPath.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes.">FabricNode</a> is the base class for All CMR nodes.  <a href="classcmr_1_1fabric_1_1FabricNode.html#details">More...</a><br /></td></tr>
@@ -92,6 +101,61 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html">FaultHandler</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html" title="The FaultHandler class provides a service interface to allow nodes to restart themselves if an error ...">FaultHandler</a> class provides a service interface to allow nodes to restart themselves if an error occurs.  <a href="classcmr_1_1fabric_1_1FaultHandler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1GenericLifecycle.html">GenericLifecycle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for any <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html" title="Creates a managed server that can be activated and deactivated.">LifecycleServer</a>.  <a href="classcmr_1_1fabric_1_1GenericLifecycle.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcmr_1_1fabric_1_1IsServerType.html">IsServerType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type trait that checks if a type is a server provider which defines a <code>server_t,</code>config_t<code>, and</code>make_return_t<code>type along with a</code>make_server()` function.  <a href="structcmr_1_1fabric_1_1IsServerType.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcmr_1_1fabric_1_1IsServerType_3_01T_00_01std_1_1void__t_3_01typename_01T_1_1server__t_00_04a70412db28fc004e13722120f742910.html">IsServerType&lt; T, std::void_t&lt; typename T::server_t, typename T::config_t, decltype(T::template make_return_t&lt; int &gt;::val)&gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type trait that checks if a type is a server provider.  <a href="structcmr_1_1fabric_1_1IsServerType_3_01T_00_01std_1_1void__t_3_01typename_01T_1_1server__t_00_04a70412db28fc004e13722120f742910.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html">LifecycleClient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lifecycle Client is just like a <code>rclcpp::Client</code> but it can be activated and deactivated.  <a href="classcmr_1_1fabric_1_1LifecycleClient.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html">LifecycleServer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a managed server that can be activated and deactivated.  <a href="classcmr_1_1fabric_1_1LifecycleServer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcmr_1_1fabric_1_1ServerDefaultArgumentConstructor.html">ServerDefaultArgumentConstructor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the default return value for server callbacks.  <a href="structcmr_1_1fabric_1_1ServerDefaultArgumentConstructor.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcmr_1_1fabric_1_1ServerDefaultArgumentConstructor_3_01void_01_4.html">ServerDefaultArgumentConstructor&lt; void &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload for <code>void</code> returning callbacks.  <a href="structcmr_1_1fabric_1_1ServerDefaultArgumentConstructor_3_01void_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcmr_1_1fabric_1_1ServiceConfig.html">ServiceConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Groups together configuration parameters for a service.  <a href="structcmr_1_1fabric_1_1ServiceConfig.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1ServiceServerPolicy.html">ServiceServerPolicy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that provides a service to <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html" title="Creates a managed server that can be activated and deactivated.">LifecycleServer</a>.  <a href="classcmr_1_1fabric_1_1ServiceServerPolicy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1SubscriptionServerPolicy.html">SubscriptionServerPolicy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that provides a subscription to <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html" title="Creates a managed server that can be activated and deactivated.">LifecycleServer</a>.  <a href="classcmr_1_1fabric_1_1SubscriptionServerPolicy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcmr_1_1fabric_1_1WallTimerServerPolicy.html">WallTimerServerPolicy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that provides a timer to <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html" title="Creates a managed server that can be activated and deactivated.">LifecycleServer</a>.  <a href="structcmr_1_1fabric_1_1WallTimerServerPolicy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a6f35b79fd38e2e26cbe7e37010faa907"><td class="memTemplParams" colspan="2">template&lt;typename ActionT &gt; </td></tr>
+<tr class="memitem:a6f35b79fd38e2e26cbe7e37010faa907"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a6f35b79fd38e2e26cbe7e37010faa907">LifecycleActionServer</a> = <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html">LifecycleServer</a>&lt; <a class="el" href="classcmr_1_1fabric_1_1ActionServerPolicy.html">ActionServerPolicy</a>&lt; ActionT &gt; &gt;</td></tr>
+<tr class="memdesc:a6f35b79fd38e2e26cbe7e37010faa907"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that provides a managed Action Server that can be enabled and disabled and wraps all errors in the appropriate error handling transition function of the fabric node.  <a href="namespacecmr_1_1fabric.html#a6f35b79fd38e2e26cbe7e37010faa907">More...</a><br /></td></tr>
+<tr class="separator:a6f35b79fd38e2e26cbe7e37010faa907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a841cb0d434fcebd500028d09e2464db1"><td class="memTemplParams" colspan="2">template&lt;typename MessageT , typename AllocatorT  = std::allocator&lt;void&gt;, typename SubscribedT  = typename rclcpp::TypeAdapter&lt;MessageT&gt;::custom_type, typename ROSMessageT  = typename rclcpp::TypeAdapter&lt;MessageT&gt;::ros_message_type, typename MessageMemoryStrategyT  = rclcpp::message_memory_strategy:: MessageMemoryStrategy&lt;ROSMessageT, AllocatorT&gt;&gt; </td></tr>
+<tr class="memitem:a841cb0d434fcebd500028d09e2464db1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a841cb0d434fcebd500028d09e2464db1">LifecycleSubscription</a> = <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html">LifecycleServer</a>&lt; <a class="el" href="classcmr_1_1fabric_1_1SubscriptionServerPolicy.html">SubscriptionServerPolicy</a>&lt; MessageT, AllocatorT, SubscribedT, ROSMessageT, MessageMemoryStrategyT &gt; &gt;</td></tr>
+<tr class="memdesc:a841cb0d434fcebd500028d09e2464db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a managed topic subscriber that can be activated and deactivated.  <a href="namespacecmr_1_1fabric.html#a841cb0d434fcebd500028d09e2464db1">More...</a><br /></td></tr>
+<tr class="separator:a841cb0d434fcebd500028d09e2464db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2"><td class="memTemplParams" colspan="2">template&lt;typename ServiceT &gt; </td></tr>
+<tr class="memitem:a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2">LifecycleService</a> = <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html">LifecycleServer</a>&lt; <a class="el" href="classcmr_1_1fabric_1_1ServiceServerPolicy.html">ServiceServerPolicy</a>&lt; ServiceT &gt; &gt;</td></tr>
+<tr class="memdesc:a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a managed service server that can be activated and deactivated.  <a href="namespacecmr_1_1fabric.html#a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2">More...</a><br /></td></tr>
+<tr class="separator:a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148f297b88566b9cde7d85c6dc5bb293"><td class="memTemplParams" colspan="2">template&lt;typename RepT , typename PeriodT &gt; </td></tr>
+<tr class="memitem:a148f297b88566b9cde7d85c6dc5bb293"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a148f297b88566b9cde7d85c6dc5bb293">LifecycleTimer</a> = <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html">LifecycleServer</a>&lt; <a class="el" href="structcmr_1_1fabric_1_1WallTimerServerPolicy.html">WallTimerServerPolicy</a>&lt; RepT, PeriodT &gt; &gt;</td></tr>
+<tr class="memdesc:a148f297b88566b9cde7d85c6dc5bb293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a managed wall timer that can be activated and deactivated.  <a href="namespacecmr_1_1fabric.html#a148f297b88566b9cde7d85c6dc5bb293">More...</a><br /></td></tr>
+<tr class="separator:a148f297b88566b9cde7d85c6dc5bb293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65cd6f004ef40cf153d745a87a2f7693"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a65cd6f004ef40cf153d745a87a2f7693">GenericLifecycleTimer</a> = <a class="el" href="classcmr_1_1fabric_1_1GenericLifecycle.html">GenericLifecycle</a></td></tr>
+<tr class="memdesc:a65cd6f004ef40cf153d745a87a2f7693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any lifecycle timer.  <a href="namespacecmr_1_1fabric.html#a65cd6f004ef40cf153d745a87a2f7693">More...</a><br /></td></tr>
+<tr class="separator:a65cd6f004ef40cf153d745a87a2f7693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -121,6 +185,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a25657dd0676f86549c16f4c302808343"><td class="memTemplParams" colspan="2">template&lt;typename ActionT &gt; </td></tr>
+<tr class="memitem:a25657dd0676f86549c16f4c302808343"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classcmr_1_1fabric_1_1GenericLifecycle.html">GenericLifecycle</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a25657dd0676f86549c16f4c302808343">create_lifecycle_action_server</a> (<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;node, const std::string &amp;action_name, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::GoalCallback &amp;goal_callback, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::CancelCallback &amp;cancel_callback, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::AcceptedCallback &amp;accepted_callback)</td></tr>
+<tr class="memdesc:a25657dd0676f86549c16f4c302808343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle action server object.  <a href="namespacecmr_1_1fabric.html#a25657dd0676f86549c16f4c302808343">More...</a><br /></td></tr>
+<tr class="separator:a25657dd0676f86549c16f4c302808343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5835fc4c116298d69818c17f7c8150a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a5835fc4c116298d69818c17f7c8150a6">activate_node</a> (const std::string &amp;node_name)</td></tr>
 <tr class="memdesc:a5835fc4c116298d69818c17f7c8150a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses the <code>LifecycleNode</code> exposed services to activate <code>node_name</code>.  <a href="namespacecmr_1_1fabric.html#a5835fc4c116298d69818c17f7c8150a6">More...</a><br /></td></tr>
 <tr class="separator:a5835fc4c116298d69818c17f7c8150a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,7 +206,136 @@ Functions</h2></td></tr>
 <tr class="memitem:a0b05ca087104d4d38af564c7aac05e2e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a0b05ca087104d4d38af564c7aac05e2e">parse_toml</a> (const std::string &amp;toml_path, const std::string &amp;toml_data)</td></tr>
 <tr class="memdesc:a0b05ca087104d4d38af564c7aac05e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the toml config file if one is specified, otherwise parses the config data.  <a href="namespacecmr_1_1fabric.html#a0b05ca087104d4d38af564c7aac05e2e">More...</a><br /></td></tr>
 <tr class="separator:a0b05ca087104d4d38af564c7aac05e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae5368b55db69646305c54ea9d680b0ae"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae5368b55db69646305c54ea9d680b0ae"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#ae5368b55db69646305c54ea9d680b0ae">is_server_type_v</a> = <a class="el" href="structcmr_1_1fabric_1_1IsServerType.html">IsServerType</a>&lt;T&gt;::value</td></tr>
+<tr class="memdesc:ae5368b55db69646305c54ea9d680b0ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for <code><a class="el" href="structcmr_1_1fabric_1_1IsServerType.html" title="A type trait that checks if a type is a server provider which defines a server_t,config_t,...">IsServerType</a>&lt;T&gt;</code>  <a href="namespacecmr_1_1fabric.html#ae5368b55db69646305c54ea9d680b0ae">More...</a><br /></td></tr>
+<tr class="separator:ae5368b55db69646305c54ea9d680b0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a65cd6f004ef40cf153d745a87a2f7693" name="a65cd6f004ef40cf153d745a87a2f7693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65cd6f004ef40cf153d745a87a2f7693">&#9670;&nbsp;</a></span>GenericLifecycleTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacecmr_1_1fabric.html#a65cd6f004ef40cf153d745a87a2f7693">cmr::fabric::GenericLifecycleTimer</a> = typedef <a class="el" href="classcmr_1_1fabric_1_1GenericLifecycle.html">GenericLifecycle</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Any lifecycle timer. </p>
+
+</div>
+</div>
+<a id="a6f35b79fd38e2e26cbe7e37010faa907" name="a6f35b79fd38e2e26cbe7e37010faa907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f35b79fd38e2e26cbe7e37010faa907">&#9670;&nbsp;</a></span>LifecycleActionServer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ActionT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacecmr_1_1fabric.html#a6f35b79fd38e2e26cbe7e37010faa907">cmr::fabric::LifecycleActionServer</a> = typedef <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html">LifecycleServer</a>&lt;<a class="el" href="classcmr_1_1fabric_1_1ActionServerPolicy.html">ActionServerPolicy</a>&lt;ActionT&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A class that provides a managed Action Server that can be enabled and disabled and wraps all errors in the appropriate error handling transition function of the fabric node. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ActionT</td><td>type of the action </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2" name="a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2">&#9670;&nbsp;</a></span>LifecycleService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ServiceT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacecmr_1_1fabric.html#a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2">cmr::fabric::LifecycleService</a> = typedef <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html">LifecycleServer</a>&lt;<a class="el" href="classcmr_1_1fabric_1_1ServiceServerPolicy.html">ServiceServerPolicy</a>&lt;ServiceT&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a managed service server that can be activated and deactivated. </p>
+<p >Other than <code>activate()</code>, <code>deactivate()</code>, and uncaught exceptions triggering a fabric node transition instead of crashing, this class provides a similar and semantics as <code>rclcpp::Service</code>.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ServiceT</td><td>The service type to subscribe to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a841cb0d434fcebd500028d09e2464db1" name="a841cb0d434fcebd500028d09e2464db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a841cb0d434fcebd500028d09e2464db1">&#9670;&nbsp;</a></span>LifecycleSubscription</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MessageT , typename AllocatorT  = std::allocator&lt;void&gt;, typename SubscribedT  = typename rclcpp::TypeAdapter&lt;MessageT&gt;::custom_type, typename ROSMessageT  = typename rclcpp::TypeAdapter&lt;MessageT&gt;::ros_message_type, typename MessageMemoryStrategyT  = rclcpp::message_memory_strategy:: MessageMemoryStrategy&lt;ROSMessageT, AllocatorT&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacecmr_1_1fabric.html#a841cb0d434fcebd500028d09e2464db1">cmr::fabric::LifecycleSubscription</a> = typedef <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html">LifecycleServer</a>&lt;<a class="el" href="classcmr_1_1fabric_1_1SubscriptionServerPolicy.html">SubscriptionServerPolicy</a>&lt;MessageT, AllocatorT, SubscribedT, ROSMessageT, MessageMemoryStrategyT&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a managed topic subscriber that can be activated and deactivated. </p>
+<p >Other than <code>activate()</code>, <code>deactivate()</code>, and uncaught exceptions triggering a fabric node transition instead of crashing, the this class provides a similar and semantics as <code>rclcpp::Subscription</code>.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MessageT</td><td>The message type to subscribe to </td></tr>
+    <tr><td class="paramname">AllocatorT</td><td></td></tr>
+    <tr><td class="paramname">rclcpp::TypeAdapter&lt;MessageT&gt;::custom_type</td><td></td></tr>
+    <tr><td class="paramname">rclcpp::TypeAdapter&lt;MessageT&gt;::ros_message_type</td><td></td></tr>
+    <tr><td class="paramname">rclcpp::message_memory_strategy,:</td><td>MessageMemoryStrategy&lt;ROSMessageT, AllocatorT&gt; </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a148f297b88566b9cde7d85c6dc5bb293" name="a148f297b88566b9cde7d85c6dc5bb293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148f297b88566b9cde7d85c6dc5bb293">&#9670;&nbsp;</a></span>LifecycleTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RepT , typename PeriodT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacecmr_1_1fabric.html#a148f297b88566b9cde7d85c6dc5bb293">cmr::fabric::LifecycleTimer</a> = typedef <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html">LifecycleServer</a>&lt;<a class="el" href="structcmr_1_1fabric_1_1WallTimerServerPolicy.html">WallTimerServerPolicy</a>&lt;RepT, PeriodT&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a managed wall timer that can be activated and deactivated. </p>
+<p >Other than <code>activate()</code>, <code>deactivate()</code>, and uncaught exceptions triggering a fabric node transition instead of crashing, this class provides a similar and semantics as <code>rclcpp::WallTimer</code>.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TimerArgT</td><td>timer callback type argument type. Either <code>void</code> or <code>TimerBase&amp;</code> </td></tr>
+    <tr><td class="paramname">RepT</td><td>timer period rep type </td></tr>
+    <tr><td class="paramname">PeriodT</td><td>timer period period type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a52f10767ce8f181287db6baf69add9aa" name="a52f10767ce8f181287db6baf69add9aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52f10767ce8f181287db6baf69add9aa">&#9670;&nbsp;</a></span>DeactivationReason</h2>
@@ -265,6 +462,73 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a25657dd0676f86549c16f4c302808343" name="a25657dd0676f86549c16f4c302808343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25657dd0676f86549c16f4c302808343">&#9670;&nbsp;</a></span>create_lifecycle_action_server()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ActionT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classcmr_1_1fabric_1_1GenericLifecycle.html">GenericLifecycle</a> &gt; cmr::fabric::create_lifecycle_action_server </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>action_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::GoalCallback &amp;&#160;</td>
+          <td class="paramname"><em>goal_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::CancelCallback &amp;&#160;</td>
+          <td class="paramname"><em>cancel_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::AcceptedCallback &amp;&#160;</td>
+          <td class="paramname"><em>accepted_callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a lifecycle action server object. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ActionT</td><td>type of the action </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>owning node which must not outlive the action server </td></tr>
+    <tr><td class="paramname">action_name</td><td></td></tr>
+    <tr><td class="paramname">goal_callback</td><td>callback when a goal is received </td></tr>
+    <tr><td class="paramname">cancel_callback</td><td>callback when a goal is cancelled </td></tr>
+    <tr><td class="paramname">accepted_callback</td><td>callback when a goal is accepted from the <code>goal_callback</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>auto </dd></dl>
+
+</div>
+</div>
 <a id="a40fe5afc9be37d12cc7c3e2141eb90a9" name="a40fe5afc9be37d12cc7c3e2141eb90a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40fe5afc9be37d12cc7c3e2141eb90a9">&#9670;&nbsp;</a></span>deactivate_node()</h2>
 
@@ -381,10 +645,37 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ae5368b55db69646305c54ea9d680b0ae" name="ae5368b55db69646305c54ea9d680b0ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5368b55db69646305c54ea9d680b0ae">&#9670;&nbsp;</a></span>is_server_type_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool cmr::fabric::is_server_type_v = <a class="el" href="structcmr_1_1fabric_1_1IsServerType.html">IsServerType</a>&lt;T&gt;::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper for <code><a class="el" href="structcmr_1_1fabric_1_1IsServerType.html" title="A type trait that checks if a type is a server provider which defines a server_t,config_t,...">IsServerType</a>&lt;T&gt;</code> </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 22 2022 07:59:09 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Wed Nov 23 2022 03:26:27 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

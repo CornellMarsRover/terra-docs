@@ -1,0 +1,4 @@
+<map id="cmr::fabric::IsServerType&lt; T, std::void_t&lt; typename T::server_t, typename T::config_t, decltype(T::template make_return_t&lt; int &gt;::val)&gt; &gt;" name="cmr::fabric::IsServerType&lt; T, std::void_t&lt; typename T::server_t, typename T::config_t, decltype(T::template make_return_t&lt; int &gt;::val)&gt; &gt;">
+<area shape="rect" id="node1" title="A type trait that checks if a type is a server provider." alt="" coords="5,80,196,165"/>
+<area shape="rect" id="node2" title=" " alt="" coords="51,5,150,32"/>
+</map>

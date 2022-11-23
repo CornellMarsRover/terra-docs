@@ -73,6 +73,7 @@ $(function() {
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classcmr_1_1fabric_1_1FabricNode-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">cmr::fabric::FabricNode Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -112,8 +113,48 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aed08c9a27fe21cea828ef3440a48e67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa740dc1f6969061fecb33c29909e52e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#afa740dc1f6969061fecb33c29909e52e">FabricNode</a> (std::optional&lt; <a class="el" href="structcmr_1_1fabric_1_1FabricNodeConfig.html">FabricNodeConfig</a> &gt; &amp;&amp;config=std::nullopt)</td></tr>
 <tr class="separator:afa740dc1f6969061fecb33c29909e52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca7a00d1da781eb20ead53bf0d040596"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#aca7a00d1da781eb20ead53bf0d040596">~FabricNode</a> () override=default</td></tr>
-<tr class="separator:aca7a00d1da781eb20ead53bf0d040596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6990e1ee45647451ed8197335ac0bd38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a6990e1ee45647451ed8197335ac0bd38">~FabricNode</a> () override</td></tr>
+<tr class="separator:a6990e1ee45647451ed8197335ac0bd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e22e6a16afd29dfc62e5a477d08d0a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a1e22e6a16afd29dfc62e5a477d08d0a0">FabricNode</a> (const <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;)=delete</td></tr>
+<tr class="separator:a1e22e6a16afd29dfc62e5a477d08d0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889f3295dc246772c88214a5aa233a78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a889f3295dc246772c88214a5aa233a78">operator=</a> (const <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;)=delete</td></tr>
+<tr class="separator:a889f3295dc246772c88214a5aa233a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7910fdc46a519e15a626719532944e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#aa7910fdc46a519e15a626719532944e4">FabricNode</a> (<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:aa7910fdc46a519e15a626719532944e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d1f7fe042131d7ad83966888503f558"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a9d1f7fe042131d7ad83966888503f558">operator=</a> (<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a9d1f7fe042131d7ad83966888503f558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a79f1e678292a21ef3d81193928eae896"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a79f1e678292a21ef3d81193928eae896">error_transition</a> ()</td></tr>
+<tr class="memdesc:a79f1e678292a21ef3d81193928eae896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transitions us to the error state and schedules a restart.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a79f1e678292a21ef3d81193928eae896">More...</a><br /></td></tr>
+<tr class="separator:a79f1e678292a21ef3d81193928eae896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4db5622ced88e33d4372dd8414ae5be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be">schedule_restart</a> ()</td></tr>
+<tr class="memdesc:ab4db5622ced88e33d4372dd8414ae5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a restart by sending a request to the fault handler.  <a href="classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be">More...</a><br /></td></tr>
+<tr class="separator:ab4db5622ced88e33d4372dd8414ae5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70c37e7bc79da5a6dc61416f68cc26c"><td class="memTemplParams" colspan="2">template&lt;typename MessageT , typename FuncT &gt; </td></tr>
+<tr class="memitem:af70c37e7bc79da5a6dc61416f68cc26c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#af70c37e7bc79da5a6dc61416f68cc26c">create_lifecycle_subscription</a> (const std::string &amp;topic, const rclcpp::QoS &amp;qos, FuncT &amp;&amp;callback, const rclcpp::SubscriptionOptionsWithAllocator&lt; std::allocator&lt; void &gt; &gt; &amp;options=rclcpp::SubscriptionOptionsWithAllocator&lt; std::allocator&lt; void &gt; &gt;())</td></tr>
+<tr class="memdesc:af70c37e7bc79da5a6dc61416f68cc26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle subscription object that can be activated and deactivated and will call the fabric node error transition when an exception is thrown from the callback.  <a href="classcmr_1_1fabric_1_1FabricNode.html#af70c37e7bc79da5a6dc61416f68cc26c">More...</a><br /></td></tr>
+<tr class="separator:af70c37e7bc79da5a6dc61416f68cc26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef5befb16a9c525d3d969e88aa630c6"><td class="memTemplParams" colspan="2">template&lt;typename MessageT &gt; </td></tr>
+<tr class="memitem:a8ef5befb16a9c525d3d969e88aa630c6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a8ef5befb16a9c525d3d969e88aa630c6">create_lifecycle_publisher</a> (const std::string &amp;topic_name, const rclcpp::QoS &amp;qos)</td></tr>
+<tr class="memdesc:a8ef5befb16a9c525d3d969e88aa630c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle publisher object that can be activated and deactivated.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a8ef5befb16a9c525d3d969e88aa630c6">More...</a><br /></td></tr>
+<tr class="separator:a8ef5befb16a9c525d3d969e88aa630c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf02f0a8cba39e118fc233c132afb7ef"><td class="memTemplParams" colspan="2">template&lt;typename ServiceT &gt; </td></tr>
+<tr class="memitem:abf02f0a8cba39e118fc233c132afb7ef"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#abf02f0a8cba39e118fc233c132afb7ef">create_lifecycle_client</a> (const std::string &amp;service_name, const rmw_qos_profile_t &amp;qos_profile=rmw_qos_profile_services_default)</td></tr>
+<tr class="memdesc:abf02f0a8cba39e118fc233c132afb7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle client object that can be activated and deactivated.  <a href="classcmr_1_1fabric_1_1FabricNode.html#abf02f0a8cba39e118fc233c132afb7ef">More...</a><br /></td></tr>
+<tr class="separator:abf02f0a8cba39e118fc233c132afb7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee95a0065990cb54711b21679fbbe2a"><td class="memTemplParams" colspan="2">template&lt;typename ServiceT , typename FuncT &gt; </td></tr>
+<tr class="memitem:a4ee95a0065990cb54711b21679fbbe2a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a4ee95a0065990cb54711b21679fbbe2a">create_lifecycle_service</a> (const std::string &amp;service_name, FuncT &amp;&amp;callback, const rmw_qos_profile_t &amp;qos_profile=rmw_qos_profile_services_default, const rclcpp::CallbackGroup::SharedPtr group=nullptr)</td></tr>
+<tr class="memdesc:a4ee95a0065990cb54711b21679fbbe2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle service listener that can be activated and deactivated and will call the fabric node error transition when an exception is thrown from the callback.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a4ee95a0065990cb54711b21679fbbe2a">More...</a><br /></td></tr>
+<tr class="separator:a4ee95a0065990cb54711b21679fbbe2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ace663bd452fef6488410149a73e6c"><td class="memTemplParams" colspan="2">template&lt;typename CallbackT , typename RepT , typename PeriodT &gt; </td></tr>
+<tr class="memitem:ab5ace663bd452fef6488410149a73e6c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ab5ace663bd452fef6488410149a73e6c">create_lifecycle_timer</a> (const std::chrono::duration&lt; RepT, PeriodT &gt; &amp;period, CallbackT &amp;&amp;callback)</td></tr>
+<tr class="memdesc:ab5ace663bd452fef6488410149a73e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle timer object that can be activated and deactivated and will call the fabric node error transition when an exception is thrown.  <a href="classcmr_1_1fabric_1_1FabricNode.html#ab5ace663bd452fef6488410149a73e6c">More...</a><br /></td></tr>
+<tr class="separator:ab5ace663bd452fef6488410149a73e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
 <tr class="memitem:a1fcb742a9fd0e2c8cfdc3319f2156a7d"><td class="memItemLeft" align="right" valign="top">rclcpp_lifecycle::LifecycleNode::CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a1fcb742a9fd0e2c8cfdc3319f2156a7d">on_configure</a> (const rclcpp_lifecycle::State &amp;) override</td></tr>
 <tr class="separator:a1fcb742a9fd0e2c8cfdc3319f2156a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aead0b7f933cf612407cb012676d062ab"><td class="memItemLeft" align="right" valign="top">rclcpp_lifecycle::LifecycleNode::CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#aead0b7f933cf612407cb012676d062ab">on_activate</a> (const rclcpp_lifecycle::State &amp;) override</td></tr>
@@ -126,18 +167,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a414babca32c2f114f0b2bebf69429bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1a2b5c5d99a5f18b5afe005cfb89731"><td class="memItemLeft" align="right" valign="top">rclcpp_lifecycle::LifecycleNode::CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ac1a2b5c5d99a5f18b5afe005cfb89731">on_error</a> (const rclcpp_lifecycle::State &amp;) override</td></tr>
 <tr class="separator:ac1a2b5c5d99a5f18b5afe005cfb89731"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a79f1e678292a21ef3d81193928eae896"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a79f1e678292a21ef3d81193928eae896">error_transition</a> ()</td></tr>
-<tr class="memdesc:a79f1e678292a21ef3d81193928eae896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transitions us to the error state and schedules a restart.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a79f1e678292a21ef3d81193928eae896">More...</a><br /></td></tr>
-<tr class="separator:a79f1e678292a21ef3d81193928eae896"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4db5622ced88e33d4372dd8414ae5be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be">schedule_restart</a> ()</td></tr>
-<tr class="memdesc:ab4db5622ced88e33d4372dd8414ae5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a restart by sending a request to the fault handler.  <a href="classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be">More...</a><br /></td></tr>
-<tr class="separator:ab4db5622ced88e33d4372dd8414ae5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
 <tr class="memitem:a32f606fbccc4520ace72d43f549472dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a32f606fbccc4520ace72d43f549472dd">cleanup_on_error</a> (const rclcpp_lifecycle::State &amp;current_state)</td></tr>
 <tr class="memdesc:a32f606fbccc4520ace72d43f549472dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up any state when an error occurs.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a32f606fbccc4520ace72d43f549472dd">More...</a><br /></td></tr>
 <tr class="separator:a32f606fbccc4520ace72d43f549472dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,8 +185,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae40fc7e3cc4898364f7a9d6cabf992af"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html">DependencyHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ae40fc7e3cc4898364f7a9d6cabf992af">m_dependency_manager</a></td></tr>
-<tr class="separator:ae40fc7e3cc4898364f7a9d6cabf992af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d07a611840329dcda63e9de793115a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; class <a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html">DependencyHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a73d07a611840329dcda63e9de793115a">m_dependency_manager</a></td></tr>
+<tr class="separator:a73d07a611840329dcda63e9de793115a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37e1bc7e7895a1bb7a372961921e87b3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a37e1bc7e7895a1bb7a372961921e87b3">m_composition_namespace</a></td></tr>
 <tr class="memdesc:a37e1bc7e7895a1bb7a372961921e87b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the namespace.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a37e1bc7e7895a1bb7a372961921e87b3">More...</a><br /></td></tr>
 <tr class="separator:a37e1bc7e7895a1bb7a372961921e87b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +195,13 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae6fedec94208f5372b24392446767fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc5c077f67e466be171f54119c7fec28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#acc5c077f67e466be171f54119c7fec28">m_processing_fault</a> = false</td></tr>
 <tr class="separator:acc5c077f67e466be171f54119c7fec28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a5db53c424c6d13ab12bb0bd08eb44a94"><td class="memTemplParams" colspan="2">template&lt;typename ActionT &gt; </td></tr>
+<tr class="memitem:a5db53c424c6d13ab12bb0bd08eb44a94"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; class <a class="el" href="classcmr_1_1fabric_1_1GenericLifecycle.html">GenericLifecycle</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a5db53c424c6d13ab12bb0bd08eb44a94">create_lifecycle_action_server</a> (<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;node, const std::string &amp;action_name, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::GoalCallback &amp;goal_callback, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::CancelCallback &amp;cancel_callback, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::AcceptedCallback &amp;accepted_callback)</td></tr>
+<tr class="memdesc:a5db53c424c6d13ab12bb0bd08eb44a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle action server object.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a5db53c424c6d13ab12bb0bd08eb44a94">More...</a><br /></td></tr>
+<tr class="separator:a5db53c424c6d13ab12bb0bd08eb44a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes.">FabricNode</a> is the base class for All CMR nodes. </p>
@@ -175,7 +211,7 @@ Private Attributes</h2></td></tr>
 <p >If an error occurs in a state transition or if the <code>error_transition</code> method is invoked, the <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes.">FabricNode</a> communicates with the fault handler to notify it of the error. The fault handler will then schedule this node for restart. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aed08c9a27fe21cea828ef3440a48e67c" name="aed08c9a27fe21cea828ef3440a48e67c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed08c9a27fe21cea828ef3440a48e67c">&#9670;&nbsp;</a></span>FabricNode() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed08c9a27fe21cea828ef3440a48e67c">&#9670;&nbsp;</a></span>FabricNode() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,7 +237,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="afa740dc1f6969061fecb33c29909e52e" name="afa740dc1f6969061fecb33c29909e52e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa740dc1f6969061fecb33c29909e52e">&#9670;&nbsp;</a></span>FabricNode() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afa740dc1f6969061fecb33c29909e52e">&#9670;&nbsp;</a></span>FabricNode() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,8 +262,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aca7a00d1da781eb20ead53bf0d040596" name="aca7a00d1da781eb20ead53bf0d040596"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca7a00d1da781eb20ead53bf0d040596">&#9670;&nbsp;</a></span>~FabricNode()</h2>
+<a id="a6990e1ee45647451ed8197335ac0bd38" name="a6990e1ee45647451ed8197335ac0bd38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6990e1ee45647451ed8197335ac0bd38">&#9670;&nbsp;</a></span>~FabricNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,6 +281,58 @@ Private Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e22e6a16afd29dfc62e5a477d08d0a0" name="a1e22e6a16afd29dfc62e5a477d08d0a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e22e6a16afd29dfc62e5a477d08d0a0">&#9670;&nbsp;</a></span>FabricNode() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cmr::fabric::FabricNode::FabricNode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7910fdc46a519e15a626719532944e4" name="aa7910fdc46a519e15a626719532944e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7910fdc46a519e15a626719532944e4">&#9670;&nbsp;</a></span>FabricNode() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cmr::fabric::FabricNode::FabricNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -392,6 +480,312 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="abf02f0a8cba39e118fc233c132afb7ef" name="abf02f0a8cba39e118fc233c132afb7ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf02f0a8cba39e118fc233c132afb7ef">&#9670;&nbsp;</a></span>create_lifecycle_client()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ServiceT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cmr::fabric::FabricNode::create_lifecycle_client </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>service_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const rmw_qos_profile_t &amp;&#160;</td>
+          <td class="paramname"><em>qos_profile</em> = <code>rmw_qos_profile_services_default</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a lifecycle client object that can be activated and deactivated. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ServiceT</td><td>type of service to create </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">service_name</td><td>name of the service </td></tr>
+    <tr><td class="paramname">qos_profile</td><td>quality of service settings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a lifecycle client object </dd></dl>
+
+</div>
+</div>
+<a id="a8ef5befb16a9c525d3d969e88aa630c6" name="a8ef5befb16a9c525d3d969e88aa630c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef5befb16a9c525d3d969e88aa630c6">&#9670;&nbsp;</a></span>create_lifecycle_publisher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MessageT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cmr::fabric::FabricNode::create_lifecycle_publisher </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>topic_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const rclcpp::QoS &amp;&#160;</td>
+          <td class="paramname"><em>qos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a lifecycle publisher object that can be activated and deactivated. </p>
+<p >This is a wrapper of <code>LifecycleNode::create_publisher()</code> to provide more consitent naming with the other lifecycle creation methods.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MessageT</td><td>type of message to publish </td></tr>
+    <tr><td class="paramname">AllocatorT</td><td>allocator type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">topic</td><td>topic to publish to </td></tr>
+    <tr><td class="paramname">qos</td><td>quality of service settings </td></tr>
+    <tr><td class="paramname">options</td><td>optional publisher options </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a lifecycle publisher object </dd></dl>
+
+</div>
+</div>
+<a id="a4ee95a0065990cb54711b21679fbbe2a" name="a4ee95a0065990cb54711b21679fbbe2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee95a0065990cb54711b21679fbbe2a">&#9670;&nbsp;</a></span>create_lifecycle_service()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ServiceT , typename FuncT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cmr::fabric::FabricNode::create_lifecycle_service </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>service_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FuncT &amp;&amp;&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const rmw_qos_profile_t &amp;&#160;</td>
+          <td class="paramname"><em>qos_profile</em> = <code>rmw_qos_profile_services_default</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const rclcpp::CallbackGroup::SharedPtr&#160;</td>
+          <td class="paramname"><em>group</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a lifecycle service listener that can be activated and deactivated and will call the fabric node error transition when an exception is thrown from the callback. </p>
+<p >This listener will not execute the callback until it is activated or after it is deactivated</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ServiceT</td><td></td></tr>
+    <tr><td class="paramname">FuncT</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">service_name</td><td>name of the service </td></tr>
+    <tr><td class="paramname">callback</td><td>callback function </td></tr>
+    <tr><td class="paramname">qos_profile</td><td>quality of service settings </td></tr>
+    <tr><td class="paramname">group</td><td>optional execution group to add the service to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a lifecycle service listener object </dd></dl>
+
+</div>
+</div>
+<a id="af70c37e7bc79da5a6dc61416f68cc26c" name="af70c37e7bc79da5a6dc61416f68cc26c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af70c37e7bc79da5a6dc61416f68cc26c">&#9670;&nbsp;</a></span>create_lifecycle_subscription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MessageT , typename FuncT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cmr::fabric::FabricNode::create_lifecycle_subscription </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const rclcpp::QoS &amp;&#160;</td>
+          <td class="paramname"><em>qos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FuncT &amp;&amp;&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const rclcpp::SubscriptionOptionsWithAllocator&lt; std::allocator&lt; void &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>options</em> = <code>rclcpp::SubscriptionOptionsWithAllocator&lt;std::allocator&lt;void&gt;&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a lifecycle subscription object that can be activated and deactivated and will call the fabric node error transition when an exception is thrown from the callback. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MessageT</td><td>type of message to receive </td></tr>
+    <tr><td class="paramname">FuncT</td><td>callback function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">topic</td><td>topic to subscribe to </td></tr>
+    <tr><td class="paramname">qos</td><td>quality of service settings </td></tr>
+    <tr><td class="paramname">callback</td><td>callback function </td></tr>
+    <tr><td class="paramname">options</td><td>optional subscription options </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a lifecycle subscription object </dd></dl>
+
+</div>
+</div>
+<a id="ab5ace663bd452fef6488410149a73e6c" name="ab5ace663bd452fef6488410149a73e6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5ace663bd452fef6488410149a73e6c">&#9670;&nbsp;</a></span>create_lifecycle_timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CallbackT , typename RepT , typename PeriodT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cmr::fabric::FabricNode::create_lifecycle_timer </td>
+          <td>(</td>
+          <td class="paramtype">const std::chrono::duration&lt; RepT, PeriodT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CallbackT &amp;&amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a lifecycle timer object that can be activated and deactivated and will call the fabric node error transition when an exception is thrown. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">CallbackT</td><td>callback type </td></tr>
+    <tr><td class="paramname">RepT</td><td>duration type </td></tr>
+    <tr><td class="paramname">PeriodT</td><td>duration period </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">period</td><td>period for the timer </td></tr>
+    <tr><td class="paramname">callback</td><td>callback to execute for the timer. Should return <code>void</code> and take no arguments or a <code>TimerBase&amp;</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a lifecycle timer object </dd></dl>
+
+</div>
+</div>
 <a id="a18d9dd0458e395d403f3cf48c457e4e1" name="a18d9dd0458e395d403f3cf48c457e4e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18d9dd0458e395d403f3cf48c457e4e1">&#9670;&nbsp;</a></span>deactivate()</h2>
 
@@ -473,7 +867,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -499,7 +893,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -525,7 +919,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -551,7 +945,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -577,7 +971,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -603,7 +997,59 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a889f3295dc246772c88214a5aa233a78" name="a889f3295dc246772c88214a5aa233a78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889f3295dc246772c88214a5aa233a78">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp; cmr::fabric::FabricNode::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d1f7fe042131d7ad83966888503f558" name="a9d1f7fe042131d7ad83966888503f558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d1f7fe042131d7ad83966888503f558">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp; cmr::fabric::FabricNode::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -639,6 +1085,82 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a5db53c424c6d13ab12bb0bd08eb44a94" name="a5db53c424c6d13ab12bb0bd08eb44a94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db53c424c6d13ab12bb0bd08eb44a94">&#9670;&nbsp;</a></span>create_lifecycle_action_server</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ActionT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; class <a class="el" href="classcmr_1_1fabric_1_1GenericLifecycle.html">GenericLifecycle</a> &gt; create_lifecycle_action_server </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>action_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::GoalCallback &amp;&#160;</td>
+          <td class="paramname"><em>goal_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::CancelCallback &amp;&#160;</td>
+          <td class="paramname"><em>cancel_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::AcceptedCallback &amp;&#160;</td>
+          <td class="paramname"><em>accepted_callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a lifecycle action server object. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ActionT</td><td>type of the action </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>owning node which must not outlive the action server </td></tr>
+    <tr><td class="paramname">action_name</td><td></td></tr>
+    <tr><td class="paramname">goal_callback</td><td>callback when a goal is received </td></tr>
+    <tr><td class="paramname">cancel_callback</td><td>callback when a goal is cancelled </td></tr>
+    <tr><td class="paramname">accepted_callback</td><td>callback when a goal is accepted from the <code>goal_callback</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>auto </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a37e1bc7e7895a1bb7a372961921e87b3" name="a37e1bc7e7895a1bb7a372961921e87b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37e1bc7e7895a1bb7a372961921e87b3">&#9670;&nbsp;</a></span>m_composition_namespace</h2>
@@ -664,8 +1186,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae40fc7e3cc4898364f7a9d6cabf992af" name="ae40fc7e3cc4898364f7a9d6cabf992af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae40fc7e3cc4898364f7a9d6cabf992af">&#9670;&nbsp;</a></span>m_dependency_manager</h2>
+<a id="a73d07a611840329dcda63e9de793115a" name="a73d07a611840329dcda63e9de793115a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d07a611840329dcda63e9de793115a">&#9670;&nbsp;</a></span>m_dependency_manager</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -674,7 +1196,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html">DependencyHandler</a>&gt; cmr::fabric::FabricNode::m_dependency_manager</td>
+          <td class="memname">std::unique_ptr&lt;class <a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html">DependencyHandler</a>&gt; cmr::fabric::FabricNode::m_dependency_manager</td>
         </tr>
       </table>
   </td>
@@ -739,7 +1261,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 22 2022 07:59:09 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Wed Nov 23 2022 03:26:27 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

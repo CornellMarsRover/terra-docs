@@ -88,57 +88,64 @@ $(function() {
 <code>#include &quot;<a class="el" href="fabric__test__node_8hpp_source.html">fabric_test_node.hpp</a>&quot;</code><br />
 <code>#include &quot;gtest/gtest.h&quot;</code><br />
 <code>#include &quot;lifecycle_msgs/srv/get_state.hpp&quot;</code><br />
+<code>#include &quot;rclcpp_action/rclcpp_action.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for fabric_test.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="fabric__test_8cpp__incl.png" border="0" usemap="#asrc_2cmr__fabric_2test_2fabric__test_8cpp" alt=""/></div>
 <map name="asrc_2cmr__fabric_2test_2fabric__test_8cpp" id="asrc_2cmr__fabric_2test_2fabric__test_8cpp">
-<area shape="rect" title=" " alt="" coords="1572,5,1703,47"/>
-<area shape="rect" title=" " alt="" coords="558,102,615,129"/>
-<area shape="rect" href="dependency__manager_8hpp.html" title=" " alt="" coords="742,259,898,300"/>
-<area shape="rect" title=" " alt="" coords="5,348,160,389"/>
-<area shape="rect" href="fabric__node_8hpp.html" title=" " alt="" coords="1211,184,1389,211"/>
-<area shape="rect" href="lifecycle__helpers_8hpp.html" title=" " alt="" coords="1526,259,1661,300"/>
-<area shape="rect" href="fault__handler_8hpp.html" title=" " alt="" coords="1414,184,1599,211"/>
-<area shape="rect" href="services_8hpp.html" title=" " alt="" coords="1123,266,1275,293"/>
-<area shape="rect" href="test__utils_8hpp.html" title=" " alt="" coords="1675,102,1839,129"/>
-<area shape="rect" href="debug__clock_8hpp.html" title=" " alt="" coords="2413,184,2589,211"/>
-<area shape="rect" href="string__utils_8hpp.html" title=" " alt="" coords="1863,102,2030,129"/>
-<area shape="rect" href="fabric__test__node_8hpp.html" title=" " alt="" coords="2054,102,2197,129"/>
-<area shape="rect" title=" " alt="" coords="2273,102,2367,129"/>
-<area shape="rect" title=" " alt="" coords="2392,95,2523,136"/>
-<area shape="rect" title=" " alt="" coords="185,355,295,382"/>
-<area shape="rect" title=" " alt="" coords="320,355,424,382"/>
-<area shape="rect" title=" " alt="" coords="449,348,599,389"/>
-<area shape="rect" title=" " alt="" coords="623,348,793,389"/>
-<area shape="rect" title=" " alt="" coords="817,348,957,389"/>
-<area shape="rect" title=" " alt="" coords="981,348,1131,389"/>
-<area shape="rect" title=" " alt="" coords="1428,355,1548,382"/>
-<area shape="rect" title=" " alt="" coords="1156,348,1319,389"/>
-<area shape="rect" title=" " alt="" coords="1299,259,1451,300"/>
-<area shape="rect" title=" " alt="" coords="974,259,1098,300"/>
-<area shape="rect" title=" " alt="" coords="1573,355,1627,382"/>
-<area shape="rect" href="clock_8hpp.html" title="This provides a clock interface which can be mocked for testing." alt="" coords="2205,266,2339,293"/>
-<area shape="rect" href="cmr__debug_8hpp.html" title=" " alt="" coords="2014,266,2181,293"/>
-<area shape="rect" title=" " alt="" coords="2219,355,2301,382"/>
-<area shape="rect" title=" " alt="" coords="1971,355,2023,382"/>
-<area shape="rect" title=" " alt="" coords="2047,348,2171,389"/>
-<area shape="rect" title=" " alt="" coords="1343,355,1404,382"/>
-<area shape="rect" title=" " alt="" coords="1923,266,1989,293"/>
-<area shape="rect" title=" " alt="" coords="1992,184,2061,211"/>
-<area shape="rect" href="thread__wrapper_8hpp.html" title=" " alt="" coords="1725,184,1917,211"/>
-<area shape="rect" title=" " alt="" coords="1737,266,1815,293"/>
-<area shape="rect" title=" " alt="" coords="1840,266,1899,293"/>
-<area shape="rect" title=" " alt="" coords="2363,266,2490,293"/>
-<area shape="rect" title=" " alt="" coords="2514,266,2571,293"/>
-<area shape="rect" href="debug__clock_8inl.html" title=" " alt="" coords="2596,266,2764,293"/>
-<area shape="rect" title=" " alt="" coords="2187,184,2347,211"/>
+<area shape="rect" title=" " alt="" coords="1733,5,1863,47"/>
+<area shape="rect" title=" " alt="" coords="893,102,951,129"/>
+<area shape="rect" href="dependency__manager_8hpp.html" title=" " alt="" coords="756,273,912,315"/>
+<area shape="rect" title=" " alt="" coords="1506,363,1661,404"/>
+<area shape="rect" href="fabric__node_8hpp.html" title=" " alt="" coords="1890,281,2069,307"/>
+<area shape="rect" href="lifecycle__helpers_8hpp.html" title=" " alt="" coords="2325,363,2460,404"/>
+<area shape="rect" href="fault__handler_8hpp.html" title=" " alt="" coords="1629,281,1815,307"/>
+<area shape="rect" href="services_8hpp.html" title=" " alt="" coords="2485,370,2637,397"/>
+<area shape="rect" href="test__utils_8hpp.html" title=" " alt="" coords="1299,191,1463,218"/>
+<area shape="rect" href="debug__clock_8hpp.html" title=" " alt="" coords="2853,281,3029,307"/>
+<area shape="rect" href="string__utils_8hpp.html" title=" " alt="" coords="1093,191,1260,218"/>
+<area shape="rect" href="fabric__test__node_8hpp.html" title=" " alt="" coords="1872,102,2015,129"/>
+<area shape="rect" title=" " alt="" coords="2381,273,2519,315"/>
+<area shape="rect" title=" " alt="" coords="2747,102,2841,129"/>
+<area shape="rect" title=" " alt="" coords="2866,95,2997,136"/>
+<area shape="rect" title=" " alt="" coords="712,370,823,397"/>
+<area shape="rect" title=" " alt="" coords="847,370,951,397"/>
+<area shape="rect" title=" " alt="" coords="5,363,156,404"/>
+<area shape="rect" title=" " alt="" coords="180,363,349,404"/>
+<area shape="rect" title=" " alt="" coords="373,363,513,404"/>
+<area shape="rect" title=" " alt="" coords="537,363,688,404"/>
+<area shape="rect" title=" " alt="" coords="1774,549,1894,575"/>
+<area shape="rect" title=" " alt="" coords="1946,452,2109,493"/>
+<area shape="rect" href="lifecycle__client_8hpp.html" title=" " alt="" coords="1787,452,1921,493"/>
+<area shape="rect" href="lifecycle__servers_8hpp.html" title=" " alt="" coords="2064,363,2199,404"/>
+<area shape="rect" title=" " alt="" coords="1786,363,1938,404"/>
+<area shape="rect" title=" " alt="" coords="2365,459,2420,486"/>
+<area shape="rect" href="cmr__debug_8hpp.html" title=" " alt="" coords="1544,459,1711,486"/>
+<area shape="rect" title=" " alt="" coords="2262,549,2345,575"/>
+<area shape="rect" title=" " alt="" coords="1509,549,1561,575"/>
+<area shape="rect" title=" " alt="" coords="1585,541,1709,583"/>
+<area shape="rect" href="clock_8hpp.html" title="This provides a clock interface which can be mocked for testing." alt="" coords="2661,370,2796,397"/>
+<area shape="rect" title=" " alt="" coords="2530,459,2591,486"/>
+<area shape="rect" title=" " alt="" coords="1415,370,1482,397"/>
+<area shape="rect" title=" " alt="" coords="1127,281,1197,307"/>
+<area shape="rect" href="thread__wrapper_8hpp.html" title=" " alt="" coords="1221,281,1413,307"/>
+<area shape="rect" title=" " alt="" coords="1312,370,1391,397"/>
+<area shape="rect" title=" " alt="" coords="1229,370,1287,397"/>
+<area shape="rect" title=" " alt="" coords="2820,370,2947,397"/>
+<area shape="rect" title=" " alt="" coords="2971,370,3028,397"/>
+<area shape="rect" href="debug__clock_8inl.html" title=" " alt="" coords="3053,370,3221,397"/>
+<area shape="rect" href="lifecycle__actions_8hpp.html" title=" " alt="" coords="2157,184,2292,225"/>
+<area shape="rect" title=" " alt="" coords="1691,184,1839,225"/>
+<area shape="rect" title=" " alt="" coords="1863,191,2023,218"/>
+<area shape="rect" title=" " alt="" coords="2143,281,2306,307"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a2eebe6752d329738cb175b558b286006"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a2eebe6752d329738cb175b558b286006">MAKE_END_TEST_FLAG</a>()</td></tr>
+<tr class="memdesc:a2eebe6752d329738cb175b558b286006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a flag to signal when the test is finished.  <a href="fabric__test_8cpp.html#a2eebe6752d329738cb175b558b286006">More...</a><br /></td></tr>
 <tr class="separator:a2eebe6752d329738cb175b558b286006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -152,27 +159,53 @@ Functions</h2></td></tr>
 <tr class="memdesc:a632a5ca08f39b8631cbf93287ac6b909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <code>create_custom_depender</code>, but with a default configuration string.  <a href="fabric__test_8cpp.html#a632a5ca08f39b8631cbf93287ac6b909">More...</a><br /></td></tr>
 <tr class="separator:a632a5ca08f39b8631cbf93287ac6b909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dcfe2d53b3b6491feefd1cc428f376b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a5dcfe2d53b3b6491feefd1cc428f376b">TEST</a> (FabricTest, activateTest)</td></tr>
+<tr class="memdesc:a5dcfe2d53b3b6491feefd1cc428f376b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that a simple dependency chain can be started from the "root" node.  <a href="fabric__test_8cpp.html#a5dcfe2d53b3b6491feefd1cc428f376b">More...</a><br /></td></tr>
 <tr class="separator:a5dcfe2d53b3b6491feefd1cc428f376b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed60e7804baad8c87558d2a607c8fc4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#aed60e7804baad8c87558d2a607c8fc4f">TEST</a> (FabricTest, restartOnKillTest)</td></tr>
+<tr class="memdesc:aed60e7804baad8c87558d2a607c8fc4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that a node restarts on an error.  <a href="fabric__test_8cpp.html#aed60e7804baad8c87558d2a607c8fc4f">More...</a><br /></td></tr>
 <tr class="separator:aed60e7804baad8c87558d2a607c8fc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a176fc0a35cfca575a4a04099606e2352"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a176fc0a35cfca575a4a04099606e2352">TEST</a> (FabricTest, startDependency)</td></tr>
+<tr class="memdesc:a176fc0a35cfca575a4a04099606e2352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that a dependee node is started when its depnder is started.  <a href="fabric__test_8cpp.html#a176fc0a35cfca575a4a04099606e2352">More...</a><br /></td></tr>
 <tr class="separator:a176fc0a35cfca575a4a04099606e2352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac49c8192eec472e2e730b98daba5b1f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#ac49c8192eec472e2e730b98daba5b1f6">TEST</a> (FabricTest, startDependencyChain)</td></tr>
+<tr class="memdesc:ac49c8192eec472e2e730b98daba5b1f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that a complex dependency chain is started correctly when the "root" node is activated.  <a href="fabric__test_8cpp.html#ac49c8192eec472e2e730b98daba5b1f6">More...</a><br /></td></tr>
 <tr class="separator:ac49c8192eec472e2e730b98daba5b1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaa140db06b2e4019dfd12e9136ad3ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#abaa140db06b2e4019dfd12e9136ad3ad">TEST</a> (FabricTest, killDependender)</td></tr>
+<tr class="memdesc:abaa140db06b2e4019dfd12e9136ad3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that a node started via a dependency chain is killed when all the nodes that depend on it die.  <a href="fabric__test_8cpp.html#abaa140db06b2e4019dfd12e9136ad3ad">More...</a><br /></td></tr>
 <tr class="separator:abaa140db06b2e4019dfd12e9136ad3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dd3787332c52f03e89780e0cd8fd56b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a0dd3787332c52f03e89780e0cd8fd56b">TEST</a> (FabricTest, killDependendent)</td></tr>
+<tr class="memdesc:a0dd3787332c52f03e89780e0cd8fd56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that a node deactivates when one of its dependencies errors.  <a href="fabric__test_8cpp.html#a0dd3787332c52f03e89780e0cd8fd56b">More...</a><br /></td></tr>
 <tr class="separator:a0dd3787332c52f03e89780e0cd8fd56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3b96b7c667180c3f434505b766102e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#ad3b96b7c667180c3f434505b766102e0">TEST</a> (FabricTest, restartDependendent)</td></tr>
+<tr class="memdesc:ad3b96b7c667180c3f434505b766102e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that a node restarts when one of its dependencies errors.  <a href="fabric__test_8cpp.html#ad3b96b7c667180c3f434505b766102e0">More...</a><br /></td></tr>
 <tr class="separator:ad3b96b7c667180c3f434505b766102e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abddafd9d584eefa4f06f0dc2947738c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#abddafd9d584eefa4f06f0dc2947738c3">TEST</a> (FabricTest, killDependencyChain)</td></tr>
+<tr class="memdesc:abddafd9d584eefa4f06f0dc2947738c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that a complex dependency graph is deactivated correctly on error.  <a href="fabric__test_8cpp.html#abddafd9d584eefa4f06f0dc2947738c3">More...</a><br /></td></tr>
 <tr class="separator:abddafd9d584eefa4f06f0dc2947738c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1feeb44efc2243cba1bab4f0b9933dff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a1feeb44efc2243cba1bab4f0b9933dff">TEST</a> (FabricTest, doubleDependency)</td></tr>
+<tr class="memdesc:a1feeb44efc2243cba1bab4f0b9933dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests activations and deactivations for two nodes which depend on the same third node.  <a href="fabric__test_8cpp.html#a1feeb44efc2243cba1bab4f0b9933dff">More...</a><br /></td></tr>
 <tr class="separator:a1feeb44efc2243cba1bab4f0b9933dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7013b86f018d7c654d81e5952a9d5489"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a7013b86f018d7c654d81e5952a9d5489">TEST</a> (FabricTest, transitionFailure)</td></tr>
+<tr class="memdesc:a7013b86f018d7c654d81e5952a9d5489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that a node is not activated when one of its dependencies fails to activate.  <a href="fabric__test_8cpp.html#a7013b86f018d7c654d81e5952a9d5489">More...</a><br /></td></tr>
 <tr class="separator:a7013b86f018d7c654d81e5952a9d5489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6dcde5c8fb404c7cf98b71e721bcd98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#af6dcde5c8fb404c7cf98b71e721bcd98">TEST</a> (FabricTest, nonFailureDeactivation)</td></tr>
+<tr class="memdesc:af6dcde5c8fb404c7cf98b71e721bcd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that a regular deactivation triggers dependending nodes to also deactivate.  <a href="fabric__test_8cpp.html#af6dcde5c8fb404c7cf98b71e721bcd98">More...</a><br /></td></tr>
 <tr class="separator:af6dcde5c8fb404c7cf98b71e721bcd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f38b5390c46adaa812d906173a6c0f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a1f38b5390c46adaa812d906173a6c0f9">TEST</a> (FabricCommTest, lifecycleSubTest)</td></tr>
+<tr class="memdesc:a1f38b5390c46adaa812d906173a6c0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests lifeycle subscriptions.  <a href="fabric__test_8cpp.html#a1f38b5390c46adaa812d906173a6c0f9">More...</a><br /></td></tr>
+<tr class="separator:a1f38b5390c46adaa812d906173a6c0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a512903c774f96989249f241e0811c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a28a512903c774f96989249f241e0811c">TEST</a> (FabricCommsTest, lifecycleServiceTest)</td></tr>
+<tr class="memdesc:a28a512903c774f96989249f241e0811c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests lifeycle services.  <a href="fabric__test_8cpp.html#a28a512903c774f96989249f241e0811c">More...</a><br /></td></tr>
+<tr class="separator:a28a512903c774f96989249f241e0811c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1ecc65edfa8381b91adcf1039e9e02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#aad1ecc65edfa8381b91adcf1039e9e02">TEST</a> (FabricCommsTest, callbackErrorTest)</td></tr>
+<tr class="memdesc:aad1ecc65edfa8381b91adcf1039e9e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests lifecycle service errors.  <a href="fabric__test_8cpp.html#aad1ecc65edfa8381b91adcf1039e9e02">More...</a><br /></td></tr>
+<tr class="separator:aad1ecc65edfa8381b91adcf1039e9e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cbe3b7b496a47f72921fd3e3b611a91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a5cbe3b7b496a47f72921fd3e3b611a91">TEST</a> (FabricCommsTest, timerTest)</td></tr>
+<tr class="memdesc:a5cbe3b7b496a47f72921fd3e3b611a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests lifeycle timers.  <a href="fabric__test_8cpp.html#a5cbe3b7b496a47f72921fd3e3b611a91">More...</a><br /></td></tr>
+<tr class="separator:a5cbe3b7b496a47f72921fd3e3b611a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac48f430dfebe2ebc8b114e6d5179d5ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#ac48f430dfebe2ebc8b114e6d5179d5ab">TEST</a> (FabricCommsTest, actionTest)</td></tr>
+<tr class="memdesc:ac48f430dfebe2ebc8b114e6d5179d5ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests lifeycle actions.  <a href="fabric__test_8cpp.html#ac48f430dfebe2ebc8b114e6d5179d5ab">More...</a><br /></td></tr>
+<tr class="separator:ac48f430dfebe2ebc8b114e6d5179d5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fabric__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -205,6 +238,8 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    std::atomic&lt;bool&gt; end_test = <span class="keyword">false</span>; \</div>
 <div class="line">    ALWAYS(&amp;end_test) { end_test = <span class="keyword">true</span>; }</div>
 </div><!-- fragment -->
+<p>Creates a flag to signal when the test is finished. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -333,8 +368,163 @@ template&lt;typename... Dependees&gt; </div>
 
 </div>
 </div>
+<a id="ac48f430dfebe2ebc8b114e6d5179d5ab" name="ac48f430dfebe2ebc8b114e6d5179d5ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac48f430dfebe2ebc8b114e6d5179d5ab">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FabricCommsTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">actionTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tests lifeycle actions. </p>
+<p >Creates a <a class="el" href="classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling.">FabricTestNode</a> and checks that the action server only executes callbacks when the node in in the active state </p>
+
+</div>
+</div>
+<a id="aad1ecc65edfa8381b91adcf1039e9e02" name="aad1ecc65edfa8381b91adcf1039e9e02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad1ecc65edfa8381b91adcf1039e9e02">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FabricCommsTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">callbackErrorTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tests lifecycle service errors. </p>
+<p >Creates a <a class="el" href="classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling.">FabricTestNode</a> and checks the node correctly restarts when an exception is thrown in one of its callbacks. </p>
+
+</div>
+</div>
+<a id="a28a512903c774f96989249f241e0811c" name="a28a512903c774f96989249f241e0811c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a512903c774f96989249f241e0811c">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FabricCommsTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">lifecycleServiceTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tests lifeycle services. </p>
+<p >Creates a <a class="el" href="classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling.">FabricTestNode</a> and checks that the service listerner only executes callbacks when the node in in the active state </p>
+
+</div>
+</div>
+<a id="a5cbe3b7b496a47f72921fd3e3b611a91" name="a5cbe3b7b496a47f72921fd3e3b611a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cbe3b7b496a47f72921fd3e3b611a91">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FabricCommsTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">timerTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tests lifeycle timers. </p>
+<p >Creates a <a class="el" href="classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling.">FabricTestNode</a> and checks that the timer only executes callbacks when the node in in the active state </p>
+
+</div>
+</div>
+<a id="a1f38b5390c46adaa812d906173a6c0f9" name="a1f38b5390c46adaa812d906173a6c0f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f38b5390c46adaa812d906173a6c0f9">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">FabricCommTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">lifecycleSubTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tests lifeycle subscriptions. </p>
+<p >Creates a <a class="el" href="classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling.">FabricTestNode</a> and checks that the subscription only executes callbacks when the node in in the active state </p>
+
+</div>
+</div>
 <a id="a5dcfe2d53b3b6491feefd1cc428f376b" name="a5dcfe2d53b3b6491feefd1cc428f376b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dcfe2d53b3b6491feefd1cc428f376b">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcfe2d53b3b6491feefd1cc428f376b">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -359,10 +549,12 @@ template&lt;typename... Dependees&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Tests that a simple dependency chain can be started from the "root" node. </p>
+
 </div>
 </div>
 <a id="a1feeb44efc2243cba1bab4f0b9933dff" name="a1feeb44efc2243cba1bab4f0b9933dff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1feeb44efc2243cba1bab4f0b9933dff">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1feeb44efc2243cba1bab4f0b9933dff">&#9670;&nbsp;</a></span>TEST() <span class="overload">[7/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,10 +579,12 @@ template&lt;typename... Dependees&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Tests activations and deactivations for two nodes which depend on the same third node. </p>
+
 </div>
 </div>
 <a id="abddafd9d584eefa4f06f0dc2947738c3" name="abddafd9d584eefa4f06f0dc2947738c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abddafd9d584eefa4f06f0dc2947738c3">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abddafd9d584eefa4f06f0dc2947738c3">&#9670;&nbsp;</a></span>TEST() <span class="overload">[8/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,10 +609,12 @@ template&lt;typename... Dependees&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Tests that a complex dependency graph is deactivated correctly on error. </p>
+
 </div>
 </div>
 <a id="a0dd3787332c52f03e89780e0cd8fd56b" name="a0dd3787332c52f03e89780e0cd8fd56b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dd3787332c52f03e89780e0cd8fd56b">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dd3787332c52f03e89780e0cd8fd56b">&#9670;&nbsp;</a></span>TEST() <span class="overload">[9/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -443,10 +639,12 @@ template&lt;typename... Dependees&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Tests that a node deactivates when one of its dependencies errors. </p>
+
 </div>
 </div>
 <a id="abaa140db06b2e4019dfd12e9136ad3ad" name="abaa140db06b2e4019dfd12e9136ad3ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abaa140db06b2e4019dfd12e9136ad3ad">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa140db06b2e4019dfd12e9136ad3ad">&#9670;&nbsp;</a></span>TEST() <span class="overload">[10/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,10 +669,12 @@ template&lt;typename... Dependees&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Tests that a node started via a dependency chain is killed when all the nodes that depend on it die. </p>
+
 </div>
 </div>
 <a id="af6dcde5c8fb404c7cf98b71e721bcd98" name="af6dcde5c8fb404c7cf98b71e721bcd98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6dcde5c8fb404c7cf98b71e721bcd98">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af6dcde5c8fb404c7cf98b71e721bcd98">&#9670;&nbsp;</a></span>TEST() <span class="overload">[11/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -499,10 +699,12 @@ template&lt;typename... Dependees&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Tests that a regular deactivation triggers dependending nodes to also deactivate. </p>
+
 </div>
 </div>
 <a id="ad3b96b7c667180c3f434505b766102e0" name="ad3b96b7c667180c3f434505b766102e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3b96b7c667180c3f434505b766102e0">&#9670;&nbsp;</a></span>TEST() <span class="overload">[7/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b96b7c667180c3f434505b766102e0">&#9670;&nbsp;</a></span>TEST() <span class="overload">[12/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -527,10 +729,12 @@ template&lt;typename... Dependees&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Tests that a node restarts when one of its dependencies errors. </p>
+
 </div>
 </div>
 <a id="aed60e7804baad8c87558d2a607c8fc4f" name="aed60e7804baad8c87558d2a607c8fc4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed60e7804baad8c87558d2a607c8fc4f">&#9670;&nbsp;</a></span>TEST() <span class="overload">[8/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed60e7804baad8c87558d2a607c8fc4f">&#9670;&nbsp;</a></span>TEST() <span class="overload">[13/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -555,10 +759,12 @@ template&lt;typename... Dependees&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Tests that a node restarts on an error. </p>
+
 </div>
 </div>
 <a id="a176fc0a35cfca575a4a04099606e2352" name="a176fc0a35cfca575a4a04099606e2352"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a176fc0a35cfca575a4a04099606e2352">&#9670;&nbsp;</a></span>TEST() <span class="overload">[9/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a176fc0a35cfca575a4a04099606e2352">&#9670;&nbsp;</a></span>TEST() <span class="overload">[14/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -583,10 +789,12 @@ template&lt;typename... Dependees&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Tests that a dependee node is started when its depnder is started. </p>
+
 </div>
 </div>
 <a id="ac49c8192eec472e2e730b98daba5b1f6" name="ac49c8192eec472e2e730b98daba5b1f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac49c8192eec472e2e730b98daba5b1f6">&#9670;&nbsp;</a></span>TEST() <span class="overload">[10/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49c8192eec472e2e730b98daba5b1f6">&#9670;&nbsp;</a></span>TEST() <span class="overload">[15/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -611,10 +819,12 @@ template&lt;typename... Dependees&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Tests that a complex dependency chain is started correctly when the "root" node is activated. </p>
+
 </div>
 </div>
 <a id="a7013b86f018d7c654d81e5952a9d5489" name="a7013b86f018d7c654d81e5952a9d5489"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7013b86f018d7c654d81e5952a9d5489">&#9670;&nbsp;</a></span>TEST() <span class="overload">[11/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7013b86f018d7c654d81e5952a9d5489">&#9670;&nbsp;</a></span>TEST() <span class="overload">[16/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -638,6 +848,8 @@ template&lt;typename... Dependees&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Tests that a node is not activated when one of its dependencies fails to activate. </p>
 
 </div>
 </div>
@@ -754,7 +966,7 @@ template&lt;typename... Dependees&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 22 2022 07:59:09 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Wed Nov 23 2022 03:26:27 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

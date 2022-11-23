@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['nodeconfig_0',['NodeConfig',['../structNodeConfig.html',1,'']]],
-  ['nodelauncher_1',['NodeLauncher',['../classtest__utils_1_1NodeLauncher.html',1,'test_utils']]]
+  ['mockarmsystemhardware_0',['MockArmSystemHardware',['../classcmr__control_1_1MockArmSystemHardware.html',1,'cmr_control']]]
 ];
