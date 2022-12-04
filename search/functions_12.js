@@ -4,7 +4,7 @@ var searchData=
   ['scale_5fmatrix_1',['scale_matrix',['../namespacecmr__aruco_1_1transformations.html#a59c778ef234d20faadb5f53f026f2b0d',1,'cmr_aruco::transformations']]],
   ['schedule_5frestart_2',['schedule_restart',['../classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be',1,'cmr::fabric::FabricNode']]],
   ['send_5faction_5fgoal_5fsync_3',['send_action_goal_sync',['../namespacetest__utils.html#ac4ec3481ff9c49042b801c1385d5feaa',1,'test_utils']]],
-  ['send_5fjoystick_5freading_4',['send_joystick_reading',['../namespacearm__direct__control__test.html#af83f1b1fbc439c3487146634504be1de',1,'arm_direct_control_test']]],
+  ['send_5fjoystick_5freading_4',['send_joystick_reading',['../namespacearm__direct__control__test.html#a8553bee98463bf50be473836510429f7',1,'arm_direct_control_test']]],
   ['send_5frequest_5',['send_request',['../namespacecmr.html#aea21691c16a0393db1724888ce768b5f',1,'cmr']]],
   ['send_5funchecked_5fjoystick_5freading_6',['send_unchecked_joystick_reading',['../namespacearm__direct__control__test.html#a35314f61645ddac3b5c26ca6b3c8c10b',1,'arm_direct_control_test']]],
   ['serviceconfig_7',['ServiceConfig',['../structcmr_1_1fabric_1_1ServiceConfig.html#acfb4339aa01e7a7e3f57e9cd9099ba9f',1,'cmr::fabric::ServiceConfig']]],

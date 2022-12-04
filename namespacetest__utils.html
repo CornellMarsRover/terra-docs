@@ -151,6 +151,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac4ec3481ff9c49042b801c1385d5feaa"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__utils.html#ac4ec3481ff9c49042b801c1385d5feaa">send_action_goal_sync</a> (type action_type, str action_name, goal, feedback_cb=None, timeout_sec=5.0)</td></tr>
 <tr class="memdesc:ac4ec3481ff9c49042b801c1385d5feaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a goal to an action server.  <a href="namespacetest__utils.html#ac4ec3481ff9c49042b801c1385d5feaa">More...</a><br /></td></tr>
 <tr class="separator:ac4ec3481ff9c49042b801c1385d5feaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c2fe96238aaae8f523abff6dcde037"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__utils.html#ae7c2fe96238aaae8f523abff6dcde037">wait_for_processes</a> (*process_names)</td></tr>
+<tr class="memdesc:ae7c2fe96238aaae8f523abff6dcde037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for the processes to be running.  <a href="namespacetest__utils.html#ae7c2fe96238aaae8f523abff6dcde037">More...</a><br /></td></tr>
+<tr class="separator:ae7c2fe96238aaae8f523abff6dcde037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Node Testing Utility Framework. </p>
@@ -425,7 +428,7 @@ Example:</h3>
 <div class="line">    <span class="keyword">assert</span> <a class="code hl_function" href="namespacecmr_1_1fabric.html#aafaf3df989305146c1178f1f21524bf3">get_lifecycle_state</a>(<span class="stringliteral">&quot;py_test_demo&quot;</span>) == <span class="stringliteral">&quot;active&quot;</span></div>
 <div class="ttc" id="anamespacecmr_1_1fabric_html_aafaf3df989305146c1178f1f21524bf3"><div class="ttname"><a href="namespacecmr_1_1fabric.html#aafaf3df989305146c1178f1f21524bf3">cmr::fabric::get_lifecycle_state</a></div><div class="ttdeci">LifecycleState get_lifecycle_state(const std::string &amp;node_name)</div><div class="ttdoc">Get the LifecycleState of a lifecycle node.</div><div class="ttdef"><b>Definition:</b> lifecycle_helpers.cpp:27</div></div>
 <div class="ttc" id="anamespacedemo__test_html_a3da6a3d9cf8eb7d2e7f7b900cf9a5f94"><div class="ttname"><a href="namespacedemo__test.html#a3da6a3d9cf8eb7d2e7f7b900cf9a5f94">demo_test.test_demo_node</a></div><div class="ttdeci">def test_demo_node(str namespace)</div><div class="ttdef"><b>Definition:</b> demo_test.py:23</div></div>
-<div class="ttc" id="anamespacetest__utils_html_ad26e4cf97fa79dbf144da3d645576996"><div class="ttname"><a href="namespacetest__utils.html#ad26e4cf97fa79dbf144da3d645576996">test_utils.activate_fabric_node</a></div><div class="ttdeci">bool activate_fabric_node(str node_name, str namespace)</div><div class="ttdoc">Activates a fabric node via the lifecycle manager.</div><div class="ttdef"><b>Definition:</b> test_utils.py:531</div></div>
+<div class="ttc" id="anamespacetest__utils_html_ad26e4cf97fa79dbf144da3d645576996"><div class="ttname"><a href="namespacetest__utils.html#ad26e4cf97fa79dbf144da3d645576996">test_utils.activate_fabric_node</a></div><div class="ttdeci">bool activate_fabric_node(str node_name, str namespace)</div><div class="ttdoc">Activates a fabric node via the lifecycle manager.</div><div class="ttdef"><b>Definition:</b> test_utils.py:543</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -933,10 +936,35 @@ Args:</h3>
 
 </div>
 </div>
+<a id="ae7c2fe96238aaae8f523abff6dcde037" name="ae7c2fe96238aaae8f523abff6dcde037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c2fe96238aaae8f523abff6dcde037">&#9670;&nbsp;</a></span>wait_for_processes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def test_utils.wait_for_processes </td>
+          <td>(</td>
+          <td class="paramtype">*&#160;</td>
+          <td class="paramname"><em>process_names</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Waits for the processes to be running. </p>
+<h3><a class="anchor" id="autotoc_md52"></a>
+Args:</h3>
+<ul>
+<li>*process_names (str): The names of the processes to wait for </li>
+</ul>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 23 2022 16:37:49 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Dec 4 2022 18:09:29 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

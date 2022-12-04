@@ -6,7 +6,7 @@ var searchData=
   ['second_5frotate_5fidx_3',['second_rotate_idx',['../namespacecmr.html#acc648bd567c2d393cdfcca38916d9a24',1,'cmr']]],
   ['second_5frotate_5fidx_4',['SECOND_ROTATE_IDX',['../namespacearm__direct__control__test.html#acd1ad3cd13d0ae13292f70cf1de90efc',1,'arm_direct_control_test']]],
   ['send_5faction_5fgoal_5fsync_5',['send_action_goal_sync',['../namespacetest__utils.html#ac4ec3481ff9c49042b801c1385d5feaa',1,'test_utils']]],
-  ['send_5fjoystick_5freading_6',['send_joystick_reading',['../namespacearm__direct__control__test.html#af83f1b1fbc439c3487146634504be1de',1,'arm_direct_control_test']]],
+  ['send_5fjoystick_5freading_6',['send_joystick_reading',['../namespacearm__direct__control__test.html#a8553bee98463bf50be473836510429f7',1,'arm_direct_control_test']]],
   ['send_5frequest_7',['send_request',['../namespacecmr.html#aea21691c16a0393db1724888ce768b5f',1,'cmr']]],
   ['send_5funchecked_5fjoystick_5freading_8',['send_unchecked_joystick_reading',['../namespacearm__direct__control__test.html#a35314f61645ddac3b5c26ca6b3c8c10b',1,'arm_direct_control_test']]],
   ['server_9',['Server',['../classrclcpp__action_1_1Server.html',1,'rclcpp_action']]],
