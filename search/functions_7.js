@@ -7,6 +7,5 @@ var searchData=
   ['get_5flatest_5fbase_5fto_5fworld_4',['get_latest_base_to_world',['../classPositionControllerNode.html#ab93b8e6f4e233cadfe8116a50876d778',1,'PositionControllerNode']]],
   ['get_5flifecycle_5fstate_5',['get_lifecycle_state',['../namespacecmr_1_1fabric.html#aafaf3df989305146c1178f1f21524bf3',1,'cmr::fabric::get_lifecycle_state()'],['../namespacetest__utils.html#a1f115fbd48203cf37745525c24b95f04',1,'test_utils.get_lifecycle_state()']]],
   ['get_5flogger_6',['get_logger',['../cmr__debug_8hpp.html#ad43ef6b7f75c225c5877a2829d10d0f6',1,'cmr_debug.hpp']]],
-  ['get_5fnamespace_7',['get_namespace',['../classtest__utils_1_1CMRTestFixture.html#ad08995c267ead9a640fa9d1cba2381dc',1,'test_utils.CMRTestFixture.get_namespace()'],['../classtest__utils_1_1NodeLauncher.html#a35c67949a64064bbfd3bde4dda6e6afb',1,'test_utils.NodeLauncher.get_namespace()']]],
-  ['getconstrain_8',['getconstrain',['../classcmr__aruco_1_1transformations_1_1Arcball.html#a014e9175dab3f382522c881178fc0e5a',1,'cmr_aruco::transformations::Arcball']]]
+  ['get_5fnamespace_7',['get_namespace',['../classtest__utils_1_1CMRTestFixture.html#ad08995c267ead9a640fa9d1cba2381dc',1,'test_utils.CMRTestFixture.get_namespace()'],['../classtest__utils_1_1NodeLauncher.html#a35c67949a64064bbfd3bde4dda6e6afb',1,'test_utils.NodeLauncher.get_namespace()']]]
 ];

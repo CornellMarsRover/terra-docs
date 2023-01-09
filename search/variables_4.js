@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['data_5ffiles_0',['data_files',['../namespacesetup.html#ad027a8e9452da003dca32bf7467bd16e',1,'setup']]],
-  ['description_1',['description',['../namespacesetup.html#aedf461ec52a946bda975938ba0b93ec0',1,'setup']]],
-  ['destroyed_2',['destroyed',['../classtest__utils_1_1TopicSubscriber.html#adfb2a0acf8da7589435e2a4000d5214f',1,'test_utils.TopicSubscriber.destroyed()'],['../classtest__utils_1_1____ServiceActionListener.html#a143cb384c3f5ed579f9334e62fd0b7a3',1,'test_utils.__ServiceActionListener.destroyed()']]],
-  ['distortion_3',['distortion',['../classcmr__aruco_1_1aruco__node_1_1ArucoNode.html#a6f224f71b384e34bbe6a5098cc82c60f',1,'cmr_aruco::aruco_node::ArucoNode']]]
+  ['elbow_5fidx_0',['elbow_idx',['../namespacecmr.html#aca6535a4da4b12832b62cce5f425a981',1,'cmr']]],
+  ['elbow_5fidx_1',['ELBOW_IDX',['../namespacearm__direct__control__test.html#a2d87481664729366efe4cf55fb89de41',1,'arm_direct_control_test']]],
+  ['end_5feffector_5fidx_2',['END_EFFECTOR_IDX',['../namespacearm__direct__control__test.html#a759042d18b790cd410624e4edd7a04e2',1,'arm_direct_control_test']]],
+  ['end_5feffector_5fidx_3',['end_effector_idx',['../namespacecmr.html#ad8c15c4bb23c08bfbf65b013070c7196',1,'cmr']]],
+  ['entry_5fpoints_4',['entry_points',['../namespacesetup.html#ada7058afc98897f073d3f3b8b9157059',1,'setup']]],
+  ['error_5fthreshold_5',['error_threshold',['../classcmr_1_1fabric_1_1LifecycleServer.html#a6553c3c8508b7cad17c71f35fbf8ff23',1,'cmr::fabric::LifecycleServer']]]
 ];

@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['validate_5finterfaces_0',['validate_interfaces',['../classcmr__control_1_1BaseArmSystemHardware.html#ae47299968869afa0257cfc7d669490e2',1,'cmr_control::BaseArmSystemHardware::validate_interfaces()'],['../classcmr__control_1_1DrivesSystemHardware.html#adb57cbd1aa70543d9274472777551bb1',1,'cmr_control::DrivesSystemHardware::validate_interfaces()']]],
-  ['validate_5fswitch_1',['validate_switch',['../classcmr__control_1_1BaseArmSystemHardware.html#abb9f4c624d6500bb433cea0c2dc30101',1,'cmr_control::BaseArmSystemHardware']]],
-  ['value_5for_2',['value_or',['../namespacemonad.html#a2877b70472a6d1bcca65a58504ec7185',1,'monad']]],
-  ['value_5for_5felse_3',['value_or_else',['../namespacemonad.html#aa2c38ffc57761841453cf837029dab2a',1,'monad']]],
-  ['vector_5fnorm_4',['vector_norm',['../namespacecmr__aruco_1_1transformations.html#a9e7ce699e4d2a2c4631d95ea3f4a00e6',1,'cmr_aruco::transformations']]]
+  ['wait_5ffor_5fdebugger_0',['wait_for_debugger',['../namespacetest__utils.html#ad6a865f6298c2073f612b6e97da10325',1,'test_utils']]],
+  ['wait_5ffor_5fmsg_1',['wait_for_msg',['../classtest__utils_1_1TopicSubscriber.html#ad1e850d4dd135665ed9189e5b31c7202',1,'test_utils.TopicSubscriber.wait_for_msg()'],['../classtest__utils_1_1____ServiceActionListener.html#a3d45ee6ae569682f2d31161f939e5423',1,'test_utils.__ServiceActionListener.wait_for_msg()']]],
+  ['wait_5ffor_5fprocesses_2',['wait_for_processes',['../namespacetest__utils.html#ae7c2fe96238aaae8f523abff6dcde037',1,'test_utils']]],
+  ['what_3',['what',['../classCmrTestException.html#a47147d57f2c2d7022c23baac73bf578e',1,'CmrTestException']]],
+  ['write_4',['write',['../classcmr__control_1_1ArmSystemHardware.html#aa64d2ecdb049a287c0fcc3cc2b1303ad',1,'cmr_control::ArmSystemHardware::write()'],['../classcmr__control_1_1DrivesSystemHardware.html#a282626e2ae24c8b7b5382b0bcb7475f5',1,'cmr_control::DrivesSystemHardware::write()'],['../classcmr__control_1_1MockArmSystemHardware.html#a5beb3f9f0c74bc006014d2cc4427b3c7',1,'cmr_control::MockArmSystemHardware::write()']]],
+  ['write_5fevent_5',['write_event',['../controller__test_8cpp.html#a0a62983545daab8bc2168c5a3e63a7c6',1,'controller_test.cpp']]]
 ];

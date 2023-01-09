@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['g_5fassert_5fhandler_0',['g_assert_handler',['../cmr__debug_8cpp.html#aa75e20f2f4045d1d10f678ad27b84efa',1,'cmr_debug.cpp']]],
-  ['group_1',['group',['../structcmr_1_1fabric_1_1ServiceConfig.html#a2ac1f0c29a0a6d3ea3b980635181ecda',1,'cmr::fabric::ServiceConfig']]]
+  ['install_5frequires_0',['install_requires',['../namespacesetup.html#abead4f26b530856f858f0d44c7cf2588',1,'setup']]],
+  ['invalid_5ffd_1',['invalid_fd',['../joystick_8cpp.html#aaaa93572a9ddcff8bee429af98deb515',1,'joystick.cpp']]],
+  ['is_5fmonad_5flike_5fv_2',['is_monad_like_v',['../namespacemonad.html#a8a382d4e8144c32ea25036b6d2f21b9c',1,'monad']]],
+  ['is_5fserver_5ftype_5fv_3',['is_server_type_v',['../namespacecmr_1_1fabric.html#ae5368b55db69646305c54ea9d680b0ae',1,'cmr::fabric']]]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['unit_5fvector_0',['unit_vector',['../namespacecmr__aruco_1_1transformations.html#aecb907f46d6f5d3d2b1254d72727b6bf',1,'cmr_aruco::transformations']]],
-  ['update_5farm_5fposition_1',['update_arm_position',['../classcmr_1_1JoystickDirectControl.html#abe12ee7c7c9e2ad38c1842ba934bbfa8',1,'cmr::JoystickDirectControl']]],
-  ['update_5fcmd_5fvel_5fand_5fcheck_5freach_5ftarget_2',['update_cmd_vel_and_check_reach_target',['../classPositionControllerNode.html#a84363b7bb0c3bfbee9ad89989ef3a54c',1,'PositionControllerNode']]]
+  ['validate_5finterfaces_0',['validate_interfaces',['../classcmr__control_1_1BaseArmSystemHardware.html#ae47299968869afa0257cfc7d669490e2',1,'cmr_control::BaseArmSystemHardware::validate_interfaces()'],['../classcmr__control_1_1DrivesSystemHardware.html#adb57cbd1aa70543d9274472777551bb1',1,'cmr_control::DrivesSystemHardware::validate_interfaces()']]],
+  ['validate_5fswitch_1',['validate_switch',['../classcmr__control_1_1BaseArmSystemHardware.html#abb9f4c624d6500bb433cea0c2dc30101',1,'cmr_control::BaseArmSystemHardware']]],
+  ['value_5for_2',['value_or',['../namespacemonad.html#a2877b70472a6d1bcca65a58504ec7185',1,'monad']]],
+  ['value_5for_5felse_3',['value_or_else',['../namespacemonad.html#aa2c38ffc57761841453cf837029dab2a',1,'monad']]]
 ];
