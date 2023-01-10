@@ -9,5 +9,6 @@ var searchData=
   ['cmr_5ffabric_6',['cmr_fabric',['../md_src_cmr_fabric_README.html',1,'']]],
   ['cmr_5fmsgs_7',['cmr_msgs',['../md_src_cmr_msgs_README.html',1,'']]],
   ['cmr_5fpy_5ftest_8',['cmr_py_test',['../md_src_cmr_py_test_README.html',1,'']]],
-  ['cmr_5ftest_9',['cmr_test',['../md_src_cmr_test_README.html',1,'']]]
+  ['cmr_5frover_9',['cmr_rover',['../md_src_cmr_rover_README.html',1,'']]],
+  ['cmr_5ftest_10',['cmr_test',['../md_src_cmr_test_README.html',1,'']]]
 ];
