@@ -65,7 +65,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">cmr_control Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -74,6 +75,12 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html">ArmSystemHardware</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html" title="ArmSystemHardware is a hardware interface for the arm that provides effort and position control to ea...">ArmSystemHardware</a> is a hardware interface for the arm that provides effort and position control to each of the arm's joints.  <a href="classcmr__control_1_1ArmSystemHardware.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1AstroSensorBroadcaster.html">AstroSensorBroadcaster</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classcmr__control_1_1AstroSensorBroadcaster.html" title="The AstroSensorBroadcaster is a broadcaster which publishes AstroTech sensor data (or really any floa...">AstroSensorBroadcaster</a> is a broadcaster which publishes AstroTech sensor data (or really any floating point sensor data) along with a timestamp to a ROS topic.  <a href="classcmr__control_1_1AstroSensorBroadcaster.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1AstroSensorHardware.html">AstroSensorHardware</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classcmr__control_1_1AstroSensorHardware.html" title="AstroSensorHardware is a hardware interface for the astro sensor that provides readings of a sensor&#39;s...">AstroSensorHardware</a> is a hardware interface for the astro sensor that provides readings of a sensor's floting point readings.  <a href="classcmr__control_1_1AstroSensorHardware.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html">BaseArmSystemHardware</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for arm system hardware.  <a href="classcmr__control_1_1BaseArmSystemHardware.html#details">More...</a><br /></td></tr>
@@ -84,11 +91,81 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1MockArmSystemHardware.html">MockArmSystemHardware</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classcmr__control_1_1MockArmSystemHardware.html" title="MockArmSystemHardware is a hardware interface for the arm that mocks effort and position control to e...">MockArmSystemHardware</a> is a hardware interface for the arm that mocks effort and position control to each of the arm's joints.  <a href="classcmr__control_1_1MockArmSystemHardware.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a6114e965c808b34c22e6d63d02d7366b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr__control.html#a6114e965c808b34c22e6d63d02d7366b">get_reading</a> (const std::string &amp;sensor_interface_name)</td></tr>
+<tr class="separator:a6114e965c808b34c22e6d63d02d7366b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f2b5c15216717415cad84734e401a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr__control.html#ab9f2b5c15216717415cad84734e401a5">set_publisher_frame_id</a> (const std::string &amp;frame_id, std::unique_ptr&lt; realtime_tools::RealtimePublisher&lt; cmr_msgs::msg::Float64ArrayStamped &gt; &gt; &amp;publisher)</td></tr>
+<tr class="separator:ab9f2b5c15216717415cad84734e401a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a6114e965c808b34c22e6d63d02d7366b" name="a6114e965c808b34c22e6d63d02d7366b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6114e965c808b34c22e6d63d02d7366b">&#9670;&nbsp;</a></span>get_reading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double cmr_control::get_reading </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>sensor_interface_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9f2b5c15216717415cad84734e401a5" name="ab9f2b5c15216717415cad84734e401a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9f2b5c15216717415cad84734e401a5">&#9670;&nbsp;</a></span>set_publisher_frame_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmr_control::set_publisher_frame_id </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>frame_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; realtime_tools::RealtimePublisher&lt; cmr_msgs::msg::Float64ArrayStamped &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>publisher</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 12 2023 18:23:20 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jan 15 2023 20:25:20 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

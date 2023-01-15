@@ -1,0 +1,4 @@
+<map id="cmr_control::AstroSensorBroadcaster" name="cmr_control::AstroSensorBroadcaster">
+<area shape="rect" id="node1" title="The AstroSensorBroadcaster is a broadcaster which publishes AstroTech sensor data (or really any floa..." alt="" coords="5,95,173,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="22,5,157,47"/>
+</map>

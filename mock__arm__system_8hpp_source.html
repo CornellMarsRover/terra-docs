@@ -71,35 +71,36 @@ $(function() {
   <div class="headertitle"><div class="title">mock_arm_system.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="mock__arm__system_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="base__arm__system_8hpp.html">cmr_control/base_arm_system.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;rclcpp/macros.hpp&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecmr__control.html">cmr_control</a></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classcmr__control_1_1MockArmSystemHardware.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="classcmr__control_1_1MockArmSystemHardware.html">MockArmSystemHardware</a> : <span class="keyword">public</span> <a class="code hl_class" href="classcmr__control_1_1BaseArmSystemHardware.html">cmr_control::BaseArmSystemHardware</a></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    RCLCPP_SHARED_PTR_DEFINITIONS(<a class="code hl_class" href="classcmr__control_1_1MockArmSystemHardware.html">MockArmSystemHardware</a>)</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    hardware_interface::return_type <a class="code hl_function" href="classcmr__control_1_1MockArmSystemHardware.html#a5ea9db666cd0b33af75e01b3eb6f2b32">read</a>(<span class="keyword">const</span> rclcpp::Time&amp; time,</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                                         <span class="keyword">const</span> rclcpp::Duration&amp; period) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    hardware_interface::return_type <a class="code hl_function" href="classcmr__control_1_1MockArmSystemHardware.html#a5beb3f9f0c74bc006014d2cc4427b3c7">write</a>(<span class="keyword">const</span> rclcpp::Time&amp; time,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                                          <span class="keyword">const</span> rclcpp::Duration&amp; period) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}  <span class="comment">// namespace cmr_control</span></div>
+<a href="mock__arm__system_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="base__arm__system_8hpp.html">cmr_control/base_arm_system.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;rclcpp/macros.hpp&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecmr__control.html">cmr_control</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classcmr__control_1_1MockArmSystemHardware.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="classcmr__control_1_1MockArmSystemHardware.html">MockArmSystemHardware</a> : <span class="keyword">public</span> <a class="code hl_class" href="classcmr__control_1_1BaseArmSystemHardware.html">cmr_control::BaseArmSystemHardware</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    RCLCPP_SHARED_PTR_DEFINITIONS(<a class="code hl_class" href="classcmr__control_1_1MockArmSystemHardware.html">MockArmSystemHardware</a>)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    hardware_interface::return_type <a class="code hl_function" href="classcmr__control_1_1MockArmSystemHardware.html#a5ea9db666cd0b33af75e01b3eb6f2b32">read</a>(<span class="keyword">const</span> rclcpp::Time&amp; time,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                                         <span class="keyword">const</span> rclcpp::Duration&amp; period) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    hardware_interface::return_type <a class="code hl_function" href="classcmr__control_1_1MockArmSystemHardware.html#a5beb3f9f0c74bc006014d2cc4427b3c7">write</a>(<span class="keyword">const</span> rclcpp::Time&amp; time,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                                          <span class="keyword">const</span> rclcpp::Duration&amp; period) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}  <span class="comment">// namespace cmr_control</span></div>
 <div class="ttc" id="abase__arm__system_8hpp_html"><div class="ttname"><a href="base__arm__system_8hpp.html">base_arm_system.hpp</a></div></div>
 <div class="ttc" id="aclasscmr__control_1_1BaseArmSystemHardware_html"><div class="ttname"><a href="classcmr__control_1_1BaseArmSystemHardware.html">cmr_control::BaseArmSystemHardware</a></div><div class="ttdoc">A base class for arm system hardware.</div><div class="ttdef"><b>Definition:</b> base_arm_system.hpp:23</div></div>
-<div class="ttc" id="aclasscmr__control_1_1MockArmSystemHardware_html"><div class="ttname"><a href="classcmr__control_1_1MockArmSystemHardware.html">cmr_control::MockArmSystemHardware</a></div><div class="ttdoc">MockArmSystemHardware is a hardware interface for the arm that mocks effort and position control to e...</div><div class="ttdef"><b>Definition:</b> mock_arm_system.hpp:16</div></div>
+<div class="ttc" id="aclasscmr__control_1_1MockArmSystemHardware_html"><div class="ttname"><a href="classcmr__control_1_1MockArmSystemHardware.html">cmr_control::MockArmSystemHardware</a></div><div class="ttdoc">MockArmSystemHardware is a hardware interface for the arm that mocks effort and position control to e...</div><div class="ttdef"><b>Definition:</b> mock_arm_system.hpp:17</div></div>
 <div class="ttc" id="aclasscmr__control_1_1MockArmSystemHardware_html_a5beb3f9f0c74bc006014d2cc4427b3c7"><div class="ttname"><a href="classcmr__control_1_1MockArmSystemHardware.html#a5beb3f9f0c74bc006014d2cc4427b3c7">cmr_control::MockArmSystemHardware::write</a></div><div class="ttdeci">hardware_interface::return_type write(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period) override</div><div class="ttdef"><b>Definition:</b> mock_arm_system.cpp:19</div></div>
 <div class="ttc" id="aclasscmr__control_1_1MockArmSystemHardware_html_a5ea9db666cd0b33af75e01b3eb6f2b32"><div class="ttname"><a href="classcmr__control_1_1MockArmSystemHardware.html#a5ea9db666cd0b33af75e01b3eb6f2b32">cmr_control::MockArmSystemHardware::read</a></div><div class="ttdeci">hardware_interface::return_type read(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period) override</div><div class="ttdef"><b>Definition:</b> mock_arm_system.cpp:13</div></div>
-<div class="ttc" id="anamespacecmr__control_html"><div class="ttname"><a href="namespacecmr__control.html">cmr_control</a></div><div class="ttdef"><b>Definition:</b> arm_system.hpp:5</div></div>
+<div class="ttc" id="anamespacecmr__control_html"><div class="ttname"><a href="namespacecmr__control.html">cmr_control</a></div><div class="ttdef"><b>Definition:</b> arm_system.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 12 2023 18:23:19 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jan 15 2023 20:25:19 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

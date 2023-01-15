@@ -71,35 +71,36 @@ $(function() {
   <div class="headertitle"><div class="title">arm_system.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="arm__system_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="base__arm__system_8hpp.html">cmr_control/base_arm_system.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;rclcpp/macros.hpp&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="namespacecmr__control.html">    4</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecmr__control.html">cmr_control</a></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classcmr__control_1_1ArmSystemHardware.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="classcmr__control_1_1ArmSystemHardware.html">ArmSystemHardware</a> : <span class="keyword">public</span> <a class="code hl_class" href="classcmr__control_1_1BaseArmSystemHardware.html">cmr_control::BaseArmSystemHardware</a></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    RCLCPP_SHARED_PTR_DEFINITIONS(<a class="code hl_class" href="classcmr__control_1_1ArmSystemHardware.html">ArmSystemHardware</a>)</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    hardware_interface::return_type <a class="code hl_function" href="classcmr__control_1_1ArmSystemHardware.html#aead7a90fbd5ad58a6a0ebf47a1bf996a">read</a>(<span class="keyword">const</span> rclcpp::Time&amp; time,</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                                         <span class="keyword">const</span> rclcpp::Duration&amp; period) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    hardware_interface::return_type <a class="code hl_function" href="classcmr__control_1_1ArmSystemHardware.html#aa64d2ecdb049a287c0fcc3cc2b1303ad">write</a>(<span class="keyword">const</span> rclcpp::Time&amp; time,</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                                          <span class="keyword">const</span> rclcpp::Duration&amp; period) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}  <span class="comment">// namespace cmr_control</span></div>
+<a href="arm__system_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="base__arm__system_8hpp.html">cmr_control/base_arm_system.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;rclcpp/macros.hpp&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="namespacecmr__control.html">    5</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecmr__control.html">cmr_control</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classcmr__control_1_1ArmSystemHardware.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="classcmr__control_1_1ArmSystemHardware.html">ArmSystemHardware</a> : <span class="keyword">public</span> <a class="code hl_class" href="classcmr__control_1_1BaseArmSystemHardware.html">cmr_control::BaseArmSystemHardware</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    RCLCPP_SHARED_PTR_DEFINITIONS(<a class="code hl_class" href="classcmr__control_1_1ArmSystemHardware.html">ArmSystemHardware</a>)</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    hardware_interface::return_type <a class="code hl_function" href="classcmr__control_1_1ArmSystemHardware.html#aead7a90fbd5ad58a6a0ebf47a1bf996a">read</a>(<span class="keyword">const</span> rclcpp::Time&amp; time,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                                         <span class="keyword">const</span> rclcpp::Duration&amp; period) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    hardware_interface::return_type <a class="code hl_function" href="classcmr__control_1_1ArmSystemHardware.html#aa64d2ecdb049a287c0fcc3cc2b1303ad">write</a>(<span class="keyword">const</span> rclcpp::Time&amp; time,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                                          <span class="keyword">const</span> rclcpp::Duration&amp; period) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}  <span class="comment">// namespace cmr_control</span></div>
 <div class="ttc" id="abase__arm__system_8hpp_html"><div class="ttname"><a href="base__arm__system_8hpp.html">base_arm_system.hpp</a></div></div>
-<div class="ttc" id="aclasscmr__control_1_1ArmSystemHardware_html"><div class="ttname"><a href="classcmr__control_1_1ArmSystemHardware.html">cmr_control::ArmSystemHardware</a></div><div class="ttdoc">ArmSystemHardware is a hardware interface for the arm that provides effort and position control to ea...</div><div class="ttdef"><b>Definition:</b> arm_system.hpp:13</div></div>
+<div class="ttc" id="aclasscmr__control_1_1ArmSystemHardware_html"><div class="ttname"><a href="classcmr__control_1_1ArmSystemHardware.html">cmr_control::ArmSystemHardware</a></div><div class="ttdoc">ArmSystemHardware is a hardware interface for the arm that provides effort and position control to ea...</div><div class="ttdef"><b>Definition:</b> arm_system.hpp:14</div></div>
 <div class="ttc" id="aclasscmr__control_1_1ArmSystemHardware_html_aa64d2ecdb049a287c0fcc3cc2b1303ad"><div class="ttname"><a href="classcmr__control_1_1ArmSystemHardware.html#aa64d2ecdb049a287c0fcc3cc2b1303ad">cmr_control::ArmSystemHardware::write</a></div><div class="ttdeci">hardware_interface::return_type write(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period) override</div><div class="ttdef"><b>Definition:</b> arm_system.cpp:13</div></div>
 <div class="ttc" id="aclasscmr__control_1_1ArmSystemHardware_html_aead7a90fbd5ad58a6a0ebf47a1bf996a"><div class="ttname"><a href="classcmr__control_1_1ArmSystemHardware.html#aead7a90fbd5ad58a6a0ebf47a1bf996a">cmr_control::ArmSystemHardware::read</a></div><div class="ttdeci">hardware_interface::return_type read(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period) override</div><div class="ttdef"><b>Definition:</b> arm_system.cpp:6</div></div>
 <div class="ttc" id="aclasscmr__control_1_1BaseArmSystemHardware_html"><div class="ttname"><a href="classcmr__control_1_1BaseArmSystemHardware.html">cmr_control::BaseArmSystemHardware</a></div><div class="ttdoc">A base class for arm system hardware.</div><div class="ttdef"><b>Definition:</b> base_arm_system.hpp:23</div></div>
-<div class="ttc" id="anamespacecmr__control_html"><div class="ttname"><a href="namespacecmr__control.html">cmr_control</a></div><div class="ttdef"><b>Definition:</b> arm_system.hpp:5</div></div>
+<div class="ttc" id="anamespacecmr__control_html"><div class="ttname"><a href="namespacecmr__control.html">cmr_control</a></div><div class="ttdef"><b>Definition:</b> arm_system.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 12 2023 18:23:19 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jan 15 2023 20:25:19 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
