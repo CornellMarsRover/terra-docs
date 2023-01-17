@@ -2,7 +2,7 @@ var searchData=
 [
   ['debug_5fclock_2ehpp_0',['debug_clock.hpp',['../debug__clock_8hpp.html',1,'']]],
   ['debug_5fclock_2einl_1',['debug_clock.inl',['../debug__clock_8inl.html',1,'']]],
-  ['demo_2elaunch_2epy_2',['demo.launch.py',['../demo_8launch_8py.html',1,'']]],
+  ['demo_2elaunch_2epy_2',['demo.launch.py',['../cmr__arm__config_2launch_2demo_8launch_8py.html',1,'(Global Namespace)'],['../cmr__rover_2launch_2demo_8launch_8py.html',1,'(Global Namespace)']]],
   ['demo_5farm_2elaunch_2epy_3',['demo_arm.launch.py',['../demo__arm_8launch_8py.html',1,'']]],
   ['demo_5fdrives_2elaunch_2epy_4',['demo_drives.launch.py',['../demo__drives_8launch_8py.html',1,'']]],
   ['demo_5fnode_2ecpp_5',['demo_node.cpp',['../demo__node_8cpp.html',1,'']]],
