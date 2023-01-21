@@ -22,7 +22,8 @@ var searchData=
   ['producerconsumermockclock_19',['ProducerConsumerMockClock',['../classcmr_1_1ProducerConsumerMockClock.html',1,'cmr']]],
   ['promise_20',['Promise',['../classcmr_1_1fabric_1_1LifecycleClient.html#a368cb7aad2e3f1ffbd96ea81a2c9bc78',1,'cmr::fabric::LifecycleClient']]],
   ['promisewithrequest_21',['PromiseWithRequest',['../classcmr_1_1fabric_1_1LifecycleClient.html#abb9f1f2adcaf5073dd1bbfc38adf9d74',1,'cmr::fabric::LifecycleClient']]],
-  ['pub_22',['pub',['../classcmr__py__test_1_1utils__test__node_1_1PassthroughNode.html#ae28f1c2bb36bd394b454535532a701d0',1,'cmr_py_test::utils_test_node::PassthroughNode']]],
-  ['publish_5fto_5ftopic_23',['publish_to_topic',['../namespacetest__utils.html#a846599ca68e06b7779964e0456662deb',1,'test_utils']]],
-  ['publisher_5f_24',['publisher_',['../classcmr__demo__py_1_1arm__effort__control_1_1ArmEffortControl.html#a8c87f817a3972a98130455fad949e4ba',1,'cmr_demo_py::arm_effort_control::ArmEffortControl']]]
+  ['ptr_5ft_22',['ptr_t',['../classcmr_1_1fabric_1_1LifecycleServer.html#a38cec8ef7f16111af687e3b604639274',1,'cmr::fabric::LifecycleServer::ptr_t()'],['../classcmr_1_1fabric_1_1LifecycleClient.html#ac97542294c05ac481a42a874756a23e1',1,'cmr::fabric::LifecycleClient::ptr_t()']]],
+  ['pub_23',['pub',['../classcmr__py__test_1_1utils__test__node_1_1PassthroughNode.html#ae28f1c2bb36bd394b454535532a701d0',1,'cmr_py_test::utils_test_node::PassthroughNode']]],
+  ['publish_5fto_5ftopic_24',['publish_to_topic',['../namespacetest__utils.html#a846599ca68e06b7779964e0456662deb',1,'test_utils']]],
+  ['publisher_5f_25',['publisher_',['../classcmr__demo__py_1_1arm__effort__control_1_1ArmEffortControl.html#a8c87f817a3972a98130455fad949e4ba',1,'cmr_demo_py::arm_effort_control::ArmEffortControl']]]
 ];

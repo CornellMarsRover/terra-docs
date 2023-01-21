@@ -14,11 +14,14 @@ var searchData=
   ['lifecycleclient_11',['LifecycleClient',['../classcmr_1_1fabric_1_1LifecycleClient.html',1,'cmr::fabric::LifecycleClient&lt; ServiceT &gt;'],['../classcmr_1_1fabric_1_1LifecycleClient.html#aafc46cdf50cccbebdf2210eb5b7b4aa9',1,'cmr::fabric::LifecycleClient::LifecycleClient()']]],
   ['lifecycleclient_3c_20cmr_5fmsgs_3a_3asrv_3a_3aactivatenode_20_3e_12',['LifecycleClient&lt; cmr_msgs::srv::ActivateNode &gt;',['../classcmr_1_1fabric_1_1LifecycleClient.html',1,'cmr::fabric']]],
   ['lifecyclemanager_13',['LifecycleManager',['../classLifecycleManager.html#ac17bd533fbc27016b67b18ed9252f60c',1,'LifecycleManager::LifecycleManager()'],['../classLifecycleManager.html',1,'LifecycleManager']]],
-  ['lifecycleserver_14',['LifecycleServer',['../classcmr_1_1fabric_1_1LifecycleServer.html',1,'cmr::fabric::LifecycleServer&lt; ServerT &gt;'],['../classcmr_1_1fabric_1_1LifecycleServer.html#a3f1fc07cc9df42739a35784043ede87c',1,'cmr::fabric::LifecycleServer::LifecycleServer()']]],
-  ['lifecycleserver_3c_20cmr_5fmsgs_3a_3asrv_3a_3aactivatenode_20_3e_15',['LifecycleServer&lt; cmr_msgs::srv::ActivateNode &gt;',['../classcmr_1_1fabric_1_1LifecycleServer.html',1,'cmr::fabric']]],
-  ['lifecycleserver_3c_20std_5fmsgs_3a_3amsg_3a_3abool_20_3e_16',['LifecycleServer&lt; std_msgs::msg::Bool &gt;',['../classcmr_1_1fabric_1_1LifecycleServer.html',1,'cmr::fabric']]],
-  ['lifecycleservice_17',['LifecycleService',['../namespacecmr_1_1fabric.html#a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2',1,'cmr::fabric']]],
-  ['lifecyclestate_18',['LifecycleState',['../namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190',1,'cmr::fabric']]],
-  ['lifecyclesubscription_19',['LifecycleSubscription',['../namespacecmr_1_1fabric.html#a841cb0d434fcebd500028d09e2464db1',1,'cmr::fabric']]],
-  ['lifecycletimer_20',['LifecycleTimer',['../namespacecmr_1_1fabric.html#a148f297b88566b9cde7d85c6dc5bb293',1,'cmr::fabric']]]
+  ['lifecycleserver_14',['LifecycleServer',['../classcmr_1_1fabric_1_1LifecycleServer.html',1,'cmr::fabric::LifecycleServer&lt; ServerT &gt;'],['../classcmr_1_1fabric_1_1LifecycleServer.html#a3f1fc07cc9df42739a35784043ede87c',1,'cmr::fabric::LifecycleServer::LifecycleServer(rclcpp_lifecycle::LifecycleNode &amp;node_base, ErrorCallbackT &amp;&amp;error_callback, const typename ServerT::config_t &amp;config, CallbackT &amp;&amp;... callbacks)'],['../classcmr_1_1fabric_1_1LifecycleServer.html#a2e75fc00e43ade2adb8c078bea2f3931',1,'cmr::fabric::LifecycleServer::LifecycleServer(const LifecycleServer &amp;)=delete'],['../classcmr_1_1fabric_1_1LifecycleServer.html#a8d01778d47f977c6bb973c4b82fcb379',1,'cmr::fabric::LifecycleServer::LifecycleServer(LifecycleServer &amp;&amp;other) noexcept=delete']]],
+  ['lifecycleserver_3c_20cmr_5fmsgs_3a_3aaction_3a_3atesttargetposition_20_3e_15',['LifecycleServer&lt; cmr_msgs::action::TestTargetPosition &gt;',['../classcmr_1_1fabric_1_1LifecycleServer.html',1,'cmr::fabric']]],
+  ['lifecycleserver_3c_20cmr_5fmsgs_3a_3asrv_3a_3aactivatenode_20_3e_16',['LifecycleServer&lt; cmr_msgs::srv::ActivateNode &gt;',['../classcmr_1_1fabric_1_1LifecycleServer.html',1,'cmr::fabric']]],
+  ['lifecycleserver_3c_20geometry_5fmsgs_3a_3amsg_3a_3apose_20_3e_17',['LifecycleServer&lt; geometry_msgs::msg::Pose &gt;',['../classcmr_1_1fabric_1_1LifecycleServer.html',1,'cmr::fabric']]],
+  ['lifecycleserver_3c_20int64_5ft_2c_20std_3a_3amilli_20_3e_18',['LifecycleServer&lt; int64_t, std::milli &gt;',['../classcmr_1_1fabric_1_1LifecycleServer.html',1,'cmr::fabric']]],
+  ['lifecycleserver_3c_20std_5fmsgs_3a_3amsg_3a_3abool_20_3e_19',['LifecycleServer&lt; std_msgs::msg::Bool &gt;',['../classcmr_1_1fabric_1_1LifecycleServer.html',1,'cmr::fabric']]],
+  ['lifecycleservice_20',['LifecycleService',['../namespacecmr_1_1fabric.html#a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2',1,'cmr::fabric']]],
+  ['lifecyclestate_21',['LifecycleState',['../namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190',1,'cmr::fabric']]],
+  ['lifecyclesubscription_22',['LifecycleSubscription',['../namespacecmr_1_1fabric.html#a841cb0d434fcebd500028d09e2464db1',1,'cmr::fabric']]],
+  ['lifecycletimer_23',['LifecycleTimer',['../namespacecmr_1_1fabric.html#a148f297b88566b9cde7d85c6dc5bb293',1,'cmr::fabric']]]
 ];

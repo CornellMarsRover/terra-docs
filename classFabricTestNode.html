@@ -92,14 +92,16 @@ Collaboration diagram for FabricTestNode:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFabricTestNode__coll__graph.png" border="0" usemap="#aFabricTestNode_coll__map" alt="Collaboration graph"/></div>
 <map name="aFabricTestNode_coll__map" id="aFabricTestNode_coll__map">
-<area shape="rect" title="this node provides a simple test of dependency management and fault handling." alt="" coords="611,101,725,128"/>
-<area shape="rect" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes." alt="" coords="285,5,439,32"/>
+<area shape="rect" title="this node provides a simple test of dependency management and fault handling." alt="" coords="659,167,773,193"/>
+<area shape="rect" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes." alt="" coords="309,5,463,32"/>
 <area shape="rect" title=" " alt="" coords="5,5,205,32"/>
-<area shape="rect" href="classcmr_1_1fabric_1_1LifecycleServer.html" title=" " alt="" coords="273,57,451,98"/>
-<area shape="rect" href="classcmr_1_1fabric_1_1GenericLifecycle.html" title="Interface for any LifecycleServer." alt="" coords="13,104,198,131"/>
-<area shape="rect" href="classcmr_1_1fabric_1_1LifecycleServer.html" title=" " alt="" coords="255,122,469,163"/>
-<area shape="rect" href="classcmr_1_1fabric_1_1LifecycleClient.html" title=" " alt="" coords="255,187,469,229"/>
-<area shape="rect" title=" " alt="" coords="42,195,169,221"/>
+<area shape="rect" href="classcmr_1_1fabric_1_1LifecycleServer.html" title=" " alt="" coords="297,57,475,98"/>
+<area shape="rect" href="classcmr_1_1fabric_1_1GenericLifecycle.html" title="Interface for any LifecycleServer." alt="" coords="13,163,198,189"/>
+<area shape="rect" href="classcmr_1_1fabric_1_1LifecycleServer.html" title=" " alt="" coords="279,122,493,163"/>
+<area shape="rect" href="classcmr_1_1fabric_1_1LifecycleServer.html" title=" " alt="" coords="297,187,475,229"/>
+<area shape="rect" href="classcmr_1_1fabric_1_1LifecycleServer.html" title=" " alt="" coords="255,253,517,294"/>
+<area shape="rect" href="classcmr_1_1fabric_1_1LifecycleClient.html" title=" " alt="" coords="279,318,493,359"/>
+<area shape="rect" title=" " alt="" coords="42,325,169,352"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -152,20 +154,20 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae73d76813b80b7d1bae675561aa99fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97b3627162138e77d7b9aa9f024324c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTestNode.html#a97b3627162138e77d7b9aa9f024324c6">m_fail_activate</a> = false</td></tr>
 <tr class="separator:a97b3627162138e77d7b9aa9f024324c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8a36939a98219105c26af27ecbbc378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecmr_1_1fabric.html#a841cb0d434fcebd500028d09e2464db1">cmr::fabric::LifecycleSubscription</a>&lt; std_msgs::msg::Bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTestNode.html#ad8a36939a98219105c26af27ecbbc378">m_test_sub</a></td></tr>
-<tr class="separator:ad8a36939a98219105c26af27ecbbc378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8223fab079782e405b026a12e41e237"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecmr_1_1fabric.html#a841cb0d434fcebd500028d09e2464db1">cmr::fabric::LifecycleSubscription</a>&lt; std_msgs::msg::Bool &gt;::ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTestNode.html#af8223fab079782e405b026a12e41e237">m_test_sub</a></td></tr>
+<tr class="separator:af8223fab079782e405b026a12e41e237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab69466348575676dee76fdf9701104dc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; std_msgs::msg::Bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTestNode.html#ab69466348575676dee76fdf9701104dc">m_test_pub</a></td></tr>
 <tr class="separator:ab69466348575676dee76fdf9701104dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefea5c684fb661da20e356f78fdf0f1c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; std_msgs::msg::Bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTestNode.html#aefea5c684fb661da20e356f78fdf0f1c">m_timer_pub</a></td></tr>
 <tr class="separator:aefea5c684fb661da20e356f78fdf0f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2b15a198848eec13a0fb8603dc3cdff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html">cmr::fabric::LifecycleClient</a>&lt; cmr_msgs::srv::ActivateNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTestNode.html#af2b15a198848eec13a0fb8603dc3cdff">m_test_client</a></td></tr>
-<tr class="separator:af2b15a198848eec13a0fb8603dc3cdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d23733b3e1e8a14b60af95cde91d1b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecmr_1_1fabric.html#a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2">cmr::fabric::LifecycleService</a>&lt; cmr_msgs::srv::ActivateNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTestNode.html#a0d23733b3e1e8a14b60af95cde91d1b4">m_test_service</a></td></tr>
-<tr class="separator:a0d23733b3e1e8a14b60af95cde91d1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28ee04ff4cbae1ebcf85d4972f563c68"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="namespacecmr_1_1fabric.html#a65cd6f004ef40cf153d745a87a2f7693">cmr::fabric::GenericLifecycleTimer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTestNode.html#a28ee04ff4cbae1ebcf85d4972f563c68">m_test_timer</a></td></tr>
-<tr class="separator:a28ee04ff4cbae1ebcf85d4972f563c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e7fd169be4f4447d550163b688c3c51"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classcmr_1_1fabric_1_1GenericLifecycle.html">cmr::fabric::GenericLifecycle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTestNode.html#a5e7fd169be4f4447d550163b688c3c51">m_test_action</a></td></tr>
-<tr class="separator:a5e7fd169be4f4447d550163b688c3c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce46efc43f809f8f9a228560fb39325"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html">cmr::fabric::LifecycleClient</a>&lt; cmr_msgs::srv::ActivateNode &gt;::ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTestNode.html#a8ce46efc43f809f8f9a228560fb39325">m_test_client</a></td></tr>
+<tr class="separator:a8ce46efc43f809f8f9a228560fb39325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7227971e4ceaa7eb3bb1625844754241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecmr_1_1fabric.html#a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2">cmr::fabric::LifecycleService</a>&lt; cmr_msgs::srv::ActivateNode &gt;::ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTestNode.html#a7227971e4ceaa7eb3bb1625844754241">m_test_service</a></td></tr>
+<tr class="separator:a7227971e4ceaa7eb3bb1625844754241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a11708f50c43e088393cfa3e99a9bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecmr_1_1fabric.html#a148f297b88566b9cde7d85c6dc5bb293">cmr::fabric::LifecycleTimer</a>&lt; int64_t, std::milli &gt;::ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTestNode.html#a41a11708f50c43e088393cfa3e99a9bc">m_test_timer</a></td></tr>
+<tr class="separator:a41a11708f50c43e088393cfa3e99a9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500c896021391fabdfdd1d3f8743a8ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecmr_1_1fabric.html#a6f35b79fd38e2e26cbe7e37010faa907">cmr::fabric::LifecycleActionServer</a>&lt; cmr_msgs::action::TestTargetPosition &gt;::ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFabricTestNode.html#a500c896021391fabdfdd1d3f8743a8ca">m_test_action</a></td></tr>
+<tr class="separator:a500c896021391fabdfdd1d3f8743a8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -501,8 +503,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a5e7fd169be4f4447d550163b688c3c51" name="a5e7fd169be4f4447d550163b688c3c51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e7fd169be4f4447d550163b688c3c51">&#9670;&nbsp;</a></span>m_test_action</h2>
+<a id="a500c896021391fabdfdd1d3f8743a8ca" name="a500c896021391fabdfdd1d3f8743a8ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a500c896021391fabdfdd1d3f8743a8ca">&#9670;&nbsp;</a></span>m_test_action</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -511,7 +513,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classcmr_1_1fabric_1_1GenericLifecycle.html">cmr::fabric::GenericLifecycle</a>&gt; FabricTestNode::m_test_action</td>
+          <td class="memname"><a class="el" href="namespacecmr_1_1fabric.html#a6f35b79fd38e2e26cbe7e37010faa907">cmr::fabric::LifecycleActionServer</a>&lt;cmr_msgs::action::TestTargetPosition&gt;::ptr_t FabricTestNode::m_test_action</td>
         </tr>
       </table>
   </td>
@@ -523,8 +525,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af2b15a198848eec13a0fb8603dc3cdff" name="af2b15a198848eec13a0fb8603dc3cdff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2b15a198848eec13a0fb8603dc3cdff">&#9670;&nbsp;</a></span>m_test_client</h2>
+<a id="a8ce46efc43f809f8f9a228560fb39325" name="a8ce46efc43f809f8f9a228560fb39325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce46efc43f809f8f9a228560fb39325">&#9670;&nbsp;</a></span>m_test_client</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -533,7 +535,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html">cmr::fabric::LifecycleClient</a>&lt;cmr_msgs::srv::ActivateNode&gt; FabricTestNode::m_test_client</td>
+          <td class="memname"><a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html">cmr::fabric::LifecycleClient</a>&lt;cmr_msgs::srv::ActivateNode&gt;::ptr_t FabricTestNode::m_test_client</td>
         </tr>
       </table>
   </td>
@@ -567,8 +569,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0d23733b3e1e8a14b60af95cde91d1b4" name="a0d23733b3e1e8a14b60af95cde91d1b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d23733b3e1e8a14b60af95cde91d1b4">&#9670;&nbsp;</a></span>m_test_service</h2>
+<a id="a7227971e4ceaa7eb3bb1625844754241" name="a7227971e4ceaa7eb3bb1625844754241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7227971e4ceaa7eb3bb1625844754241">&#9670;&nbsp;</a></span>m_test_service</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -577,7 +579,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacecmr_1_1fabric.html#a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2">cmr::fabric::LifecycleService</a>&lt;cmr_msgs::srv::ActivateNode&gt; FabricTestNode::m_test_service</td>
+          <td class="memname"><a class="el" href="namespacecmr_1_1fabric.html#a10ee3ecb9332a6f6a6a0c8c3e2f7c7c2">cmr::fabric::LifecycleService</a>&lt;cmr_msgs::srv::ActivateNode&gt;::ptr_t FabricTestNode::m_test_service</td>
         </tr>
       </table>
   </td>
@@ -589,8 +591,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ad8a36939a98219105c26af27ecbbc378" name="ad8a36939a98219105c26af27ecbbc378"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8a36939a98219105c26af27ecbbc378">&#9670;&nbsp;</a></span>m_test_sub</h2>
+<a id="af8223fab079782e405b026a12e41e237" name="af8223fab079782e405b026a12e41e237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8223fab079782e405b026a12e41e237">&#9670;&nbsp;</a></span>m_test_sub</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -599,7 +601,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacecmr_1_1fabric.html#a841cb0d434fcebd500028d09e2464db1">cmr::fabric::LifecycleSubscription</a>&lt;std_msgs::msg::Bool&gt; FabricTestNode::m_test_sub</td>
+          <td class="memname"><a class="el" href="namespacecmr_1_1fabric.html#a841cb0d434fcebd500028d09e2464db1">cmr::fabric::LifecycleSubscription</a>&lt;std_msgs::msg::Bool&gt;::ptr_t FabricTestNode::m_test_sub</td>
         </tr>
       </table>
   </td>
@@ -611,8 +613,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a28ee04ff4cbae1ebcf85d4972f563c68" name="a28ee04ff4cbae1ebcf85d4972f563c68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28ee04ff4cbae1ebcf85d4972f563c68">&#9670;&nbsp;</a></span>m_test_timer</h2>
+<a id="a41a11708f50c43e088393cfa3e99a9bc" name="a41a11708f50c43e088393cfa3e99a9bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a11708f50c43e088393cfa3e99a9bc">&#9670;&nbsp;</a></span>m_test_timer</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -621,7 +623,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="namespacecmr_1_1fabric.html#a65cd6f004ef40cf153d745a87a2f7693">cmr::fabric::GenericLifecycleTimer</a>&gt; FabricTestNode::m_test_timer</td>
+          <td class="memname"><a class="el" href="namespacecmr_1_1fabric.html#a148f297b88566b9cde7d85c6dc5bb293">cmr::fabric::LifecycleTimer</a>&lt;int64_t,std::milli&gt;::ptr_t FabricTestNode::m_test_timer</td>
         </tr>
       </table>
   </td>
@@ -661,7 +663,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 21 2023 18:27:20 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Jan 21 2023 19:27:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

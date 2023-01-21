@@ -1,10 +1,12 @@
 <map id="FabricTestNode" name="FabricTestNode">
-<area shape="rect" id="node1" title="this node provides a simple test of dependency management and fault handling." alt="" coords="611,101,725,128"/>
-<area shape="rect" id="node2" href="$classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes." alt="" coords="285,5,439,32"/>
+<area shape="rect" id="node1" title="this node provides a simple test of dependency management and fault handling." alt="" coords="659,167,773,193"/>
+<area shape="rect" id="node2" href="$classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes." alt="" coords="309,5,463,32"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,5,205,32"/>
-<area shape="rect" id="node4" href="$classcmr_1_1fabric_1_1LifecycleServer.html" title=" " alt="" coords="273,57,451,98"/>
-<area shape="rect" id="node5" href="$classcmr_1_1fabric_1_1GenericLifecycle.html" title="Interface for any LifecycleServer." alt="" coords="13,104,198,131"/>
-<area shape="rect" id="node8" href="$classcmr_1_1fabric_1_1LifecycleServer.html" title=" " alt="" coords="255,122,469,163"/>
-<area shape="rect" id="node6" href="$classcmr_1_1fabric_1_1LifecycleClient.html" title=" " alt="" coords="255,187,469,229"/>
-<area shape="rect" id="node7" title=" " alt="" coords="42,195,169,221"/>
+<area shape="rect" id="node4" href="$classcmr_1_1fabric_1_1LifecycleServer.html" title=" " alt="" coords="297,57,475,98"/>
+<area shape="rect" id="node5" href="$classcmr_1_1fabric_1_1GenericLifecycle.html" title="Interface for any LifecycleServer." alt="" coords="13,163,198,189"/>
+<area shape="rect" id="node8" href="$classcmr_1_1fabric_1_1LifecycleServer.html" title=" " alt="" coords="279,122,493,163"/>
+<area shape="rect" id="node9" href="$classcmr_1_1fabric_1_1LifecycleServer.html" title=" " alt="" coords="297,187,475,229"/>
+<area shape="rect" id="node10" href="$classcmr_1_1fabric_1_1LifecycleServer.html" title=" " alt="" coords="255,253,517,294"/>
+<area shape="rect" id="node6" href="$classcmr_1_1fabric_1_1LifecycleClient.html" title=" " alt="" coords="279,318,493,359"/>
+<area shape="rect" id="node7" title=" " alt="" coords="42,325,169,352"/>
 </map>

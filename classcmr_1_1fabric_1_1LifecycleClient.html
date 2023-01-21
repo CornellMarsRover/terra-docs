@@ -123,6 +123,8 @@ Public Types</h2></td></tr>
 <tr class="separator:aa9fdf91925decba967f71497c26edef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfa4b0da59674b8b8d7aa0c3cb4403e1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html#adfa4b0da59674b8b8d7aa0c3cb4403e1">CallbackWithRequestType</a> = std::function&lt; void(<a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html#adb9656235f8195e5410323adedc10ad2">SharedFutureWithRequest</a>)&gt;</td></tr>
 <tr class="separator:adfa4b0da59674b8b8d7aa0c3cb4403e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97542294c05ac481a42a874756a23e1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html#ac97542294c05ac481a42a874756a23e1">ptr_t</a> = std::unique_ptr&lt; <a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html">LifecycleClient</a>&lt; ServiceT &gt; &gt;</td></tr>
+<tr class="separator:ac97542294c05ac481a42a874756a23e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -256,6 +258,22 @@ template&lt;typename ServiceT &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html">cmr::fabric::LifecycleClient</a>&lt; ServiceT &gt;::PromiseWithRequest =  std::promise&lt;std::pair&lt;<a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html#ad7d339e9e9df8d7798e229e6ce56e876">SharedRequest</a>, <a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html#abedf900f688dd481df30cd411e598e05">SharedResponse</a>&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac97542294c05ac481a42a874756a23e1" name="ac97542294c05ac481a42a874756a23e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac97542294c05ac481a42a874756a23e1">&#9670;&nbsp;</a></span>ptr_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ServiceT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html">cmr::fabric::LifecycleClient</a>&lt; ServiceT &gt;::ptr_t =  std::unique_ptr&lt;<a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html">LifecycleClient</a>&lt;ServiceT&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -759,7 +777,7 @@ template&lt;typename ServiceT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 21 2023 18:27:20 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Jan 21 2023 19:27:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

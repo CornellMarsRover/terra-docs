@@ -96,9 +96,11 @@ Collaboration diagram for cmr::InverseKinematics:</div>
 <div class="dyncontent">
 <div class="center"><img src="classcmr_1_1InverseKinematics__coll__graph.png" border="0" usemap="#acmr_1_1InverseKinematics_coll__map" alt="Collaboration graph"/></div>
 <map name="acmr_1_1InverseKinematics_coll__map" id="acmr_1_1InverseKinematics_coll__map">
-<area shape="rect" title="InverseKinematics" alt="" coords="26,155,185,181"/>
-<area shape="rect" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes." alt="" coords="28,80,183,107"/>
+<area shape="rect" title="InverseKinematics" alt="" coords="130,185,289,212"/>
+<area shape="rect" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes." alt="" coords="32,89,187,115"/>
 <area shape="rect" title=" " alt="" coords="5,5,205,32"/>
+<area shape="rect" href="classcmr_1_1fabric_1_1LifecycleServer.html" title=" " alt="" coords="217,81,420,123"/>
+<area shape="rect" href="classcmr_1_1fabric_1_1GenericLifecycle.html" title="Interface for any LifecycleServer." alt="" coords="230,5,415,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -142,8 +144,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a56b0af4d1970b49d4c0d096bf5453199"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="namespacecmr_1_1fabric.html#a841cb0d434fcebd500028d09e2464db1">fabric::LifecycleSubscription</a>&lt; geometry_msgs::msg::Pose &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1InverseKinematics.html#a56b0af4d1970b49d4c0d096bf5453199">m_arm_pose_sub</a></td></tr>
-<tr class="separator:a56b0af4d1970b49d4c0d096bf5453199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099178ba63cdebec77a1e644f5eb5a0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecmr_1_1fabric.html#a841cb0d434fcebd500028d09e2464db1">fabric::LifecycleSubscription</a>&lt; geometry_msgs::msg::Pose &gt;::ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1InverseKinematics.html#a099178ba63cdebec77a1e644f5eb5a0d">m_arm_pose_sub</a></td></tr>
+<tr class="separator:a099178ba63cdebec77a1e644f5eb5a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad86c8821b0f37c17a1a2ae30f5dd7c7c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; moveit::planning_interface::MoveGroupInterface &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1InverseKinematics.html#ad86c8821b0f37c17a1a2ae30f5dd7c7c">m_move_group_interface</a></td></tr>
 <tr class="separator:ad86c8821b0f37c17a1a2ae30f5dd7c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc2ab8761374e9793395dceb0dc7e7e4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1InverseKinematics.html#afc2ab8761374e9793395dceb0dc7e7e4">m_node</a></td></tr>
@@ -386,8 +388,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a56b0af4d1970b49d4c0d096bf5453199" name="a56b0af4d1970b49d4c0d096bf5453199"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56b0af4d1970b49d4c0d096bf5453199">&#9670;&nbsp;</a></span>m_arm_pose_sub</h2>
+<a id="a099178ba63cdebec77a1e644f5eb5a0d" name="a099178ba63cdebec77a1e644f5eb5a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a099178ba63cdebec77a1e644f5eb5a0d">&#9670;&nbsp;</a></span>m_arm_pose_sub</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,7 +398,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="namespacecmr_1_1fabric.html#a841cb0d434fcebd500028d09e2464db1">fabric::LifecycleSubscription</a>&lt;geometry_msgs::msg::Pose&gt; &gt; cmr::InverseKinematics::m_arm_pose_sub</td>
+          <td class="memname"><a class="el" href="namespacecmr_1_1fabric.html#a841cb0d434fcebd500028d09e2464db1">fabric::LifecycleSubscription</a>&lt;geometry_msgs::msg::Pose&gt;::ptr_t cmr::InverseKinematics::m_arm_pose_sub</td>
         </tr>
       </table>
   </td>
@@ -481,7 +483,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 21 2023 18:27:20 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Jan 21 2023 19:27:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

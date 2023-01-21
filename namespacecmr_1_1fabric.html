@@ -185,10 +185,18 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a25657dd0676f86549c16f4c302808343"><td class="memTemplParams" colspan="2">template&lt;typename ActionT &gt; </td></tr>
-<tr class="memitem:a25657dd0676f86549c16f4c302808343"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classcmr_1_1fabric_1_1GenericLifecycle.html">GenericLifecycle</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a25657dd0676f86549c16f4c302808343">create_lifecycle_action_server</a> (<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;node, const std::string &amp;action_name, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::GoalCallback &amp;goal_callback, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::CancelCallback &amp;cancel_callback, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::AcceptedCallback &amp;accepted_callback)</td></tr>
-<tr class="memdesc:a25657dd0676f86549c16f4c302808343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle action server object.  <a href="namespacecmr_1_1fabric.html#a25657dd0676f86549c16f4c302808343">More...</a><br /></td></tr>
-<tr class="separator:a25657dd0676f86549c16f4c302808343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1bb199537748c08a5d608b674b23446"><td class="memTemplParams" colspan="2">template&lt;typename ActionT &gt; </td></tr>
+<tr class="memitem:ac1bb199537748c08a5d608b674b23446"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="namespacecmr_1_1fabric.html#a6f35b79fd38e2e26cbe7e37010faa907">LifecycleActionServer</a>&lt; ActionT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#ac1bb199537748c08a5d608b674b23446">create_lifecycle_action_server</a> (<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;node, const std::string &amp;action_name, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::GoalCallback &amp;goal_callback, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::CancelCallback &amp;cancel_callback, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::AcceptedCallback &amp;accepted_callback)</td></tr>
+<tr class="memdesc:ac1bb199537748c08a5d608b674b23446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle action server object.  <a href="namespacecmr_1_1fabric.html#ac1bb199537748c08a5d608b674b23446">More...</a><br /></td></tr>
+<tr class="separator:ac1bb199537748c08a5d608b674b23446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa43f1f38fa844319af3b0de164e352cd"><td class="memTemplParams" colspan="2">template&lt;typename ServiceT &gt; </td></tr>
+<tr class="memitem:aa43f1f38fa844319af3b0de164e352cd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#aa43f1f38fa844319af3b0de164e352cd">create_lifecycle_client_ptr</a> (<a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html">LifecycleClient</a>&lt; ServiceT &gt; &amp;&amp;service)</td></tr>
+<tr class="memdesc:aa43f1f38fa844319af3b0de164e352cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a <code>unique_ptr</code> of a <a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html" title="Lifecycle Client is just like a rclcpp::Client but it can be activated and deactivated.">LifecycleClient</a>.  <a href="namespacecmr_1_1fabric.html#aa43f1f38fa844319af3b0de164e352cd">More...</a><br /></td></tr>
+<tr class="separator:aa43f1f38fa844319af3b0de164e352cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5277228188af2e8d6ff1b0f7fa2b493"><td class="memTemplParams" colspan="2">template&lt;typename ServiceT &gt; </td></tr>
+<tr class="memitem:ac5277228188af2e8d6ff1b0f7fa2b493"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#ac5277228188af2e8d6ff1b0f7fa2b493">create_lifecycle_client_shared</a> (<a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html">LifecycleClient</a>&lt; ServiceT &gt; &amp;&amp;service)</td></tr>
+<tr class="memdesc:ac5277228188af2e8d6ff1b0f7fa2b493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a <code>shared_ptr</code> of a lifecycle client.  <a href="namespacecmr_1_1fabric.html#ac5277228188af2e8d6ff1b0f7fa2b493">More...</a><br /></td></tr>
+<tr class="separator:ac5277228188af2e8d6ff1b0f7fa2b493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5835fc4c116298d69818c17f7c8150a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr_1_1fabric.html#a5835fc4c116298d69818c17f7c8150a6">activate_node</a> (const std::string &amp;node_name)</td></tr>
 <tr class="memdesc:a5835fc4c116298d69818c17f7c8150a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses the <code>LifecycleNode</code> exposed services to activate <code>node_name</code>.  <a href="namespacecmr_1_1fabric.html#a5835fc4c116298d69818c17f7c8150a6">More...</a><br /></td></tr>
 <tr class="separator:a5835fc4c116298d69818c17f7c8150a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -462,8 +470,8 @@ template&lt;typename RepT , typename PeriodT &gt; </div>
 
 </div>
 </div>
-<a id="a25657dd0676f86549c16f4c302808343" name="a25657dd0676f86549c16f4c302808343"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25657dd0676f86549c16f4c302808343">&#9670;&nbsp;</a></span>create_lifecycle_action_server()</h2>
+<a id="ac1bb199537748c08a5d608b674b23446" name="ac1bb199537748c08a5d608b674b23446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1bb199537748c08a5d608b674b23446">&#9670;&nbsp;</a></span>create_lifecycle_action_server()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,7 +479,7 @@ template&lt;typename RepT , typename PeriodT &gt; </div>
 template&lt;typename ActionT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classcmr_1_1fabric_1_1GenericLifecycle.html">GenericLifecycle</a> &gt; cmr::fabric::create_lifecycle_action_server </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="namespacecmr_1_1fabric.html#a6f35b79fd38e2e26cbe7e37010faa907">LifecycleActionServer</a>&lt; ActionT &gt; &gt; cmr::fabric::create_lifecycle_action_server </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;&#160;</td>
           <td class="paramname"><em>node</em>, </td>
@@ -526,6 +534,50 @@ template&lt;typename ActionT &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>auto </dd></dl>
+
+</div>
+</div>
+<a id="aa43f1f38fa844319af3b0de164e352cd" name="aa43f1f38fa844319af3b0de164e352cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa43f1f38fa844319af3b0de164e352cd">&#9670;&nbsp;</a></span>create_lifecycle_client_ptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ServiceT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cmr::fabric::create_lifecycle_client_ptr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html">LifecycleClient</a>&lt; ServiceT &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>service</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make a <code>unique_ptr</code> of a <a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html" title="Lifecycle Client is just like a rclcpp::Client but it can be activated and deactivated.">LifecycleClient</a>. </p>
+
+</div>
+</div>
+<a id="ac5277228188af2e8d6ff1b0f7fa2b493" name="ac5277228188af2e8d6ff1b0f7fa2b493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5277228188af2e8d6ff1b0f7fa2b493">&#9670;&nbsp;</a></span>create_lifecycle_client_shared()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ServiceT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cmr::fabric::create_lifecycle_client_shared </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcmr_1_1fabric_1_1LifecycleClient.html">LifecycleClient</a>&lt; ServiceT &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>service</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make a <code>shared_ptr</code> of a lifecycle client. </p>
 
 </div>
 </div>
@@ -675,7 +727,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 21 2023 18:27:20 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Jan 21 2023 19:27:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

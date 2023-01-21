@@ -199,10 +199,10 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a5db53c424c6d13ab12bb0bd08eb44a94"><td class="memTemplParams" colspan="2">template&lt;typename ActionT &gt; </td></tr>
-<tr class="memitem:a5db53c424c6d13ab12bb0bd08eb44a94"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; class <a class="el" href="classcmr_1_1fabric_1_1GenericLifecycle.html">GenericLifecycle</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a5db53c424c6d13ab12bb0bd08eb44a94">create_lifecycle_action_server</a> (<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;node, const std::string &amp;action_name, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::GoalCallback &amp;goal_callback, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::CancelCallback &amp;cancel_callback, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::AcceptedCallback &amp;accepted_callback)</td></tr>
-<tr class="memdesc:a5db53c424c6d13ab12bb0bd08eb44a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle action server object.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a5db53c424c6d13ab12bb0bd08eb44a94">More...</a><br /></td></tr>
-<tr class="separator:a5db53c424c6d13ab12bb0bd08eb44a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed9bdc8a5e03101414b5a52e6808112"><td class="memTemplParams" colspan="2">template&lt;typename ActionT &gt; </td></tr>
+<tr class="memitem:a8ed9bdc8a5e03101414b5a52e6808112"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html">LifecycleServer</a>&lt; <a class="el" href="classcmr_1_1fabric_1_1ActionServerPolicy.html">ActionServerPolicy</a>&lt; ActionT &gt; &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a8ed9bdc8a5e03101414b5a52e6808112">create_lifecycle_action_server</a> (<a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;node, const std::string &amp;action_name, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::GoalCallback &amp;goal_callback, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::CancelCallback &amp;cancel_callback, const typename <a class="el" href="classrclcpp__action_1_1Server.html">rclcpp_action::Server</a>&lt; ActionT &gt;::AcceptedCallback &amp;accepted_callback)</td></tr>
+<tr class="memdesc:a8ed9bdc8a5e03101414b5a52e6808112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle action server object.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a8ed9bdc8a5e03101414b5a52e6808112">More...</a><br /></td></tr>
+<tr class="separator:a8ed9bdc8a5e03101414b5a52e6808112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes.">FabricNode</a> is the base class for All CMR nodes. </p>
@@ -1097,8 +1097,8 @@ template&lt;typename CallbackT , typename RepT , typename PeriodT &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a5db53c424c6d13ab12bb0bd08eb44a94" name="a5db53c424c6d13ab12bb0bd08eb44a94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5db53c424c6d13ab12bb0bd08eb44a94">&#9670;&nbsp;</a></span>create_lifecycle_action_server</h2>
+<a id="a8ed9bdc8a5e03101414b5a52e6808112" name="a8ed9bdc8a5e03101414b5a52e6808112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed9bdc8a5e03101414b5a52e6808112">&#9670;&nbsp;</a></span>create_lifecycle_action_server</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1109,7 +1109,7 @@ template&lt;typename ActionT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; class <a class="el" href="classcmr_1_1fabric_1_1GenericLifecycle.html">GenericLifecycle</a> &gt; create_lifecycle_action_server </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html">LifecycleServer</a>&lt; <a class="el" href="classcmr_1_1fabric_1_1ActionServerPolicy.html">ActionServerPolicy</a>&lt; ActionT &gt; &gt; &gt; create_lifecycle_action_server </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html">FabricNode</a> &amp;&#160;</td>
           <td class="paramname"><em>node</em>, </td>
@@ -1272,7 +1272,7 @@ template&lt;typename ActionT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 21 2023 18:27:20 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Jan 21 2023 19:27:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
