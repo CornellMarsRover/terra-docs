@@ -76,7 +76,7 @@ $(function() {
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;cmr_msgs/msg/arm_joint_effort.hpp&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;cmr_msgs/msg/joystick_reading.hpp&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;std_msgs/msg/float64_multi_array.hpp&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="namespacecmr.html">    6</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecmr.html">cmr</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecmr.html">cmr</a></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763">   13</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763">ArmSegment</a> : uint8_t { <a class="code hl_enumvalue" href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763a095a1b43effec73955e31e790438de49">Base</a> = 0, <a class="code hl_enumvalue" href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763a5ea53619e3ad29fce5f9bcb86b4625e7">Elbow</a>, <a class="code hl_enumvalue" href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763a4596b383ef8a39fa1d316b94cd9eb3fb">Wrist</a> };</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
@@ -125,7 +125,7 @@ $(function() {
 <div class="ttc" id="aclasscmr_1_1JoystickDirectControl_html_af018a4b0d9a1a20caaaa1b0697e142f0"><div class="ttname"><a href="classcmr_1_1JoystickDirectControl.html#af018a4b0d9a1a20caaaa1b0697e142f0">cmr::JoystickDirectControl::m_arm_control_pub</a></div><div class="ttdeci">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; std_msgs::msg::Float64MultiArray &gt; &gt; m_arm_control_pub</div><div class="ttdoc">publishes messages to the ros2 control hardware interface</div><div class="ttdef"><b>Definition:</b> joystick_direct_control.hpp:39</div></div>
 <div class="ttc" id="aclasscmr_1_1fabric_1_1FabricNode_html"><div class="ttname"><a href="classcmr_1_1fabric_1_1FabricNode.html">cmr::fabric::FabricNode</a></div><div class="ttdoc">The FabricNode is the base class for All CMR nodes.</div><div class="ttdef"><b>Definition:</b> fabric_node.hpp:61</div></div>
 <div class="ttc" id="afabric__node_8hpp_html"><div class="ttname"><a href="fabric__node_8hpp.html">fabric_node.hpp</a></div></div>
-<div class="ttc" id="anamespacecmr_html"><div class="ttname"><a href="namespacecmr.html">cmr</a></div><div class="ttdef"><b>Definition:</b> joystick_direct_control.hpp:7</div></div>
+<div class="ttc" id="anamespacecmr_html"><div class="ttname"><a href="namespacecmr.html">cmr</a></div><div class="ttdef"><b>Definition:</b> inverse_kinematics.hpp:8</div></div>
 <div class="ttc" id="anamespacecmr_html_a31edbda5c9f35af6b6c4dfcb6b77c763"><div class="ttname"><a href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763">cmr::ArmSegment</a></div><div class="ttdeci">ArmSegment</div><div class="ttdoc">An ArmSegment is a segment of the arm that can be controlled by mutiple joints for multiple degrees o...</div><div class="ttdef"><b>Definition:</b> joystick_direct_control.hpp:13</div></div>
 <div class="ttc" id="anamespacecmr_html_a31edbda5c9f35af6b6c4dfcb6b77c763a095a1b43effec73955e31e790438de49"><div class="ttname"><a href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763a095a1b43effec73955e31e790438de49">cmr::ArmSegment::Base</a></div><div class="ttdeci">@ Base</div></div>
 <div class="ttc" id="anamespacecmr_html_a31edbda5c9f35af6b6c4dfcb6b77c763a4596b383ef8a39fa1d316b94cd9eb3fb"><div class="ttname"><a href="namespacecmr.html#a31edbda5c9f35af6b6c4dfcb6b77c763a4596b383ef8a39fa1d316b94cd9eb3fb">cmr::ArmSegment::Wrist</a></div><div class="ttdeci">@ Wrist</div></div>
@@ -133,7 +133,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 19 2023 17:58:56 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Jan 21 2023 18:27:20 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

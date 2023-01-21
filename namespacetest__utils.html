@@ -112,6 +112,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a01a5539fc8e2ed149224ed569a5fc01b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__utils.html#a01a5539fc8e2ed149224ed569a5fc01b">cmr_node_test</a> (list nodes)</td></tr>
 <tr class="memdesc:a01a5539fc8e2ed149224ed569a5fc01b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A decorator that should be used for all CMR node tests The decorated test should take at least a single argument, which is the namespace the node launcher will use to launch all nodes.  <a href="namespacetest__utils.html#a01a5539fc8e2ed149224ed569a5fc01b">More...</a><br /></td></tr>
 <tr class="separator:a01a5539fc8e2ed149224ed569a5fc01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ca8b099a918f9965cabb1866165a14"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__utils.html#af8ca8b099a918f9965cabb1866165a14">cmr_on_exit</a> (cleanup_func)</td></tr>
+<tr class="separator:af8ca8b099a918f9965cabb1866165a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee9589c4e67f886fed533b931283c9f4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__utils.html#aee9589c4e67f886fed533b931283c9f4">call_service_sync</a> (type service_type, str service_name, request, timeout_sec=5.0)</td></tr>
 <tr class="memdesc:aee9589c4e67f886fed533b931283c9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a service synchronously, blocking the calling thread until the service returns.  <a href="namespacetest__utils.html#aee9589c4e67f886fed533b931283c9f4">More...</a><br /></td></tr>
 <tr class="separator:aee9589c4e67f886fed533b931283c9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -428,8 +430,26 @@ Example:</h3>
 <div class="line">    <span class="keyword">assert</span> <a class="code hl_function" href="namespacecmr_1_1fabric.html#aafaf3df989305146c1178f1f21524bf3">get_lifecycle_state</a>(<span class="stringliteral">&quot;py_test_demo&quot;</span>) == <span class="stringliteral">&quot;active&quot;</span></div>
 <div class="ttc" id="anamespacecmr_1_1fabric_html_aafaf3df989305146c1178f1f21524bf3"><div class="ttname"><a href="namespacecmr_1_1fabric.html#aafaf3df989305146c1178f1f21524bf3">cmr::fabric::get_lifecycle_state</a></div><div class="ttdeci">LifecycleState get_lifecycle_state(const std::string &amp;node_name)</div><div class="ttdoc">Get the LifecycleState of a lifecycle node.</div><div class="ttdef"><b>Definition:</b> lifecycle_helpers.cpp:27</div></div>
 <div class="ttc" id="anamespacedemo__test_html_a3da6a3d9cf8eb7d2e7f7b900cf9a5f94"><div class="ttname"><a href="namespacedemo__test.html#a3da6a3d9cf8eb7d2e7f7b900cf9a5f94">demo_test.test_demo_node</a></div><div class="ttdeci">def test_demo_node(str namespace)</div><div class="ttdef"><b>Definition:</b> demo_test.py:23</div></div>
-<div class="ttc" id="anamespacetest__utils_html_ad26e4cf97fa79dbf144da3d645576996"><div class="ttname"><a href="namespacetest__utils.html#ad26e4cf97fa79dbf144da3d645576996">test_utils.activate_fabric_node</a></div><div class="ttdeci">bool activate_fabric_node(str node_name, str namespace)</div><div class="ttdoc">Activates a fabric node via the lifecycle manager.</div><div class="ttdef"><b>Definition:</b> test_utils.py:546</div></div>
+<div class="ttc" id="anamespacetest__utils_html_ad26e4cf97fa79dbf144da3d645576996"><div class="ttname"><a href="namespacetest__utils.html#ad26e4cf97fa79dbf144da3d645576996">test_utils.activate_fabric_node</a></div><div class="ttdeci">bool activate_fabric_node(str node_name, str namespace)</div><div class="ttdoc">Activates a fabric node via the lifecycle manager.</div><div class="ttdef"><b>Definition:</b> test_utils.py:576</div></div>
 </div><!-- fragment --> 
+</div>
+</div>
+<a id="af8ca8b099a918f9965cabb1866165a14" name="af8ca8b099a918f9965cabb1866165a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8ca8b099a918f9965cabb1866165a14">&#9670;&nbsp;</a></span>cmr_on_exit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def test_utils.cmr_on_exit </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cleanup_func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a4cf1895f06a28a5315f98439210a457d" name="a4cf1895f06a28a5315f98439210a457d"></a>
@@ -964,7 +984,7 @@ Args:</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 19 2023 17:58:57 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Jan 21 2023 18:27:20 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

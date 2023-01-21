@@ -119,9 +119,12 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:acf8b083ac5534003b9f0171afdcfae55"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__utils_1_1NodeLauncher.html#acf8b083ac5534003b9f0171afdcfae55">__wait_for_launch_process</a> (self)</td></tr>
 <tr class="memdesc:acf8b083ac5534003b9f0171afdcfae55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for the child process to make a service call to notify the parent that it is ready.  <a href="classtest__utils_1_1NodeLauncher.html#acf8b083ac5534003b9f0171afdcfae55">More...</a><br /></td></tr>
 <tr class="separator:acf8b083ac5534003b9f0171afdcfae55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe4794765edc09b07d2d70dcf206861f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__utils_1_1NodeLauncher.html#abe4794765edc09b07d2d70dcf206861f">__kill_launch_file</a> (self, IncludeLaunchDescription ld)</td></tr>
-<tr class="memdesc:abe4794765edc09b07d2d70dcf206861f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the launch file and kills all launched nodes A node is identified by the string "executable=" in the launch file.  <a href="classtest__utils_1_1NodeLauncher.html#abe4794765edc09b07d2d70dcf206861f">More...</a><br /></td></tr>
-<tr class="separator:abe4794765edc09b07d2d70dcf206861f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd602291d950a38349d8edca8a571d2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__utils_1_1NodeLauncher.html#a0cd602291d950a38349d8edca8a571d2">__get_entity_pid</a> (entity)</td></tr>
+<tr class="memdesc:a0cd602291d950a38349d8edca8a571d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pid of <code>entity</code> if it is an active LaunchNode or ExecuteProcess otherwise returns None.  <a href="classtest__utils_1_1NodeLauncher.html#a0cd602291d950a38349d8edca8a571d2">More...</a><br /></td></tr>
+<tr class="separator:a0cd602291d950a38349d8edca8a571d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d1b41c8a862bab9dcc30e86f7e7fec"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__utils_1_1NodeLauncher.html#a80d1b41c8a862bab9dcc30e86f7e7fec">__kill_launch_entity</a> (self, entity)</td></tr>
+<tr class="memdesc:a80d1b41c8a862bab9dcc30e86f7e7fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kills <code>entity</code> and all of its sub entities.  <a href="classtest__utils_1_1NodeLauncher.html#a80d1b41c8a862bab9dcc30e86f7e7fec">More...</a><br /></td></tr>
+<tr class="separator:a80d1b41c8a862bab9dcc30e86f7e7fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a356686c93f30f523c6e10c1e594199f6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__utils_1_1NodeLauncher.html#a356686c93f30f523c6e10c1e594199f6">__launch_nodes</a> (self, LaunchDescription ld)</td></tr>
 <tr class="memdesc:a356686c93f30f523c6e10c1e594199f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launches the nodes in the launch description.  <a href="classtest__utils_1_1NodeLauncher.html#a356686c93f30f523c6e10c1e594199f6">More...</a><br /></td></tr>
 <tr class="separator:a356686c93f30f523c6e10c1e594199f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,8 +248,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abe4794765edc09b07d2d70dcf206861f" name="abe4794765edc09b07d2d70dcf206861f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe4794765edc09b07d2d70dcf206861f">&#9670;&nbsp;</a></span>__kill_launch_file()</h2>
+<a id="a0cd602291d950a38349d8edca8a571d2" name="a0cd602291d950a38349d8edca8a571d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cd602291d950a38349d8edca8a571d2">&#9670;&nbsp;</a></span>__get_entity_pid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +258,35 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">def test_utils.NodeLauncher.__kill_launch_file </td>
+          <td class="memname">def test_utils.NodeLauncher.__get_entity_pid </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the pid of <code>entity</code> if it is an active LaunchNode or ExecuteProcess otherwise returns None. </p>
+
+</div>
+</div>
+<a id="a80d1b41c8a862bab9dcc30e86f7e7fec" name="a80d1b41c8a862bab9dcc30e86f7e7fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d1b41c8a862bab9dcc30e86f7e7fec">&#9670;&nbsp;</a></span>__kill_launch_entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">def test_utils.NodeLauncher.__kill_launch_entity </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -263,8 +294,8 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">IncludeLaunchDescription&#160;</td>
-          <td class="paramname"><em>ld</em>&#160;</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>entity</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -279,7 +310,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reads the launch file and kills all launched nodes A node is identified by the string "executable=" in the launch file. </p>
+<p>Kills <code>entity</code> and all of its sub entities. </p>
 
 </div>
 </div>
@@ -508,7 +539,7 @@ Args:</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 19 2023 17:58:57 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Jan 21 2023 18:27:20 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
