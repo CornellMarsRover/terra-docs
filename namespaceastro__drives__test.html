@@ -84,6 +84,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa91e6615e0fd9b50ec2701bdf9a67cf4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceastro__drives__test.html#aa91e6615e0fd9b50ec2701bdf9a67cf4">euler_from_quaternion</a> (quat)</td></tr>
 <tr class="memdesc:aa91e6615e0fd9b50ec2701bdf9a67cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a quaternion into euler angles (roll, pitch, yaw) roll is rotation around x in radians (counterclockwise) pitch is rotation around y in radians (counterclockwise) yaw is rotation around z in radians (counterclockwise)  <a href="namespaceastro__drives__test.html#aa91e6615e0fd9b50ec2701bdf9a67cf4">More...</a><br /></td></tr>
 <tr class="separator:aa91e6615e0fd9b50ec2701bdf9a67cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405b1a309fd6babcf24825ac6e226fa4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceastro__drives__test.html#a405b1a309fd6babcf24825ac6e226fa4">check_joint_states</a> (<a class="el" href="classtest__utils_1_1TopicSubscriber.html">TopicSubscriber</a> sub, joint_name, test_fn, timeout_sec=10.0)</td></tr>
+<tr class="memdesc:a405b1a309fd6babcf24825ac6e226fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <code>test_fn</code> with the position and velocity of <code>joint_name</code> state and returns the a tuple of the position and velocity.  <a href="namespaceastro__drives__test.html#a405b1a309fd6babcf24825ac6e226fa4">More...</a><br /></td></tr>
+<tr class="separator:a405b1a309fd6babcf24825ac6e226fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a72c00daa553acde353fd38259fb1daf2" name="a72c00daa553acde353fd38259fb1daf2"></a>
@@ -129,6 +132,49 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a405b1a309fd6babcf24825ac6e226fa4" name="a405b1a309fd6babcf24825ac6e226fa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a405b1a309fd6babcf24825ac6e226fa4">&#9670;&nbsp;</a></span>check_joint_states()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def astro_drives_test.check_joint_states </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtest__utils_1_1TopicSubscriber.html">TopicSubscriber</a>&#160;</td>
+          <td class="paramname"><em>sub</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>joint_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>test_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>timeout_sec</em> = <code>10.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls <code>test_fn</code> with the position and velocity of <code>joint_name</code> state and returns the a tuple of the position and velocity. </p>
+<p >Will keep waiting if <code>tes_fn</code> returns false </p>
+
+</div>
+</div>
 <a id="aa91e6615e0fd9b50ec2701bdf9a67cf4" name="aa91e6615e0fd9b50ec2701bdf9a67cf4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa91e6615e0fd9b50ec2701bdf9a67cf4">&#9670;&nbsp;</a></span>euler_from_quaternion()</h2>
 
@@ -152,7 +198,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 21 2023 19:27:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jan 22 2023 02:26:04 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

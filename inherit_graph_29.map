@@ -1,5 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,46,59,73"/>
-<area shape="rect" id="node2" href="$classcmr__demo__py_1_1arm__effort__control_1_1ArmEffortControl.html" title="A temporary test node that just publishes a constant effort of 10.0 to the arm joints at a rate of 2H..." alt="" coords="107,5,273,47"/>
-<area shape="rect" id="node3" href="$classcmr__py__test_1_1utils__test__node_1_1PassthroughNode.html" title="This node simply provides a topic and action server for testing purposes." alt="" coords="108,71,272,112"/>
+<area shape="rect" id="node1" href="$classJsInputMockSubscriber.html" title=" " alt="" coords="5,5,164,32"/>
 </map>

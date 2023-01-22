@@ -18,7 +18,7 @@ var searchData=
   ['pipe_5fname_15',['pipe_name',['../controller__test_8cpp.html#a8332c281f1523b7783822a68050ee25a',1,'controller_test.cpp']]],
   ['position_5ffactor_16',['position_factor',['../mock__arm__system_8cpp.html#a2fa7b0377603cdac439e43f944450e4e',1,'mock_arm_system.cpp']]],
   ['positioncontrollernode_17',['PositionControllerNode',['../classPositionControllerNode.html#a0a100e3ad912857cae48d3978efbb179',1,'PositionControllerNode::PositionControllerNode()'],['../classPositionControllerNode.html',1,'PositionControllerNode']]],
-  ['prepare_5fcommand_5fmode_5fswitch_18',['prepare_command_mode_switch',['../classcmr__control_1_1BaseArmSystemHardware.html#a92befdb5c1be851717d40a1d8e40fa18',1,'cmr_control::BaseArmSystemHardware']]],
+  ['prepare_5fcommand_5fmode_5fswitch_18',['prepare_command_mode_switch',['../classcmr__control_1_1BaseArmSystemHardware.html#a92befdb5c1be851717d40a1d8e40fa18',1,'cmr_control::BaseArmSystemHardware::prepare_command_mode_switch()'],['../classcmr__control_1_1AstroMotor.html#a55cd3b5d4241c584fd1524adf9f8846f',1,'cmr_control::AstroMotor::prepare_command_mode_switch()']]],
   ['producerconsumermockclock_19',['ProducerConsumerMockClock',['../classcmr_1_1ProducerConsumerMockClock.html',1,'cmr']]],
   ['promise_20',['Promise',['../classcmr_1_1fabric_1_1LifecycleClient.html#a368cb7aad2e3f1ffbd96ea81a2c9bc78',1,'cmr::fabric::LifecycleClient']]],
   ['promisewithrequest_21',['PromiseWithRequest',['../classcmr_1_1fabric_1_1LifecycleClient.html#abb9f1f2adcaf5073dd1bbfc38adf9d74',1,'cmr::fabric::LifecycleClient']]],
