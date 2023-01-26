@@ -6,5 +6,6 @@ var searchData=
   ['monad_2ehpp_3',['monad.hpp',['../monad_8hpp.html',1,'']]],
   ['monad_2einl_4',['monad.inl',['../monad_8inl.html',1,'']]],
   ['move_5fgroup_2elaunch_2epy_5',['move_group.launch.py',['../move__group_8launch_8py.html',1,'']]],
-  ['moveit_5frviz_2elaunch_2epy_6',['moveit_rviz.launch.py',['../moveit__rviz_8launch_8py.html',1,'']]]
+  ['moveit_5fperception_2elaunch_2epy_6',['moveit_perception.launch.py',['../moveit__perception_8launch_8py.html',1,'']]],
+  ['moveit_5frviz_2elaunch_2epy_7',['moveit_rviz.launch.py',['../moveit__rviz_8launch_8py.html',1,'']]]
 ];
