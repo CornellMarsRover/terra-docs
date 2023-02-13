@@ -109,9 +109,16 @@ $(function() {
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacemonad.html#aa2c38ffc57761841453cf837029dab2a">value_or_else</a>(T&amp;&amp; <a class="code hl_namespace" href="namespacemonad.html">monad</a>, Func f) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(f()))</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    -&gt; std::enable_if_t&lt;is_monad_like_v&lt;T&gt;,</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                        std::remove_reference_t&lt;<span class="keyword">decltype</span>(<a class="code hl_namespace" href="namespacemonad.html">monad</a>.value())&gt;&gt;;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}  <span class="comment">// namespace monad</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">#include &quot;<a class="code" href="monad_8inl.html">cmr_utils/monad.inl</a>&quot;</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="keyword">constexpr</span> U <a class="code hl_function" href="namespacemonad.html#a2877b70472a6d1bcca65a58504ec7185">value_or</a>(<span class="keyword">const</span> std::pair&lt;bool, T&gt;&amp; pair, U&amp;&amp; default_val) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Func&gt;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">constexpr</span> T <a class="code hl_function" href="namespacemonad.html#aa2c38ffc57761841453cf837029dab2a">value_or_else</a>(<span class="keyword">const</span> std::pair&lt;bool, T&gt;&amp; pair,</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                          Func f) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(f()));</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>}  <span class="comment">// namespace monad</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="preprocessor">#include &quot;<a class="code" href="monad_8inl.html">cmr_utils/monad.inl</a>&quot;</span></div>
 <div class="ttc" id="amonad_8inl_html"><div class="ttname"><a href="monad_8inl.html">monad.inl</a></div></div>
 <div class="ttc" id="anamespacemonad_html"><div class="ttname"><a href="namespacemonad.html">monad</a></div><div class="ttdoc">Namespace of helper functions for monads.</div><div class="ttdef"><b>Definition:</b> monad.hpp:23</div></div>
 <div class="ttc" id="anamespacemonad_html_a2877b70472a6d1bcca65a58504ec7185"><div class="ttname"><a href="namespacemonad.html#a2877b70472a6d1bcca65a58504ec7185">monad::value_or</a></div><div class="ttdeci">constexpr auto value_or(T &amp;&amp;monad, U &amp;&amp;default_val) noexcept -&gt; std::enable_if_t&lt; is_monad_like_v&lt; T &gt;, U &gt;</div><div class="ttdoc">Gets the value contained within the monad or the default if it is empty.</div><div class="ttdef"><b>Definition:</b> monad.inl:33</div></div>
@@ -123,7 +130,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 10 2023 10:51:06 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Mon Feb 13 2023 21:35:46 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

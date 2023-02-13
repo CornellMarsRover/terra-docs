@@ -84,39 +84,43 @@ $(function() {
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;cmr_msgs/msg/joystick_reading.hpp&quot;</code><br />
 <code>#include &quot;cmr_utils/external/tomlcpp.hxx&quot;</code><br />
+<code>#include &quot;<a class="el" href="monad_8hpp_source.html">cmr_utils/monad.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="string__utils_8hpp_source.html">cmr_utils/string_utils.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for joystick.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="joystick_8cpp__incl.png" border="0" usemap="#asrc_2cmr__bs_2src_2joystick_8cpp" alt=""/></div>
 <map name="asrc_2cmr__bs_2src_2joystick_8cpp" id="asrc_2cmr__bs_2src_2joystick_8cpp">
-<area shape="rect" title=" " alt="" coords="734,5,915,32"/>
-<area shape="rect" href="joystick_8hpp.html" title=" " alt="" coords="529,87,667,114"/>
-<area shape="rect" href="cmr__debug_8hpp.html" title=" " alt="" coords="372,355,539,382"/>
-<area shape="rect" title=" " alt="" coords="855,169,1015,211"/>
-<area shape="rect" title=" " alt="" coords="743,87,800,114"/>
-<area shape="rect" title=" " alt="" coords="825,87,931,114"/>
-<area shape="rect" title=" " alt="" coords="955,87,1022,114"/>
-<area shape="rect" title=" " alt="" coords="1046,87,1097,114"/>
-<area shape="rect" title=" " alt="" coords="1121,87,1189,114"/>
-<area shape="rect" title=" " alt="" coords="1213,80,1337,121"/>
-<area shape="rect" href="string__utils_8hpp.html" title=" " alt="" coords="5,266,172,293"/>
-<area shape="rect" href="fabric__node_8hpp.html" title=" " alt="" coords="653,177,831,203"/>
-<area shape="rect" href="thread__wrapper_8hpp.html" title=" " alt="" coords="359,177,551,203"/>
-<area shape="rect" href="lifecycle__client_8hpp.html" title=" " alt="" coords="844,348,979,389"/>
-<area shape="rect" href="lifecycle__helpers_8hpp.html" title=" " alt="" coords="752,259,887,300"/>
-<area shape="rect" href="lifecycle__servers_8hpp.html" title=" " alt="" coords="963,259,1097,300"/>
-<area shape="rect" title=" " alt="" coords="1054,348,1217,389"/>
-<area shape="rect" title=" " alt="" coords="575,259,727,300"/>
-<area shape="rect" title=" " alt="" coords="851,445,971,471"/>
-<area shape="rect" title=" " alt="" coords="221,355,276,382"/>
-<area shape="rect" title=" " alt="" coords="322,445,405,471"/>
-<area shape="rect" title=" " alt="" coords="429,445,481,471"/>
-<area shape="rect" title=" " alt="" coords="505,437,629,479"/>
-<area shape="rect" title=" " alt="" coords="248,266,327,293"/>
-<area shape="rect" title=" " alt="" coords="351,266,418,293"/>
-<area shape="rect" title=" " alt="" coords="493,266,551,293"/>
-<area shape="rect" title=" " alt="" coords="54,355,123,382"/>
+<area shape="rect" title=" " alt="" coords="982,5,1163,32"/>
+<area shape="rect" href="joystick_8hpp.html" title=" " alt="" coords="495,87,632,114"/>
+<area shape="rect" title=" " alt="" coords="39,177,146,203"/>
+<area shape="rect" href="cmr__debug_8hpp.html" title=" " alt="" coords="803,355,969,382"/>
+<area shape="rect" title=" " alt="" coords="789,169,949,211"/>
+<area shape="rect" title=" " alt="" coords="957,87,1015,114"/>
+<area shape="rect" title=" " alt="" coords="1039,87,1106,114"/>
+<area shape="rect" title=" " alt="" coords="1130,87,1181,114"/>
+<area shape="rect" title=" " alt="" coords="1205,87,1273,114"/>
+<area shape="rect" title=" " alt="" coords="1297,80,1421,121"/>
+<area shape="rect" href="monad_8hpp.html" title=" " alt="" coords="1167,355,1309,382"/>
+<area shape="rect" href="string__utils_8hpp.html" title=" " alt="" coords="1024,266,1191,293"/>
+<area shape="rect" href="fabric__node_8hpp.html" title=" " alt="" coords="370,177,549,203"/>
+<area shape="rect" href="thread__wrapper_8hpp.html" title=" " alt="" coords="573,177,765,203"/>
+<area shape="rect" title=" " alt="" coords="171,169,345,211"/>
+<area shape="rect" href="lifecycle__client_8hpp.html" title=" " alt="" coords="5,348,140,389"/>
+<area shape="rect" href="lifecycle__helpers_8hpp.html" title=" " alt="" coords="485,259,620,300"/>
+<area shape="rect" href="lifecycle__servers_8hpp.html" title=" " alt="" coords="327,259,461,300"/>
+<area shape="rect" title=" " alt="" coords="185,348,347,389"/>
+<area shape="rect" title=" " alt="" coords="150,259,302,300"/>
+<area shape="rect" title=" " alt="" coords="334,445,454,471"/>
+<area shape="rect" title=" " alt="" coords="993,355,1048,382"/>
+<area shape="rect" title=" " alt="" coords="975,445,1058,471"/>
+<area shape="rect" title=" " alt="" coords="1091,445,1143,471"/>
+<area shape="rect" title=" " alt="" coords="824,437,948,479"/>
+<area shape="rect" title=" " alt="" coords="696,266,775,293"/>
+<area shape="rect" title=" " alt="" coords="799,266,866,293"/>
+<area shape="rect" title=" " alt="" coords="890,266,949,293"/>
+<area shape="rect" href="monad_8inl.html" title=" " alt="" coords="1171,445,1305,471"/>
+<area shape="rect" title=" " alt="" coords="1073,355,1142,382"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -128,16 +132,39 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:afe1150d9a4e5c7e7e7239da992ea4a01"><td class="memItemLeft" align="right" valign="top">std::optional&lt; js_event &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#afe1150d9a4e5c7e7e7239da992ea4a01">cmr::read_event</a> (int fd)</td></tr>
+<tr class="memdesc:afe1150d9a4e5c7e7e7239da992ea4a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an event being produced by the controller and return the js_event that occurred.  <a href="namespacecmr.html#afe1150d9a4e5c7e7e7239da992ea4a01">More...</a><br /></td></tr>
 <tr class="separator:afe1150d9a4e5c7e7e7239da992ea4a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0832a34d86974d3a62478055b9027a2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#ad0832a34d86974d3a62478055b9027a2">cmr::get_axis_state</a> (const js_event &amp;event, std::array&lt; Joystick::AxisState, 3 &gt; &amp;axis_state)</td></tr>
-<tr class="memdesc:ad0832a34d86974d3a62478055b9027a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keeps track of the current axis state.  <a href="namespacecmr.html#ad0832a34d86974d3a62478055b9027a2">More...</a><br /></td></tr>
-<tr class="separator:ad0832a34d86974d3a62478055b9027a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e77a54ebd4d927a7203776b848e0243"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr.html#a9e77a54ebd4d927a7203776b848e0243">cmr::get_control_state</a> (const js_event &amp;event, std::array&lt; Joystick::AxisState, 3 &gt; &amp;axis_state)</td></tr>
+<tr class="memdesc:a9e77a54ebd4d927a7203776b848e0243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keeps track of the current axis state.  <a href="namespacecmr.html#a9e77a54ebd4d927a7203776b848e0243">More...</a><br /></td></tr>
+<tr class="separator:a9e77a54ebd4d927a7203776b848e0243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eef17a6b234af0ae4bd1ffecc8362ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joystick_8cpp.html#a1eef17a6b234af0ae4bd1ffecc8362ea">const_declarations</a> ()</td></tr>
+<tr class="separator:a1eef17a6b234af0ae4bd1ffecc8362ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:aaaa93572a9ddcff8bee429af98deb515"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joystick_8cpp.html#aaaa93572a9ddcff8bee429af98deb515">invalid_fd</a> = -1</td></tr>
 <tr class="separator:aaaa93572a9ddcff8bee429af98deb515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac5f4b904fcd7fe5fc88d0bb1f1dfeb"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joystick_8cpp.html#a0ac5f4b904fcd7fe5fc88d0bb1f1dfeb">joystick_max</a> = std::numeric_limits&lt;int16_t&gt;::max()</td></tr>
+<tr class="separator:a0ac5f4b904fcd7fe5fc88d0bb1f1dfeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a1eef17a6b234af0ae4bd1ffecc8362ea" name="a1eef17a6b234af0ae4bd1ffecc8362ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eef17a6b234af0ae4bd1ffecc8362ea">&#9670;&nbsp;</a></span>const_declarations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void const_declarations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="aaaa93572a9ddcff8bee429af98deb515" name="aaaa93572a9ddcff8bee429af98deb515"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaaa93572a9ddcff8bee429af98deb515">&#9670;&nbsp;</a></span>invalid_fd</h2>
@@ -161,10 +188,32 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a0ac5f4b904fcd7fe5fc88d0bb1f1dfeb" name="a0ac5f4b904fcd7fe5fc88d0bb1f1dfeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ac5f4b904fcd7fe5fc88d0bb1f1dfeb">&#9670;&nbsp;</a></span>joystick_max</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr double joystick_max = std::numeric_limits&lt;int16_t&gt;::max()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 10 2023 10:51:06 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Mon Feb 13 2023 21:35:46 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

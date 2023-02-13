@@ -101,6 +101,14 @@ Functions</h2></td></tr>
 <tr class="memitem:aa2c38ffc57761841453cf837029dab2a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemonad.html#aa2c38ffc57761841453cf837029dab2a">value_or_else</a> (T &amp;&amp;monad, Func f) noexcept(noexcept(f())) -&gt; std::enable_if_t&lt; <a class="el" href="namespacemonad.html#a8a382d4e8144c32ea25036b6d2f21b9c">is_monad_like_v</a>&lt; T &gt;, std::remove_reference_t&lt; decltype(monad.value())&gt; &gt;</td></tr>
 <tr class="memdesc:aa2c38ffc57761841453cf837029dab2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value contained within the monad or the value returned by the function if it is empty.  <a href="namespacemonad.html#aa2c38ffc57761841453cf837029dab2a">More...</a><br /></td></tr>
 <tr class="separator:aa2c38ffc57761841453cf837029dab2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e067a9d0c6a45ff8dd5d3b9029d902"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:a29e067a9d0c6a45ff8dd5d3b9029d902"><td class="memTemplItemLeft" align="right" valign="top">constexpr U&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemonad.html#a29e067a9d0c6a45ff8dd5d3b9029d902">value_or</a> (const std::pair&lt; bool, T &gt; &amp;pair, U &amp;&amp;default_val) noexcept</td></tr>
+<tr class="memdesc:a29e067a9d0c6a45ff8dd5d3b9029d902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value contained within the pair or the default if it is empty.  <a href="namespacemonad.html#a29e067a9d0c6a45ff8dd5d3b9029d902">More...</a><br /></td></tr>
+<tr class="separator:a29e067a9d0c6a45ff8dd5d3b9029d902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed889d078fe57bd1ea7652756efd669d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Func &gt; </td></tr>
+<tr class="memitem:aed889d078fe57bd1ea7652756efd669d"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemonad.html#aed889d078fe57bd1ea7652756efd669d">value_or_else</a> (const std::pair&lt; bool, T &gt; &amp;pair, Func f) noexcept(noexcept(f()))</td></tr>
+<tr class="memdesc:aed889d078fe57bd1ea7652756efd669d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value contained within the pair or the value returned by the function if it is empty.  <a href="namespacemonad.html#aed889d078fe57bd1ea7652756efd669d">More...</a><br /></td></tr>
+<tr class="separator:aed889d078fe57bd1ea7652756efd669d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -232,8 +240,63 @@ template&lt;template&lt; typename &gt; class T, typename U , typename Func &gt; 
 
 </div>
 </div>
+<a id="a29e067a9d0c6a45ff8dd5d3b9029d902" name="a29e067a9d0c6a45ff8dd5d3b9029d902"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e067a9d0c6a45ff8dd5d3b9029d902">&#9670;&nbsp;</a></span>value_or() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr U monad::value_or </td>
+          <td>(</td>
+          <td class="paramtype">const std::pair&lt; bool, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U &amp;&amp;&#160;</td>
+          <td class="paramname"><em>default_val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value contained within the pair or the default if it is empty. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>value type </td></tr>
+    <tr><td class="paramname">U</td><td>default type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">monad</td><td></td></tr>
+    <tr><td class="paramname">default_val</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value within <code>monad</code> or <code>default_val</code> </dd></dl>
+
+</div>
+</div>
 <a id="a2877b70472a6d1bcca65a58504ec7185" name="a2877b70472a6d1bcca65a58504ec7185"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2877b70472a6d1bcca65a58504ec7185">&#9670;&nbsp;</a></span>value_or()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2877b70472a6d1bcca65a58504ec7185">&#9670;&nbsp;</a></span>value_or() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,8 +350,64 @@ template&lt;typename T , typename U &gt; </div>
 
 </div>
 </div>
+<a id="aed889d078fe57bd1ea7652756efd669d" name="aed889d078fe57bd1ea7652756efd669d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed889d078fe57bd1ea7652756efd669d">&#9670;&nbsp;</a></span>value_or_else() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Func &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr T monad::value_or_else </td>
+          <td>(</td>
+          <td class="paramtype">const std::pair&lt; bool, T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value contained within the pair or the value returned by the function if it is empty. </p>
+<p >Has the same exception guaruntees as <code>f</code></p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>monad type </td></tr>
+    <tr><td class="paramname">Func</td><td>a function which takes nothing and returns a value of the wrapped monad value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">monad</td><td></td></tr>
+    <tr><td class="paramname">f</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="aa2c38ffc57761841453cf837029dab2a" name="aa2c38ffc57761841453cf837029dab2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2c38ffc57761841453cf837029dab2a">&#9670;&nbsp;</a></span>value_or_else()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c38ffc57761841453cf837029dab2a">&#9670;&nbsp;</a></span>value_or_else() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -374,7 +493,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 10 2023 10:51:06 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Mon Feb 13 2023 21:35:46 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

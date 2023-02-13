@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_0',['y',['../structcmr_1_1Joystick_1_1AxisState.html#a61239ad9573e1b5c1430bd5fb5366f8a',1,'cmr::Joystick::AxisState']]]
+  ['x_0',['x',['../structcmr_1_1Joystick_1_1AxisState.html#af4423816a53ef08e26821b470d644203',1,'cmr::Joystick::AxisState']]]
 ];

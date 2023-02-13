@@ -6,12 +6,15 @@ var searchData=
   ['joystick_3',['Joystick',['../classcmr_1_1Joystick.html',1,'cmr::Joystick'],['../classcmr_1_1Joystick.html#ade24117dba51bdd2b4ca5083a44aaf36',1,'cmr::Joystick::Joystick()']]],
   ['joystick_2ecpp_4',['joystick.cpp',['../joystick_8cpp.html',1,'']]],
   ['joystick_2ehpp_5',['joystick.hpp',['../joystick_8hpp.html',1,'']]],
-  ['joystick_5fcallback_6',['joystick_callback',['../classcmr_1_1Joystick.html#a4ffd3dbf7033f72127a74423b096bf96',1,'cmr::Joystick']]],
-  ['joystick_5fdirect_5fcontrol_2ecpp_7',['joystick_direct_control.cpp',['../joystick__direct__control_8cpp.html',1,'']]],
-  ['joystick_5fdirect_5fcontrol_2ehpp_8',['joystick_direct_control.hpp',['../joystick__direct__control_8hpp.html',1,'']]],
-  ['joystick_5fdirect_5fcontrol_5fmain_2ecpp_9',['joystick_direct_control_main.cpp',['../joystick__direct__control__main_8cpp.html',1,'']]],
-  ['joystick_5fmain_2ecpp_10',['joystick_main.cpp',['../joystick__main_8cpp.html',1,'']]],
-  ['joystickdirectcontrol_11',['JoystickDirectControl',['../classcmr_1_1JoystickDirectControl.html',1,'cmr::JoystickDirectControl'],['../classcmr_1_1JoystickDirectControl.html#a800e489fe081ad7cdd0aaab159dc47d4',1,'cmr::JoystickDirectControl::JoystickDirectControl()']]],
-  ['jsinputmocksubscriber_12',['JsInputMockSubscriber',['../classJsInputMockSubscriber.html',1,'']]],
-  ['jthread_13',['JThread',['../thread__wrapper_8hpp.html#a50a9e0b0dca6157600861f3069252c83',1,'thread_wrapper.hpp']]]
+  ['joystick_5fdirect_5fcontrol_2ecpp_6',['joystick_direct_control.cpp',['../joystick__direct__control_8cpp.html',1,'']]],
+  ['joystick_5fdirect_5fcontrol_2ehpp_7',['joystick_direct_control.hpp',['../joystick__direct__control_8hpp.html',1,'']]],
+  ['joystick_5fdirect_5fcontrol_5fmain_2ecpp_8',['joystick_direct_control_main.cpp',['../joystick__direct__control__main_8cpp.html',1,'']]],
+  ['joystick_5fmain_2ecpp_9',['joystick_main.cpp',['../joystick__main_8cpp.html',1,'']]],
+  ['joystick_5fmax_10',['joystick_max',['../joystick_8cpp.html#a0ac5f4b904fcd7fe5fc88d0bb1f1dfeb',1,'joystick.cpp']]],
+  ['joystick_5ftype_5fto_5fstring_11',['joystick_type_to_string',['../controller__test_8cpp.html#a9a5df44fef78c8a2ec643fbe1f23e9f8',1,'controller_test.cpp']]],
+  ['joystickdirectcontrol_12',['JoystickDirectControl',['../classcmr_1_1JoystickDirectControl.html',1,'cmr::JoystickDirectControl'],['../classcmr_1_1JoystickDirectControl.html#a800e489fe081ad7cdd0aaab159dc47d4',1,'cmr::JoystickDirectControl::JoystickDirectControl()']]],
+  ['joysticktype_13',['JoystickType',['../controller__test_8cpp.html#a8de4939237efe914e87ff0af9d50cd0c',1,'controller_test.cpp']]],
+  ['js_5fevent_5fbutton_5fpubl_14',['js_event_button_publ',['../classcmr_1_1Joystick.html#a5e2e00f6fa5941fcca2c6d7a1d9abaa3',1,'cmr::Joystick']]],
+  ['jsinputmocksubscriber_15',['JsInputMockSubscriber',['../classJsInputMockSubscriber.html',1,'']]],
+  ['jthread_16',['JThread',['../thread__wrapper_8hpp.html#a50a9e0b0dca6157600861f3069252c83',1,'thread_wrapper.hpp']]]
 ];

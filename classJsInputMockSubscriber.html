@@ -73,13 +73,16 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a850656f9cf6aa802ca245cb068a42c41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsInputMockSubscriber.html#a850656f9cf6aa802ca245cb068a42c41">MOCK_METHOD</a> (void, callback,(int, int, double))</td></tr>
-<tr class="memdesc:a850656f9cf6aa802ca245cb068a42c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct callback for a js_input subscriber.  <a href="classJsInputMockSubscriber.html#a850656f9cf6aa802ca245cb068a42c41">More...</a><br /></td></tr>
-<tr class="separator:a850656f9cf6aa802ca245cb068a42c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5c6eef9111541408e9b6adc9fccde8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsInputMockSubscriber.html#a5d5c6eef9111541408e9b6adc9fccde8">MOCK_METHOD</a> (void, arm_callback,(int, int, double))</td></tr>
+<tr class="memdesc:a5d5c6eef9111541408e9b6adc9fccde8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct callback for a js_input subscriber.  <a href="classJsInputMockSubscriber.html#a5d5c6eef9111541408e9b6adc9fccde8">More...</a><br /></td></tr>
+<tr class="separator:a5d5c6eef9111541408e9b6adc9fccde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f535c2c16976b868d76b19048c408f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsInputMockSubscriber.html#a7f535c2c16976b868d76b19048c408f3">MOCK_METHOD</a> (void, drives_callback,(double, double, double, double, double, double, std::string))</td></tr>
+<tr class="memdesc:a7f535c2c16976b868d76b19048c408f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for a cmd_vel subscriber.  <a href="classJsInputMockSubscriber.html#a7f535c2c16976b868d76b19048c408f3">More...</a><br /></td></tr>
+<tr class="separator:a7f535c2c16976b868d76b19048c408f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a850656f9cf6aa802ca245cb068a42c41" name="a850656f9cf6aa802ca245cb068a42c41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a850656f9cf6aa802ca245cb068a42c41">&#9670;&nbsp;</a></span>MOCK_METHOD()</h2>
+<a id="a5d5c6eef9111541408e9b6adc9fccde8" name="a5d5c6eef9111541408e9b6adc9fccde8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d5c6eef9111541408e9b6adc9fccde8">&#9670;&nbsp;</a></span>MOCK_METHOD() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -93,7 +96,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">callback&#160;</td>
+          <td class="paramtype">arm_callback&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -122,13 +125,61 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7f535c2c16976b868d76b19048c408f3" name="a7f535c2c16976b868d76b19048c408f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f535c2c16976b868d76b19048c408f3">&#9670;&nbsp;</a></span>MOCK_METHOD() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">JsInputMockSubscriber::MOCK_METHOD </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">drives_callback&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(double, double, double, double, double, double, std::string)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback for a cmd_vel subscriber. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linear_x</td><td></td></tr>
+    <tr><td class="paramname">linear_y</td><td></td></tr>
+    <tr><td class="paramname">linear_z</td><td></td></tr>
+    <tr><td class="paramname">angular_x</td><td></td></tr>
+    <tr><td class="paramname">angular_y</td><td></td></tr>
+    <tr><td class="paramname">angular_z</td><td></td></tr>
+    <tr><td class="paramname">frame_id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/cmr_bs/test/<a class="el" href="controller__test_8cpp.html">controller_test.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 10 2023 10:51:06 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Mon Feb 13 2023 21:35:46 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

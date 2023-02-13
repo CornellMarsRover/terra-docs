@@ -33,7 +33,10 @@ var searchData=
   ['detatchdestructionpolicy_30',['DetatchDestructionPolicy',['../classDetatchDestructionPolicy.html',1,'']]],
   ['diff_5fdrives_5ftest_5flaunch_31',['diff_drives_test_launch',['../namespacediff__drives__test__launch.html',1,'']]],
   ['diff_5fdrives_5ftest_5flaunch_2epy_32',['diff_drives_test_launch.py',['../diff__drives__test__launch_8py.html',1,'']]],
-  ['drives_5fsystem_2ecpp_33',['drives_system.cpp',['../drives__system_8cpp.html',1,'']]],
-  ['drives_5fsystem_2ehpp_34',['drives_system.hpp',['../drives__system_8hpp.html',1,'']]],
-  ['drivessystemhardware_35',['DrivesSystemHardware',['../classcmr__control_1_1DrivesSystemHardware.html',1,'cmr_control']]]
+  ['drives_33',['Drives',['../controller__test_8cpp.html#a8de4939237efe914e87ff0af9d50cd0ca63a6b9b3b5de50d32228700cfe042610',1,'controller_test.cpp']]],
+  ['drives_5fcallback_34',['drives_callback',['../classcmr_1_1Joystick.html#a3fd494286267af509afbc28f238ac71d',1,'cmr::Joystick']]],
+  ['drives_5fpublish_5fcallback_35',['drives_publish_callback',['../classcmr_1_1Joystick.html#acf396b500d0527ff28e2f21a975b1d86',1,'cmr::Joystick']]],
+  ['drives_5fsystem_2ecpp_36',['drives_system.cpp',['../drives__system_8cpp.html',1,'']]],
+  ['drives_5fsystem_2ehpp_37',['drives_system.hpp',['../drives__system_8hpp.html',1,'']]],
+  ['drivessystemhardware_38',['DrivesSystemHardware',['../classcmr__control_1_1DrivesSystemHardware.html',1,'cmr_control']]]
 ];

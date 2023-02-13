@@ -95,11 +95,12 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="monad_8hpp__dep__incl.png" border="0" usemap="#asrc_2cmr__utils_2include_2cmr__utils_2monad_8hppdep" alt=""/></div>
 <map name="asrc_2cmr__utils_2include_2cmr__utils_2monad_8hppdep" id="asrc_2cmr__utils_2include_2cmr__utils_2monad_8hppdep">
-<area shape="rect" title=" " alt="" coords="326,5,473,47"/>
-<area shape="rect" href="fabric__node_8cpp.html" title=" " alt="" coords="5,95,132,136"/>
-<area shape="rect" href="lifecycle__helpers_8cpp.html" title=" " alt="" coords="157,95,303,136"/>
-<area shape="rect" href="monad_8inl.html" title=" " alt="" coords="328,95,471,136"/>
-<area shape="rect" href="error__test_8cpp.html" title=" " alt="" coords="495,95,618,136"/>
+<area shape="rect" title=" " alt="" coords="447,5,593,47"/>
+<area shape="rect" href="joystick_8cpp.html" title=" " alt="" coords="5,102,187,129"/>
+<area shape="rect" href="fabric__node_8cpp.html" title=" " alt="" coords="211,95,338,136"/>
+<area shape="rect" href="lifecycle__helpers_8cpp.html" title=" " alt="" coords="363,95,509,136"/>
+<area shape="rect" href="monad_8inl.html" title=" " alt="" coords="534,95,677,136"/>
+<area shape="rect" href="error__test_8cpp.html" title=" " alt="" coords="701,95,824,136"/>
 </map>
 </div>
 </div>
@@ -137,6 +138,14 @@ Functions</h2></td></tr>
 <tr class="memitem:aa2c38ffc57761841453cf837029dab2a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemonad.html#aa2c38ffc57761841453cf837029dab2a">monad::value_or_else</a> (T &amp;&amp;monad, Func f) noexcept(noexcept(f())) -&gt; std::enable_if_t&lt; is_monad_like_v&lt; T &gt;, std::remove_reference_t&lt; decltype(monad.value())&gt; &gt;</td></tr>
 <tr class="memdesc:aa2c38ffc57761841453cf837029dab2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value contained within the monad or the value returned by the function if it is empty.  <a href="namespacemonad.html#aa2c38ffc57761841453cf837029dab2a">More...</a><br /></td></tr>
 <tr class="separator:aa2c38ffc57761841453cf837029dab2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e067a9d0c6a45ff8dd5d3b9029d902"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:a29e067a9d0c6a45ff8dd5d3b9029d902"><td class="memTemplItemLeft" align="right" valign="top">constexpr U&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemonad.html#a29e067a9d0c6a45ff8dd5d3b9029d902">monad::value_or</a> (const std::pair&lt; bool, T &gt; &amp;pair, U &amp;&amp;default_val) noexcept</td></tr>
+<tr class="memdesc:a29e067a9d0c6a45ff8dd5d3b9029d902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value contained within the pair or the default if it is empty.  <a href="namespacemonad.html#a29e067a9d0c6a45ff8dd5d3b9029d902">More...</a><br /></td></tr>
+<tr class="separator:a29e067a9d0c6a45ff8dd5d3b9029d902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed889d078fe57bd1ea7652756efd669d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Func &gt; </td></tr>
+<tr class="memitem:aed889d078fe57bd1ea7652756efd669d"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemonad.html#aed889d078fe57bd1ea7652756efd669d">monad::value_or_else</a> (const std::pair&lt; bool, T &gt; &amp;pair, Func f) noexcept(noexcept(f()))</td></tr>
+<tr class="memdesc:aed889d078fe57bd1ea7652756efd669d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value contained within the pair or the value returned by the function if it is empty.  <a href="namespacemonad.html#aed889d078fe57bd1ea7652756efd669d">More...</a><br /></td></tr>
+<tr class="separator:aed889d078fe57bd1ea7652756efd669d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -148,7 +157,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 10 2023 10:51:06 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Mon Feb 13 2023 21:35:46 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
