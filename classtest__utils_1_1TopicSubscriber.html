@@ -116,7 +116,7 @@ Private Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A class for listening to a topic Freeing the topic listener with <code>del</code> or using <code>with</code> is technically optional, as the garbage collector will do this if you don't. </p>
-<h3><a class="anchor" id="autotoc_md46"></a>
+<h3><a class="anchor" id="autotoc_md54"></a>
 Example:</h3>
 <div class="fragment"><div class="line">subber = TopicSubscriber(String, <span class="stringliteral">&quot;/test/utils_test_node/test_out&quot;</span>)</div>
 <div class="line"><a class="code hl_function" href="namespacetest__utils.html#a846599ca68e06b7779964e0456662deb">publish_to_topic</a>(String, <span class="stringliteral">&quot;/test/utils_test_node/test_in&quot;</span>, String(data=<span class="stringliteral">&quot;Hi&quot;</span>))</div>
@@ -330,13 +330,13 @@ Example:</h3>
 
 <p>Waits for a message to be received on the topic and returns that message Will return immediately if a message has already been received. </p>
 <p >This should not be called at the same time as another <code>wait_for_msg</code></p>
-<h3><a class="anchor" id="autotoc_md53"></a>
+<h3><a class="anchor" id="autotoc_md61"></a>
 Args:</h3>
 <ul>
 <li>timeout_sec (float or None): The number of seconds to wait for a message If <code>None</code>, waits forever</li>
 <li>async_nodes (list of RclpyNode): A list of nodes to spin while waiting Can be empty </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md54"></a>
+<h3><a class="anchor" id="autotoc_md62"></a>
 Returns:</h3>
 <p >The message received or None if the timeout is reached </p>
 
@@ -405,7 +405,7 @@ Returns:</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 13 2023 21:35:46 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Tue Feb 14 2023 23:01:48 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

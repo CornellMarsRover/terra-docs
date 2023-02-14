@@ -133,26 +133,26 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab4db5622ced88e33d4372dd8414ae5be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be">schedule_restart</a> ()</td></tr>
 <tr class="memdesc:ab4db5622ced88e33d4372dd8414ae5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a restart by sending a request to the fault handler.  <a href="classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be">More...</a><br /></td></tr>
 <tr class="separator:ab4db5622ced88e33d4372dd8414ae5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af70c37e7bc79da5a6dc61416f68cc26c"><td class="memTemplParams" colspan="2">template&lt;typename MessageT , typename FuncT &gt; </td></tr>
-<tr class="memitem:af70c37e7bc79da5a6dc61416f68cc26c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#af70c37e7bc79da5a6dc61416f68cc26c">create_lifecycle_subscription</a> (const std::string &amp;topic, const rclcpp::QoS &amp;qos, FuncT &amp;&amp;callback, const rclcpp::SubscriptionOptionsWithAllocator&lt; std::allocator&lt; void &gt; &gt; &amp;options=rclcpp::SubscriptionOptionsWithAllocator&lt; std::allocator&lt; void &gt; &gt;())</td></tr>
-<tr class="memdesc:af70c37e7bc79da5a6dc61416f68cc26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle subscription object that can be activated and deactivated and will call the fabric node error transition when an exception is thrown from the callback.  <a href="classcmr_1_1fabric_1_1FabricNode.html#af70c37e7bc79da5a6dc61416f68cc26c">More...</a><br /></td></tr>
-<tr class="separator:af70c37e7bc79da5a6dc61416f68cc26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ef5befb16a9c525d3d969e88aa630c6"><td class="memTemplParams" colspan="2">template&lt;typename MessageT &gt; </td></tr>
-<tr class="memitem:a8ef5befb16a9c525d3d969e88aa630c6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a8ef5befb16a9c525d3d969e88aa630c6">create_lifecycle_publisher</a> (const std::string &amp;topic_name, const rclcpp::QoS &amp;qos)</td></tr>
-<tr class="memdesc:a8ef5befb16a9c525d3d969e88aa630c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle publisher object that can be activated and deactivated.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a8ef5befb16a9c525d3d969e88aa630c6">More...</a><br /></td></tr>
-<tr class="separator:a8ef5befb16a9c525d3d969e88aa630c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf02f0a8cba39e118fc233c132afb7ef"><td class="memTemplParams" colspan="2">template&lt;typename ServiceT &gt; </td></tr>
-<tr class="memitem:abf02f0a8cba39e118fc233c132afb7ef"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#abf02f0a8cba39e118fc233c132afb7ef">create_lifecycle_client</a> (const std::string &amp;service_name, const rmw_qos_profile_t &amp;qos_profile=rmw_qos_profile_services_default)</td></tr>
-<tr class="memdesc:abf02f0a8cba39e118fc233c132afb7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle client object that can be activated and deactivated.  <a href="classcmr_1_1fabric_1_1FabricNode.html#abf02f0a8cba39e118fc233c132afb7ef">More...</a><br /></td></tr>
-<tr class="separator:abf02f0a8cba39e118fc233c132afb7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ee95a0065990cb54711b21679fbbe2a"><td class="memTemplParams" colspan="2">template&lt;typename ServiceT , typename FuncT &gt; </td></tr>
-<tr class="memitem:a4ee95a0065990cb54711b21679fbbe2a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a4ee95a0065990cb54711b21679fbbe2a">create_lifecycle_service</a> (const std::string &amp;service_name, FuncT &amp;&amp;callback, const rmw_qos_profile_t &amp;qos_profile=rmw_qos_profile_services_default, const rclcpp::CallbackGroup::SharedPtr group=nullptr)</td></tr>
-<tr class="memdesc:a4ee95a0065990cb54711b21679fbbe2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle service listener that can be activated and deactivated and will call the fabric node error transition when an exception is thrown from the callback.  <a href="classcmr_1_1fabric_1_1FabricNode.html#a4ee95a0065990cb54711b21679fbbe2a">More...</a><br /></td></tr>
-<tr class="separator:a4ee95a0065990cb54711b21679fbbe2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5ace663bd452fef6488410149a73e6c"><td class="memTemplParams" colspan="2">template&lt;typename CallbackT , typename RepT , typename PeriodT &gt; </td></tr>
-<tr class="memitem:ab5ace663bd452fef6488410149a73e6c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ab5ace663bd452fef6488410149a73e6c">create_lifecycle_timer</a> (const std::chrono::duration&lt; RepT, PeriodT &gt; &amp;period, CallbackT &amp;&amp;callback)</td></tr>
-<tr class="memdesc:ab5ace663bd452fef6488410149a73e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle timer object that can be activated and deactivated and will call the fabric node error transition when an exception is thrown.  <a href="classcmr_1_1fabric_1_1FabricNode.html#ab5ace663bd452fef6488410149a73e6c">More...</a><br /></td></tr>
-<tr class="separator:ab5ace663bd452fef6488410149a73e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf70c37e7bc79da5a6dc61416f68cc26c"><td class="memTemplParams" colspan="2">template&lt;typename MessageT , typename FuncT &gt; </td></tr>
+<tr class="memitem:gaf70c37e7bc79da5a6dc61416f68cc26c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__LifecycleFactory.html#gaf70c37e7bc79da5a6dc61416f68cc26c">create_lifecycle_subscription</a> (const std::string &amp;topic, const rclcpp::QoS &amp;qos, FuncT &amp;&amp;callback, const rclcpp::SubscriptionOptionsWithAllocator&lt; std::allocator&lt; void &gt; &gt; &amp;options=rclcpp::SubscriptionOptionsWithAllocator&lt; std::allocator&lt; void &gt; &gt;())</td></tr>
+<tr class="memdesc:gaf70c37e7bc79da5a6dc61416f68cc26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle subscription object that can be activated and deactivated and will call the fabric node error transition when an exception is thrown from the callback.  <a href="group__LifecycleFactory.html#gaf70c37e7bc79da5a6dc61416f68cc26c">More...</a><br /></td></tr>
+<tr class="separator:gaf70c37e7bc79da5a6dc61416f68cc26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ef5befb16a9c525d3d969e88aa630c6"><td class="memTemplParams" colspan="2">template&lt;typename MessageT &gt; </td></tr>
+<tr class="memitem:ga8ef5befb16a9c525d3d969e88aa630c6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__LifecycleFactory.html#ga8ef5befb16a9c525d3d969e88aa630c6">create_lifecycle_publisher</a> (const std::string &amp;topic_name, const rclcpp::QoS &amp;qos)</td></tr>
+<tr class="memdesc:ga8ef5befb16a9c525d3d969e88aa630c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle publisher object that can be activated and deactivated.  <a href="group__LifecycleFactory.html#ga8ef5befb16a9c525d3d969e88aa630c6">More...</a><br /></td></tr>
+<tr class="separator:ga8ef5befb16a9c525d3d969e88aa630c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf02f0a8cba39e118fc233c132afb7ef"><td class="memTemplParams" colspan="2">template&lt;typename ServiceT &gt; </td></tr>
+<tr class="memitem:gabf02f0a8cba39e118fc233c132afb7ef"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__LifecycleFactory.html#gabf02f0a8cba39e118fc233c132afb7ef">create_lifecycle_client</a> (const std::string &amp;service_name, const rmw_qos_profile_t &amp;qos_profile=rmw_qos_profile_services_default)</td></tr>
+<tr class="memdesc:gabf02f0a8cba39e118fc233c132afb7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle client object that can be activated and deactivated.  <a href="group__LifecycleFactory.html#gabf02f0a8cba39e118fc233c132afb7ef">More...</a><br /></td></tr>
+<tr class="separator:gabf02f0a8cba39e118fc233c132afb7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ee95a0065990cb54711b21679fbbe2a"><td class="memTemplParams" colspan="2">template&lt;typename ServiceT , typename FuncT &gt; </td></tr>
+<tr class="memitem:ga4ee95a0065990cb54711b21679fbbe2a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__LifecycleFactory.html#ga4ee95a0065990cb54711b21679fbbe2a">create_lifecycle_service</a> (const std::string &amp;service_name, FuncT &amp;&amp;callback, const rmw_qos_profile_t &amp;qos_profile=rmw_qos_profile_services_default, const rclcpp::CallbackGroup::SharedPtr group=nullptr)</td></tr>
+<tr class="memdesc:ga4ee95a0065990cb54711b21679fbbe2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle service listener that can be activated and deactivated and will call the fabric node error transition when an exception is thrown from the callback.  <a href="group__LifecycleFactory.html#ga4ee95a0065990cb54711b21679fbbe2a">More...</a><br /></td></tr>
+<tr class="separator:ga4ee95a0065990cb54711b21679fbbe2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5ace663bd452fef6488410149a73e6c"><td class="memTemplParams" colspan="2">template&lt;typename CallbackT , typename RepT , typename PeriodT &gt; </td></tr>
+<tr class="memitem:gab5ace663bd452fef6488410149a73e6c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__LifecycleFactory.html#gab5ace663bd452fef6488410149a73e6c">create_lifecycle_timer</a> (const std::chrono::duration&lt; RepT, PeriodT &gt; &amp;period, CallbackT &amp;&amp;callback)</td></tr>
+<tr class="memdesc:gab5ace663bd452fef6488410149a73e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a lifecycle timer object that can be activated and deactivated and will call the fabric node error transition when an exception is thrown.  <a href="group__LifecycleFactory.html#gab5ace663bd452fef6488410149a73e6c">More...</a><br /></td></tr>
+<tr class="separator:gab5ace663bd452fef6488410149a73e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -209,7 +209,29 @@ Friends</h2></td></tr>
 <p >Derived classes must implement the <code>configure</code>, <code>activate</code>, <code>deactivate</code>, and <code>cleanup</code> methods.</p>
 <p >This node sets up the ROS 2 lifecycle services to communicate with the CMR Dependency and Lifecycle manager nodes.</p>
 <p >When a <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes.">FabricNode</a> is activated or deactivated, it communicates with the dependency manager to ensure all dependencies are running and on deactivation, notifies the dependency manager that those dependents are no needed by this node. The dependency manager will activate all dependents via the lifecycle manager.</p>
-<p >If an error occurs in a state transition or if the <code>error_transition</code> method is invoked, the <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes.">FabricNode</a> communicates with the fault handler to notify it of the error. The fault handler will then schedule this node for restart. </p>
+<p >If an error occurs in a state transition or if the <code>error_transition</code> method is invoked, the <a class="el" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes.">FabricNode</a> communicates with the fault handler to notify it of the error. The fault handler will then schedule this node for restart.</p>
+<p >When a Fabric Node is created, it is passed a configuration file in TOML. It must contain the following section:</p>
+<div class="fragment"><div class="line">[fault_handling]</div>
+<div class="line">restart_attempts = &lt;<span class="keywordtype">int</span>&gt;</div>
+<div class="line">restart_delay = &lt;<span class="keywordtype">int</span>&gt;</div>
+</div><!-- fragment --><p >The <code>restart_attempts</code> is the number of times a Fabric Node will attempt to restart when an error occurs. The <code>restart_delay</code> is the number of seconds to wait before restarting the node when it fails. A fabric node is initially in the inactive state after finishing its configuration. It then must be activated which can be done from the topic interface provided by <code><a class="el" href="classLifecycleManager.html" title="A node which provides a service interface for lifecycle_helpers">LifecycleManager</a></code> or from C++ via <code><a class="el" href="group__LifecycleHelpers.html#ga5835fc4c116298d69818c17f7c8150a6" title="Uses the LifecycleNode exposed services to activate node_name.">cmr::fabric::activate_node()</a></code>.</p>
+<p >Upon activation, the node will communicate with <code><a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html" title="The DependencyHandler class is responsible for managing the dependencies.">cmr::fabric::DependencyHandler</a></code> to first activate any dependencies. The same process will happen in reverse on deactivation to deactivate any nodes that were activated for the sole purpose of being the dependency.</p>
+<p >When an error occurs, <code><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be" title="Schedules a restart by sending a request to the fault handler.">FabricNode::schedule_restart()</a></code> should be called, which will schedule the node for restart by <code><a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html" title="The FaultHandler class provides a service interface to allow nodes to restart themselves if an error ...">cmr::fabric::FaultHandler</a></code>. When using the <code><a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html" title="Creates a managed server that can be activated and deactivated.">cmr::fabric::LifecycleServer</a></code> which can be created by factory methods <code><a class="el" href="group__LifecycleFactory.html#gab5ace663bd452fef6488410149a73e6c" title="Create a lifecycle timer object that can be activated and deactivated and will call the fabric node e...">create_lifecycle_timer()</a></code>, <code><a class="el" href="group__LifecycleFactory.html#gaf70c37e7bc79da5a6dc61416f68cc26c" title="Create a lifecycle subscription object that can be activated and deactivated and will call the fabric...">create_lifecycle_subscription()</a></code>, etc., all exceptions thrown in the Callback will be caught and trigger a call to <code><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be" title="Schedules a restart by sending a request to the fault handler.">FabricNode::schedule_restart()</a></code>. Furthermore, any assertions called within the server callback functions will also trigger a node restart.</p>
+<p >A node restart shuts down all nodes that depend on the faulting node and restarts all of them in reverse topological order to maintain the constraint that a node is never active for a nontrivial period of time without its dependencies.</p>
+<h2><a class="anchor" id="autotoc_md11"></a>
+ROS Params:</h2>
+<ul>
+<li><code>composition_ns</code> - the namespace to run the node in, which will be the namespace the node uses for the <code>~/recover_fault</code> service to communicate with <code><a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html" title="The FaultHandler class provides a service interface to allow nodes to restart themselves if an error ...">cmr::fabric::FaultHandler</a></code></li>
+<li><code>config_path</code> - the path to the TOML config file</li>
+<li><code>config_data</code> - the contents of the TOML config file. Will be overriden by <code>config_path</code> if both parameters are specefied</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md12"></a>
+TOML Params:</h2>
+<ul>
+<li><code>restart_attempts</code> - See above</li>
+<li><code>restart_delay</code> - See above</li>
+<li><code>dependencies</code> - List of node names that the node depends upon </li>
+</ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5ce52f1627fc350def4283fa890ddf7b" name="a5ce52f1627fc350def4283fa890ddf7b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ce52f1627fc350def4283fa890ddf7b">&#9670;&nbsp;</a></span>FabricNode() <span class="overload">[1/4]</span></h2>
@@ -488,312 +510,6 @@ Friends</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false otherwise which will cause transition to <code>ErrorProcessing</code> </dd></dl>
 
 <p>Implemented in <a class="el" href="classFabricTestNode.html#a5fad657e9c6844011fcc71682480a852">FabricTestNode</a>, <a class="el" href="classcmr_1_1InverseKinematics.html#acd8e723d4dfb79892146c980eda14d63">cmr::InverseKinematics</a>, <a class="el" href="classcmr_1_1JoystickDirectControl.html#a573404fdf79d7d728be6b94807cd20c4">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1Joystick.html#a4ec8ddc8c78b84afb973e4b92c857081">cmr::Joystick</a>, <a class="el" href="classcmr_1_1CameraNode.html#aa9856de05713608470770a6fa46f569b">cmr::CameraNode</a>, and <a class="el" href="classDemoNode.html#af7b19ce94dded7510884d0e93324164b">DemoNode</a>.</p>
-
-</div>
-</div>
-<a id="abf02f0a8cba39e118fc233c132afb7ef" name="abf02f0a8cba39e118fc233c132afb7ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf02f0a8cba39e118fc233c132afb7ef">&#9670;&nbsp;</a></span>create_lifecycle_client()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ServiceT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto cmr::fabric::FabricNode::create_lifecycle_client </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>service_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const rmw_qos_profile_t &amp;&#160;</td>
-          <td class="paramname"><em>qos_profile</em> = <code>rmw_qos_profile_services_default</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Create a lifecycle client object that can be activated and deactivated. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">ServiceT</td><td>type of service to create </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">service_name</td><td>name of the service </td></tr>
-    <tr><td class="paramname">qos_profile</td><td>quality of service settings </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a lifecycle client object </dd></dl>
-
-</div>
-</div>
-<a id="a8ef5befb16a9c525d3d969e88aa630c6" name="a8ef5befb16a9c525d3d969e88aa630c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ef5befb16a9c525d3d969e88aa630c6">&#9670;&nbsp;</a></span>create_lifecycle_publisher()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename MessageT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto cmr::fabric::FabricNode::create_lifecycle_publisher </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>topic_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const rclcpp::QoS &amp;&#160;</td>
-          <td class="paramname"><em>qos</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Create a lifecycle publisher object that can be activated and deactivated. </p>
-<p >This is a wrapper of <code>LifecycleNode::create_publisher()</code> to provide more consitent naming with the other lifecycle creation methods.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">MessageT</td><td>type of message to publish </td></tr>
-    <tr><td class="paramname">AllocatorT</td><td>allocator type </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">topic</td><td>topic to publish to </td></tr>
-    <tr><td class="paramname">qos</td><td>quality of service settings </td></tr>
-    <tr><td class="paramname">options</td><td>optional publisher options </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a lifecycle publisher object </dd></dl>
-
-</div>
-</div>
-<a id="a4ee95a0065990cb54711b21679fbbe2a" name="a4ee95a0065990cb54711b21679fbbe2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ee95a0065990cb54711b21679fbbe2a">&#9670;&nbsp;</a></span>create_lifecycle_service()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ServiceT , typename FuncT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto cmr::fabric::FabricNode::create_lifecycle_service </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>service_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FuncT &amp;&amp;&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const rmw_qos_profile_t &amp;&#160;</td>
-          <td class="paramname"><em>qos_profile</em> = <code>rmw_qos_profile_services_default</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const rclcpp::CallbackGroup::SharedPtr&#160;</td>
-          <td class="paramname"><em>group</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Create a lifecycle service listener that can be activated and deactivated and will call the fabric node error transition when an exception is thrown from the callback. </p>
-<p >This listener will not execute the callback until it is activated or after it is deactivated</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">ServiceT</td><td></td></tr>
-    <tr><td class="paramname">FuncT</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">service_name</td><td>name of the service </td></tr>
-    <tr><td class="paramname">callback</td><td>callback function </td></tr>
-    <tr><td class="paramname">qos_profile</td><td>quality of service settings </td></tr>
-    <tr><td class="paramname">group</td><td>optional execution group to add the service to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a lifecycle service listener object </dd></dl>
-
-</div>
-</div>
-<a id="af70c37e7bc79da5a6dc61416f68cc26c" name="af70c37e7bc79da5a6dc61416f68cc26c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af70c37e7bc79da5a6dc61416f68cc26c">&#9670;&nbsp;</a></span>create_lifecycle_subscription()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename MessageT , typename FuncT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto cmr::fabric::FabricNode::create_lifecycle_subscription </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>topic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const rclcpp::QoS &amp;&#160;</td>
-          <td class="paramname"><em>qos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FuncT &amp;&amp;&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const rclcpp::SubscriptionOptionsWithAllocator&lt; std::allocator&lt; void &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>options</em> = <code>rclcpp::SubscriptionOptionsWithAllocator&lt;std::allocator&lt;void&gt;&gt;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Create a lifecycle subscription object that can be activated and deactivated and will call the fabric node error transition when an exception is thrown from the callback. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">MessageT</td><td>type of message to receive </td></tr>
-    <tr><td class="paramname">FuncT</td><td>callback function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">topic</td><td>topic to subscribe to </td></tr>
-    <tr><td class="paramname">qos</td><td>quality of service settings </td></tr>
-    <tr><td class="paramname">callback</td><td>callback function </td></tr>
-    <tr><td class="paramname">options</td><td>optional subscription options </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a lifecycle subscription object </dd></dl>
-
-</div>
-</div>
-<a id="ab5ace663bd452fef6488410149a73e6c" name="ab5ace663bd452fef6488410149a73e6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5ace663bd452fef6488410149a73e6c">&#9670;&nbsp;</a></span>create_lifecycle_timer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename CallbackT , typename RepT , typename PeriodT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto cmr::fabric::FabricNode::create_lifecycle_timer </td>
-          <td>(</td>
-          <td class="paramtype">const std::chrono::duration&lt; RepT, PeriodT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>period</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">CallbackT &amp;&amp;&#160;</td>
-          <td class="paramname"><em>callback</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Create a lifecycle timer object that can be activated and deactivated and will call the fabric node error transition when an exception is thrown. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">CallbackT</td><td>callback type </td></tr>
-    <tr><td class="paramname">RepT</td><td>duration type </td></tr>
-    <tr><td class="paramname">PeriodT</td><td>duration period </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">period</td><td>period for the timer </td></tr>
-    <tr><td class="paramname">callback</td><td>callback to execute for the timer. Should return <code>void</code> and take no arguments or a <code>TimerBase&amp;</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a lifecycle timer object </dd></dl>
 
 </div>
 </div>
@@ -1272,7 +988,7 @@ template&lt;typename ActionT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 13 2023 21:35:46 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Tue Feb 14 2023 23:01:48 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

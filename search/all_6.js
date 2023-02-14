@@ -14,7 +14,7 @@ var searchData=
   ['fault_5fhandler_2ehpp_11',['fault_handler.hpp',['../fault__handler_8hpp.html',1,'']]],
   ['fault_5fhandler_5fnode_2ecpp_12',['fault_handler_node.cpp',['../fault__handler__node_8cpp.html',1,'']]],
   ['faulthandler_13',['FaultHandler',['../classcmr_1_1fabric_1_1FaultHandler.html',1,'cmr::fabric::FaultHandler'],['../classcmr_1_1fabric_1_1FaultHandler.html#a7b2e163f67e3ed95fe3894aa0da282e4',1,'cmr::fabric::FaultHandler::FaultHandler(const std::string &amp;node_name=&quot;fault_handler&quot;, const std::string &amp;node_namespace=&quot;fabric&quot;)'],['../classcmr_1_1fabric_1_1FaultHandler.html#a45fbfcf5c5bfb26a8f413a676d2853e6',1,'cmr::fabric::FaultHandler::FaultHandler(std::shared_ptr&lt; cmr::Clock&lt; std::chrono::system_clock &gt; &gt; base_clock, std::shared_ptr&lt; cmr::Clock&lt; std::chrono::system_clock &gt; &gt; check_clock, const std::string &amp;node_name=&quot;fault_handler&quot;, const std::string &amp;node_namespace=&quot;fabric&quot;)']]],
-  ['finalized_14',['Finalized',['../namespacecmr_1_1fabric.html#a2bde5b0913d02186fb7b9f5d0580c190a65457a3fa7904cfb30c890a602332205',1,'cmr::fabric']]],
+  ['finalized_14',['Finalized',['../group__LifecycleHelpers.html#gga2bde5b0913d02186fb7b9f5d0580c190a65457a3fa7904cfb30c890a602332205',1,'cmr::fabric']]],
   ['forward_5fk_5farm_15',['forward_k_arm',['../namespaceforward__k__arm.html',1,'']]],
   ['forward_5fk_5farm_2elaunch_2epy_16',['forward_k_arm.launch.py',['../forward__k__arm_8launch_8py.html',1,'']]]
 ];

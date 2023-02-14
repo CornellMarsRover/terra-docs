@@ -3,7 +3,7 @@ var searchData=
   ['schedule_5frestart_0',['schedule_restart',['../classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be',1,'cmr::fabric::FabricNode']]],
   ['send_5faction_5fgoal_5fsync_1',['send_action_goal_sync',['../namespacetest__utils.html#ac4ec3481ff9c49042b801c1385d5feaa',1,'test_utils']]],
   ['send_5fjoystick_5freading_2',['send_joystick_reading',['../namespacearm__direct__control__test.html#a8553bee98463bf50be473836510429f7',1,'arm_direct_control_test']]],
-  ['send_5frequest_3',['send_request',['../namespacecmr.html#aea21691c16a0393db1724888ce768b5f',1,'cmr']]],
+  ['send_5frequest_3',['send_request',['../group__ServiceUtils.html#gaea21691c16a0393db1724888ce768b5f',1,'cmr']]],
   ['send_5funchecked_5fjoystick_5freading_4',['send_unchecked_joystick_reading',['../namespacearm__direct__control__test.html#a35314f61645ddac3b5c26ca6b3c8c10b',1,'arm_direct_control_test']]],
   ['serviceconfig_5',['ServiceConfig',['../structcmr_1_1fabric_1_1ServiceConfig.html#acfb4339aa01e7a7e3f57e9cd9099ba9f',1,'cmr::fabric::ServiceConfig']]],
   ['set_5fassert_5fhandler_6',['set_assert_handler',['../cmr__debug_8hpp.html#a55cc5e49493402a3831a8a9ba88c5e60',1,'set_assert_handler(assert_handler_t handler) noexcept:&#160;cmr_debug.cpp'],['../cmr__debug_8cpp.html#a55cc5e49493402a3831a8a9ba88c5e60',1,'set_assert_handler(assert_handler_t handler) noexcept:&#160;cmr_debug.cpp']]],

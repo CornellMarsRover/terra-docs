@@ -103,7 +103,13 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Func&gt;<br />
 class CmrRAII&lt; Func &gt;</div><p >A RAII helper class that simply provides a way to call a function when it is destroyed. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p >Meant to be used with the <code>ALWAYS</code> macro.</p>
+<h3><a class="anchor" id="autotoc_md76"></a>
+Example:</h3>
+<div class="fragment"><div class="line"> {C++}</div>
+<div class="line"><a class="code hl_define" href="cmr__debug_8hpp.html#afa6fc53191f57974025ccf7668a51d3e">ALWAYS</a>(<span class="keyword">this</span>) { this-&gt;m_finished = <span class="keyword">true</span>; };</div>
+<div class="ttc" id="acmr__debug_8hpp_html_afa6fc53191f57974025ccf7668a51d3e"><div class="ttname"><a href="cmr__debug_8hpp.html#afa6fc53191f57974025ccf7668a51d3e">ALWAYS</a></div><div class="ttdeci">#define ALWAYS(...)</div><div class="ttdoc">Macro for easily creating a CmrRAII object that calls the code when it is destroyed.</div><div class="ttdef"><b>Definition:</b> cmr_debug.hpp:377</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a824ce5b0b377ac37f9a39c65b6225234" name="a824ce5b0b377ac37f9a39c65b6225234"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a824ce5b0b377ac37f9a39c65b6225234">&#9670;&nbsp;</a></span>CmrRAII() <span class="overload">[1/4]</span></h2>
 
@@ -345,7 +351,7 @@ template&lt;typename Func &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 13 2023 21:35:46 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Tue Feb 14 2023 23:01:48 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
