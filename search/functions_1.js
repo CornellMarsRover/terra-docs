@@ -6,8 +6,9 @@ var searchData=
   ['activate_5fnode_3',['activate_node',['../group__LifecycleHelpers.html#ga5835fc4c116298d69818c17f7c8150a6',1,'cmr::fabric']]],
   ['add_5fto_5ftoml_5flist_4',['add_to_toml_list',['../test__utils_8hpp.html#acf42dcb3d1300c1397ff1ec3054a8496',1,'test_utils.hpp']]],
   ['arm_5fcallback_5',['arm_callback',['../classcmr_1_1Joystick.html#a1bae9ca5b00844ba94e9101f5573cf2f',1,'cmr::Joystick']]],
-  ['astromotor_6',['AstroMotor',['../classcmr__control_1_1AstroMotor.html#a10c5951ea0b9b1ebd5ec0f258f52a8b9',1,'cmr_control::AstroMotor']]],
-  ['astrosensor_7',['AstroSensor',['../classsemantic__components_1_1AstroSensor.html#af42cd117a5512aa73103bcda64eb8ec0',1,'semantic_components::AstroSensor::AstroSensor(const std::string &amp;name)'],['../classsemantic__components_1_1AstroSensor.html#ab1c54fc1758dcea990906f47dddc0ebc',1,'semantic_components::AstroSensor::AstroSensor(const std::string &amp;name, const std::vector&lt; std::string &gt; &amp;names)']]],
-  ['astrosensorbroadcaster_8',['AstroSensorBroadcaster',['../classcmr__control_1_1AstroSensorBroadcaster.html#a872782bc3abdb9d14abfcfefc1ff3a34',1,'cmr_control::AstroSensorBroadcaster']]],
-  ['async_5fsend_5frequest_9',['async_send_request',['../classcmr_1_1fabric_1_1LifecycleClient.html#ac23331cbe95481c86cb9e569c0bcd0d4',1,'cmr::fabric::LifecycleClient']]]
+  ['arucoaction_6',['ArucoAction',['../classArucoAction.html#ab5db810b451fee9a557d594d90d58877',1,'ArucoAction']]],
+  ['astromotor_7',['AstroMotor',['../classcmr__control_1_1AstroMotor.html#a10c5951ea0b9b1ebd5ec0f258f52a8b9',1,'cmr_control::AstroMotor']]],
+  ['astrosensor_8',['AstroSensor',['../classsemantic__components_1_1AstroSensor.html#af42cd117a5512aa73103bcda64eb8ec0',1,'semantic_components::AstroSensor::AstroSensor(const std::string &amp;name)'],['../classsemantic__components_1_1AstroSensor.html#ab1c54fc1758dcea990906f47dddc0ebc',1,'semantic_components::AstroSensor::AstroSensor(const std::string &amp;name, const std::vector&lt; std::string &gt; &amp;names)']]],
+  ['astrosensorbroadcaster_9',['AstroSensorBroadcaster',['../classcmr__control_1_1AstroSensorBroadcaster.html#a872782bc3abdb9d14abfcfefc1ff3a34',1,'cmr_control::AstroSensorBroadcaster']]],
+  ['async_5fsend_5frequest_10',['async_send_request',['../classcmr_1_1fabric_1_1LifecycleClient.html#ac23331cbe95481c86cb9e569c0bcd0d4',1,'cmr::fabric::LifecycleClient']]]
 ];

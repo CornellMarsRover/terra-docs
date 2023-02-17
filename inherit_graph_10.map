@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structcmr_1_1fabric_1_1ServerDefaultArgumentConstructor_3_01void_01_4.html" title="Overload for void returning callbacks." alt="" coords="5,5,196,47"/>
+<area shape="rect" id="node1" href="$structcmr_1_1fabric_1_1ServerDefaultArgumentConstructor.html" title="Constructs the default return value for server callbacks." alt="" coords="5,13,180,54"/>
+<area shape="rect" id="node2" href="$structcmr_1_1fabric_1_1ActionServerPolicy_1_1ActionDefaultReturnConstruct.html" title=" " alt="" coords="228,5,436,61"/>
 </map>

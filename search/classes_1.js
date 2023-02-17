@@ -8,9 +8,10 @@ var searchData=
   ['actionserverpolicy_5',['ActionServerPolicy',['../classcmr_1_1fabric_1_1ActionServerPolicy.html',1,'cmr::fabric']]],
   ['armeffortcontrol_6',['ArmEffortControl',['../classcmr__demo__py_1_1arm__effort__control_1_1ArmEffortControl.html',1,'cmr_demo_py::arm_effort_control']]],
   ['armsystemhardware_7',['ArmSystemHardware',['../classcmr__control_1_1ArmSystemHardware.html',1,'cmr_control']]],
-  ['astromotor_8',['AstroMotor',['../classcmr__control_1_1AstroMotor.html',1,'cmr_control']]],
-  ['astrosensor_9',['AstroSensor',['../classsemantic__components_1_1AstroSensor.html',1,'semantic_components']]],
-  ['astrosensorbroadcaster_10',['AstroSensorBroadcaster',['../classcmr__control_1_1AstroSensorBroadcaster.html',1,'cmr_control']]],
-  ['astrosensorhardware_11',['AstroSensorHardware',['../classcmr__control_1_1AstroSensorHardware.html',1,'cmr_control']]],
-  ['axisstate_12',['AxisState',['../structcmr_1_1Joystick_1_1AxisState.html',1,'cmr::Joystick']]]
+  ['arucoaction_8',['ArucoAction',['../classArucoAction.html',1,'']]],
+  ['astromotor_9',['AstroMotor',['../classcmr__control_1_1AstroMotor.html',1,'cmr_control']]],
+  ['astrosensor_10',['AstroSensor',['../classsemantic__components_1_1AstroSensor.html',1,'semantic_components']]],
+  ['astrosensorbroadcaster_11',['AstroSensorBroadcaster',['../classcmr__control_1_1AstroSensorBroadcaster.html',1,'cmr_control']]],
+  ['astrosensorhardware_12',['AstroSensorHardware',['../classcmr__control_1_1AstroSensorHardware.html',1,'cmr_control']]],
+  ['axisstate_13',['AxisState',['../structcmr_1_1Joystick_1_1AxisState.html',1,'cmr::Joystick']]]
 ];

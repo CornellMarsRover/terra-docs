@@ -1,4 +1,10 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,200,39"/>
-<area shape="rect" id="node2" href="$classsemantic__components_1_1AstroSensor.html" title="The AstroSensor class is a semantic component which represents an sensor returning one or multiple fl..." alt="" coords="248,5,401,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,205,159"/>
+<area shape="rect" id="node2" href="$classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes." alt="" coords="253,132,408,159"/>
+<area shape="rect" id="node3" href="$classDemoNode.html" title=" " alt="" coords="499,5,586,32"/>
+<area shape="rect" id="node4" href="$classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling." alt="" coords="485,56,600,83"/>
+<area shape="rect" id="node5" href="$classcmr_1_1CameraNode.html" title="CameraNode" alt="" coords="479,107,606,133"/>
+<area shape="rect" id="node6" href="$classcmr_1_1InverseKinematics.html" title="InverseKinematics" alt="" coords="463,157,622,184"/>
+<area shape="rect" id="node7" href="$classcmr_1_1Joystick.html" title="Joystick TOML File: restart_attempts &#45; Amount of restart attempts used for fault handeling." alt="" coords="493,208,592,235"/>
+<area shape="rect" id="node8" href="$classcmr_1_1JoystickDirectControl.html" title="The JoystickDirectControl node is the node called to activate arm control via direct joystick control..." alt="" coords="456,259,629,285"/>
 </map>
