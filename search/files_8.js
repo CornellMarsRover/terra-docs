@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['joystick_2ecpp_0',['joystick.cpp',['../joystick_8cpp.html',1,'']]],
-  ['joystick_2ehpp_1',['joystick.hpp',['../joystick_8hpp.html',1,'']]],
-  ['joystick_5fdirect_5fcontrol_2ecpp_2',['joystick_direct_control.cpp',['../joystick__direct__control_8cpp.html',1,'']]],
-  ['joystick_5fdirect_5fcontrol_2ehpp_3',['joystick_direct_control.hpp',['../joystick__direct__control_8hpp.html',1,'']]],
-  ['joystick_5fdirect_5fcontrol_5fmain_2ecpp_4',['joystick_direct_control_main.cpp',['../joystick__direct__control__main_8cpp.html',1,'']]],
-  ['joystick_5fmain_2ecpp_5',['joystick_main.cpp',['../joystick__main_8cpp.html',1,'']]]
+  ['inverse_5fkinematics_2ecpp_0',['inverse_kinematics.cpp',['../inverse__kinematics_8cpp.html',1,'']]],
+  ['inverse_5fkinematics_2ehpp_1',['inverse_kinematics.hpp',['../inverse__kinematics_8hpp.html',1,'']]],
+  ['inverse_5fkinematics_5fmain_2ecpp_2',['inverse_kinematics_main.cpp',['../inverse__kinematics__main_8cpp.html',1,'']]]
 ];
