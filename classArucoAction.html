@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classArucoAction.html" title="The ArucoAction class subscribes to aruco_poses topic.">ArucoAction</a> class subscribes to aruco_poses topic.  
+<p>The class <a class="el" href="classArucoAction.html" title="The class ArucoAction contains several methods, functions, and member variables that assist in the ar...">ArucoAction</a> contains several methods, functions, and member variables that assist in the aruco tag detection.  
  <a href="classArucoAction.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="aruco__bt__action_8hpp_source.html">aruco_bt_action.hpp</a>&gt;</code></p>
@@ -83,7 +83,7 @@ Inheritance diagram for ArucoAction:</div>
 <div class="dyncontent">
 <div class="center"><img src="classArucoAction__inherit__graph.png" border="0" usemap="#aArucoAction_inherit__map" alt="Inheritance graph"/></div>
 <map name="aArucoAction_inherit__map" id="aArucoAction_inherit__map">
-<area shape="rect" title="The ArucoAction class subscribes to aruco_poses topic." alt="" coords="30,80,123,107"/>
+<area shape="rect" title="The class ArucoAction contains several methods, functions, and member variables that assist in the ar..." alt="" coords="30,80,123,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,148,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -92,7 +92,7 @@ Collaboration diagram for ArucoAction:</div>
 <div class="dyncontent">
 <div class="center"><img src="classArucoAction__coll__graph.png" border="0" usemap="#aArucoAction_coll__map" alt="Collaboration graph"/></div>
 <map name="aArucoAction_coll__map" id="aArucoAction_coll__map">
-<area shape="rect" title="The ArucoAction class subscribes to aruco_poses topic." alt="" coords="30,80,123,107"/>
+<area shape="rect" title="The class ArucoAction contains several methods, functions, and member variables that assist in the ar..." alt="" coords="30,80,123,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,148,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -113,8 +113,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a4bed4cbf7f1427e48d1f235d0c5a5b8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArucoAction.html#a4bed4cbf7f1427e48d1f235d0c5a5b8f">topic_callback</a> (const geometry_msgs::msg::PoseArray::SharedPtr msg)</td></tr>
-<tr class="memdesc:a4bed4cbf7f1427e48d1f235d0c5a5b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback function calculates the time that is stamped on the detected AR tag and sees if it is sooner than the previous time calculated.  <a href="classArucoAction.html#a4bed4cbf7f1427e48d1f235d0c5a5b8f">More...</a><br /></td></tr>
+<tr class="memdesc:a4bed4cbf7f1427e48d1f235d0c5a5b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback function loops through the Aruco poses to add each pose to the vector of AR tags.  <a href="classArucoAction.html#a4bed4cbf7f1427e48d1f235d0c5a5b8f">More...</a><br /></td></tr>
 <tr class="separator:a4bed4cbf7f1427e48d1f235d0c5a5b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97e1183a2044e428520caca7d927c5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArucoAction.html#ac97e1183a2044e428520caca7d927c5e">transformhelper</a> (const geometry_msgs::msg::PoseArray::SharedPtr msg)</td></tr>
+<tr class="memdesc:ac97e1183a2044e428520caca7d927c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transformhelper function completes the transform of the initial position coordinates into the necessary reference frame of "map".  <a href="classArucoAction.html#ac97e1183a2044e428520caca7d927c5e">More...</a><br /></td></tr>
+<tr class="separator:ac97e1183a2044e428520caca7d927c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -124,10 +127,14 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aff11141d3dc44cf01d498b59c8b7a489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef76fd81c3d6df8a3f56d30f98e064c0"><td class="memItemLeft" align="right" valign="top">geometry_msgs::msg::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArucoAction.html#aef76fd81c3d6df8a3f56d30f98e064c0">m_latest_position_average</a></td></tr>
 <tr class="separator:aef76fd81c3d6df8a3f56d30f98e064c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa86d86a97d997a5e2787a840344e727"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; tf2_ros::TransformListener &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArucoAction.html#afa86d86a97d997a5e2787a840344e727">m_tf_listener</a></td></tr>
+<tr class="separator:afa86d86a97d997a5e2787a840344e727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f1e81a094f144892b1db2afe433ca08"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; tf2_ros::Buffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArucoAction.html#a1f1e81a094f144892b1db2afe433ca08">m_tf_buffer</a></td></tr>
+<tr class="separator:a1f1e81a094f144892b1db2afe433ca08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >The <a class="el" href="classArucoAction.html" title="The ArucoAction class subscribes to aruco_poses topic.">ArucoAction</a> class subscribes to aruco_poses topic. </p>
-<p >The constructor, methods, and variables listed work together to post the average position of the detected aruco tags that are within 1 meter of each other in order for the rover to circle the post at the location. </p>
+<div class="textblock"><p >The class <a class="el" href="classArucoAction.html" title="The class ArucoAction contains several methods, functions, and member variables that assist in the ar...">ArucoAction</a> contains several methods, functions, and member variables that assist in the aruco tag detection. </p>
+<p >The class listens for messages on /aruco_poses, then makes a list of the poses gathered from the messages and loops through the poses and gets the position of the first pose in the vector and adds it to a separate vector. After this, the rest of the poses are looped through and if their respective coordinates are within 1 of the coordinates of the first pose, it is added to that vector. The coordinates of the poses in the m_position_to_post vector are then averaged to get the coordinate that the rover should circle around. This coordinate is then transformed to the "map" reference frame and the Vector3Stamped position is placed in the blackboaard port ARTag. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab5db810b451fee9a557d594d90d58877" name="ab5db810b451fee9a557d594d90d58877"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5db810b451fee9a557d594d90d58877">&#9670;&nbsp;</a></span>ArucoAction()</h2>
@@ -240,8 +247,37 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The callback function calculates the time that is stamped on the detected AR tag and sees if it is sooner than the previous time calculated. </p>
-<p >It also loops through the Aruco poses to add each pose to the vector of AR tags. </p>
+<p>The callback function loops through the Aruco poses to add each pose to the vector of AR tags. </p>
+<p >It then averages the coordinates of the closest tags to get the position that the rover should circle around. It then calls the transform helper function to transform the calculated coordinates into the correct reference frame. </p>
+
+</div>
+</div>
+<a id="ac97e1183a2044e428520caca7d927c5e" name="ac97e1183a2044e428520caca7d927c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac97e1183a2044e428520caca7d927c5e">&#9670;&nbsp;</a></span>transformhelper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArucoAction::transformhelper </td>
+          <td>(</td>
+          <td class="paramtype">const geometry_msgs::msg::PoseArray::SharedPtr&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The transformhelper function completes the transform of the initial position coordinates into the necessary reference frame of "map". </p>
+<p >It uses the msg argument to do the transform. The function is then called in the topic_callback function to be ran there and to then post the final position in the correct reference frame to the blackboard. </p>
 
 </div>
 </div>
@@ -312,6 +348,50 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1f1e81a094f144892b1db2afe433ca08" name="a1f1e81a094f144892b1db2afe433ca08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f1e81a094f144892b1db2afe433ca08">&#9670;&nbsp;</a></span>m_tf_buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;tf2_ros::Buffer&gt; ArucoAction::m_tf_buffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa86d86a97d997a5e2787a840344e727" name="afa86d86a97d997a5e2787a840344e727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa86d86a97d997a5e2787a840344e727">&#9670;&nbsp;</a></span>m_tf_listener</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;tf2_ros::TransformListener&gt; ArucoAction::m_tf_listener</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/cmr_cv/include/cmr_cv/<a class="el" href="aruco__bt__action_8hpp_source.html">aruco_bt_action.hpp</a></li>
 <li>src/cmr_cv/src/<a class="el" href="aruco__bt__action_8cpp.html">aruco_bt_action.cpp</a></li>
@@ -319,7 +399,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 6 2023 22:29:23 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Tue Mar 14 2023 23:53:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
