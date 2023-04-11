@@ -218,14 +218,14 @@ Friends</h2></td></tr>
 <p >Upon activation, the node will communicate with <code><a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html" title="The DependencyHandler class is responsible for managing the dependencies.">cmr::fabric::DependencyHandler</a></code> to first activate any dependencies. The same process will happen in reverse on deactivation to deactivate any nodes that were activated for the sole purpose of being the dependency.</p>
 <p >When an error occurs, <code><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be" title="Schedules a restart by sending a request to the fault handler.">FabricNode::schedule_restart()</a></code> should be called, which will schedule the node for restart by <code><a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html" title="The FaultHandler class provides a service interface to allow nodes to restart themselves if an error ...">cmr::fabric::FaultHandler</a></code>. When using the <code><a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html" title="Creates a managed server that can be activated and deactivated.">cmr::fabric::LifecycleServer</a></code> which can be created by factory methods <code><a class="el" href="group__LifecycleFactory.html#gab5ace663bd452fef6488410149a73e6c" title="Create a lifecycle timer object that can be activated and deactivated and will call the fabric node e...">create_lifecycle_timer()</a></code>, <code><a class="el" href="group__LifecycleFactory.html#gaf70c37e7bc79da5a6dc61416f68cc26c" title="Create a lifecycle subscription object that can be activated and deactivated and will call the fabric...">create_lifecycle_subscription()</a></code>, etc., all exceptions thrown in the Callback will be caught and trigger a call to <code><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be" title="Schedules a restart by sending a request to the fault handler.">FabricNode::schedule_restart()</a></code>. Furthermore, any assertions called within the server callback functions will also trigger a node restart.</p>
 <p >A node restart shuts down all nodes that depend on the faulting node and restarts all of them in reverse topological order to maintain the constraint that a node is never active for a nontrivial period of time without its dependencies.</p>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md14"></a>
 ROS Params:</h2>
 <ul>
 <li><code>composition_ns</code> - the namespace to run the node in, which will be the namespace the node uses for the <code>~/recover_fault</code> service to communicate with <code><a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html" title="The FaultHandler class provides a service interface to allow nodes to restart themselves if an error ...">cmr::fabric::FaultHandler</a></code></li>
 <li><code>config_path</code> - the path to the TOML config file</li>
 <li><code>config_data</code> - the contents of the TOML config file. Will be overriden by <code>config_path</code> if both parameters are specefied</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md12"></a>
+<h2><a class="anchor" id="autotoc_md15"></a>
 TOML Params:</h2>
 <ul>
 <li><code>restart_attempts</code> - See above</li>
@@ -988,7 +988,7 @@ template&lt;typename ActionT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 25 2023 22:45:09 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Tue Apr 11 2023 14:36:45 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
