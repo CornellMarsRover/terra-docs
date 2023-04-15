@@ -241,7 +241,7 @@ Functions</h2></td></tr>
 
 <p>Macro for easily creating a <code><a class="el" href="classCmrRAII.html" title="A RAII helper class that simply provides a way to call a function when it is destroyed.">CmrRAII</a></code> object that calls the code when it is destroyed. </p>
 <p >The paramaters of this macro are the captures of the <code><a class="el" href="classCmrRAII.html" title="A RAII helper class that simply provides a way to call a function when it is destroyed.">CmrRAII</a></code>'s lambda which is called upon destruction. This macro essentially creates a lambda and assigns it to a uniqurely names <code><a class="el" href="classCmrRAII.html" title="A RAII helper class that simply provides a way to call a function when it is destroyed.">CmrRAII</a></code></p>
-<h2><a class="anchor" id="autotoc_md80"></a>
+<h2><a class="anchor" id="autotoc_md81"></a>
 Example</h2>
 <div class="fragment"><div class="line"> {C++}</div>
 <div class="line"><a class="code hl_define" href="cmr__debug_8hpp.html#afa6fc53191f57974025ccf7668a51d3e">ALWAYS</a>(<span class="keyword">this</span>) { m_error_processing = <span class="keyword">false</span>; };</div>
@@ -285,7 +285,7 @@ Example</h2>
   </table>
   </dd>
 </dl>
-<h2><a class="anchor" id="autotoc_md74"></a>
+<h2><a class="anchor" id="autotoc_md75"></a>
 Example:</h2>
 <ul>
 <li><code>CMR_ASSERT(x == 10);</code></li>
@@ -325,7 +325,7 @@ Example:</h2>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Like <code>CMR_ASSERT</code> but also supplied a format string followed by format arguments, just like <code>printf</code> </p>
-<h3><a class="anchor" id="autotoc_md75"></a>
+<h3><a class="anchor" id="autotoc_md76"></a>
 Example</h3>
 <ul>
 <li><code>CMR_ASSERT_MSG(x == 10, "%s was %d instead of 10", "x", x)</code></li>
@@ -438,7 +438,7 @@ Example</h3>
   </table>
   </dd>
 </dl>
-<h2><a class="anchor" id="autotoc_md73"></a>
+<h2><a class="anchor" id="autotoc_md74"></a>
 Example</h2>
 <p ><code>CMR_LOG(INFO, "test is %s", get_parameter("test").as_string().c_str());</code></p>
 <p >`CMR_LOG(WARN, "we got %d", my_num); </p>
@@ -500,7 +500,7 @@ Example</h2>
 <p>Macro for declaring a callback function for a FabricNode. </p>
 <p >This macro essentially wraps a try-catch around the code you provide to turn any assetion errors into calls to <code><a class="el" href="cmr__debug_8hpp.html#ae32e3f77a8ecab97ba7615b92530ca52" title="Empty function that is called if CMR_RETRY_ON_ERR is called from outside a FabricNode.">error_transition()</a></code> to restart the node instead of terminating it</p>
 <p >This should be used in all service, topic, etc. callback handlers</p>
-<h2><a class="anchor" id="autotoc_md77"></a>
+<h2><a class="anchor" id="autotoc_md78"></a>
 Example:</h2>
 <div class="fragment"><div class="line"> {C++}</div>
 <div class="line">m_sub = create_subscription&lt;std_msgs::msg::Bool&gt;(</div>
@@ -805,7 +805,7 @@ template&lt;typename U , typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<h2><a class="anchor" id="autotoc_md78"></a>
+<h2><a class="anchor" id="autotoc_md79"></a>
 Example</h2>
 <div class="fragment"><div class="line"> {C++}</div>
 <div class="line"><span class="keyword">auto</span> x = narrow_cast&lt;int&gt;(1.5); <span class="comment">// will fail</span></div>
@@ -855,7 +855,7 @@ Example</h2>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 11 2023 14:36:44 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Apr 15 2023 20:29:53 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

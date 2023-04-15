@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,137,47"/>
-<area shape="rect" id="node2" href="$classcmr__control_1_1AstroMotor.html" title="AstroMotor is a hardware interface for controlling a single motor with position or velocity commands." alt="" coords="185,13,345,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,111,39"/>
+<area shape="rect" id="node2" href="$classThreadWrapper.html" title="The ThreadWrapper provides RAII and other features for std::thread." alt="" coords="159,5,345,47"/>
 </map>

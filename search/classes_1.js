@@ -13,5 +13,6 @@ var searchData=
   ['astrosensor_10',['AstroSensor',['../classsemantic__components_1_1AstroSensor.html',1,'semantic_components']]],
   ['astrosensorbroadcaster_11',['AstroSensorBroadcaster',['../classcmr__control_1_1AstroSensorBroadcaster.html',1,'cmr_control']]],
   ['astrosensorhardware_12',['AstroSensorHardware',['../classcmr__control_1_1AstroSensorHardware.html',1,'cmr_control']]],
-  ['axisstate_13',['AxisState',['../structcmr_1_1Joystick_1_1AxisState.html',1,'cmr::Joystick']]]
+  ['autostate_13',['AutoState',['../classcmr_1_1AutoState.html',1,'cmr']]],
+  ['axisstate_14',['AxisState',['../structcmr_1_1Joystick_1_1AxisState.html',1,'cmr::Joystick']]]
 ];

@@ -6,5 +6,6 @@ var searchData=
   ['_7egenericlifecycle_3',['~GenericLifecycle',['../classcmr_1_1fabric_1_1GenericLifecycle.html#ad91cf28e2e84e16706904d462f6dda5c',1,'cmr::fabric::GenericLifecycle']]],
   ['_7elifecycleclient_4',['~LifecycleClient',['../classcmr_1_1fabric_1_1LifecycleClient.html#a1720c878d86d7066fcdaff39f8199b4f',1,'cmr::fabric::LifecycleClient']]],
   ['_7elifecycleserver_5',['~LifecycleServer',['../classcmr_1_1fabric_1_1LifecycleServer.html#acd629822162b1b886fcecec9d098493e',1,'cmr::fabric::LifecycleServer']]],
-  ['_7ethreadwrapper_6',['~ThreadWrapper',['../classThreadWrapper.html#a643af8d1bf04d1b6d7213bf6a067970d',1,'ThreadWrapper']]]
+  ['_7ethreadwrapper_6',['~ThreadWrapper',['../classThreadWrapper.html#a643af8d1bf04d1b6d7213bf6a067970d',1,'ThreadWrapper']]],
+  ['_7ewhilenode_7',['~WhileNode',['../classcmr_1_1WhileNode.html#aa091437fb7165acc915c221dd31ec4d3',1,'cmr::WhileNode']]]
 ];

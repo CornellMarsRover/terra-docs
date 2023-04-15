@@ -69,6 +69,7 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classArucoAction-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ArucoAction Class Reference</div></div>
 </div><!--header-->
@@ -102,13 +103,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab5db810b451fee9a557d594d90d58877"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArucoAction.html#ab5db810b451fee9a557d594d90d58877">ArucoAction</a> (const std::string &amp;name, const std::string &amp;action_name, const BT::NodeConfiguration &amp;conf)</td></tr>
 <tr class="separator:ab5db810b451fee9a557d594d90d58877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaafd8a974a46150c37e37022fdf39bee"><td class="memItemLeft" align="right" valign="top">BT::NodeStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArucoAction.html#aaafd8a974a46150c37e37022fdf39bee">tick</a> () override</td></tr>
-<tr class="memdesc:aaafd8a974a46150c37e37022fdf39bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tick method that spins the node and returns success if there are any AR tags in the vector (meaning one was detected) and failure if there wasn't one detected; posts the latest position to the blackboard that is the average of the similarly located tags in the vector.  <a href="classArucoAction.html#aaafd8a974a46150c37e37022fdf39bee">More...</a><br /></td></tr>
+<tr class="memdesc:aaafd8a974a46150c37e37022fdf39bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">detected; posts the latest position to the blackboard that is the average of the similarly located tags in the vector  <a href="classArucoAction.html#aaafd8a974a46150c37e37022fdf39bee">More...</a><br /></td></tr>
 <tr class="separator:aaafd8a974a46150c37e37022fdf39bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6c72eda4da63dd501b3be722a5b3774d"><td class="memItemLeft" align="right" valign="top">static BT::PortsList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArucoAction.html#a6c72eda4da63dd501b3be722a5b3774d">provided_ports</a> ()</td></tr>
-<tr class="separator:a6c72eda4da63dd501b3be722a5b3774d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7fe1016830a769b3257abb1d660065"><td class="memItemLeft" align="right" valign="top">static BT::PortsList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArucoAction.html#a3d7fe1016830a769b3257abb1d660065">providedPorts</a> ()</td></tr>
+<tr class="separator:a3d7fe1016830a769b3257abb1d660065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -131,6 +132,13 @@ Private Attributes</h2></td></tr>
 <tr class="separator:afa86d86a97d997a5e2787a840344e727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f1e81a094f144892b1db2afe433ca08"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; tf2_ros::Buffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArucoAction.html#a1f1e81a094f144892b1db2afe433ca08">m_tf_buffer</a></td></tr>
 <tr class="separator:a1f1e81a094f144892b1db2afe433ca08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a705420970bb08e6b1734228dd21b7"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; geometry_msgs::msg::PoseArray &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArucoAction.html#ae1a705420970bb08e6b1734228dd21b7">m_sub</a></td></tr>
+<tr class="separator:ae1a705420970bb08e6b1734228dd21b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a0d963cfc8e4bc80e5b1a80b06b124a4e"><td class="memItemLeft" align="right" valign="top">static std::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArucoAction.html#a0d963cfc8e4bc80e5b1a80b06b124a4e">output</a> = &quot;ARTag&quot;</td></tr>
+<tr class="separator:a0d963cfc8e4bc80e5b1a80b06b124a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The class <a class="el" href="classArucoAction.html" title="The class ArucoAction contains several methods, functions, and member variables that assist in the ar...">ArucoAction</a> contains several methods, functions, and member variables that assist in the aruco tag detection. </p>
@@ -171,8 +179,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6c72eda4da63dd501b3be722a5b3774d" name="a6c72eda4da63dd501b3be722a5b3774d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c72eda4da63dd501b3be722a5b3774d">&#9670;&nbsp;</a></span>provided_ports()</h2>
+<a id="a3d7fe1016830a769b3257abb1d660065" name="a3d7fe1016830a769b3257abb1d660065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d7fe1016830a769b3257abb1d660065">&#9670;&nbsp;</a></span>providedPorts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +189,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static BT::PortsList ArucoAction::provided_ports </td>
+          <td class="memname">static BT::PortsList ArucoAction::providedPorts </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -189,7 +197,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -219,7 +227,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Tick method that spins the node and returns success if there are any AR tags in the vector (meaning one was detected) and failure if there wasn't one detected; posts the latest position to the blackboard that is the average of the similarly located tags in the vector. </p>
+<p>detected; posts the latest position to the blackboard that is the average of the similarly located tags in the vector </p>
 
 </div>
 </div>
@@ -348,6 +356,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae1a705420970bb08e6b1734228dd21b7" name="ae1a705420970bb08e6b1734228dd21b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1a705420970bb08e6b1734228dd21b7">&#9670;&nbsp;</a></span>m_sub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Subscription&lt;geometry_msgs::msg::PoseArray&gt;::SharedPtr ArucoAction::m_sub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1f1e81a094f144892b1db2afe433ca08" name="a1f1e81a094f144892b1db2afe433ca08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f1e81a094f144892b1db2afe433ca08">&#9670;&nbsp;</a></span>m_tf_buffer</h2>
 
@@ -392,6 +422,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0d963cfc8e4bc80e5b1a80b06b124a4e" name="a0d963cfc8e4bc80e5b1a80b06b124a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d963cfc8e4bc80e5b1a80b06b124a4e">&#9670;&nbsp;</a></span>output</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string ArucoAction::output = &quot;ARTag&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/cmr_cv/include/cmr_cv/<a class="el" href="aruco__bt__action_8hpp_source.html">aruco_bt_action.hpp</a></li>
 <li>src/cmr_cv/src/<a class="el" href="aruco__bt__action_8cpp.html">aruco_bt_action.cpp</a></li>
@@ -399,7 +451,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 11 2023 14:36:44 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Apr 15 2023 20:29:53 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

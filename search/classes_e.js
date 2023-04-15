@@ -6,5 +6,6 @@ var searchData=
   ['serviceconfig_3',['ServiceConfig',['../structcmr_1_1fabric_1_1ServiceConfig.html',1,'cmr::fabric']]],
   ['servicelistener_4',['ServiceListener',['../classtest__utils_1_1ServiceListener.html',1,'test_utils']]],
   ['serviceserverpolicy_5',['ServiceServerPolicy',['../classcmr_1_1fabric_1_1ServiceServerPolicy.html',1,'cmr::fabric']]],
-  ['subscriptionserverpolicy_6',['SubscriptionServerPolicy',['../classcmr_1_1fabric_1_1SubscriptionServerPolicy.html',1,'cmr::fabric']]]
+  ['squarepathaction_6',['SquarePathAction',['../classcmr_1_1SquarePathAction.html',1,'cmr']]],
+  ['subscriptionserverpolicy_7',['SubscriptionServerPolicy',['../classcmr_1_1fabric_1_1SubscriptionServerPolicy.html',1,'cmr::fabric']]]
 ];
