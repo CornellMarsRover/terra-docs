@@ -82,7 +82,7 @@ $(function() {
 <li><code><a class="el" href="classcmr__control_1_1MockArmSystemHardware.html" title="MockArmSystemHardware is a hardware interface for the arm that mocks effort and position control to e...">cmr_control::MockArmSystemHardware</a></code> (unnecessary, see <a href="https://control.ros.org/galactic/doc/api/classfake__components_1_1GenericSystem.html">ROS2 Control Mocks</a> for mocking)</li>
 </ul>
 <p >The Controllers are configured via a YAML file which contains parameters that link up a controller and hardware interface. A hardware interface must be "connected" to a joint or other object within the URDF via the <code>&lt;ros2_control&gt;</code> tag</p>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md9"></a>
 Steps to adding a new Hardware Component:</h1>
 <ol type="1">
 <li>Create a Hardware Interface that subtypes from the correct base class. Skip this step if you will reuse an existing one. Make sure the interface uses <code>PLUGINLIB_EXPORT_CLASS</code> macro to register itself with <a href="https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Pluginlib.html">pluginlib</a></li>
@@ -160,7 +160,7 @@ Steps to adding a new Hardware Component:</h1>
 </div><!-- fragment --></li>
 </ol>
 <p >You can find further information <a href="https://control.ros.org/master/doc/ros2_control/hardware_interface/doc/writing_new_hardware_interface.html">here</a> for adding a HW interface and <a href="https://control.ros.org/foxy/doc/ros2_controllers/doc/writing_new_controller.html">here</a> for adding a controller.</p>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 Some notes about HW Interfaces</h1>
 <p >Each HW interface typically has state interfaces and command interfaces. The HW interface typically has member variables for each state and command interface it provides. The command interface value is set by the controller when it receives commands on the topics is subscribes to. The state interfaces value is what the hardware interface reads and writes. They should reflect the current state (ex. velocity, position) of the motor or sensor the HW interface corresponds to.</p>
 <p >The method <code>prepare_command_mode_switch</code> is called with a vector of interface names being passed to a HW interface. Note that <code>prepare_command_mode_switch</code> may be called with a set of command interfaces not relevant to the HW interface, and when that occurs the call should be ignored. The vector names represents the new command modes being requested for each joint under the HW interface's control. Each string in the vector will be of the form <code>JOINT_NAME/NEW_COMMAND_MODE_NAME</code>. </p>
@@ -168,7 +168,7 @@ Some notes about HW Interfaces</h1>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 15 2023 20:42:57 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Apr 15 2023 21:07:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

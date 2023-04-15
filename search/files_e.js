@@ -1,7 +1,7 @@
 var searchData=
 [
   ['services_2ehpp_0',['services.hpp',['../services_8hpp.html',1,'']]],
-  ['setup_2epy_1',['setup.py',['../cmr__demo__py_2setup_8py.html',1,'(Global Namespace)'],['../cmr__py__test_2setup_8py.html',1,'(Global Namespace)']]],
+  ['setup_2epy_1',['setup.py',['../cmr__aruco__py_2setup_8py.html',1,'(Global Namespace)'],['../cmr__demo__py_2setup_8py.html',1,'(Global Namespace)'],['../cmr__py__test_2setup_8py.html',1,'(Global Namespace)']]],
   ['setup_5fassistant_2elaunch_2epy_2',['setup_assistant.launch.py',['../setup__assistant_8launch_8py.html',1,'']]],
   ['spawn_5fcontrollers_2elaunch_2epy_3',['spawn_controllers.launch.py',['../spawn__controllers_8launch_8py.html',1,'']]],
   ['square_5fpath_5fnode_2ecpp_4',['square_path_node.cpp',['../square__path__node_8cpp.html',1,'']]],

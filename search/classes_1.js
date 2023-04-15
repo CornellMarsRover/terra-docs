@@ -9,10 +9,11 @@ var searchData=
   ['armeffortcontrol_6',['ArmEffortControl',['../classcmr__demo__py_1_1arm__effort__control_1_1ArmEffortControl.html',1,'cmr_demo_py::arm_effort_control']]],
   ['armsystemhardware_7',['ArmSystemHardware',['../classcmr__control_1_1ArmSystemHardware.html',1,'cmr_control']]],
   ['arucoaction_8',['ArucoAction',['../classArucoAction.html',1,'']]],
-  ['astromotor_9',['AstroMotor',['../classcmr__control_1_1AstroMotor.html',1,'cmr_control']]],
-  ['astrosensor_10',['AstroSensor',['../classsemantic__components_1_1AstroSensor.html',1,'semantic_components']]],
-  ['astrosensorbroadcaster_11',['AstroSensorBroadcaster',['../classcmr__control_1_1AstroSensorBroadcaster.html',1,'cmr_control']]],
-  ['astrosensorhardware_12',['AstroSensorHardware',['../classcmr__control_1_1AstroSensorHardware.html',1,'cmr_control']]],
-  ['autostate_13',['AutoState',['../classcmr_1_1AutoState.html',1,'cmr']]],
-  ['axisstate_14',['AxisState',['../structcmr_1_1Joystick_1_1AxisState.html',1,'cmr::Joystick']]]
+  ['arucomarkertranslate_9',['ArucoMarkerTranslate',['../classcmr__aruco__py_1_1aruco__marker__translate_1_1ArucoMarkerTranslate.html',1,'cmr_aruco_py::aruco_marker_translate']]],
+  ['astromotor_10',['AstroMotor',['../classcmr__control_1_1AstroMotor.html',1,'cmr_control']]],
+  ['astrosensor_11',['AstroSensor',['../classsemantic__components_1_1AstroSensor.html',1,'semantic_components']]],
+  ['astrosensorbroadcaster_12',['AstroSensorBroadcaster',['../classcmr__control_1_1AstroSensorBroadcaster.html',1,'cmr_control']]],
+  ['astrosensorhardware_13',['AstroSensorHardware',['../classcmr__control_1_1AstroSensorHardware.html',1,'cmr_control']]],
+  ['autostate_14',['AutoState',['../classcmr_1_1AutoState.html',1,'cmr']]],
+  ['axisstate_15',['AxisState',['../structcmr_1_1Joystick_1_1AxisState.html',1,'cmr::Joystick']]]
 ];

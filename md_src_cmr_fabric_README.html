@@ -68,7 +68,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >Framework for node configuration, management, and fault handling.</p>
-<h1><a class="anchor" id="autotoc_md19"></a>
+<h1><a class="anchor" id="autotoc_md21"></a>
 Fabric Nodes</h1>
 <p >A <code><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes.">cmr::fabric::FabricNode</a></code> is a base class for all nodes using the fabric framework. These nodes are subtypes of <a href="https://design.ros2.org/articles/node_lifecycle.html">ros2 Lifecycle Nodes</a>. They do however have extra configuration and fault handling properties.</p>
 <p >Fabric Nodes must run while the <code><a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html" title="The FaultHandler class provides a service interface to allow nodes to restart themselves if an error ...">cmr::fabric::FaultHandler</a></code> and <code><a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html" title="The DependencyHandler class is responsible for managing the dependencies.">cmr::fabric::DependencyHandler</a></code> are also running nodes. The <code><a class="el" href="classLifecycleManager.html" title="A node which provides a service interface for lifecycle_helpers">LifecycleManager</a></code> may also be spawned as a node to provide a <a href="https://docs.ros.org/en/humble/Concepts/About-ROS-Interfaces.html">service interface</a> for the activation and deactivation.</p>
@@ -123,7 +123,7 @@ Fabric Nodes</h1>
 <div class="line">    )</div>
 <div class="ttc" id="anamespacearm_html_a0ed5896285c8d4fb3c919266f8e973b7"><div class="ttname"><a href="namespacearm.html#a0ed5896285c8d4fb3c919266f8e973b7">arm.generate_launch_description</a></div><div class="ttdeci">def generate_launch_description()</div><div class="ttdef"><b>Definition:</b> arm.launch.py:11</div></div>
 <div class="ttc" id="anamespacearm_html_a6b25306118a66b028cffb7233a6aed15"><div class="ttname"><a href="namespacearm.html#a6b25306118a66b028cffb7233a6aed15">arm.fabric_node</a></div><div class="ttdeci">Node fabric_node(str conf_path)</div><div class="ttdef"><b>Definition:</b> arm.launch.py:34</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md20"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md22"></a>
 Fabric Utilities</h1>
 <p >There are some utilities for interacting with Fabric Nodes within this package. <code><a class="el" href="test__utils_8hpp.html#a5f36999f32ac2d85eeb8159410823322" title="Creates a FabricNode config by formatting a toml string.">create_config()</a></code>, <code><a class="el" href="test__utils_8hpp.html#a6f2392f1a685d9dd4b914ac8975635bd" title="Create a thread for a node, passing it config to its constructor.">create_test_thread()</a></code> and other functions in <code><a class="el" href="test__utils_8hpp.html">test_utils.hpp</a></code> are here to help write C++ unit tests that utilizie Fabric Nodes.</p>
 <p >The <a class="el" href="group__LifecycleHelpers.html">LifecycleHelpers</a> provide an easy to use C++ interface to control the activation, deactivation, and lifecycle of nodes. </p>
@@ -131,7 +131,7 @@ Fabric Utilities</h1>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 15 2023 20:42:57 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sat Apr 15 2023 21:07:47 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
