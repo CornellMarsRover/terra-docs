@@ -14,7 +14,7 @@ var searchData=
   ['joystick_5ftype_5fto_5fstring_11',['joystick_type_to_string',['../controller__test_8cpp.html#a9a5df44fef78c8a2ec643fbe1f23e9f8',1,'controller_test.cpp']]],
   ['joystickdirectcontrol_12',['JoystickDirectControl',['../classcmr_1_1JoystickDirectControl.html',1,'cmr::JoystickDirectControl'],['../classcmr_1_1JoystickDirectControl.html#a800e489fe081ad7cdd0aaab159dc47d4',1,'cmr::JoystickDirectControl::JoystickDirectControl()']]],
   ['joysticktype_13',['JoystickType',['../controller__test_8cpp.html#a8de4939237efe914e87ff0af9d50cd0c',1,'controller_test.cpp']]],
-  ['js_5fevent_5fbutton_5fpubl_14',['js_event_button_publ',['../classcmr_1_1Joystick.html#a5e2e00f6fa5941fcca2c6d7a1d9abaa3',1,'cmr::Joystick']]],
+  ['js_5fevent_5fbutton_5farm_5fpubl_14',['js_event_button_arm_publ',['../classcmr_1_1Joystick.html#ab2be252c923c5e852102581b769663fb',1,'cmr::Joystick']]],
   ['jsinputmocksubscriber_15',['JsInputMockSubscriber',['../classJsInputMockSubscriber.html',1,'']]],
   ['jthread_16',['JThread',['../thread__wrapper_8hpp.html#a50a9e0b0dca6157600861f3069252c83',1,'thread_wrapper.hpp']]]
 ];

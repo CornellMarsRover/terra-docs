@@ -88,7 +88,7 @@ Inheritance diagram for cmr::fabric::FabricNode:</div>
 <div class="dyncontent">
 <div class="center"><img src="classcmr_1_1fabric_1_1FabricNode__inherit__graph.png" border="0" usemap="#acmr_1_1fabric_1_1FabricNode_inherit__map" alt="Inheritance graph"/></div>
 <map name="acmr_1_1fabric_1_1FabricNode_inherit__map" id="acmr_1_1fabric_1_1FabricNode_inherit__map">
-<area shape="rect" title="The FabricNode is the base class for All CMR nodes." alt="" coords="253,183,408,209"/>
+<area shape="rect" title="The FabricNode is the base class for All CMR nodes." alt="" coords="253,259,408,285"/>
 <area shape="rect" href="classDemoNode.html" title=" " alt="" coords="499,5,586,32"/>
 <area shape="rect" href="classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling." alt="" coords="485,56,600,83"/>
 <area shape="rect" href="classcmr_1_1CameraNode.html" title="CameraNode" alt="" coords="479,107,606,133"/>
@@ -97,7 +97,10 @@ Inheritance diagram for cmr::fabric::FabricNode:</div>
 <area shape="rect" href="classcmr_1_1InverseKinematics.html" title="InverseKinematics" alt="" coords="463,259,622,285"/>
 <area shape="rect" href="classcmr_1_1Joystick.html" title="Joystick TOML File: restart_attempts &#45; Amount of restart attempts used for fault handeling." alt="" coords="493,309,592,336"/>
 <area shape="rect" href="classcmr_1_1JoystickDirectControl.html" title="The JoystickDirectControl node is the node called to activate arm control via direct joystick control..." alt="" coords="456,360,629,387"/>
-<area shape="rect" title=" " alt="" coords="5,183,205,209"/>
+<area shape="rect" href="classcmr_1_1PanTiltNode.html" title="PanTiltNode" alt="" coords="481,411,604,437"/>
+<area shape="rect" href="classcmr_1_1SiteAnalyze.html" title="SiteAnalyze" alt="" coords="483,461,602,488"/>
+<area shape="rect" href="classcmr_1_1SubprocessNode.html" title="A SubprocessNode is a Fabric&#45;managed way of running a particular command in its own process." alt="" coords="467,512,618,539"/>
+<area shape="rect" title=" " alt="" coords="5,259,205,285"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -220,14 +223,14 @@ Friends</h2></td></tr>
 <p >Upon activation, the node will communicate with <code><a class="el" href="classcmr_1_1fabric_1_1DependencyHandler.html" title="The DependencyHandler class is responsible for managing the dependencies.">cmr::fabric::DependencyHandler</a></code> to first activate any dependencies. The same process will happen in reverse on deactivation to deactivate any nodes that were activated for the sole purpose of being the dependency.</p>
 <p >When an error occurs, <code><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be" title="Schedules a restart by sending a request to the fault handler.">FabricNode::schedule_restart()</a></code> should be called, which will schedule the node for restart by <code><a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html" title="The FaultHandler class provides a service interface to allow nodes to restart themselves if an error ...">cmr::fabric::FaultHandler</a></code>. When using the <code><a class="el" href="classcmr_1_1fabric_1_1LifecycleServer.html" title="Creates a managed server that can be activated and deactivated.">cmr::fabric::LifecycleServer</a></code> which can be created by factory methods <code><a class="el" href="group__LifecycleFactory.html#gab5ace663bd452fef6488410149a73e6c" title="Create a lifecycle timer object that can be activated and deactivated and will call the fabric node e...">create_lifecycle_timer()</a></code>, <code><a class="el" href="group__LifecycleFactory.html#gaf70c37e7bc79da5a6dc61416f68cc26c" title="Create a lifecycle subscription object that can be activated and deactivated and will call the fabric...">create_lifecycle_subscription()</a></code>, etc., all exceptions thrown in the Callback will be caught and trigger a call to <code><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#ab4db5622ced88e33d4372dd8414ae5be" title="Schedules a restart by sending a request to the fault handler.">FabricNode::schedule_restart()</a></code>. Furthermore, any assertions called within the server callback functions will also trigger a node restart.</p>
 <p >A node restart shuts down all nodes that depend on the faulting node and restarts all of them in reverse topological order to maintain the constraint that a node is never active for a nontrivial period of time without its dependencies.</p>
-<h2><a class="anchor" id="autotoc_md16"></a>
+<h2><a class="anchor" id="autotoc_md17"></a>
 ROS Params:</h2>
 <ul>
 <li><code>composition_ns</code> - the namespace to run the node in, which will be the namespace the node uses for the <code>~/recover_fault</code> service to communicate with <code><a class="el" href="classcmr_1_1fabric_1_1FaultHandler.html" title="The FaultHandler class provides a service interface to allow nodes to restart themselves if an error ...">cmr::fabric::FaultHandler</a></code></li>
 <li><code>config_path</code> - the path to the TOML config file</li>
 <li><code>config_data</code> - the contents of the TOML config file. Will be overriden by <code>config_path</code> if both parameters are specefied</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 TOML Params:</h2>
 <ul>
 <li><code>restart_attempts</code> - See above</li>
@@ -406,7 +409,7 @@ TOML Params:</h2>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a18d9dd0458e395d403f3cf48c457e4e1" title="Derived class hook for deactivation.">FabricNode::deactivate</a></code> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false otherwise which will cause transition to <code>ErrorProcessing</code> </dd></dl>
 
-<p>Implemented in <a class="el" href="classcmr_1_1InverseKinematics.html#a60ecca80fb196f35551e10aa65e0bb8c">cmr::InverseKinematics</a>, <a class="el" href="classcmr_1_1JoystickDirectControl.html#ac8f8d6e83fbdfcebc1aa4885ab6304f7">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1Joystick.html#aaad84e82a27b821aa4e15a79bf57c7ee">cmr::Joystick</a>, <a class="el" href="classcmr_1_1GpsClient.html#a3e5c4eb5545fa017cbea50621ef9c52d">cmr::GpsClient</a>, <a class="el" href="classcmr_1_1CameraNode.html#aa3586eb77bcb42379f18fc173cb61345">cmr::CameraNode</a>, <a class="el" href="classDemoNode.html#afa0810bcb07ce082ee3f14449ed8ed91">DemoNode</a>, <a class="el" href="classcmr_1_1GpsFake.html#a6570bcbc930ba6b62ff0aa5c793b0b60">cmr::GpsFake</a>, and <a class="el" href="classFabricTestNode.html#a0ae429c0522cd7e890a557a17b0f31fb">FabricTestNode</a>.</p>
+<p>Implemented in <a class="el" href="classcmr_1_1InverseKinematics.html#a60ecca80fb196f35551e10aa65e0bb8c">cmr::InverseKinematics</a>, <a class="el" href="classcmr_1_1JoystickDirectControl.html#ac8f8d6e83fbdfcebc1aa4885ab6304f7">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1SiteAnalyze.html#a6ad921382aee287ccc7c58275d9eb3c4">cmr::SiteAnalyze</a>, <a class="el" href="classcmr_1_1Joystick.html#aaad84e82a27b821aa4e15a79bf57c7ee">cmr::Joystick</a>, <a class="el" href="classcmr_1_1GpsClient.html#a3e5c4eb5545fa017cbea50621ef9c52d">cmr::GpsClient</a>, <a class="el" href="classcmr_1_1CameraNode.html#aa3586eb77bcb42379f18fc173cb61345">cmr::CameraNode</a>, <a class="el" href="classcmr_1_1PanTiltNode.html#a788e9e6e2868584d85d7080f37af6d10">cmr::PanTiltNode</a>, <a class="el" href="classDemoNode.html#afa0810bcb07ce082ee3f14449ed8ed91">DemoNode</a>, <a class="el" href="classcmr_1_1GpsFake.html#a6570bcbc930ba6b62ff0aa5c793b0b60">cmr::GpsFake</a>, <a class="el" href="classFabricTestNode.html#a0ae429c0522cd7e890a557a17b0f31fb">FabricTestNode</a>, and <a class="el" href="classcmr_1_1SubprocessNode.html#a5b1dc7d73a7bbe335f6fe8ab9a395405">cmr::SubprocessNode</a>.</p>
 
 </div>
 </div>
@@ -440,7 +443,7 @@ TOML Params:</h2>
 <p>This should essentially undo <code><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#a48bff2e55c9f6a9838197ec4dae3f529" title="Derived class hook for configuring the node.">configure()</a></code></p>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false otherwise which will cause transition to <code>ErrorProcessing</code> </dd></dl>
 
-<p>Implemented in <a class="el" href="classcmr_1_1InverseKinematics.html#af3a2d98bdb2d8c49bbb8902064a18bce">cmr::InverseKinematics</a>, <a class="el" href="classcmr_1_1JoystickDirectControl.html#ae1e29f0207bdbe81828373cafcd7aba8">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1Joystick.html#aee045d042693a82acc3669c5c9b06368">cmr::Joystick</a>, <a class="el" href="classcmr_1_1GpsClient.html#a38c3aab866221dcc87fdaaf46c3b1d29">cmr::GpsClient</a>, <a class="el" href="classcmr_1_1CameraNode.html#a1e67ff9f17003aed60a4d1df66f2c8d6">cmr::CameraNode</a>, <a class="el" href="classDemoNode.html#a9d2c3b2c522edf0e6914675c54195d50">DemoNode</a>, <a class="el" href="classcmr_1_1GpsFake.html#a56a311a19c7162e7faf4a4ec88126a30">cmr::GpsFake</a>, and <a class="el" href="classFabricTestNode.html#a5fd2b502118f97efb318a45c44fcf76b">FabricTestNode</a>.</p>
+<p>Implemented in <a class="el" href="classcmr_1_1InverseKinematics.html#af3a2d98bdb2d8c49bbb8902064a18bce">cmr::InverseKinematics</a>, <a class="el" href="classcmr_1_1JoystickDirectControl.html#ae1e29f0207bdbe81828373cafcd7aba8">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1SiteAnalyze.html#a55aed98e22e245354798b2040dc7cdd4">cmr::SiteAnalyze</a>, <a class="el" href="classcmr_1_1Joystick.html#aee045d042693a82acc3669c5c9b06368">cmr::Joystick</a>, <a class="el" href="classcmr_1_1GpsClient.html#a38c3aab866221dcc87fdaaf46c3b1d29">cmr::GpsClient</a>, <a class="el" href="classcmr_1_1CameraNode.html#a1e67ff9f17003aed60a4d1df66f2c8d6">cmr::CameraNode</a>, <a class="el" href="classcmr_1_1PanTiltNode.html#a68dd535b56cf4ee74385ec7b07774127">cmr::PanTiltNode</a>, <a class="el" href="classDemoNode.html#a9d2c3b2c522edf0e6914675c54195d50">DemoNode</a>, <a class="el" href="classcmr_1_1GpsFake.html#a56a311a19c7162e7faf4a4ec88126a30">cmr::GpsFake</a>, <a class="el" href="classFabricTestNode.html#a5fd2b502118f97efb318a45c44fcf76b">FabricTestNode</a>, and <a class="el" href="classcmr_1_1SubprocessNode.html#acd04aa2fbb593bd8237808f0b345f12c">cmr::SubprocessNode</a>.</p>
 
 </div>
 </div>
@@ -511,7 +514,7 @@ TOML Params:</h2>
 </blockquote>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false otherwise which will cause transition to <code>ErrorProcessing</code> </dd></dl>
 
-<p>Implemented in <a class="el" href="classFabricTestNode.html#a5fad657e9c6844011fcc71682480a852">FabricTestNode</a>, <a class="el" href="classcmr_1_1InverseKinematics.html#acd8e723d4dfb79892146c980eda14d63">cmr::InverseKinematics</a>, <a class="el" href="classcmr_1_1JoystickDirectControl.html#a573404fdf79d7d728be6b94807cd20c4">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1Joystick.html#a4ec8ddc8c78b84afb973e4b92c857081">cmr::Joystick</a>, <a class="el" href="classcmr_1_1GpsClient.html#af6a16458995bd0a4aa3ac38010ee0da2">cmr::GpsClient</a>, <a class="el" href="classcmr_1_1CameraNode.html#aa9856de05713608470770a6fa46f569b">cmr::CameraNode</a>, <a class="el" href="classDemoNode.html#af7b19ce94dded7510884d0e93324164b">DemoNode</a>, and <a class="el" href="classcmr_1_1GpsFake.html#a2e82f922045c95fa0760b93f34d3fd99">cmr::GpsFake</a>.</p>
+<p>Implemented in <a class="el" href="classFabricTestNode.html#a5fad657e9c6844011fcc71682480a852">FabricTestNode</a>, <a class="el" href="classcmr_1_1InverseKinematics.html#acd8e723d4dfb79892146c980eda14d63">cmr::InverseKinematics</a>, <a class="el" href="classcmr_1_1JoystickDirectControl.html#a573404fdf79d7d728be6b94807cd20c4">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1SiteAnalyze.html#a6d165fdc75047a329d5f19f0a3585e22">cmr::SiteAnalyze</a>, <a class="el" href="classcmr_1_1Joystick.html#a4ec8ddc8c78b84afb973e4b92c857081">cmr::Joystick</a>, <a class="el" href="classcmr_1_1GpsClient.html#af6a16458995bd0a4aa3ac38010ee0da2">cmr::GpsClient</a>, <a class="el" href="classcmr_1_1CameraNode.html#aa9856de05713608470770a6fa46f569b">cmr::CameraNode</a>, <a class="el" href="classcmr_1_1PanTiltNode.html#abcd50e1cb147ec0b43c7bc7215937695">cmr::PanTiltNode</a>, <a class="el" href="classDemoNode.html#af7b19ce94dded7510884d0e93324164b">DemoNode</a>, <a class="el" href="classcmr_1_1GpsFake.html#a2e82f922045c95fa0760b93f34d3fd99">cmr::GpsFake</a>, and <a class="el" href="classcmr_1_1SubprocessNode.html#ace55f87b7de0bbdc92c8a423e781fae1">cmr::SubprocessNode</a>.</p>
 
 </div>
 </div>
@@ -545,7 +548,7 @@ TOML Params:</h2>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcmr_1_1fabric_1_1FabricNode.html#aff5b4793c28f24c4d73bf670027d6286" title="Derived class hook for activation.">FabricNode::activate</a></code> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false otherwise which will cause transition to <code>ErrorProcessing</code> </dd></dl>
 
-<p>Implemented in <a class="el" href="classcmr_1_1InverseKinematics.html#a72e2e430b63ffa663fe9a3d0f5c834c7">cmr::InverseKinematics</a>, <a class="el" href="classcmr_1_1JoystickDirectControl.html#a319a8021d67fe226b368852da6dda2ec">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1Joystick.html#ab6833e9331498593d614813b25f4c29b">cmr::Joystick</a>, <a class="el" href="classcmr_1_1GpsClient.html#a1afd466c7b6769b25356b6e4644ee16c">cmr::GpsClient</a>, <a class="el" href="classcmr_1_1CameraNode.html#ac1f7bf38ae9788d021d4a31f23ec5b04">cmr::CameraNode</a>, <a class="el" href="classDemoNode.html#a76894794d22fa7d29f4941a99d11d9db">DemoNode</a>, <a class="el" href="classcmr_1_1GpsFake.html#abc9d175b687a1ee4bf8e4768b01948e1">cmr::GpsFake</a>, and <a class="el" href="classFabricTestNode.html#a5ba62881c8daef7926382c7640e8b267">FabricTestNode</a>.</p>
+<p>Implemented in <a class="el" href="classcmr_1_1InverseKinematics.html#a72e2e430b63ffa663fe9a3d0f5c834c7">cmr::InverseKinematics</a>, <a class="el" href="classcmr_1_1JoystickDirectControl.html#a319a8021d67fe226b368852da6dda2ec">cmr::JoystickDirectControl</a>, <a class="el" href="classcmr_1_1SiteAnalyze.html#a256215b420a32b730569279765052678">cmr::SiteAnalyze</a>, <a class="el" href="classcmr_1_1Joystick.html#ab6833e9331498593d614813b25f4c29b">cmr::Joystick</a>, <a class="el" href="classcmr_1_1GpsClient.html#a1afd466c7b6769b25356b6e4644ee16c">cmr::GpsClient</a>, <a class="el" href="classcmr_1_1CameraNode.html#ac1f7bf38ae9788d021d4a31f23ec5b04">cmr::CameraNode</a>, <a class="el" href="classcmr_1_1PanTiltNode.html#ab393c76699a82464f40b0bc1073d6573">cmr::PanTiltNode</a>, <a class="el" href="classDemoNode.html#a76894794d22fa7d29f4941a99d11d9db">DemoNode</a>, <a class="el" href="classcmr_1_1GpsFake.html#abc9d175b687a1ee4bf8e4768b01948e1">cmr::GpsFake</a>, <a class="el" href="classFabricTestNode.html#a5ba62881c8daef7926382c7640e8b267">FabricTestNode</a>, and <a class="el" href="classcmr_1_1SubprocessNode.html#a341db2852e342bae868c5aac654346a1">cmr::SubprocessNode</a>.</p>
 
 </div>
 </div>
@@ -990,7 +993,7 @@ template&lt;typename ActionT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 15 2023 21:33:43 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Oct 20 2023 00:57:55 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

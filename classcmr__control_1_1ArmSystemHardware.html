@@ -70,12 +70,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classcmr__control_1_1ArmSystemHardware-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">cmr_control::ArmSystemHardware Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classcmr__control_1_1ArmSystemHardware.html" title="ArmSystemHardware is a hardware interface for the arm that provides effort and position control to ea...">ArmSystemHardware</a> is a hardware interface for the arm that provides effort and position control to each of the arm's joints.  
+<p><a class="el" href="classcmr__control_1_1ArmSystemHardware.html" title="ArmSystemHardware is a hardware interface for the arm that provides velocity and position control to ...">ArmSystemHardware</a> is a hardware interface for the arm that provides velocity and position control to each of the arm's joints.  
  <a href="classcmr__control_1_1ArmSystemHardware.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="arm__system_8hpp_source.html">arm_system.hpp</a>&gt;</code></p>
@@ -84,8 +86,7 @@ Inheritance diagram for cmr_control::ArmSystemHardware:</div>
 <div class="dyncontent">
 <div class="center"><img src="classcmr__control_1_1ArmSystemHardware__inherit__graph.png" border="0" usemap="#acmr__control_1_1ArmSystemHardware_inherit__map" alt="Inheritance graph"/></div>
 <map name="acmr__control_1_1ArmSystemHardware_inherit__map" id="acmr__control_1_1ArmSystemHardware_inherit__map">
-<area shape="rect" title="ArmSystemHardware is a hardware interface for the arm that provides effort and position control to ea..." alt="" coords="5,184,225,211"/>
-<area shape="rect" href="classcmr__control_1_1BaseArmSystemHardware.html" title="A base class for arm system hardware." alt="" coords="18,95,213,136"/>
+<area shape="rect" title="ArmSystemHardware is a hardware interface for the arm that provides velocity and position control to ..." alt="" coords="5,95,225,121"/>
 <area shape="rect" title=" " alt="" coords="49,5,181,47"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -94,50 +95,267 @@ Collaboration diagram for cmr_control::ArmSystemHardware:</div>
 <div class="dyncontent">
 <div class="center"><img src="classcmr__control_1_1ArmSystemHardware__coll__graph.png" border="0" usemap="#acmr__control_1_1ArmSystemHardware_coll__map" alt="Collaboration graph"/></div>
 <map name="acmr__control_1_1ArmSystemHardware_coll__map" id="acmr__control_1_1ArmSystemHardware_coll__map">
-<area shape="rect" title="ArmSystemHardware is a hardware interface for the arm that provides effort and position control to ea..." alt="" coords="5,184,225,211"/>
-<area shape="rect" href="classcmr__control_1_1BaseArmSystemHardware.html" title="A base class for arm system hardware." alt="" coords="18,95,213,136"/>
+<area shape="rect" title="ArmSystemHardware is a hardware interface for the arm that provides velocity and position control to ..." alt="" coords="5,95,225,121"/>
 <area shape="rect" title=" " alt="" coords="49,5,181,47"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a18f47da3fb840c8462c14bd9a474815e"><td class="memItemLeft" align="right" valign="top">hardware_interface::CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a18f47da3fb840c8462c14bd9a474815e">on_init</a> (const hardware_interface::HardwareInfo &amp;info) override</td></tr>
+<tr class="separator:a18f47da3fb840c8462c14bd9a474815e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31fa6dad5d21437ac59a78e25f2f22a1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; hardware_interface::StateInterface &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a31fa6dad5d21437ac59a78e25f2f22a1">export_state_interfaces</a> () override</td></tr>
+<tr class="separator:a31fa6dad5d21437ac59a78e25f2f22a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba629456b90e99479d0b82afc8fca8d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; hardware_interface::CommandInterface &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a7ba629456b90e99479d0b82afc8fca8d">export_command_interfaces</a> () override</td></tr>
+<tr class="separator:a7ba629456b90e99479d0b82afc8fca8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d552dca3ef4f1a32c2ccbfa1e61f955"><td class="memItemLeft" align="right" valign="top">hardware_interface::return_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a6d552dca3ef4f1a32c2ccbfa1e61f955">prepare_command_mode_switch</a> (const std::vector&lt; std::string &gt; &amp;start_interfaces, const std::vector&lt; std::string &gt; &amp;stop_interfaces) override</td></tr>
+<tr class="separator:a6d552dca3ef4f1a32c2ccbfa1e61f955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba2f5cbc678d28d4cea77136e97267f8"><td class="memItemLeft" align="right" valign="top">CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#aba2f5cbc678d28d4cea77136e97267f8">on_activate</a> (const rclcpp_lifecycle::State &amp;previous_state) override</td></tr>
+<tr class="separator:aba2f5cbc678d28d4cea77136e97267f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fc5f8812cb83753ec3b1e5bbce6eea"><td class="memItemLeft" align="right" valign="top">CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#ac0fc5f8812cb83753ec3b1e5bbce6eea">on_deactivate</a> (const rclcpp_lifecycle::State &amp;previous_state) override</td></tr>
+<tr class="separator:ac0fc5f8812cb83753ec3b1e5bbce6eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aead7a90fbd5ad58a6a0ebf47a1bf996a"><td class="memItemLeft" align="right" valign="top">hardware_interface::return_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#aead7a90fbd5ad58a6a0ebf47a1bf996a">read</a> (const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period) override</td></tr>
 <tr class="separator:aead7a90fbd5ad58a6a0ebf47a1bf996a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa64d2ecdb049a287c0fcc3cc2b1303ad"><td class="memItemLeft" align="right" valign="top">hardware_interface::return_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#aa64d2ecdb049a287c0fcc3cc2b1303ad">write</a> (const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period) override</td></tr>
 <tr class="separator:aa64d2ecdb049a287c0fcc3cc2b1303ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classcmr__control_1_1BaseArmSystemHardware"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcmr__control_1_1BaseArmSystemHardware')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html">cmr_control::BaseArmSystemHardware</a></td></tr>
-<tr class="memitem:ac85b9b8f6eb7f9cd7f4068ffa8f542e9 inherit pub_methods_classcmr__control_1_1BaseArmSystemHardware"><td class="memItemLeft" align="right" valign="top">CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#ac85b9b8f6eb7f9cd7f4068ffa8f542e9">on_init</a> (const hardware_interface::HardwareInfo &amp;info) override</td></tr>
-<tr class="separator:ac85b9b8f6eb7f9cd7f4068ffa8f542e9 inherit pub_methods_classcmr__control_1_1BaseArmSystemHardware"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a5ecd27acd5b52e65ebcc77be76875f inherit pub_methods_classcmr__control_1_1BaseArmSystemHardware"><td class="memItemLeft" align="right" valign="top">std::vector&lt; hardware_interface::StateInterface &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#a8a5ecd27acd5b52e65ebcc77be76875f">export_state_interfaces</a> () override</td></tr>
-<tr class="separator:a8a5ecd27acd5b52e65ebcc77be76875f inherit pub_methods_classcmr__control_1_1BaseArmSystemHardware"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56b84c940055ee0edcfd4010048b9195 inherit pub_methods_classcmr__control_1_1BaseArmSystemHardware"><td class="memItemLeft" align="right" valign="top">std::vector&lt; hardware_interface::CommandInterface &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#a56b84c940055ee0edcfd4010048b9195">export_command_interfaces</a> () override</td></tr>
-<tr class="separator:a56b84c940055ee0edcfd4010048b9195 inherit pub_methods_classcmr__control_1_1BaseArmSystemHardware"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92befdb5c1be851717d40a1d8e40fa18 inherit pub_methods_classcmr__control_1_1BaseArmSystemHardware"><td class="memItemLeft" align="right" valign="top">hardware_interface::return_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#a92befdb5c1be851717d40a1d8e40fa18">prepare_command_mode_switch</a> (const std::vector&lt; std::string &gt; &amp;start_interfaces, const std::vector&lt; std::string &gt; &amp;stop_interfaces) override</td></tr>
-<tr class="separator:a92befdb5c1be851717d40a1d8e40fa18 inherit pub_methods_classcmr__control_1_1BaseArmSystemHardware"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6b10cddf2cbbb45e8dbfe2bb98f9c43 inherit pub_methods_classcmr__control_1_1BaseArmSystemHardware"><td class="memItemLeft" align="right" valign="top">CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#af6b10cddf2cbbb45e8dbfe2bb98f9c43">on_activate</a> (const rclcpp_lifecycle::State &amp;previous_state) override</td></tr>
-<tr class="separator:af6b10cddf2cbbb45e8dbfe2bb98f9c43 inherit pub_methods_classcmr__control_1_1BaseArmSystemHardware"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bedff29c5485cd5de0254db6b02ddd5 inherit pub_methods_classcmr__control_1_1BaseArmSystemHardware"><td class="memItemLeft" align="right" valign="top">CallbackReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#a4bedff29c5485cd5de0254db6b02ddd5">on_deactivate</a> (const rclcpp_lifecycle::State &amp;previous_state) override</td></tr>
-<tr class="separator:a4bedff29c5485cd5de0254db6b02ddd5 inherit pub_methods_classcmr__control_1_1BaseArmSystemHardware"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_classcmr__control_1_1BaseArmSystemHardware"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcmr__control_1_1BaseArmSystemHardware')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html">cmr_control::BaseArmSystemHardware</a></td></tr>
-<tr class="memitem:ac30a32298bc3ee9e886e4837af43cef9 inherit pro_attribs_classcmr__control_1_1BaseArmSystemHardware"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#ac30a32298bc3ee9e886e4837af43cef9">m_hw_control_modes</a></td></tr>
-<tr class="separator:ac30a32298bc3ee9e886e4837af43cef9 inherit pro_attribs_classcmr__control_1_1BaseArmSystemHardware"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cb906c30ec736131a48070bcaf97dd3 inherit pro_attribs_classcmr__control_1_1BaseArmSystemHardware"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#a9cb906c30ec736131a48070bcaf97dd3">m_hw_position_commands</a></td></tr>
-<tr class="separator:a9cb906c30ec736131a48070bcaf97dd3 inherit pro_attribs_classcmr__control_1_1BaseArmSystemHardware"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77270c6fc5733a2d4b3092eab603fe3e inherit pro_attribs_classcmr__control_1_1BaseArmSystemHardware"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#a77270c6fc5733a2d4b3092eab603fe3e">m_hw_effort_commands</a></td></tr>
-<tr class="separator:a77270c6fc5733a2d4b3092eab603fe3e inherit pro_attribs_classcmr__control_1_1BaseArmSystemHardware"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac78a1faac9f1a7d0aaf471385831e323 inherit pro_attribs_classcmr__control_1_1BaseArmSystemHardware"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#ac78a1faac9f1a7d0aaf471385831e323">m_hw_velocities</a></td></tr>
-<tr class="separator:ac78a1faac9f1a7d0aaf471385831e323 inherit pro_attribs_classcmr__control_1_1BaseArmSystemHardware"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86fa56a7219137e5b982ed7cc3a3a9d6 inherit pro_attribs_classcmr__control_1_1BaseArmSystemHardware"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1BaseArmSystemHardware.html#a86fa56a7219137e5b982ed7cc3a3a9d6">m_hw_positions</a></td></tr>
-<tr class="separator:a86fa56a7219137e5b982ed7cc3a3a9d6 inherit pro_attribs_classcmr__control_1_1BaseArmSystemHardware"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a1a3807fb61da865bb514542afaa42eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a1a3807fb61da865bb514542afaa42eac">sensor_callback</a> (const cmr_msgs::msg::SensorReadBatch &amp;msg)</td></tr>
+<tr class="separator:a1a3807fb61da865bb514542afaa42eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9845f0bed03c6730eb130b0d0cb7c1ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a9845f0bed03c6730eb130b0d0cb7c1ed">validate_interfaces</a> () const</td></tr>
+<tr class="memdesc:a9845f0bed03c6730eb130b0d0cb7c1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the interfaces we're configured with make sense for this hardware.  <a href="classcmr__control_1_1ArmSystemHardware.html#a9845f0bed03c6730eb130b0d0cb7c1ed">More...</a><br /></td></tr>
+<tr class="separator:a9845f0bed03c6730eb130b0d0cb7c1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b43f5f87a683d30ea5f85d9a43d8433"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a4b43f5f87a683d30ea5f85d9a43d8433">validate_switch</a> (const std::vector&lt; std::string &gt; &amp;new_modes) const</td></tr>
+<tr class="memdesc:a4b43f5f87a683d30ea5f85d9a43d8433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if all control modes are changed at the same time and are all given the same control mode.  <a href="classcmr__control_1_1ArmSystemHardware.html#a4b43f5f87a683d30ea5f85d9a43d8433">More...</a><br /></td></tr>
+<tr class="separator:a4b43f5f87a683d30ea5f85d9a43d8433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3800c5640a9aa2d864b57fe855ff16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a6f3800c5640a9aa2d864b57fe855ff16">halt_all_motion</a> ()</td></tr>
+<tr class="memdesc:a6f3800c5640a9aa2d864b57fe855ff16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Halts all motion in the current control mode and sets the current control mode of all joints to "undefined".  <a href="classcmr__control_1_1ArmSystemHardware.html#a6f3800c5640a9aa2d864b57fe855ff16">More...</a><br /></td></tr>
+<tr class="separator:a6f3800c5640a9aa2d864b57fe855ff16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57007d059e14737202adbf21654e0071"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a57007d059e14737202adbf21654e0071">set_velocity_mode</a> () const</td></tr>
+<tr class="memdesc:a57007d059e14737202adbf21654e0071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all joints to velocity mode.  <a href="classcmr__control_1_1ArmSystemHardware.html#a57007d059e14737202adbf21654e0071">More...</a><br /></td></tr>
+<tr class="separator:a57007d059e14737202adbf21654e0071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5a7f11021a98c8545d507cafa706a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#acf5a7f11021a98c8545d507cafa706a9">set_position_mode</a> () const</td></tr>
+<tr class="memdesc:acf5a7f11021a98c8545d507cafa706a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all joints to position mode.  <a href="classcmr__control_1_1ArmSystemHardware.html#acf5a7f11021a98c8545d507cafa706a9">More...</a><br /></td></tr>
+<tr class="separator:acf5a7f11021a98c8545d507cafa706a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afda136041196d9e5a3798e27be0eb111"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#afda136041196d9e5a3798e27be0eb111">m_hw_control_modes</a></td></tr>
+<tr class="separator:afda136041196d9e5a3798e27be0eb111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a346c232c3462d7dddfc0730f13730941"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a346c232c3462d7dddfc0730f13730941">m_hw_position_commands</a></td></tr>
+<tr class="separator:a346c232c3462d7dddfc0730f13730941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a2c31863817b969b69745d7768d8cb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#af9a2c31863817b969b69745d7768d8cb">m_hw_velocity_commands</a></td></tr>
+<tr class="separator:af9a2c31863817b969b69745d7768d8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7a2900a0ee4cfeb2a4018c4972f487"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a6c7a2900a0ee4cfeb2a4018c4972f487">m_hw_velocities</a></td></tr>
+<tr class="separator:a6c7a2900a0ee4cfeb2a4018c4972f487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc7f244f27a8b6966d5607a9df282f5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a5fc7f244f27a8b6966d5607a9df282f5">m_hw_positions</a></td></tr>
+<tr class="separator:a5fc7f244f27a8b6966d5607a9df282f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03bc091904f7358a7013b7ae41766f99"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a03bc091904f7358a7013b7ae41766f99">m_comm_node</a></td></tr>
+<tr class="separator:a03bc091904f7358a7013b7ae41766f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3691ce2f22fcd4e9241895ac83ad867c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a3691ce2f22fcd4e9241895ac83ad867c">m_hw_buffer</a></td></tr>
+<tr class="separator:a3691ce2f22fcd4e9241895ac83ad867c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f4132969de35b615da540612a1f4474"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Publisher&lt; cmr_msgs::msg::MotorWriteBatch &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a9f4132969de35b615da540612a1f4474">m_motor_write_pub</a></td></tr>
+<tr class="separator:a9f4132969de35b615da540612a1f4474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7986565c15948f79781a91b175e9c9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Subscription&lt; cmr_msgs::msg::SensorReadBatch &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1ArmSystemHardware.html#a4d7986565c15948f79781a91b175e9c9">m_motor_read_sub</a></td></tr>
+<tr class="separator:a4d7986565c15948f79781a91b175e9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p ><a class="el" href="classcmr__control_1_1ArmSystemHardware.html" title="ArmSystemHardware is a hardware interface for the arm that provides effort and position control to ea...">ArmSystemHardware</a> is a hardware interface for the arm that provides effort and position control to each of the arm's joints. </p>
-<p >It also reads the current position and velocity of each arm joint from the encoders. </p>
+<div class="textblock"><p ><a class="el" href="classcmr__control_1_1ArmSystemHardware.html" title="ArmSystemHardware is a hardware interface for the arm that provides velocity and position control to ...">ArmSystemHardware</a> is a hardware interface for the arm that provides velocity and position control to each of the arm's joints. </p>
+<p >It also reads the current position of each arm joint from the encoders. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7ba629456b90e99479d0b82afc8fca8d" name="a7ba629456b90e99479d0b82afc8fca8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba629456b90e99479d0b82afc8fca8d">&#9670;&nbsp;</a></span>export_command_interfaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; hardware_interface::CommandInterface &gt; cmr_control::ArmSystemHardware::export_command_interfaces </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31fa6dad5d21437ac59a78e25f2f22a1" name="a31fa6dad5d21437ac59a78e25f2f22a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31fa6dad5d21437ac59a78e25f2f22a1">&#9670;&nbsp;</a></span>export_state_interfaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; hardware_interface::StateInterface &gt; cmr_control::ArmSystemHardware::export_state_interfaces </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f3800c5640a9aa2d864b57fe855ff16" name="a6f3800c5640a9aa2d864b57fe855ff16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f3800c5640a9aa2d864b57fe855ff16">&#9670;&nbsp;</a></span>halt_all_motion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmr_control::ArmSystemHardware::halt_all_motion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Halts all motion in the current control mode and sets the current control mode of all joints to "undefined". </p>
+<p >This is called when the hardware interface is told to switch control modes between position and velocity control. If any of the joints are not in the "undefined" mode, this indicates that another hardware resource is using this particular joint and therefore it is not safe to switch control mode at this time. </p>
+
+</div>
+</div>
+<a id="aba2f5cbc678d28d4cea77136e97267f8" name="aba2f5cbc678d28d4cea77136e97267f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba2f5cbc678d28d4cea77136e97267f8">&#9670;&nbsp;</a></span>on_activate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hardware_interface::CallbackReturn cmr_control::ArmSystemHardware::on_activate </td>
+          <td>(</td>
+          <td class="paramtype">const rclcpp_lifecycle::State &amp;&#160;</td>
+          <td class="paramname"><em>previous_state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0fc5f8812cb83753ec3b1e5bbce6eea" name="ac0fc5f8812cb83753ec3b1e5bbce6eea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0fc5f8812cb83753ec3b1e5bbce6eea">&#9670;&nbsp;</a></span>on_deactivate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hardware_interface::CallbackReturn cmr_control::ArmSystemHardware::on_deactivate </td>
+          <td>(</td>
+          <td class="paramtype">const rclcpp_lifecycle::State &amp;&#160;</td>
+          <td class="paramname"><em>previous_state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18f47da3fb840c8462c14bd9a474815e" name="a18f47da3fb840c8462c14bd9a474815e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18f47da3fb840c8462c14bd9a474815e">&#9670;&nbsp;</a></span>on_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hardware_interface::CallbackReturn cmr_control::ArmSystemHardware::on_init </td>
+          <td>(</td>
+          <td class="paramtype">const hardware_interface::HardwareInfo &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d552dca3ef4f1a32c2ccbfa1e61f955" name="a6d552dca3ef4f1a32c2ccbfa1e61f955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d552dca3ef4f1a32c2ccbfa1e61f955">&#9670;&nbsp;</a></span>prepare_command_mode_switch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hardware_interface::return_type cmr_control::ArmSystemHardware::prepare_command_mode_switch </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start_interfaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stop_interfaces</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aead7a90fbd5ad58a6a0ebf47a1bf996a" name="aead7a90fbd5ad58a6a0ebf47a1bf996a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aead7a90fbd5ad58a6a0ebf47a1bf996a">&#9670;&nbsp;</a></span>read()</h2>
 
@@ -171,6 +389,150 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a3807fb61da865bb514542afaa42eac" name="a1a3807fb61da865bb514542afaa42eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a3807fb61da865bb514542afaa42eac">&#9670;&nbsp;</a></span>sensor_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmr_control::ArmSystemHardware::sensor_callback </td>
+          <td>(</td>
+          <td class="paramtype">const cmr_msgs::msg::SensorReadBatch &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf5a7f11021a98c8545d507cafa706a9" name="acf5a7f11021a98c8545d507cafa706a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5a7f11021a98c8545d507cafa706a9">&#9670;&nbsp;</a></span>set_position_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmr_control::ArmSystemHardware::set_position_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set all joints to position mode. </p>
+<p >Warning: this function does not provide any confirmation for whether the mode was set; it is possible that the joint misses this message. </p>
+
+</div>
+</div>
+<a id="a57007d059e14737202adbf21654e0071" name="a57007d059e14737202adbf21654e0071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57007d059e14737202adbf21654e0071">&#9670;&nbsp;</a></span>set_velocity_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmr_control::ArmSystemHardware::set_velocity_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set all joints to velocity mode. </p>
+<p >Warning: this function does not provide any confirmation for whether the mode was set; it is possible that the joint misses this message. </p>
+
+</div>
+</div>
+<a id="a9845f0bed03c6730eb130b0d0cb7c1ed" name="a9845f0bed03c6730eb130b0d0cb7c1ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9845f0bed03c6730eb130b0d0cb7c1ed">&#9670;&nbsp;</a></span>validate_interfaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cmr_control::ArmSystemHardware::validate_interfaces </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the interfaces we're configured with make sense for this hardware. </p>
+<p >Checks that we have the expected number and types of command and state interfaces declared in the ROS2 Control portion of this hardware's URDF file. </p>
+
+</div>
+</div>
+<a id="a4b43f5f87a683d30ea5f85d9a43d8433" name="a4b43f5f87a683d30ea5f85d9a43d8433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b43f5f87a683d30ea5f85d9a43d8433">&#9670;&nbsp;</a></span>validate_switch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cmr_control::ArmSystemHardware::validate_switch </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>new_modes</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if all control modes are changed at the same time and are all given the same control mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_modes</td><td>The new control modes to set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -210,6 +572,205 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a03bc091904f7358a7013b7ae41766f99" name="a03bc091904f7358a7013b7ae41766f99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03bc091904f7358a7013b7ae41766f99">&#9670;&nbsp;</a></span>m_comm_node</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp::Node&gt; cmr_control::ArmSystemHardware::m_comm_node</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3691ce2f22fcd4e9241895ac83ad867c" name="a3691ce2f22fcd4e9241895ac83ad867c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3691ce2f22fcd4e9241895ac83ad867c">&#9670;&nbsp;</a></span>m_hw_buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; cmr_control::ArmSystemHardware::m_hw_buffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afda136041196d9e5a3798e27be0eb111" name="afda136041196d9e5a3798e27be0eb111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda136041196d9e5a3798e27be0eb111">&#9670;&nbsp;</a></span>m_hw_control_modes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; cmr_control::ArmSystemHardware::m_hw_control_modes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a346c232c3462d7dddfc0730f13730941" name="a346c232c3462d7dddfc0730f13730941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346c232c3462d7dddfc0730f13730941">&#9670;&nbsp;</a></span>m_hw_position_commands</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; cmr_control::ArmSystemHardware::m_hw_position_commands</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fc7f244f27a8b6966d5607a9df282f5" name="a5fc7f244f27a8b6966d5607a9df282f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fc7f244f27a8b6966d5607a9df282f5">&#9670;&nbsp;</a></span>m_hw_positions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; cmr_control::ArmSystemHardware::m_hw_positions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c7a2900a0ee4cfeb2a4018c4972f487" name="a6c7a2900a0ee4cfeb2a4018c4972f487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c7a2900a0ee4cfeb2a4018c4972f487">&#9670;&nbsp;</a></span>m_hw_velocities</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; cmr_control::ArmSystemHardware::m_hw_velocities</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9a2c31863817b969b69745d7768d8cb" name="af9a2c31863817b969b69745d7768d8cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a2c31863817b969b69745d7768d8cb">&#9670;&nbsp;</a></span>m_hw_velocity_commands</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; cmr_control::ArmSystemHardware::m_hw_velocity_commands</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d7986565c15948f79781a91b175e9c9" name="a4d7986565c15948f79781a91b175e9c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d7986565c15948f79781a91b175e9c9">&#9670;&nbsp;</a></span>m_motor_read_sub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp::Subscription&lt;cmr_msgs::msg::SensorReadBatch&gt; &gt; cmr_control::ArmSystemHardware::m_motor_read_sub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f4132969de35b615da540612a1f4474" name="a9f4132969de35b615da540612a1f4474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f4132969de35b615da540612a1f4474">&#9670;&nbsp;</a></span>m_motor_write_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp::Publisher&lt;cmr_msgs::msg::MotorWriteBatch&gt; &gt; cmr_control::ArmSystemHardware::m_motor_write_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/cmr_control/include/cmr_control/<a class="el" href="arm__system_8hpp_source.html">arm_system.hpp</a></li>
 <li>src/cmr_control/src/<a class="el" href="arm__system_8cpp.html">arm_system.cpp</a></li>
@@ -217,7 +778,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 15 2023 21:33:43 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Oct 20 2023 00:57:55 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

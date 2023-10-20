@@ -69,23 +69,35 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">arm_system.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="arm__system_8hpp_source.html">cmr_control/arm_system.hpp</a>&quot;</code><br />
+<code>#include &lt;hardware_interface/types/hardware_interface_type_values.hpp&gt;</code><br />
+<code>#include &quot;cmr_control/external/boards.h&quot;</code><br />
+<code>#include &quot;std_msgs/msg/string.hpp&quot;</code><br />
 <code>#include &quot;pluginlib/class_list_macros.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for arm_system.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="arm__system_8cpp__incl.png" border="0" usemap="#asrc_2cmr__control_2src_2arm__system_8cpp" alt=""/></div>
 <map name="asrc_2cmr__control_2src_2arm__system_8cpp" id="asrc_2cmr__control_2src_2arm__system_8cpp">
-<area shape="rect" title=" " alt="" coords="185,5,320,47"/>
-<area shape="rect" href="arm__system_8hpp.html" title=" " alt="" coords="67,102,257,129"/>
-<area shape="rect" title=" " alt="" coords="281,95,409,136"/>
-<area shape="rect" href="base__arm__system_8hpp.html" title=" " alt="" coords="5,184,156,225"/>
-<area shape="rect" title=" " alt="" coords="181,191,309,218"/>
-<area shape="rect" title=" " alt="" coords="6,273,155,315"/>
+<area shape="rect" title=" " alt="" coords="757,5,891,47"/>
+<area shape="rect" href="arm__system_8hpp.html" title=" " alt="" coords="347,109,536,136"/>
+<area shape="rect" title=" " alt="" coords="560,95,731,151"/>
+<area shape="rect" title=" " alt="" coords="755,102,893,143"/>
+<area shape="rect" title=" " alt="" coords="917,109,1085,136"/>
+<area shape="rect" title=" " alt="" coords="1109,102,1237,143"/>
+<area shape="rect" title=" " alt="" coords="5,199,155,240"/>
+<area shape="rect" title=" " alt="" coords="179,199,333,240"/>
+<area shape="rect" href="cmr__debug_8hpp.html" title=" " alt="" coords="358,206,525,233"/>
+<area shape="rect" title=" " alt="" coords="528,295,648,322"/>
+<area shape="rect" title=" " alt="" coords="600,199,749,240"/>
+<area shape="rect" title=" " alt="" coords="196,295,279,322"/>
+<area shape="rect" title=" " alt="" coords="303,295,355,322"/>
+<area shape="rect" title=" " alt="" coords="379,288,503,329"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -93,11 +105,33 @@ Include dependency graph for arm_system.cpp:</div>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacecmr__control"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecmr__control.html">cmr_control</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a87aaed985a36450f855a162a190d0007"><td class="memItemLeft" align="right" valign="top">const std::array&lt; uint8_t, 7 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arm__system_8cpp.html#a87aaed985a36450f855a162a190d0007">motor_ids</a></td></tr>
+<tr class="separator:a87aaed985a36450f855a162a190d0007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a87aaed985a36450f855a162a190d0007" name="a87aaed985a36450f855a162a190d0007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87aaed985a36450f855a162a190d0007">&#9670;&nbsp;</a></span>motor_ids</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::array&lt;uint8_t, 7&gt; motor_ids</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {BLDC_AR1, BLDC_AR2, BLDC_AR3, BLDC_AR4,</div>
+<div class="line">                                          BLDC_AR5, BLDC_AR6, BDC_ENDO}</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 15 2023 21:33:43 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Oct 20 2023 00:57:55 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

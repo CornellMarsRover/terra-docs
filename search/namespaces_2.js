@@ -7,6 +7,7 @@ var searchData=
   ['cmr_5fcontrol_4',['cmr_control',['../namespacecmr__control.html',1,'']]],
   ['cmr_5fdemo_5fpy_5',['cmr_demo_py',['../namespacecmr__demo__py.html',1,'']]],
   ['cmr_5fpy_5ftest_6',['cmr_py_test',['../namespacecmr__py__test.html',1,'']]],
-  ['fabric_7',['fabric',['../namespacecmr_1_1fabric.html',1,'cmr']]],
-  ['utils_5ftest_5fnode_8',['utils_test_node',['../namespacecmr__py__test_1_1utils__test__node.html',1,'cmr_py_test']]]
+  ['drives_5fcalibrator_7',['drives_calibrator',['../namespacecmr__demo__py_1_1drives__calibrator.html',1,'cmr_demo_py']]],
+  ['fabric_8',['fabric',['../namespacecmr_1_1fabric.html',1,'cmr']]],
+  ['utils_5ftest_5fnode_9',['utils_test_node',['../namespacecmr__py__test_1_1utils__test__node.html',1,'cmr_py_test']]]
 ];

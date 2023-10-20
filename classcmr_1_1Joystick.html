@@ -142,9 +142,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:acf396b500d0527ff28e2f21a975b1d86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#acf396b500d0527ff28e2f21a975b1d86">drives_publish_callback</a> () const</td></tr>
 <tr class="memdesc:acf396b500d0527ff28e2f21a975b1d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to continuously display messages through the use of a seperate callback timer than the one used for the drives_callback.  <a href="classcmr_1_1Joystick.html#acf396b500d0527ff28e2f21a975b1d86">More...</a><br /></td></tr>
 <tr class="separator:acf396b500d0527ff28e2f21a975b1d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e2e00f6fa5941fcca2c6d7a1d9abaa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a5e2e00f6fa5941fcca2c6d7a1d9abaa3">js_event_button_publ</a> (std::optional&lt; js_event &gt; event, cmr_msgs::msg::JoystickReading message) const</td></tr>
-<tr class="memdesc:a5e2e00f6fa5941fcca2c6d7a1d9abaa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to assign values and publish a message whenever a button is pressed or released.  <a href="classcmr_1_1Joystick.html#a5e2e00f6fa5941fcca2c6d7a1d9abaa3">More...</a><br /></td></tr>
-<tr class="separator:a5e2e00f6fa5941fcca2c6d7a1d9abaa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2be252c923c5e852102581b769663fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#ab2be252c923c5e852102581b769663fb">js_event_button_arm_publ</a> (std::optional&lt; js_event &gt; event, cmr_msgs::msg::JoystickReading message) const</td></tr>
+<tr class="memdesc:ab2be252c923c5e852102581b769663fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to assign values and publish a message whenever a button is pressed or released.  <a href="classcmr_1_1Joystick.html#ab2be252c923c5e852102581b769663fb">More...</a><br /></td></tr>
+<tr class="separator:ab2be252c923c5e852102581b769663fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ec8ddc8c78b84afb973e4b92c857081"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a4ec8ddc8c78b84afb973e4b92c857081">configure</a> (const std::shared_ptr&lt; toml::Table &gt; &amp;table) override</td></tr>
 <tr class="memdesc:a4ec8ddc8c78b84afb973e4b92c857081"><td class="mdescLeft">&#160;</td><td class="mdescRight">initilizes publishers and member variables to be used  <a href="classcmr_1_1Joystick.html#a4ec8ddc8c78b84afb973e4b92c857081">More...</a><br /></td></tr>
 <tr class="separator:a4ec8ddc8c78b84afb973e4b92c857081"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,7 +182,7 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:ae9ca92ec7a45abfe57d9034231114860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to repeat the drives callback in order to continuously send messages to the arm node.  <a href="classcmr_1_1Joystick.html#ae9ca92ec7a45abfe57d9034231114860">More...</a><br /></td></tr>
 <tr class="separator:ae9ca92ec7a45abfe57d9034231114860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c7c9f5e1489d4bdb19fee218eb7368"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#af1c7c9f5e1489d4bdb19fee218eb7368">m_got_first_message</a> = false</td></tr>
-<tr class="memdesc:af1c7c9f5e1489d4bdb19fee218eb7368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a message has been received in order to continue to the publish part knowing a message exist.  <a href="classcmr_1_1Joystick.html#af1c7c9f5e1489d4bdb19fee218eb7368">More...</a><br /></td></tr>
+<tr class="memdesc:af1c7c9f5e1489d4bdb19fee218eb7368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a message has been received in order to continue to the publish part knowing a message exists.  <a href="classcmr_1_1Joystick.html#af1c7c9f5e1489d4bdb19fee218eb7368">More...</a><br /></td></tr>
 <tr class="separator:af1c7c9f5e1489d4bdb19fee218eb7368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f74d116fcfd4f7b338b87b73d9a7402"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structcmr_1_1Joystick_1_1AxisState.html">AxisState</a>, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a7f74d116fcfd4f7b338b87b73d9a7402">m_axis_state</a> {}</td></tr>
 <tr class="memdesc:a7f74d116fcfd4f7b338b87b73d9a7402"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the state of a particular axis on a joystick.  <a href="classcmr_1_1Joystick.html#a7f74d116fcfd4f7b338b87b73d9a7402">More...</a><br /></td></tr>
@@ -190,12 +190,39 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a80bdf4245ac4f0a64adefb8faf5384ad"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; cmr_msgs::msg::JoystickReading &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a80bdf4245ac4f0a64adefb8faf5384ad">m_joystick_pub</a></td></tr>
 <tr class="memdesc:a80bdf4245ac4f0a64adefb8faf5384ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">The publisher for the joystick read function.  <a href="classcmr_1_1Joystick.html#a80bdf4245ac4f0a64adefb8faf5384ad">More...</a><br /></td></tr>
 <tr class="separator:a80bdf4245ac4f0a64adefb8faf5384ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2fcf1f4c359acad4bfdbf165df2ac19"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; std_msgs::msg::Int32 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#aa2fcf1f4c359acad4bfdbf165df2ac19">m_end_effector_pub</a></td></tr>
+<tr class="memdesc:aa2fcf1f4c359acad4bfdbf165df2ac19"><td class="mdescLeft">&#160;</td><td class="mdescRight">The publisher for the end effector read function.  <a href="classcmr_1_1Joystick.html#aa2fcf1f4c359acad4bfdbf165df2ac19">More...</a><br /></td></tr>
+<tr class="separator:aa2fcf1f4c359acad4bfdbf165df2ac19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac880d814887c8b36aa5d0970aa64f250"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; std_msgs::msg::Int32 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#ac880d814887c8b36aa5d0970aa64f250">m_hex_driver_pub</a></td></tr>
+<tr class="memdesc:ac880d814887c8b36aa5d0970aa64f250"><td class="mdescLeft">&#160;</td><td class="mdescRight">The publisher for the hex driver read function.  <a href="classcmr_1_1Joystick.html#ac880d814887c8b36aa5d0970aa64f250">More...</a><br /></td></tr>
+<tr class="separator:ac880d814887c8b36aa5d0970aa64f250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4808669719964b6f578368507f38938"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; std_msgs::msg::Int32 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#ad4808669719964b6f578368507f38938">m_extendo_pub</a></td></tr>
+<tr class="memdesc:ad4808669719964b6f578368507f38938"><td class="mdescLeft">&#160;</td><td class="mdescRight">The publisher for the extendo cam read function.  <a href="classcmr_1_1Joystick.html#ad4808669719964b6f578368507f38938">More...</a><br /></td></tr>
+<tr class="separator:ad4808669719964b6f578368507f38938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6880632b983ab710674c1aeace563f89"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; std_msgs::msg::Int32 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a6880632b983ab710674c1aeace563f89">m_pan_cam1_pub</a></td></tr>
+<tr class="memdesc:a6880632b983ab710674c1aeace563f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">The publisher for the pantilt camera read function, pan value for camera 1.  <a href="classcmr_1_1Joystick.html#a6880632b983ab710674c1aeace563f89">More...</a><br /></td></tr>
+<tr class="separator:a6880632b983ab710674c1aeace563f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94cca5ef5c0d147caf06816d63ae690f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; std_msgs::msg::Int32 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a94cca5ef5c0d147caf06816d63ae690f">m_tilt_cam1_pub</a></td></tr>
+<tr class="memdesc:a94cca5ef5c0d147caf06816d63ae690f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The publisher for the pantilt camera read function, tilt value for camera 1.  <a href="classcmr_1_1Joystick.html#a94cca5ef5c0d147caf06816d63ae690f">More...</a><br /></td></tr>
+<tr class="separator:a94cca5ef5c0d147caf06816d63ae690f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5505c82eff1744b530b455f03c13edb9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; std_msgs::msg::Int32 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a5505c82eff1744b530b455f03c13edb9">m_pan_cam2_pub</a></td></tr>
+<tr class="memdesc:a5505c82eff1744b530b455f03c13edb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The publisher for the pantilt camera read function, pan value for camera 2.  <a href="classcmr_1_1Joystick.html#a5505c82eff1744b530b455f03c13edb9">More...</a><br /></td></tr>
+<tr class="separator:a5505c82eff1744b530b455f03c13edb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c813577db0e463f513ab84f9fe544c0"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; std_msgs::msg::Int32 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a0c813577db0e463f513ab84f9fe544c0">m_tilt_cam2_pub</a></td></tr>
+<tr class="memdesc:a0c813577db0e463f513ab84f9fe544c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The publisher for the pantilt camera read function, tilt value for camera 2.  <a href="classcmr_1_1Joystick.html#a0c813577db0e463f513ab84f9fe544c0">More...</a><br /></td></tr>
+<tr class="separator:a0c813577db0e463f513ab84f9fe544c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad74a8245cb5170791a35fbfc3a07ef72"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; geometry_msgs::msg::TwistStamped &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#ad74a8245cb5170791a35fbfc3a07ef72">m_drives_pub</a></td></tr>
 <tr class="memdesc:ad74a8245cb5170791a35fbfc3a07ef72"><td class="mdescLeft">&#160;</td><td class="mdescRight">The publisher for the drives read function.  <a href="classcmr_1_1Joystick.html#ad74a8245cb5170791a35fbfc3a07ef72">More...</a><br /></td></tr>
 <tr class="separator:ad74a8245cb5170791a35fbfc3a07ef72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c76c14b3cfd0fd1d5c4c03f0470815a"><td class="memItemLeft" align="right" valign="top">geometry_msgs::msg::TwistStamped&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a9c76c14b3cfd0fd1d5c4c03f0470815a">m_last_drives_twist</a></td></tr>
 <tr class="memdesc:a9c76c14b3cfd0fd1d5c4c03f0470815a"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the last message that was sent out by the drives callback function  <a href="classcmr_1_1Joystick.html#a9c76c14b3cfd0fd1d5c4c03f0470815a">More...</a><br /></td></tr>
 <tr class="separator:a9c76c14b3cfd0fd1d5c4c03f0470815a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0011a01bcaf28075545c620e0bd7fe33"><td class="memItemLeft" align="right" valign="top">std_msgs::msg::Int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a0011a01bcaf28075545c620e0bd7fe33">m_last_pan</a></td></tr>
+<tr class="memdesc:a0011a01bcaf28075545c620e0bd7fe33"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the last camera pan message that was sent out by the drives callback function  <a href="classcmr_1_1Joystick.html#a0011a01bcaf28075545c620e0bd7fe33">More...</a><br /></td></tr>
+<tr class="separator:a0011a01bcaf28075545c620e0bd7fe33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ecbf3520b7f438d2f2f4ccd8687f9e7"><td class="memItemLeft" align="right" valign="top">std_msgs::msg::Int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1Joystick.html#a4ecbf3520b7f438d2f2f4ccd8687f9e7">m_last_tilt</a></td></tr>
+<tr class="memdesc:a4ecbf3520b7f438d2f2f4ccd8687f9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the last camera tilt message that was sent out by the drives callback function  <a href="classcmr_1_1Joystick.html#a4ecbf3520b7f438d2f2f4ccd8687f9e7">More...</a><br /></td></tr>
+<tr class="separator:a4ecbf3520b7f438d2f2f4ccd8687f9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -337,7 +364,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>publishesthe arm movement message to the m_joystick_pub </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>publishes the arm movement message to the m_joystick_pub </dd></dl>
 
 </div>
 </div>
@@ -474,6 +501,7 @@ false whell a member variable is not pulled properly </dd></dl>
 
 <p>Used to read values from the drives controller and send inputs in the form of messages. </p>
 <p >Will store the messages in the form of a TwistStamped to be published by another callback timer</p>
+<p >Also used for pan and tilting camera.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">axis_state</td><td>an array of axis pulled from the js_events </td></tr>
@@ -511,8 +539,8 @@ false whell a member variable is not pulled properly </dd></dl>
 
 </div>
 </div>
-<a id="a5e2e00f6fa5941fcca2c6d7a1d9abaa3" name="a5e2e00f6fa5941fcca2c6d7a1d9abaa3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e2e00f6fa5941fcca2c6d7a1d9abaa3">&#9670;&nbsp;</a></span>js_event_button_publ()</h2>
+<a id="ab2be252c923c5e852102581b769663fb" name="ab2be252c923c5e852102581b769663fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2be252c923c5e852102581b769663fb">&#9670;&nbsp;</a></span>js_event_button_arm_publ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -521,7 +549,7 @@ false whell a member variable is not pulled properly </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void cmr::Joystick::js_event_button_publ </td>
+          <td class="memname">void cmr::Joystick::js_event_button_arm_publ </td>
           <td>(</td>
           <td class="paramtype">std::optional&lt; js_event &gt;&#160;</td>
           <td class="paramname"><em>event</em>, </td>
@@ -546,6 +574,7 @@ false whell a member variable is not pulled properly </dd></dl>
 </div><div class="memdoc">
 
 <p>Used to assign values and publish a message whenever a button is pressed or released. </p>
+<p >This is used for arm callback.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td>the js_event by which the values are pulled from </td></tr>
@@ -678,6 +707,54 @@ false whell a member variable is not pulled properly </dd></dl>
 
 </div>
 </div>
+<a id="aa2fcf1f4c359acad4bfdbf165df2ac19" name="aa2fcf1f4c359acad4bfdbf165df2ac19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2fcf1f4c359acad4bfdbf165df2ac19">&#9670;&nbsp;</a></span>m_end_effector_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp_lifecycle::LifecyclePublisher&lt;std_msgs::msg::Int32&gt; &gt; cmr::Joystick::m_end_effector_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The publisher for the end effector read function. </p>
+
+</div>
+</div>
+<a id="ad4808669719964b6f578368507f38938" name="ad4808669719964b6f578368507f38938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4808669719964b6f578368507f38938">&#9670;&nbsp;</a></span>m_extendo_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp_lifecycle::LifecyclePublisher&lt;std_msgs::msg::Int32&gt; &gt; cmr::Joystick::m_extendo_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The publisher for the extendo cam read function. </p>
+
+</div>
+</div>
 <a id="af1c7c9f5e1489d4bdb19fee218eb7368" name="af1c7c9f5e1489d4bdb19fee218eb7368"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1c7c9f5e1489d4bdb19fee218eb7368">&#9670;&nbsp;</a></span>m_got_first_message</h2>
 
@@ -698,7 +775,31 @@ false whell a member variable is not pulled properly </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if a message has been received in order to continue to the publish part knowing a message exist. </p>
+<p>Checks if a message has been received in order to continue to the publish part knowing a message exists. </p>
+
+</div>
+</div>
+<a id="ac880d814887c8b36aa5d0970aa64f250" name="ac880d814887c8b36aa5d0970aa64f250"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac880d814887c8b36aa5d0970aa64f250">&#9670;&nbsp;</a></span>m_hex_driver_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp_lifecycle::LifecyclePublisher&lt;std_msgs::msg::Int32&gt; &gt; cmr::Joystick::m_hex_driver_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The publisher for the hex driver read function. </p>
 
 </div>
 </div>
@@ -774,6 +875,54 @@ false whell a member variable is not pulled properly </dd></dl>
 
 </div>
 </div>
+<a id="a0011a01bcaf28075545c620e0bd7fe33" name="a0011a01bcaf28075545c620e0bd7fe33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0011a01bcaf28075545c620e0bd7fe33">&#9670;&nbsp;</a></span>m_last_pan</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std_msgs::msg::Int32 cmr::Joystick::m_last_pan</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>contains the last camera pan message that was sent out by the drives callback function </p>
+
+</div>
+</div>
+<a id="a4ecbf3520b7f438d2f2f4ccd8687f9e7" name="a4ecbf3520b7f438d2f2f4ccd8687f9e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ecbf3520b7f438d2f2f4ccd8687f9e7">&#9670;&nbsp;</a></span>m_last_tilt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std_msgs::msg::Int32 cmr::Joystick::m_last_tilt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>contains the last camera tilt message that was sent out by the drives callback function </p>
+
+</div>
+</div>
 <a id="acb39458713d607141ad7ee271007c9a9" name="acb39458713d607141ad7ee271007c9a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb39458713d607141ad7ee271007c9a9">&#9670;&nbsp;</a></span>m_max_arm_speed</h2>
 
@@ -822,6 +971,102 @@ false whell a member variable is not pulled properly </dd></dl>
 
 </div>
 </div>
+<a id="a6880632b983ab710674c1aeace563f89" name="a6880632b983ab710674c1aeace563f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6880632b983ab710674c1aeace563f89">&#9670;&nbsp;</a></span>m_pan_cam1_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp_lifecycle::LifecyclePublisher&lt;std_msgs::msg::Int32&gt; &gt; cmr::Joystick::m_pan_cam1_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The publisher for the pantilt camera read function, pan value for camera 1. </p>
+
+</div>
+</div>
+<a id="a5505c82eff1744b530b455f03c13edb9" name="a5505c82eff1744b530b455f03c13edb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5505c82eff1744b530b455f03c13edb9">&#9670;&nbsp;</a></span>m_pan_cam2_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp_lifecycle::LifecyclePublisher&lt;std_msgs::msg::Int32&gt; &gt; cmr::Joystick::m_pan_cam2_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The publisher for the pantilt camera read function, pan value for camera 2. </p>
+
+</div>
+</div>
+<a id="a94cca5ef5c0d147caf06816d63ae690f" name="a94cca5ef5c0d147caf06816d63ae690f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94cca5ef5c0d147caf06816d63ae690f">&#9670;&nbsp;</a></span>m_tilt_cam1_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp_lifecycle::LifecyclePublisher&lt;std_msgs::msg::Int32&gt; &gt; cmr::Joystick::m_tilt_cam1_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The publisher for the pantilt camera read function, tilt value for camera 1. </p>
+
+</div>
+</div>
+<a id="a0c813577db0e463f513ab84f9fe544c0" name="a0c813577db0e463f513ab84f9fe544c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c813577db0e463f513ab84f9fe544c0">&#9670;&nbsp;</a></span>m_tilt_cam2_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp_lifecycle::LifecyclePublisher&lt;std_msgs::msg::Int32&gt; &gt; cmr::Joystick::m_tilt_cam2_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The publisher for the pantilt camera read function, tilt value for camera 2. </p>
+
+</div>
+</div>
 <a id="a829ce0c4c0dbe4797ed442178267254a" name="a829ce0c4c0dbe4797ed442178267254a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a829ce0c4c0dbe4797ed442178267254a">&#9670;&nbsp;</a></span>m_type_name</h2>
 
@@ -853,7 +1098,7 @@ false whell a member variable is not pulled properly </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 15 2023 21:33:43 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Oct 20 2023 00:57:55 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

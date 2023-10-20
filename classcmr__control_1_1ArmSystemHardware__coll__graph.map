@@ -1,5 +1,4 @@
 <map id="cmr_control::ArmSystemHardware" name="cmr_control::ArmSystemHardware">
-<area shape="rect" id="node1" title="ArmSystemHardware is a hardware interface for the arm that provides effort and position control to ea..." alt="" coords="5,184,225,211"/>
-<area shape="rect" id="node2" href="$classcmr__control_1_1BaseArmSystemHardware.html" title="A base class for arm system hardware." alt="" coords="18,95,213,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="49,5,181,47"/>
+<area shape="rect" id="node1" title="ArmSystemHardware is a hardware interface for the arm that provides velocity and position control to ..." alt="" coords="5,95,225,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="49,5,181,47"/>
 </map>

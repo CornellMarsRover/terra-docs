@@ -6,5 +6,6 @@ var searchData=
   ['clock_2ehpp_3',['clock.hpp',['../clock_8hpp.html',1,'']]],
   ['cmr_5fdebug_2ecpp_4',['cmr_debug.cpp',['../cmr__debug_8cpp.html',1,'']]],
   ['cmr_5fdebug_2ehpp_5',['cmr_debug.hpp',['../cmr__debug_8hpp.html',1,'']]],
-  ['controller_5ftest_2ecpp_6',['controller_test.cpp',['../controller__test_8cpp.html',1,'']]]
+  ['contributing_2emd_6',['CONTRIBUTING.md',['../CONTRIBUTING_8md.html',1,'']]],
+  ['controller_5ftest_2ecpp_7',['controller_test.cpp',['../controller__test_8cpp.html',1,'']]]
 ];

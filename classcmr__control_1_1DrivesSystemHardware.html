@@ -122,6 +122,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:adb57cbd1aa70543d9274472777551bb1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1DrivesSystemHardware.html#adb57cbd1aa70543d9274472777551bb1">validate_interfaces</a> () const</td></tr>
 <tr class="memdesc:adb57cbd1aa70543d9274472777551bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the interfaces we're configured with make sense for this hardware.  <a href="classcmr__control_1_1DrivesSystemHardware.html#adb57cbd1aa70543d9274472777551bb1">More...</a><br /></td></tr>
 <tr class="separator:adb57cbd1aa70543d9274472777551bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab384f6c6c681eefc9ef0d2abdb58dbf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1DrivesSystemHardware.html#ab384f6c6c681eefc9ef0d2abdb58dbf7">sensor_callback</a> (const cmr_msgs::msg::SensorReadBatch &amp;msg)</td></tr>
+<tr class="separator:ab384f6c6c681eefc9ef0d2abdb58dbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ae0bbc74bb06fa84614abd81e10d14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1DrivesSystemHardware.html#a52ae0bbc74bb06fa84614abd81e10d14">set_velocity_mode</a> () const</td></tr>
+<tr class="separator:a52ae0bbc74bb06fa84614abd81e10d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -131,6 +135,14 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a17ee8196d5144ffa8d88fad24de56b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2cd3e077437462b083375e555bba0da"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1DrivesSystemHardware.html#ae2cd3e077437462b083375e555bba0da">m_hw_positions</a></td></tr>
 <tr class="separator:ae2cd3e077437462b083375e555bba0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab900f999f025f94d1d0715faec96543d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1DrivesSystemHardware.html#ab900f999f025f94d1d0715faec96543d">m_hw_buffer</a></td></tr>
+<tr class="separator:ab900f999f025f94d1d0715faec96543d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43208f4d9e601f3ef252b8e008840b9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1DrivesSystemHardware.html#ac43208f4d9e601f3ef252b8e008840b9">m_comm_node</a></td></tr>
+<tr class="separator:ac43208f4d9e601f3ef252b8e008840b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f00e8421b027d7a6de4d2e55f0e0c92"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Publisher&lt; cmr_msgs::msg::MotorWriteBatch &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1DrivesSystemHardware.html#a4f00e8421b027d7a6de4d2e55f0e0c92">m_motor_write_pub</a></td></tr>
+<tr class="separator:a4f00e8421b027d7a6de4d2e55f0e0c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907f266ab132f622f0328f5024a6c71d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Subscription&lt; cmr_msgs::msg::SensorReadBatch &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr__control_1_1DrivesSystemHardware.html#a907f266ab132f622f0328f5024a6c71d">m_motor_read_sub</a></td></tr>
+<tr class="separator:a907f266ab132f622f0328f5024a6c71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Hardware interface for the drives system of the rover, which consists of a number of wheel motors and their encoders. </p>
@@ -300,6 +312,57 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab384f6c6c681eefc9ef0d2abdb58dbf7" name="ab384f6c6c681eefc9ef0d2abdb58dbf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab384f6c6c681eefc9ef0d2abdb58dbf7">&#9670;&nbsp;</a></span>sensor_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmr_control::DrivesSystemHardware::sensor_callback </td>
+          <td>(</td>
+          <td class="paramtype">const cmr_msgs::msg::SensorReadBatch &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52ae0bbc74bb06fa84614abd81e10d14" name="a52ae0bbc74bb06fa84614abd81e10d14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52ae0bbc74bb06fa84614abd81e10d14">&#9670;&nbsp;</a></span>set_velocity_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmr_control::DrivesSystemHardware::set_velocity_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adb57cbd1aa70543d9274472777551bb1" name="adb57cbd1aa70543d9274472777551bb1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb57cbd1aa70543d9274472777551bb1">&#9670;&nbsp;</a></span>validate_interfaces()</h2>
 
@@ -365,6 +428,50 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac43208f4d9e601f3ef252b8e008840b9" name="ac43208f4d9e601f3ef252b8e008840b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac43208f4d9e601f3ef252b8e008840b9">&#9670;&nbsp;</a></span>m_comm_node</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp::Node&gt; cmr_control::DrivesSystemHardware::m_comm_node</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab900f999f025f94d1d0715faec96543d" name="ab900f999f025f94d1d0715faec96543d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab900f999f025f94d1d0715faec96543d">&#9670;&nbsp;</a></span>m_hw_buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; cmr_control::DrivesSystemHardware::m_hw_buffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac5e9facd437a065c16dcaa0aad731d0a" name="ac5e9facd437a065c16dcaa0aad731d0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5e9facd437a065c16dcaa0aad731d0a">&#9670;&nbsp;</a></span>m_hw_commands</h2>
 
@@ -431,6 +538,50 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a907f266ab132f622f0328f5024a6c71d" name="a907f266ab132f622f0328f5024a6c71d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a907f266ab132f622f0328f5024a6c71d">&#9670;&nbsp;</a></span>m_motor_read_sub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp::Subscription&lt;cmr_msgs::msg::SensorReadBatch&gt; &gt; cmr_control::DrivesSystemHardware::m_motor_read_sub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f00e8421b027d7a6de4d2e55f0e0c92" name="a4f00e8421b027d7a6de4d2e55f0e0c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f00e8421b027d7a6de4d2e55f0e0c92">&#9670;&nbsp;</a></span>m_motor_write_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp::Publisher&lt;cmr_msgs::msg::MotorWriteBatch&gt; &gt; cmr_control::DrivesSystemHardware::m_motor_write_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/cmr_control/include/cmr_control/<a class="el" href="drives__system_8hpp_source.html">drives_system.hpp</a></li>
 <li>src/cmr_control/src/<a class="el" href="drives__system_8cpp.html">drives_system.cpp</a></li>
@@ -438,7 +589,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 15 2023 21:33:43 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Oct 20 2023 00:57:55 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

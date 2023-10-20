@@ -1,5 +1,4 @@
 <map id="cmr_control::MockArmSystemHardware" name="cmr_control::MockArmSystemHardware">
-<area shape="rect" id="node1" title="MockArmSystemHardware is a hardware interface for the arm that mocks effort and position control to e..." alt="" coords="5,184,201,225"/>
-<area shape="rect" id="node2" href="$classcmr__control_1_1BaseArmSystemHardware.html" title="A base class for arm system hardware." alt="" coords="6,95,201,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="37,5,169,47"/>
+<area shape="rect" id="node1" title="MockArmSystemHardware is a hardware interface for the arm that mocks effort and position control to e..." alt="" coords="5,95,201,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="6,5,201,47"/>
 </map>

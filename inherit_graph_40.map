@@ -1,12 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,183,205,209"/>
-<area shape="rect" id="node2" href="$classcmr_1_1fabric_1_1FabricNode.html" title="The FabricNode is the base class for All CMR nodes." alt="" coords="253,183,408,209"/>
-<area shape="rect" id="node3" href="$classDemoNode.html" title=" " alt="" coords="499,5,586,32"/>
-<area shape="rect" id="node4" href="$classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling." alt="" coords="485,56,600,83"/>
-<area shape="rect" id="node5" href="$classcmr_1_1CameraNode.html" title="CameraNode" alt="" coords="479,107,606,133"/>
-<area shape="rect" id="node6" href="$classcmr_1_1GpsClient.html" title="GpsClient connects to a GPS server exposed by gpsd and outputs the GPS fixes as sensor_msgs::msg::Nav..." alt="" coords="489,157,596,184"/>
-<area shape="rect" id="node7" href="$classcmr_1_1GpsFake.html" title="GpsFake" alt="" coords="491,208,594,235"/>
-<area shape="rect" id="node8" href="$classcmr_1_1InverseKinematics.html" title="InverseKinematics" alt="" coords="463,259,622,285"/>
-<area shape="rect" id="node9" href="$classcmr_1_1Joystick.html" title="Joystick TOML File: restart_attempts &#45; Amount of restart attempts used for fault handeling." alt="" coords="493,309,592,336"/>
-<area shape="rect" id="node10" href="$classcmr_1_1JoystickDirectControl.html" title="The JoystickDirectControl node is the node called to activate arm control via direct joystick control..." alt="" coords="456,360,629,387"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,132,73"/>
+<area shape="rect" id="node2" href="$classcmr_1_1fabric_1_1LifecycleClient.html" title=" " alt="" coords="180,5,395,47"/>
+<area shape="rect" id="node3" href="$classcmr_1_1fabric_1_1LifecycleClient.html" title="Lifecycle Client is just like a rclcpp::Client but it can be activated and deactivated." alt="" coords="201,71,374,112"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,137,47"/>
-<area shape="rect" id="node2" href="$classcmr__control_1_1AstroSensorHardware.html" title="AstroSensorHardware is a hardware interface for the astro sensor that provides readings of a sensor&#39;s..." alt="" coords="185,5,353,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,169,54"/>
+<area shape="rect" id="node2" href="$classuros_1_1agent_1_1graph__manager_1_1GraphManager_1_1DatareaderListener.html" title="Implementation of FastDDS&#39; DomainReaderListener abstract class." alt="" coords="217,5,388,61"/>
 </map>

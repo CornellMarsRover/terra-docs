@@ -140,15 +140,36 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:abe12ee7c7c9e2ad38c1842ba934bbfa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#abe12ee7c7c9e2ad38c1842ba934bbfa8">update_arm_position</a> (const cmr_msgs::msg::JoystickReading &amp;msg)</td></tr>
 <tr class="memdesc:abe12ee7c7c9e2ad38c1842ba934bbfa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">update_arm_position is the callback function for when the subscriber receives a message from the joystick hardware.  <a href="classcmr_1_1JoystickDirectControl.html#abe12ee7c7c9e2ad38c1842ba934bbfa8">More...</a><br /></td></tr>
 <tr class="separator:abe12ee7c7c9e2ad38c1842ba934bbfa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c0b1f756e5424f1f1ecf6f6900e71e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#ae8c0b1f756e5424f1f1ecf6f6900e71e">update_end_effector_velocity</a> (int vel)</td></tr>
+<tr class="memdesc:ae8c0b1f756e5424f1f1ecf6f6900e71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">update_end_effector_velocity will send a motor write to the end effector's motor in order to command its velocity.  <a href="classcmr_1_1JoystickDirectControl.html#ae8c0b1f756e5424f1f1ecf6f6900e71e">More...</a><br /></td></tr>
+<tr class="separator:ae8c0b1f756e5424f1f1ecf6f6900e71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd6c244722c7d7f84948fdd3b03bc05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#a2dd6c244722c7d7f84948fdd3b03bc05">update_hex_driver_velocity</a> (int vel)</td></tr>
+<tr class="memdesc:a2dd6c244722c7d7f84948fdd3b03bc05"><td class="mdescLeft">&#160;</td><td class="mdescRight">update_hex_driver_velocity will send a motor write to the end effector's hex driver servo in order to command its velocity.  <a href="classcmr_1_1JoystickDirectControl.html#a2dd6c244722c7d7f84948fdd3b03bc05">More...</a><br /></td></tr>
+<tr class="separator:a2dd6c244722c7d7f84948fdd3b03bc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d215e1cfcca52b6f3c5539c0d3f6b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#a54d215e1cfcca52b6f3c5539c0d3f6b6">update_extendo_velocity</a> (int vel)</td></tr>
+<tr class="memdesc:a54d215e1cfcca52b6f3c5539c0d3f6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">update_extendo_velocity will send a motor write to the end effector's hex driver servo in order to command its velocity.  <a href="classcmr_1_1JoystickDirectControl.html#a54d215e1cfcca52b6f3c5539c0d3f6b6">More...</a><br /></td></tr>
+<tr class="separator:a54d215e1cfcca52b6f3c5539c0d3f6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a8d797e981a52d0f94c521384b5c50ffc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Subscription&lt; cmr_msgs::msg::JoystickReading &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#a8d797e981a52d0f94c521384b5c50ffc">m_joystick_sub</a></td></tr>
 <tr class="memdesc:a8d797e981a52d0f94c521384b5c50ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">listens for messages from the joystick hardware  <a href="classcmr_1_1JoystickDirectControl.html#a8d797e981a52d0f94c521384b5c50ffc">More...</a><br /></td></tr>
 <tr class="separator:a8d797e981a52d0f94c521384b5c50ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7145e615a118b2c600308e462f426ee"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Subscription&lt; std_msgs::msg::Int32 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#ad7145e615a118b2c600308e462f426ee">m_end_effector_sub</a></td></tr>
+<tr class="memdesc:ad7145e615a118b2c600308e462f426ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">listens for messages from the end effector controller hardware  <a href="classcmr_1_1JoystickDirectControl.html#ad7145e615a118b2c600308e462f426ee">More...</a><br /></td></tr>
+<tr class="separator:ad7145e615a118b2c600308e462f426ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41a50f10ef3b41a1449f1203e32ebf1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Subscription&lt; std_msgs::msg::Int32 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#ad41a50f10ef3b41a1449f1203e32ebf1">m_hex_driver_sub</a></td></tr>
+<tr class="memdesc:ad41a50f10ef3b41a1449f1203e32ebf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">listens for messages from the end effector controller hardware  <a href="classcmr_1_1JoystickDirectControl.html#ad41a50f10ef3b41a1449f1203e32ebf1">More...</a><br /></td></tr>
+<tr class="separator:ad41a50f10ef3b41a1449f1203e32ebf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae511e64929650f5bceaa07dfb2559d1d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp::Subscription&lt; std_msgs::msg::Int32 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#ae511e64929650f5bceaa07dfb2559d1d">m_extendo_sub</a></td></tr>
+<tr class="memdesc:ae511e64929650f5bceaa07dfb2559d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">listens for messages from the end effector controller hardware  <a href="classcmr_1_1JoystickDirectControl.html#ae511e64929650f5bceaa07dfb2559d1d">More...</a><br /></td></tr>
+<tr class="separator:ae511e64929650f5bceaa07dfb2559d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af018a4b0d9a1a20caaaa1b0697e142f0"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; std_msgs::msg::Float64MultiArray &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#af018a4b0d9a1a20caaaa1b0697e142f0">m_arm_control_pub</a></td></tr>
 <tr class="memdesc:af018a4b0d9a1a20caaaa1b0697e142f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">publishes messages to the ros2 control hardware interface  <a href="classcmr_1_1JoystickDirectControl.html#af018a4b0d9a1a20caaaa1b0697e142f0">More...</a><br /></td></tr>
 <tr class="separator:af018a4b0d9a1a20caaaa1b0697e142f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac662947350d6aa4065f1325120dc38d2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt; cmr_msgs::msg::MotorWriteBatch &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#ac662947350d6aa4065f1325120dc38d2">m_motor_write_pub</a></td></tr>
+<tr class="memdesc:ac662947350d6aa4065f1325120dc38d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">publishes messages directly to the motors; used for the end effector and hex screw  <a href="classcmr_1_1JoystickDirectControl.html#ac662947350d6aa4065f1325120dc38d2">More...</a><br /></td></tr>
+<tr class="separator:ac662947350d6aa4065f1325120dc38d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcdf63e6615486c933e260df2701df25"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#abcdf63e6615486c933e260df2701df25">m_sensitivity</a></td></tr>
 <tr class="separator:abcdf63e6615486c933e260df2701df25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9eb35c3f1f552fce814153654c6139c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmr_1_1JoystickDirectControl.html#ac9eb35c3f1f552fce814153654c6139c">m_sens_scaler</a></td></tr>
@@ -398,6 +419,90 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ae8c0b1f756e5424f1f1ecf6f6900e71e" name="ae8c0b1f756e5424f1f1ecf6f6900e71e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8c0b1f756e5424f1f1ecf6f6900e71e">&#9670;&nbsp;</a></span>update_end_effector_velocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmr::JoystickDirectControl::update_end_effector_velocity </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>update_end_effector_velocity will send a motor write to the end effector's motor in order to command its velocity. </p>
+
+</div>
+</div>
+<a id="a54d215e1cfcca52b6f3c5539c0d3f6b6" name="a54d215e1cfcca52b6f3c5539c0d3f6b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54d215e1cfcca52b6f3c5539c0d3f6b6">&#9670;&nbsp;</a></span>update_extendo_velocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmr::JoystickDirectControl::update_extendo_velocity </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>update_extendo_velocity will send a motor write to the end effector's hex driver servo in order to command its velocity. </p>
+
+</div>
+</div>
+<a id="a2dd6c244722c7d7f84948fdd3b03bc05" name="a2dd6c244722c7d7f84948fdd3b03bc05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dd6c244722c7d7f84948fdd3b03bc05">&#9670;&nbsp;</a></span>update_hex_driver_velocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmr::JoystickDirectControl::update_hex_driver_velocity </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>update_hex_driver_velocity will send a motor write to the end effector's hex driver servo in order to command its velocity. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a13fa696b5e3033183c21e2abb8679979" name="a13fa696b5e3033183c21e2abb8679979"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13fa696b5e3033183c21e2abb8679979">&#9670;&nbsp;</a></span>m_active_segment</h2>
@@ -447,6 +552,78 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ad7145e615a118b2c600308e462f426ee" name="ad7145e615a118b2c600308e462f426ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7145e615a118b2c600308e462f426ee">&#9670;&nbsp;</a></span>m_end_effector_sub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp::Subscription&lt;std_msgs::msg::Int32&gt; &gt; cmr::JoystickDirectControl::m_end_effector_sub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>listens for messages from the end effector controller hardware </p>
+
+</div>
+</div>
+<a id="ae511e64929650f5bceaa07dfb2559d1d" name="ae511e64929650f5bceaa07dfb2559d1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae511e64929650f5bceaa07dfb2559d1d">&#9670;&nbsp;</a></span>m_extendo_sub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp::Subscription&lt;std_msgs::msg::Int32&gt; &gt; cmr::JoystickDirectControl::m_extendo_sub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>listens for messages from the end effector controller hardware </p>
+
+</div>
+</div>
+<a id="ad41a50f10ef3b41a1449f1203e32ebf1" name="ad41a50f10ef3b41a1449f1203e32ebf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41a50f10ef3b41a1449f1203e32ebf1">&#9670;&nbsp;</a></span>m_hex_driver_sub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;rclcpp::Subscription&lt;std_msgs::msg::Int32&gt; &gt; cmr::JoystickDirectControl::m_hex_driver_sub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>listens for messages from the end effector controller hardware </p>
+
+</div>
+</div>
 <a id="ae1e8de2f055cf0c269ebb1f3c1b51c39" name="ae1e8de2f055cf0c269ebb1f3c1b51c39"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1e8de2f055cf0c269ebb1f3c1b51c39">&#9670;&nbsp;</a></span>m_is_activated</h2>
 
@@ -490,6 +667,30 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>listens for messages from the joystick hardware </p>
+
+</div>
+</div>
+<a id="ac662947350d6aa4065f1325120dc38d2" name="ac662947350d6aa4065f1325120dc38d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac662947350d6aa4065f1325120dc38d2">&#9670;&nbsp;</a></span>m_motor_write_pub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; rclcpp_lifecycle::LifecyclePublisher&lt;cmr_msgs::msg::MotorWriteBatch&gt; &gt; cmr::JoystickDirectControl::m_motor_write_pub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>publishes messages directly to the motors; used for the end effector and hex screw </p>
 
 </div>
 </div>
@@ -544,7 +745,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 15 2023 21:33:43 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Fri Oct 20 2023 00:57:55 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

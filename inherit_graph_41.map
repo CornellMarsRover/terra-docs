@@ -1,4 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,20,120,47"/>
-<area shape="rect" id="node2" href="$classcmr__aruco__py_1_1aruco__marker__translate_1_1ArucoMarkerTranslate.html" title="This node is responsible for translating markers from the /aruco_markers topic (configurable via the ..." alt="" coords="168,5,371,61"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,100,108"/>
+<area shape="rect" id="node2" href="$classLifecycleManager.html" title="A node which provides a service interface for lifecycle_helpers" alt="" coords="167,5,291,32"/>
+<area shape="rect" id="node3" href="$classPositionControllerNode.html" title="The PositionControllerNode listens for odometry messages and publishes tf frames for the base link ba..." alt="" coords="152,56,307,83"/>
+<area shape="rect" id="node4" href="$classTestControllerClient.html" title="The TestController is a node that listens for messages published to the /test/set_target topic of typ..." alt="" coords="161,107,297,133"/>
+<area shape="rect" id="node5" href="$classcmr_1_1fabric_1_1FaultHandler.html" title="The FaultHandler class provides a service interface to allow nodes to restart themselves if an error ..." alt="" coords="148,157,311,184"/>
 </map>

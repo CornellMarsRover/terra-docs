@@ -1,0 +1,4 @@
+<map id="cmr_demo_py.drives_calibrator.DrivesCalibrator" name="cmr_demo_py.drives_calibrator.DrivesCalibrator">
+<area shape="rect" id="node1" title="A node that calls the ODrive calibration routine of the CCB." alt="" coords="5,80,183,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="67,5,121,32"/>
+</map>

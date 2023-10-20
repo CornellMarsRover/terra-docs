@@ -1,5 +1,5 @@
 <map id="cmr::fabric::FabricNode" name="cmr::fabric::FabricNode">
-<area shape="rect" id="node1" title="The FabricNode is the base class for All CMR nodes." alt="" coords="253,183,408,209"/>
+<area shape="rect" id="node1" title="The FabricNode is the base class for All CMR nodes." alt="" coords="253,259,408,285"/>
 <area shape="rect" id="node3" href="$classDemoNode.html" title=" " alt="" coords="499,5,586,32"/>
 <area shape="rect" id="node4" href="$classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling." alt="" coords="485,56,600,83"/>
 <area shape="rect" id="node5" href="$classcmr_1_1CameraNode.html" title="CameraNode" alt="" coords="479,107,606,133"/>
@@ -8,5 +8,8 @@
 <area shape="rect" id="node8" href="$classcmr_1_1InverseKinematics.html" title="InverseKinematics" alt="" coords="463,259,622,285"/>
 <area shape="rect" id="node9" href="$classcmr_1_1Joystick.html" title="Joystick TOML File: restart_attempts &#45; Amount of restart attempts used for fault handeling." alt="" coords="493,309,592,336"/>
 <area shape="rect" id="node10" href="$classcmr_1_1JoystickDirectControl.html" title="The JoystickDirectControl node is the node called to activate arm control via direct joystick control..." alt="" coords="456,360,629,387"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,183,205,209"/>
+<area shape="rect" id="node11" href="$classcmr_1_1PanTiltNode.html" title="PanTiltNode" alt="" coords="481,411,604,437"/>
+<area shape="rect" id="node12" href="$classcmr_1_1SiteAnalyze.html" title="SiteAnalyze" alt="" coords="483,461,602,488"/>
+<area shape="rect" id="node13" href="$classcmr_1_1SubprocessNode.html" title="A SubprocessNode is a Fabric&#45;managed way of running a particular command in its own process." alt="" coords="467,512,618,539"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,259,205,285"/>
 </map>

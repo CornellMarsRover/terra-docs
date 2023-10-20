@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classCmrRAII.html" title="A RAII helper class that simply provides a way to call a function when it is destroyed." alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="$classcmr__control_1_1MockArmSystemHardware.html" title="MockArmSystemHardware is a hardware interface for the arm that mocks effort and position control to e..." alt="" coords="248,5,444,47"/>
 </map>
