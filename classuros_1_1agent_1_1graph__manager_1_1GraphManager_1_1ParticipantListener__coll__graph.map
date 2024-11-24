@@ -1,5 +1,0 @@
-<map id="uros::agent::graph_manager::GraphManager::ParticipantListener" name="uros::agent::graph_manager::GraphManager::ParticipantListener">
-<area shape="rect" id="node1" title="Implementation of FastDDS&#39; DomainParticipantListener abstract class." alt="" coords="381,31,552,87"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,208,47"/>
-<area shape="rect" id="node3" href="$classuros_1_1agent_1_1graph__manager_1_1GraphManager.html" title="Class that keeps track of the existing entities in the ROS 2 world, both coming from micro&#45;ROS or fro..." alt="" coords="21,71,192,112"/>
-</map>

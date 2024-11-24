@@ -1,0 +1,4 @@
+<map id="cmr_rovernet.drivesnet.CmdVelSubscriber" name="cmr_rovernet.drivesnet.CmdVelSubscriber">
+<area shape="rect" id="node1" title="This node subscribes to the /drives_controller/cmd_vel topic output by the drivescontroller node." alt="" coords="5,80,189,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="71,5,124,32"/>
+</map>

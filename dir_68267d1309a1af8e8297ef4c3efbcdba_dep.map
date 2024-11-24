@@ -1,35 +1,17 @@
 <map id="src" name="src">
-<area shape="rect" id="node2" href="dir_b459277d1e8d6ae426ff7d339fb40bb3.html" title="cmr_arm" alt="" coords="1890,27,1963,75"/>
-<area shape="rect" id="node12" href="dir_765c48096ff0c2b7cda2f993d09c8836.html" title="cmr_fabric" alt="" coords="1307,123,1389,171"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000002_000021.html" title="2" alt="" coords="1404,144,1412,159"/>
-<area shape="rect" id="node19" href="dir_7a5f9d3b1a0d09f1c0e3dab011d3ac8c.html" title="cmr_utils" alt="" coords="1357,219,1432,267"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000002_000033.html" title="2" alt="" coords="1448,225,1456,240"/>
-<area shape="rect" id="node3" href="dir_d22210a29067f1cd4291347ee88e94ad.html" title="cmr_arm_config" alt="" coords="1751,27,1865,75"/>
-<area shape="rect" id="node4" href="dir_496cbc3cf116794a769e91185fc59156.html" title="cmr_aruco_py" alt="" coords="1623,27,1726,75"/>
-<area shape="rect" id="node5" href="dir_9a9c28c46c3ffeef5add9872eaba54b6.html" title="cmr_astrotech" alt="" coords="1282,27,1387,75"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000007_000021.html" title="1" alt="" coords="1347,96,1355,111"/>
-<area shape="rect" id="node6" href="dir_b8190bd51e8e35a8689fa7d966bb634c.html" title="cmr_bs" alt="" coords="1527,27,1599,75"/>
-<area shape="rect" id="edge4-headlabel" href="dir_000009_000021.html" title="4" alt="" coords="1406,122,1414,136"/>
-<area shape="rect" id="edge5-headlabel" href="dir_000009_000033.html" title="5" alt="" coords="1429,203,1437,218"/>
-<area shape="rect" id="node7" href="dir_1f8ab9a83e2944c8b756f00825da35ef.html" title="cmr_control" alt="" coords="1412,27,1503,75"/>
-<area shape="rect" id="edge7-headlabel" href="dir_000011_000021.html" title="1" alt="" coords="1390,110,1398,125"/>
-<area shape="rect" id="edge6-headlabel" href="dir_000011_000033.html" title="2" alt="" coords="1412,197,1420,211"/>
-<area shape="rect" id="node8" href="dir_417e8239ccbd45931a776eda3344c94f.html" title="cmr_cv" alt="" coords="1019,27,1091,75"/>
-<area shape="rect" id="edge8-headlabel" href="dir_000013_000021.html" title="2" alt="" coords="1287,115,1295,130"/>
-<area shape="rect" id="edge9-headlabel" href="dir_000013_000033.html" title="1" alt="" coords="1341,197,1349,211"/>
-<area shape="rect" id="node9" href="dir_94c0947fa3c8ac7d1f4104ee10e731ed.html" title="cmr_demo" alt="" coords="645,27,728,75"/>
-<area shape="rect" id="edge10-headlabel" href="dir_000015_000021.html" title="3" alt="" coords="1284,128,1292,143"/>
-<area shape="rect" id="edge11-headlabel" href="dir_000015_000033.html" title="1" alt="" coords="1337,215,1345,229"/>
-<area shape="rect" id="node10" href="dir_6b3611249781b2833f0349aad2d9876b.html" title="cmr_demo_py" alt="" coords="891,27,994,75"/>
-<area shape="rect" id="node11" href="dir_5dd4a1a8d0e0caed75e405a263460e50.html" title="cmr_description" alt="" coords="752,27,867,75"/>
-<area shape="rect" id="edge12-headlabel" href="dir_000021_000033.html" title="20" alt="" coords="1375,191,1390,206"/>
-<area shape="rect" id="node13" href="dir_fa69eb67587fcaaa55082472f4158e24.html" title="cmr_fabric_wrappers" alt="" coords="1115,27,1258,75"/>
-<area shape="rect" id="edge13-headlabel" href="dir_000023_000021.html" title="1" alt="" coords="1293,99,1301,113"/>
-<area shape="rect" id="node14" href="dir_bb0965c40348be9345b858d1e4fce987.html" title="cmr_msgs" alt="" coords="539,27,621,75"/>
-<area shape="rect" id="node15" href="dir_7d614799df906ba69620a11697794a55.html" title="cmr_nav" alt="" coords="443,27,515,75"/>
-<area shape="rect" id="node16" href="dir_409a70296efba0130354c0ffd126d064.html" title="cmr_py_test" alt="" coords="325,27,419,75"/>
-<area shape="rect" id="node17" href="dir_7ad35f1b70c8313e38269907b758cea6.html" title="cmr_rover" alt="" coords="221,27,301,75"/>
-<area shape="rect" id="node18" href="dir_f68dfb48355d11b2d8864743750f8384.html" title="cmr_test" alt="" coords="123,27,197,75"/>
-<area shape="rect" id="node20" href="dir_a14bce3d5291a72d3515a749459562ab.html" title="uros" alt="" coords="27,27,99,75"/>
-<area shape="rect" id="clust1" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" alt="" coords="16,16,2071,277"/>
+<area shape="rect" id="node2" href="dir_26c07b96b1bb3ce46e9e56b6dfbfc861.html" title="cmr_arm_sim" alt="" coords="1219,27,1320,75"/>
+<area shape="rect" id="node3" href="dir_8918c677b13ece8fbdd7565d1acaec53.html" title="cmr_arm_simulator" alt="" coords="1061,27,1195,75"/>
+<area shape="rect" id="node4" href="dir_f4c5015e9f0e43b671ef0578bd41477d.html" title="cmr_cams" alt="" coords="955,27,1037,75"/>
+<area shape="rect" id="node5" href="dir_0c0d73d2c8e3e5f85bda06939e071ef5.html" title="cmr_controller_remote" alt="" coords="779,27,930,75"/>
+<area shape="rect" id="node6" href="dir_765c48096ff0c2b7cda2f993d09c8836.html" title="cmr_fabric" alt="" coords="643,123,725,171"/>
+<area shape="rect" id="node12" href="dir_7a5f9d3b1a0d09f1c0e3dab011d3ac8c.html" title="cmr_utils" alt="" coords="647,219,721,267"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000006_000017.html" title="20" alt="" coords="685,193,700,208"/>
+<area shape="rect" id="node7" href="dir_fa69eb67587fcaaa55082472f4158e24.html" title="cmr_fabric_wrappers" alt="" coords="613,27,755,75"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000008_000006.html" title="1" alt="" coords="688,97,696,112"/>
+<area shape="rect" id="node8" href="dir_469c5549e9fc1f1b11c1586c51bde5ca.html" title="cmr_imu" alt="" coords="516,27,588,75"/>
+<area shape="rect" id="node9" href="dir_bb0965c40348be9345b858d1e4fce987.html" title="cmr_msgs" alt="" coords="409,27,492,75"/>
+<area shape="rect" id="node10" href="dir_7002f5e5dfd1272b960bcd72037d5184.html" title="cmr_param_gui" alt="" coords="274,27,385,75"/>
+<area shape="rect" id="node11" href="dir_7ab434f314d7f40cf6cf6e9ac2a9362c.html" title="cmr_rovernet" alt="" coords="151,27,249,75"/>
+<area shape="rect" id="node13" href="dir_1bc3a491f6588e12c7115e8b85a4b852.html" title="moveit_servo" alt="" coords="26,27,126,75"/>
+<area shape="rect" id="clust1" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" alt="" coords="16,16,1427,277"/>
 </map>

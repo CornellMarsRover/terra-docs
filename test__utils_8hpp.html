@@ -108,9 +108,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="test__utils_8hpp__dep__incl.png" border="0" usemap="#asrc_2cmr__fabric_2include_2cmr__fabric_2test__utils_8hppdep" alt=""/></div>
 <map name="asrc_2cmr__fabric_2include_2cmr__fabric_2test__utils_8hppdep" id="asrc_2cmr__fabric_2include_2cmr__fabric_2test__utils_8hppdep">
-<area shape="rect" title=" " alt="" coords="93,5,261,47"/>
-<area shape="rect" href="controller__test_8cpp.html" title=" " alt="" coords="5,95,176,136"/>
-<area shape="rect" href="fabric__test_8cpp.html" title=" " alt="" coords="200,95,331,136"/>
+<area shape="rect" title=" " alt="" coords="5,5,173,47"/>
+<area shape="rect" href="fabric__test_8cpp.html" title=" " alt="" coords="24,95,155,136"/>
 </map>
 </div>
 </div>
@@ -173,14 +172,14 @@ template&lt;typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Creates a list of strings by inserting string between quotes, and separating them with commas. </p>
-<h2><a class="anchor" id="autotoc_md20"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Example</h2>
 <div class="fragment"><div class="line"> {C++}</div>
 <div class="line">std::stringstream ss;</div>
 <div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespacesetup.html#ab3a7a0638d76a01367c5bc3cc699447f">name</a> = <span class="stringliteral">&quot;test&quot;</span>;</div>
 <div class="line">add_to_stream(ss, 10, <span class="stringliteral">&quot;hello&quot;</span>, <a class="code hl_variable" href="namespacesetup.html#ab3a7a0638d76a01367c5bc3cc699447f">name</a>);</div>
 <div class="line">ss.str() == <span class="stringliteral">&quot;\&quot;10\&quot;,\&quot;hello\&quot;,\&quot;test\&quot;,&quot;</span>;</div>
-<div class="ttc" id="anamespacesetup_html_ab3a7a0638d76a01367c5bc3cc699447f"><div class="ttname"><a href="namespacesetup.html#ab3a7a0638d76a01367c5bc3cc699447f">setup.name</a></div><div class="ttdeci">name</div><div class="ttdef"><b>Definition:</b> setup.py:6</div></div>
+<div class="ttc" id="anamespacesetup_html_ab3a7a0638d76a01367c5bc3cc699447f"><div class="ttname"><a href="namespacesetup.html#ab3a7a0638d76a01367c5bc3cc699447f">setup.name</a></div><div class="ttdeci">name</div><div class="ttdef"><b>Definition:</b> setup.py:11</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Args</td><td></td></tr>
@@ -247,10 +246,10 @@ template&lt;typename... Formats&gt; </div>
   </table>
   </dd>
 </dl>
-<h2><a class="anchor" id="autotoc_md19"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 Example</h2>
 <div class="fragment"><div class="line"> {C++}</div>
-<div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespacedemo__test.html#a2f2db625c14a25c24660d4ac5270621b">node_config</a> = <a class="code hl_struct" href="structNodeConfig.html">NodeConfig</a>{<span class="stringliteral">&quot;test_node&quot;</span>, <span class="stringliteral">&quot;test_ns&quot;</span>};</div>
+<div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> node_config = <a class="code hl_struct" href="structNodeConfig.html">NodeConfig</a>{<span class="stringliteral">&quot;test_node&quot;</span>, <span class="stringliteral">&quot;test_ns&quot;</span>};</div>
 <div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> config_str = R<span class="stringliteral">&quot;(</span></div>
 <div class="line"><span class="stringliteral">dependencies = [%s]</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
@@ -259,7 +258,7 @@ Example</h2>
 <div class="line"><span class="stringliteral">restart_delay = 2</span></div>
 <div class="line"><span class="stringliteral">)&quot;;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral"></span><span class="keyword">const</span> <span class="keyword">auto</span> formatted_config = <a class="code hl_function" href="test__utils_8hpp.html#a5f36999f32ac2d85eeb8159410823322">create_config</a>(<a class="code hl_variable" href="namespacedemo__test.html#a2f2db625c14a25c24660d4ac5270621b">node_config</a>, config_str,</div>
+<div class="line"><span class="stringliteral"></span><span class="keyword">const</span> <span class="keyword">auto</span> formatted_config = <a class="code hl_function" href="test__utils_8hpp.html#a5f36999f32ac2d85eeb8159410823322">create_config</a>(node_config, config_str,</div>
 <div class="line"><span class="stringliteral">&quot;\&quot;test_dep\&quot;&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// formatted_config.toml_config now contains a string which is:</span></div>
@@ -268,7 +267,6 @@ Example</h2>
 <div class="line"><span class="comment">// [fault_handling]</span></div>
 <div class="line"><span class="comment">// restart_attempts = 2</span></div>
 <div class="line"><span class="comment">// restart_delay = 2</span></div>
-<div class="ttc" id="anamespacedemo__test_html_a2f2db625c14a25c24660d4ac5270621b"><div class="ttname"><a href="namespacedemo__test.html#a2f2db625c14a25c24660d4ac5270621b">demo_test.node_config</a></div><div class="ttdeci">node_config</div><div class="ttdef"><b>Definition:</b> demo_test.py:79</div></div>
 <div class="ttc" id="astructNodeConfig_html"><div class="ttname"><a href="structNodeConfig.html">NodeConfig</a></div><div class="ttdoc">Configuration parameters for a node.</div><div class="ttdef"><b>Definition:</b> test_utils.hpp:11</div></div>
 <div class="ttc" id="atest__utils_8hpp_html_a5f36999f32ac2d85eeb8159410823322"><div class="ttname"><a href="test__utils_8hpp.html#a5f36999f32ac2d85eeb8159410823322">create_config</a></div><div class="ttdeci">auto create_config(NodeConfig node_config, const char *const config, Formats &amp;&amp;... formats)</div><div class="ttdoc">Creates a FabricNode config by formatting a toml string.</div><div class="ttdef"><b>Definition:</b> test_utils.hpp:73</div></div>
 </div><!-- fragment --> 
@@ -323,7 +321,7 @@ template&lt;typename NodeT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 27 2024 20:02:34 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Nov 24 2024 00:10:28 for Terra by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

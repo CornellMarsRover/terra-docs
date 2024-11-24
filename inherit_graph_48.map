@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,104,104,131"/>
-<area shape="rect" id="node2" href="$structcmr_1_1fabric_1_1IsServerType_3_01T_00_01std_1_1void__t_3_01typename_01T_1_1server__t_00_04a70412db28fc004e13722120f742910.html" title="A type trait that checks if a type is a server provider." alt="" coords="152,5,343,91"/>
-<area shape="rect" id="node3" href="$structmonad_1_1IsMonadLike_3_01T_00_01std_1_1void__t_3_01std_1_1enable__if__t_3_01std_1_1is__sam2d58459cebc9cc1c6629a7899913a3d8.html" title=" " alt="" coords="161,115,334,259"/>
-</map>

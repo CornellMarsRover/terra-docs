@@ -1,0 +1,4 @@
+<map id="moveit_servo::PoseTracking" name="moveit_servo::PoseTracking">
+<area shape="rect" id="node1" title="Class PoseTracking &#45; subscribe to a target pose." alt="" coords="5,153,192,180"/>
+<area shape="rect" id="node2" href="$structmoveit__servo_1_1PIDConfig.html" title=" " alt="" coords="17,5,181,32"/>
+</map>

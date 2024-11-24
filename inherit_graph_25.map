@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classCmrRAII.html" title="A RAII helper class that simply provides a way to call a function when it is destroyed." alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,17,88,43"/>
+<area shape="rect" id="node2" href="$classcmr__imu_1_1i__data__processor_1_1IDataProcessor.html" title="数据处理器接口类 :param metaclass: :return:" alt="" coords="138,5,315,47"/>
+<area shape="rect" id="node4" href="$classcmr__imu_1_1i__protocol__resolver_1_1IProtocolResolver.html" title=" " alt="" coords="136,71,317,112"/>
+<area shape="rect" id="node3" href="$classcmr__imu_1_1jy901s__dataProcessor_1_1JY901SDataProcessor.html" title=" " alt="" coords="365,5,572,47"/>
+<area shape="rect" id="node5" href="$classcmr__imu_1_1protocol__485__resolver_1_1Protocol485Resolver.html" title=" " alt="" coords="369,71,568,112"/>
+<area shape="rect" id="node6" title=" " alt="" coords="7,71,86,98"/>
 </map>

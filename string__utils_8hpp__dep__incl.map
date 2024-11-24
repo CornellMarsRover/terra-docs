@@ -1,7 +1,6 @@
 <map id="src/cmr_utils/include/cmr_utils/string_utils.hpp" name="src/cmr_utils/include/cmr_utils/string_utils.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="305,5,476,47"/>
-<area shape="rect" id="node2" href="$joystick_8cpp.html" title=" " alt="" coords="5,102,187,129"/>
-<area shape="rect" id="node3" href="$dependency__manager_8cpp.html" title=" " alt="" coords="211,95,387,136"/>
-<area shape="rect" id="node4" href="$lifecycle__helpers_8cpp.html" title=" " alt="" coords="411,95,557,136"/>
-<area shape="rect" id="node5" href="$fabric__test_8cpp.html" title=" " alt="" coords="581,95,712,136"/>
+<area shape="rect" id="node1" title=" " alt="" coords="193,5,364,47"/>
+<area shape="rect" id="node2" href="$dependency__manager_8cpp.html" title=" " alt="" coords="5,95,181,136"/>
+<area shape="rect" id="node3" href="$lifecycle__helpers_8cpp.html" title=" " alt="" coords="205,95,352,136"/>
+<area shape="rect" id="node4" href="$fabric__test_8cpp.html" title=" " alt="" coords="376,95,507,136"/>
 </map>

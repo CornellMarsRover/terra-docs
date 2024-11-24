@@ -1,7 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,148,108"/>
-<area shape="rect" id="node2" href="$classArucoAction.html" title="The class ArucoAction contains several methods, functions, and member variables that assist in the ar..." alt="" coords="237,5,330,32"/>
-<area shape="rect" id="node3" href="$classcmr_1_1PoseGeneratorAction.html" title=" " alt="" coords="196,56,371,83"/>
-<area shape="rect" id="node4" href="$classcmr_1_1PrintAction.html" title="A cmr::PrintAction class that wraps nav2_msgs::action::Wait." alt="" coords="226,107,341,133"/>
-<area shape="rect" id="node5" href="$classcmr_1_1SquarePathAction.html" title=" " alt="" coords="206,157,361,184"/>
+<area shape="rect" id="node1" href="$structcmr_1_1fabric_1_1ActionConfig.html" title="Configuration for a LifecycleActionServer." alt="" coords="5,5,167,32"/>
 </map>

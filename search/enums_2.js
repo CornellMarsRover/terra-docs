@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joysticktype_0',['JoystickType',['../controller__test_8cpp.html#a8de4939237efe914e87ff0af9d50cd0c',1,'controller_test.cpp']]]
+  ['deactivationreason_0',['DeactivationReason',['../namespacecmr_1_1fabric.html#a52f10767ce8f181287db6baf69add9aa',1,'cmr::fabric']]]
 ];

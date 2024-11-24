@@ -1,15 +1,6 @@
 <map id="cmr::fabric::FabricNode" name="cmr::fabric::FabricNode">
-<area shape="rect" id="node1" title="The FabricNode is the base class for All CMR nodes." alt="" coords="253,259,408,285"/>
-<area shape="rect" id="node3" href="$classDemoNode.html" title=" " alt="" coords="499,5,586,32"/>
-<area shape="rect" id="node4" href="$classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling." alt="" coords="485,56,600,83"/>
-<area shape="rect" id="node5" href="$classcmr_1_1CameraNode.html" title="CameraNode" alt="" coords="479,107,606,133"/>
-<area shape="rect" id="node6" href="$classcmr_1_1GpsClient.html" title="GpsClient connects to a GPS server exposed by gpsd and outputs the GPS fixes as sensor_msgs::msg::Nav..." alt="" coords="489,157,596,184"/>
-<area shape="rect" id="node7" href="$classcmr_1_1GpsFake.html" title="GpsFake" alt="" coords="491,208,594,235"/>
-<area shape="rect" id="node8" href="$classcmr_1_1InverseKinematics.html" title="InverseKinematics" alt="" coords="463,259,622,285"/>
-<area shape="rect" id="node9" href="$classcmr_1_1Joystick.html" title="Joystick TOML File: restart_attempts &#45; Amount of restart attempts used for fault handeling." alt="" coords="493,309,592,336"/>
-<area shape="rect" id="node10" href="$classcmr_1_1JoystickDirectControl.html" title="The JoystickDirectControl node is the node called to activate arm control via direct joystick control..." alt="" coords="456,360,629,387"/>
-<area shape="rect" id="node11" href="$classcmr_1_1PanTiltNode.html" title="PanTiltNode" alt="" coords="481,411,604,437"/>
-<area shape="rect" id="node12" href="$classcmr_1_1SiteAnalyze.html" title="SiteAnalyze" alt="" coords="483,461,602,488"/>
-<area shape="rect" id="node13" href="$classcmr_1_1SubprocessNode.html" title="A SubprocessNode is a Fabric&#45;managed way of running a particular command in its own process." alt="" coords="467,512,618,539"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,259,205,285"/>
+<area shape="rect" id="node1" title="The FabricNode is the base class for All CMR nodes." alt="" coords="64,80,219,107"/>
+<area shape="rect" id="node3" href="$classFabricTestNode.html" title="this node provides a simple test of dependency management and fault handling." alt="" coords="5,155,120,181"/>
+<area shape="rect" id="node4" href="$classcmr_1_1SubprocessNode.html" title="A SubprocessNode is a Fabric&#45;managed way of running a particular command in its own process." alt="" coords="145,155,295,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="41,5,241,32"/>
 </map>

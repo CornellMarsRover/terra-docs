@@ -1,4 +1,0 @@
-<map id="cmr_aruco_py.aruco_marker_translate.ArucoMarkerTranslate" name="cmr_aruco_py.aruco_marker_translate.ArucoMarkerTranslate">
-<area shape="rect" id="node1" title="This node is responsible for translating markers from the /aruco_markers topic (configurable via the ..." alt="" coords="5,80,208,136"/>
-<area shape="rect" id="node2" title=" " alt="" coords="47,5,167,32"/>
-</map>

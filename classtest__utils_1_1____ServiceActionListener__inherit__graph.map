@@ -1,5 +1,0 @@
-<map id="test_utils.__ServiceActionListener" name="test_utils.__ServiceActionListener">
-<area shape="rect" id="node1" title="Internal class for listening to a service or action." alt="" coords="95,5,268,47"/>
-<area shape="rect" id="node2" href="$classtest__utils_1_1ActionListener.html" title="A class for waiting for action goals." alt="" coords="5,95,168,121"/>
-<area shape="rect" id="node3" href="$classtest__utils_1_1ServiceListener.html" title="A class for waiting for service calls." alt="" coords="193,95,362,121"/>
-</map>
